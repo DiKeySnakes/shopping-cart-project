@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Logo from '../assets/images/yellow_feather.png';
+import { NavLink } from 'react-router-dom';
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -8,7 +9,7 @@ const Wrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #ea5455;
+  background-color: #b20600;
   position: fixed;
   border-bottom: 2px solid black;
   -webkit-box-shadow: 0px 10px 13px -7px #000000,
@@ -32,7 +33,7 @@ const TitleWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: #f9f5eb;
+  color: #eeeeee;
   text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.7);
   margin-left: 3rem;
 `;
@@ -78,11 +79,11 @@ const Button = styled.button`
   margin-right: 3rem;
   font-size: calc(1.5rem + 2vmin);
   font-family: 'Great Vibes', cursive;
-  background-color: #ea5455;
+  background-color: #b20600;
   border: none;
   cursor: pointer;
-  color: #f9f5eb;
-  text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.7);
+  color: #eeeeee;
+  text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.9);
   @media (max-width: 650px) {
     font-size: calc(1rem + 2vmin);
   }
@@ -98,18 +99,24 @@ function Header(props) {
         <LogoWrapper>
           <Image src={Logo} alt='Logo'></Image>
         </LogoWrapper>
-        <Title>Super Lingerie Shop</Title>
+        <Title>Super Guitar Shop</Title>
       </TitleWrapper>
       <ButtonGroup>
-        <Button onClick={props.onClick}>
-          <i className='fa-solid fa-house'></i> Home
-        </Button>
-        <Button onClick={props.onClick}>
-          <i className='fa-solid fa-cart-shopping'></i> Shop
-        </Button>
-        <Button onClick={props.onClick}>
-          <i className='fa-solid fa-address-card'></i> Contacts
-        </Button>
+        <NavLink to='/'>
+          <Button onClick={props.onClick}>
+            <i className='fa-solid fa-house'></i> Home
+          </Button>
+        </NavLink>
+        <NavLink to='/Shop'>
+          <Button onClick={props.onClick}>
+            <i className='fa-solid fa-cart-shopping'></i> Shop
+          </Button>
+        </NavLink>
+        <NavLink to='/Contacts'>
+          <Button onClick={props.onClick}>
+            <i className='fa-solid fa-address-card'></i> Contacts
+          </Button>
+        </NavLink>
       </ButtonGroup>
     </Wrapper>
   );

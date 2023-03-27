@@ -13,20 +13,22 @@ const Wrapper = styled.footer`
   left: 50%;
   margin-left: -50vw;
   z-index: 10;
-  color: #f9f5eb;
-  background-color: #002b5b;
+  color: #eeeeee;
+  background-color: #ff5f00;
+  border-top: 2px solid #00092c;
   font-size: calc(0.3rem + 2vmin);
   font-family: 'Handlee', cursive;
-  text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.9);
+  text-shadow: 4px 3px 0px #00092c;
   a {
     text-decoration: none;
-    color: #f9f5eb;
+    color: #eeeeee;
   }
   a:hover {
     text-decoration: underline;
-    color: #f9f5eb;
+    color: #eeeeee;
   }
   i {
+    color: #eeeeee;
     transition: transform 0.3s ease-in-out;
   }
   i:hover {
