@@ -20,6 +20,16 @@ const Wrapper = styled.div`
   margin-left: -50vw;
   z-index: 10;
   font-size: calc(1.5rem + 2vmin);
+  & .active {
+    color: yellow;
+  }
+  a {
+    margin-right: 3rem;
+    text-decoration: none;
+    color: #eeeeee;
+    text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.9);
+    font-family: 'Satisfy', cursive;
+  }
   @media (max-width: 650px) {
     font-size: calc(1rem + 2vmin);
   }
@@ -46,7 +56,7 @@ const Title = styled.div`
   align-items: left;
   white-space: nowrap;
   font-size: calc(1.5rem + 2vmin);
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Satisfy', cursive;
   margin-left: 0.5rem;
 `;
 
@@ -67,29 +77,11 @@ const LogoWrapper = styled.div`
   align-items: center;
 `;
 
-const ButtonGroup = styled.div`
+const AnchorGroup = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-`;
-
-const Button = styled.button`
-  padding: 0.5rem 1rem;
-  margin-right: 3rem;
-  font-size: calc(1.5rem + 2vmin);
-  font-family: 'Great Vibes', cursive;
-  background-color: #b20600;
-  border: none;
-  cursor: pointer;
-  color: #eeeeee;
-  text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.9);
-  @media (max-width: 650px) {
-    font-size: calc(1rem + 2vmin);
-  }
-  @media (max-width: 430px) {
-    font-size: calc(0.5rem + 2vmin);
-  }
 `;
 
 function Header(props) {
@@ -99,25 +91,19 @@ function Header(props) {
         <LogoWrapper>
           <Image src={Logo} alt='Logo'></Image>
         </LogoWrapper>
-        <Title>Super Guitar Shop</Title>
+        <Title>GarageBand Guitar Shop</Title>
       </TitleWrapper>
-      <ButtonGroup>
+      <AnchorGroup>
         <NavLink to='/'>
-          <Button onClick={props.onClick}>
-            <i className='fa-solid fa-house'></i> Home
-          </Button>
+          <i className='fa-solid fa-house'></i> Home
         </NavLink>
-        <NavLink to='/Shop'>
-          <Button onClick={props.onClick}>
-            <i className='fa-solid fa-cart-shopping'></i> Shop
-          </Button>
+        <NavLink to='/Products'>
+          <i className='fa-solid fa-cart-shopping'></i> Products
         </NavLink>
         <NavLink to='/Contacts'>
-          <Button onClick={props.onClick}>
-            <i className='fa-solid fa-address-card'></i> Contacts
-          </Button>
+          <i className='fa-solid fa-address-card'></i> Contacts
         </NavLink>
-      </ButtonGroup>
+      </AnchorGroup>
     </Wrapper>
   );
 }

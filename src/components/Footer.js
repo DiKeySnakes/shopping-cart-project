@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.footer`
-  width: 100%;
+  width: 100vw;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   display: flex;
@@ -17,7 +17,7 @@ const Wrapper = styled.footer`
   background-color: #ff5f00;
   border-top: 2px solid #00092c;
   font-size: calc(0.3rem + 2vmin);
-  font-family: 'Handlee', cursive;
+  font-family: 'Kalam', cursive;
   text-shadow: 4px 3px 0px #00092c;
   a {
     text-decoration: none;

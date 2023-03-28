@@ -1,7 +1,8 @@
 import Header from './components/Header';
 import Home from './components/Home';
-import Shop from './components/Shop';
+import Products from './components/Products';
 import Contacts from './components/Contacts';
+import NotFound from './components/NotFound';
 import Footer from './components/Footer';
 import { Route, Routes } from 'react-router-dom';
 
@@ -11,8 +12,9 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/Shop' element={<Shop />} />
+        <Route path='/Products' element={<Products />} />
         <Route path='/Contacts' element={<Contacts />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
