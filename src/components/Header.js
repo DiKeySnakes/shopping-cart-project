@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Logo from '../assets/images/yellow_feather.png';
 import { NavLink } from 'react-router-dom';
+import { Counter } from '../features/counter/Counter';
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -93,6 +94,7 @@ function Header(props) {
         </LogoWrapper>
         <Title>GarageBand Guitar Shop</Title>
       </TitleWrapper>
+      <Counter />
       <AnchorGroup>
         <NavLink to='/'>
           <i className='fa-solid fa-house'></i> Home
@@ -102,6 +104,9 @@ function Header(props) {
         </NavLink>
         <NavLink to='/Contacts'>
           <i className='fa-solid fa-address-card'></i> Contacts
+        </NavLink>
+        <NavLink to='/Cart'>
+          <i className='fa-solid fa-cart-shopping'></i> Cart
         </NavLink>
       </AnchorGroup>
     </Wrapper>
