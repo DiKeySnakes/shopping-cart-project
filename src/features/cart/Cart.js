@@ -9,49 +9,41 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { nanoid } from '@reduxjs/toolkit';
 import styled from 'styled-components';
+import { Table } from '@react-to-styled/table';
 
 const Wrapper = styled.div`
   width: 100%;
-  /* height: 83vh; */
   margin-top: 12rem;
   margin-bottom: 12rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   background-color: #f5c7a9;
 `;
 
 const CardContainer = styled.div`
-  margin-top: 4rem;
+  padding: 0 5rem;
+  width: 50vw;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   justify-content: space-around;
   align-items: center;
   gap: 3rem;
-  @media (max-width: 1300px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media (max-width: 870px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media (max-width: 650px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media (max-width: 330px) {
+  @media (max-width: 1670px) {
     grid-template-columns: repeat(1, 1fr);
+    width: 40vw;
+  }
+  @media (max-width: 800px) {
+    width: 100vw;
   }
 `;
 
 const Card = styled.div`
-  max-width: 80vmin;
+  max-width: 70vmin;
   height: 60vmin;
-  /* margin-left: 5rem; */
   padding: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  /* align-items: center; */
+  justify-content: space-around;
   background-color: #eee9da;
   border: 2px solid black;
   border-radius: 1rem;
@@ -60,11 +52,15 @@ const Card = styled.div`
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   overflow: hidden;
   object-fit: contain;
+  @media (max-width: 800px) {
+    max-width: 100vw;
+    height: 65vmin;
+  }
 `;
 
 const ImageWrapper = styled.div`
-  width: 30rem;
-  height: 50rem;
+  width: 25vmin;
+  height: 50vmin;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -74,18 +70,14 @@ const ImageWrapper = styled.div`
 const Image = styled.img`
   width: 100%;
   height: 100%;
-  padding: 2rem;
   object-fit: contain;
   src: ${(props) => props.src};
   alt: ${(props) => props.alt};
 `;
 
 const DescriptionWrapper = styled.div`
-  width: 50%;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  /* align-items: center; */
 `;
 
 const Description = styled.div`
@@ -95,15 +87,14 @@ const Description = styled.div`
   align-items: center;
   text-align: center;
   overflow: hidden;
-  font-size: calc(0.5rem + 2vmin);
+  font-size: 2vmin;
   color: #f00;
-  position: relative;
   margin-top: 1rem;
 `;
 
 const Button = styled.button`
-  padding: 0.5rem 1rem;
-  font-size: calc(0.3rem + 2vmin);
+  padding: 0.5vmin 1vmin;
+  font-size: 2vmin;
   background-color: #b20600;
   border: none;
   border-radius: 0.5rem;
@@ -111,13 +102,10 @@ const Button = styled.button`
   color: #eeeeee;
   text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.9);
   @media (max-width: 950px) {
-    font-size: calc(0.2rem + 1.5vmin);
+    font-size: 1.8vmin;
   }
   @media (max-width: 650px) {
-    font-size: calc(0.2rem + 1vmin);
-  }
-  @media (max-width: 430px) {
-    font-size: calc(0.1rem + 1vmin);
+    font-size: 1.5vmin;
   }
 `;
 
@@ -137,13 +125,57 @@ const TotalWrapper = styled.div`
   align-items: center;
   text-align: center;
   overflow: hidden;
-  font-size: calc(2rem + 2vmin);
+  font-size: 3vmin;
   color: #f00;
-  position: relative;
   margin-top: 3rem;
   margin-bottom: 3rem;
   border: 2px solid #f00;
   border-radius: 0.5rem;
+`;
+
+const ReceiptWrapper = styled.div`
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  background-color: #f5c7a9;
+  @media (max-width: 800px) {
+    position: static;
+    width: 100vw;
+  }
+`;
+
+const Receipt = styled.div`
+  width: 55vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  background-color: #eee9da;
+  border: 2px solid black;
+  border-radius: 1rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  @media (max-width: 800px) {
+    width: 90vw;
+  }
+`;
+
+const Subtotal = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: right;
 `;
 
 const Cart = () => {
@@ -173,30 +205,71 @@ const Cart = () => {
     dispatch(decrementQuantity(itemId));
   };
 
+  const columns = {
+    title: {
+      header: 'Title',
+      Cell: ({ data: { name } }) => <span>{name}</span>,
+    },
+    quantity: {
+      header: 'Quantity',
+      Cell: ({ data: { quantity } }) => <span>{quantity}</span>,
+    },
+    price: {
+      header: 'Unit Price',
+      Cell: ({ data: { price } }) => <span>${price}</span>,
+    },
+    total: {
+      header: 'Total Price',
+      Cell: ({ data: { quantity }, data: { price } }) => (
+        <span>${quantity * price}</span>
+      ),
+    },
+  };
+
+  const data = cart;
+
+  const columns2 = {
+    title: {
+      header: 'Title',
+      Cell: ({ data: { title } }) => <span>{title}</span>,
+    },
+    price: {
+      header: 'Price',
+      Cell: ({ data: { price } }) => <span>${price}</span>,
+    },
+  };
+
+  const data2 = [
+    { title: 'Sales tax (Montana, US)', price: 0.0 },
+    { title: 'Shipping', price: 0.0 },
+  ];
+
   return (
     <Wrapper>
       <CardContainer>
         {cart.map((elem) => {
           return (
-            <Card key={elem.id} id={elem.id}>
+            <Card key={nanoid()} id={elem.id}>
               <ImageWrapper key={nanoid()}>
-                <Image key={elem.id} src={elem.src} alt={elem.name} />
+                <Image key={nanoid()} src={elem.src} alt={elem.name} />
               </ImageWrapper>
               <DescriptionWrapper>
                 <Description
                   style={{
                     textDecoration: 'underline',
-                    fontSize: 'calc(1.5rem + 2vmin)',
+                    fontSize: '3vmin',
                   }}>
                   {elem.name}
                 </Description>
                 <Description>Price: ${elem.price}</Description>
-                <TotalWrapper>Total: {elem.quantity * elem.price}</TotalWrapper>
+                <TotalWrapper>
+                  Total: ${elem.quantity * elem.price}
+                </TotalWrapper>
                 <ButtonGroup style={{ justifyContent: 'space-around' }}>
                   <Button key={nanoid()} onClick={handleDecrementQuantity}>
                     -
                   </Button>
-                  <span style={{ fontSize: '2rem' }}>{elem.quantity}</span>
+                  <span style={{ fontSize: '2vmin' }}>{elem.quantity}</span>
                   <Button key={nanoid()} onClick={handleIncrementQuantity}>
                     +
                   </Button>
@@ -206,7 +279,7 @@ const Cart = () => {
                     Delete item
                   </Button>
                   <Link to='/Products'>
-                    <Button key={nanoid()}>Shop again</Button>
+                    <Button key={nanoid()}>Continue shopping</Button>
                   </Link>
                 </ButtonGroup>
               </DescriptionWrapper>
@@ -214,6 +287,33 @@ const Cart = () => {
           );
         })}
       </CardContainer>
+      <ReceiptWrapper>
+        <Receipt>
+          <h1 style={{ fontSize: '5vmin' }}>Order № {Date.now()}</h1>
+          <Table data={data} columns={columns} style={{ fontSize: '2vmin' }} />
+          <Subtotal>
+            <h1 style={{ fontSize: '5vmin' }}>
+              Subtotal: $
+              {cart.reduce((result, item) => {
+                return result + item.price * item.quantity;
+              }, 0)}
+            </h1>
+          </Subtotal>
+          <Table
+            data={data2}
+            columns={columns2}
+            style={{ fontSize: '2vmin' }}
+          />
+          <Subtotal>
+            <h1 style={{ fontSize: '5vmin' }}>
+              Order total: $
+              {cart.reduce((result, item) => {
+                return result + item.price * item.quantity;
+              }, 0)}
+            </h1>
+          </Subtotal>
+        </Receipt>
+      </ReceiptWrapper>
     </Wrapper>
   );
 };
