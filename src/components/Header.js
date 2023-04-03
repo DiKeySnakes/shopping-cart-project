@@ -100,7 +100,7 @@ function Header(props) {
           <i className='fa-solid fa-house'></i> Home
         </NavLink>
         <NavLink to='/Products'>
-          <i className='fa-solid fa-cart-shopping'></i> Products
+          <i className='fa-brands fa-shopify'></i> Products
         </NavLink>
         <NavLink to='/Contacts'>
           <i className='fa-solid fa-address-card'></i> Contacts
