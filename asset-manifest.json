@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/shopping-cart-project/static/js/main.0fef3104.js",
+    "main.js": "/shopping-cart-project/static/js/main.a9ba2e48.js",
     "static/media/Fender_Telecaster_Electric_guitar.png": "/shopping-cart-project/static/media/Fender_Telecaster_Electric_guitar.da0408974d7d58db5dd3.png",
     "static/media/ESP_LTD_EC_200QM.png": "/shopping-cart-project/static/media/ESP_LTD_EC_200QM.b4a9f72143ffc7f217a3.png",
     "static/media/C_F_Martin&Company_Acoustic_guitar_Martin_D_28_Dreadnought.png": "/shopping-cart-project/static/media/C_F_Martin&Company_Acoustic_guitar_Martin_D_28_Dreadnought.76b1c799ef36f7cdc25c.png",
@@ -36,9 +36,9 @@
     "static/media/Gibson_Les_Paul_Standard.png": "/shopping-cart-project/static/media/Gibson_Les_Paul_Standard.4f1d6342d2fcf0f15c96.png",
     "static/media/Ibanez_FRM150_Paul_Gilbert_Signature.png": "/shopping-cart-project/static/media/Ibanez_FRM150_Paul_Gilbert_Signature.43233605dc872bce0a12.png",
     "index.html": "/shopping-cart-project/index.html",
-    "main.0fef3104.js.map": "/shopping-cart-project/static/js/main.0fef3104.js.map"
+    "main.a9ba2e48.js.map": "/shopping-cart-project/static/js/main.a9ba2e48.js.map"
   },
   "entrypoints": [
-    "static/js/main.0fef3104.js"
+    "static/js/main.a9ba2e48.js"
   ]
 }
