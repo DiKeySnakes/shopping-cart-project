@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Logo from '../assets/images/yellow_feather.png';
+import Logo from '../assets/images/Logo_Hagstrom_white.svg';
 import { NavLink } from 'react-router-dom';
 import { Counter } from '../features/counter/Counter';
 
@@ -10,17 +10,18 @@ const Wrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #b20600;
+  background-color: #111111;
   position: fixed;
   border-bottom: 2px solid black;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+  /* -webkit-box-shadow: 0px 10px 13px -7px #000000,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0); */
   top: 0;
   left: 50%;
   margin-left: -50vw;
   z-index: 10;
-  font-size: calc(1.5rem + 2vmin);
+  font-size: 2vmin;
+  font-weight: 400;
   & .active {
     color: yellow;
   }
@@ -28,14 +29,13 @@ const Wrapper = styled.div`
     margin-right: 3rem;
     text-decoration: none;
     color: #eeeeee;
-    text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.9);
-    font-family: 'Satisfy', cursive;
+    font-family: 'Bitter', serif;
   }
   @media (max-width: 650px) {
-    font-size: calc(1rem + 2vmin);
+    font-size: 2vmin;
   }
   @media (max-width: 430px) {
-    font-size: calc(0.5rem + 2vmin);
+    font-size: 2vmin;
   }
 `;
 
@@ -45,7 +45,7 @@ const TitleWrapper = styled.div`
   justify-content: center;
   align-items: center;
   color: #eeeeee;
-  text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.7);
+  /* text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.7); */
   margin-left: 3rem;
 `;
 
@@ -56,8 +56,8 @@ const Title = styled.div`
   justify-content: center;
   align-items: left;
   white-space: nowrap;
-  font-size: calc(1.5rem + 2vmin);
-  font-family: 'Satisfy', cursive;
+  font-size: 2vmin;
+  font-family: 'Bitter', serif;
   margin-left: 0.5rem;
 `;
 
@@ -70,8 +70,8 @@ const Image = styled.img`
 `;
 
 const LogoWrapper = styled.div`
-  width: 3rem;
-  height: 3rem;
+  width: 12vmin;
+  height: 4vmin;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -92,7 +92,7 @@ function Header(props) {
         <LogoWrapper>
           <Image src={Logo} alt='Logo'></Image>
         </LogoWrapper>
-        <Title>GarageBand Guitar Shop</Title>
+        <Title>Guitar Shop</Title>
       </TitleWrapper>
       <Counter />
       <AnchorGroup>

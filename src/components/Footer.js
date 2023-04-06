@@ -1,34 +1,33 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.footer`
-  width: 100vw;
+  width: 100%;
+  margin-top: 4rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  margin-left: -50vw;
-  z-index: 10;
-  color: #eeeeee;
-  background-color: #ff5f00;
-  border-top: 2px solid #00092c;
+  /* position: fixed; */
+  /* bottom: 0; */
+  /* left: 50%; */
+  /* margin-left: -50vw; */
+  /* z-index: 10; */
+  color: #333333;
+  background-color: #bdbbb9;
   font-size: calc(0.3rem + 2vmin);
-  font-family: 'Kalam', cursive;
-  text-shadow: 4px 3px 0px #00092c;
+  font-family: 'Bitter', serif;
   a {
     text-decoration: none;
-    color: #eeeeee;
+    color: #333333;
   }
   a:hover {
     text-decoration: underline;
-    color: #eeeeee;
+    color: #333333;
   }
   i {
-    color: #eeeeee;
+    color: #333333;
     transition: transform 0.3s ease-in-out;
   }
   i:hover {

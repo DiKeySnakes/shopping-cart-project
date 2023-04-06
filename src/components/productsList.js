@@ -1,3 +1,4 @@
+import HagstromSwedeCrimsonFlameVertical from '../assets/images/HagstromSwedeCrimsonFlameVertical.png';
 import FenderStratocaster from '../assets/images/Fender_Stratocaster.png';
 import Hagstrom from '../assets/images/Acoustic_electric_guitar_Hagström.png';
 import Cort from '../assets/images/Bass_guitar_Cort.png';
@@ -33,6 +34,13 @@ import SchecterC1Hellraiser from '../assets/images/Schecter_C_1_Hellraiser.png';
 import { nanoid } from '@reduxjs/toolkit';
 
 const productsList = [
+  {
+    src: HagstromSwedeCrimsonFlameVertical,
+    name: 'Hagstrom Swede Crimson Flame',
+    price: '3500',
+    quantity: 1,
+    id: nanoid(),
+  },
   {
     src: FenderStratocaster,
     name: 'Fender Stratocaster',

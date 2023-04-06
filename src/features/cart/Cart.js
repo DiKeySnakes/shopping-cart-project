@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   margin-bottom: 12rem;
   display: flex;
   flex-direction: column;
-  background-color: #f5c7a9;
+  /* background-color: #f5c7a9; */
 `;
 
 const CardContainer = styled.div`
@@ -140,11 +140,11 @@ const ReceiptWrapper = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
-  right: 0;
+  position: absolute;
   top: 0;
-  z-index: 5;
-  background-color: #f5c7a9;
+  right: 0;
+  /* z-index: 5; */
+  /* background-color: #f5c7a9; */
   @media (max-width: 800px) {
     position: static;
     width: 100vw;

@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import SecondaryHeader from './components/SecondaryHeader';
 import Home from './components/Home';
 import Products from './components/Products';
 import Contacts from './components/Contacts';
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className='App'>
       <Header />
+      <SecondaryHeader />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/Products' element={<Products />} />

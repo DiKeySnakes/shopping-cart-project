@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     font-size: 62.5%;
     line-height: 1.6;
-    background-color: #f5c7a9;
+    background-color: #e0e0dc;
   }
 `;
 export default GlobalStyle;

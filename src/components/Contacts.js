@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #f5c7a9;
+  /* background-color: #f5c7a9; */
 `;
 
 const Contacts = () => {
