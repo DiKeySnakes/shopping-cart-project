@@ -9,11 +9,6 @@ const Wrapper = styled.footer`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* position: fixed; */
-  /* bottom: 0; */
-  /* left: 50%; */
-  /* margin-left: -50vw; */
-  /* z-index: 10; */
   color: #333333;
   background-color: #bdbbb9;
   font-size: calc(0.3rem + 2vmin);

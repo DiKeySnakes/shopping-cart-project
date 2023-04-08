@@ -13,9 +13,6 @@ const Wrapper = styled.div`
   background-color: #111111;
   position: fixed;
   border-bottom: 2px solid black;
-  /* -webkit-box-shadow: 0px 10px 13px -7px #000000,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0); */
   top: 0;
   left: 50%;
   margin-left: -50vw;
@@ -35,7 +32,7 @@ const Wrapper = styled.div`
     font-size: 2vmin;
   }
   @media (max-width: 430px) {
-    font-size: 2vmin;
+    font-size: 3vmin;
   }
 `;
 
@@ -45,7 +42,6 @@ const TitleWrapper = styled.div`
   justify-content: center;
   align-items: center;
   color: #eeeeee;
-  /* text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.7); */
   margin-left: 3rem;
 `;
 

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import history from '../assets/images/history.png';
 
 const SecondaryHeaderPusher = styled.div`
@@ -48,6 +49,15 @@ const Left = styled.div`
   font-family: 'Signika Negative', sans-serif;
   font-size: 2vmin;
   color: #333333;
+  @media (max-width: 800px) {
+    font-size: 2.5vmin;
+  }
+  @media (max-width: 550px) {
+    font-size: 3vmin;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 const Right = styled.div`
@@ -60,6 +70,15 @@ const Right = styled.div`
   font-family: 'Signika Negative', sans-serif;
   font-size: 2vmin;
   color: #333333;
+  @media (max-width: 800px) {
+    font-size: 2.5vmin;
+  }
+  @media (max-width: 550px) {
+    font-size: 3vmin;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 const Edge = styled.div`
@@ -102,7 +121,13 @@ const SecondaryHeader = () => {
           <Logo src={history} alt='' />
         </LogoWrapper>
         <RightWrapper>
-          <Right>Discover our Heritage</Right>
+          <Right>
+            <Link
+              to='/Heritage'
+              style={{ textDecoration: 'none', color: '#333333' }}>
+              Discover our Heritage
+            </Link>
+          </Right>
           <Edge />
         </RightWrapper>
       </Wrapper>
