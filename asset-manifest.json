@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.eee1d81a.js",
+    "main.js": "/shopping-cart-project/static/js/main.4be9c914.js",
     "static/media/Fender_Telecaster_Electric_guitar.png": "/shopping-cart-project/static/media/Fender_Telecaster_Electric_guitar.da0408974d7d58db5dd3.png",
     "static/media/ESP_LTD_EC_200QM.png": "/shopping-cart-project/static/media/ESP_LTD_EC_200QM.b4a9f72143ffc7f217a3.png",
     "static/media/C_F_Martin&Company_Acoustic_guitar_Martin_D_28_Dreadnought.png": "/shopping-cart-project/static/media/C_F_Martin&Company_Acoustic_guitar_Martin_D_28_Dreadnought.76b1c799ef36f7cdc25c.png",
@@ -30,25 +30,32 @@
     "static/media/HagstromSwedeMandarinBurst.png": "/shopping-cart-project/static/media/HagstromSwedeMandarinBurst.f5c24de8a08bafb406ca.png",
     "static/media/HagstromSwedeCrimsonFlameVertical.png": "/shopping-cart-project/static/media/HagstromSwedeCrimsonFlameVertical.14478403edb89b6a1998.png",
     "static/media/Gretsch_G5622T_CB_Electromatic.png": "/shopping-cart-project/static/media/Gretsch_G5622T_CB_Electromatic.332f1f2caa78f234ae06.png",
+    "static/media/Heritage_Hagstrom_58_Adv_ny.jpg": "/shopping-cart-project/static/media/Heritage_Hagstrom_58_Adv_ny.25dd4eded89a22cadf60.jpg",
     "static/media/HagstromSwedeGoldBack.png": "/shopping-cart-project/static/media/HagstromSwedeGoldBack.1671a604c62b3004470c.png",
     "static/media/Ibanez_Acoustic_guitar.png": "/shopping-cart-project/static/media/Ibanez_Acoustic_guitar.a0c30e2896a4c492cca1.png",
     "static/media/HagstromSwedeDarkStormBack.png": "/shopping-cart-project/static/media/HagstromSwedeDarkStormBack.a05ba4ed6585eb872013.png",
+    "static/media/Heritage_History_Super_Swede_book_Karl_Erik_Hagstroem_and_Mikael_Jansson.jpg": "/shopping-cart-project/static/media/Heritage_History_Super_Swede_book_Karl_Erik_Hagstroem_and_Mikael_Jansson.00f1183acc30d2e16b71.jpg",
     "static/media/Gibson_Les_Paul_Studio_Sunburst_Electric_guitar.png": "/shopping-cart-project/static/media/Gibson_Les_Paul_Studio_Sunburst_Electric_guitar.2383fb81685c063262c6.png",
     "static/media/HagstromSwedeCrimsonFlameBack.png": "/shopping-cart-project/static/media/HagstromSwedeCrimsonFlameBack.223f35c737cae7e2fc3d.png",
     "static/media/Jackson_Flying_V_Black.png": "/shopping-cart-project/static/media/Jackson_Flying_V_Black.029c3ca296b46d7e4e88.png",
     "static/media/HagstromSwedeMandarinBurstBack.png": "/shopping-cart-project/static/media/HagstromSwedeMandarinBurstBack.77814145bac162ff2ec3.png",
     "static/media/Fender_Precision_Bass.png": "/shopping-cart-project/static/media/Fender_Precision_Bass.4273c230c1075bb3dc04.png",
+    "static/media/Heritage_butikdrottninggatan.jpg": "/shopping-cart-project/static/media/Heritage_butikdrottninggatan.672955455a439f4bc0ca.jpg",
     "static/media/Bass_guitar_Cort.png": "/shopping-cart-project/static/media/Bass_guitar_Cort.f75bd76a4ac6e00c5ea7.png",
     "static/media/Jackson_Guitars_V.png": "/shopping-cart-project/static/media/Jackson_Guitars_V.e7309917c7e41402dc96.png",
     "static/media/Homepage_Slider_Super_SwedeMKIII_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_Super_SwedeMKIII_1920x640Px.60bbef3f7de60f086544.jpg",
     "static/media/Homepage_Slider_Paramore_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_Paramore_1920x640Px.0b00c0f1ab5a7b32f171.jpg",
     "static/media/Homepage_Slider_SwedeMKIII_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_SwedeMKIII_1920x640Px.b1de66c2c25a1c422826.jpg",
+    "static/media/Heritage_Sven_Ingvars.jpg": "/shopping-cart-project/static/media/Heritage_Sven_Ingvars.7fc25649534c23151dd7.jpg",
     "static/media/Homepage_Slider_Super_Swede_Book_2021_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_Super_Swede_Book_2021_1920x640Px.ed6cafeb80a3fc4f224b.jpg",
     "static/media/Homepage_Slider_Alvar_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_Alvar_1920x640Px.07e339d968534317b034.jpg",
     "static/media/Acoustic_electric_guitar_Hagström.png": "/shopping-cart-project/static/media/Acoustic_electric_guitar_Hagström.2a045dd50ace42ce05ab.png",
+    "static/media/Heritage_History_Super_Swede_book.jpg": "/shopping-cart-project/static/media/Heritage_History_Super_Swede_book.b7f578a89c4bdb41c09e.jpg",
     "static/media/Home_Viking_Jacob-Widen.jpg": "/shopping-cart-project/static/media/Home_Viking_Jacob-Widen.ec8233fb7ba45e40030a.jpg",
     "static/media/Home_TEK_WH_070413_57.jpg": "/shopping-cart-project/static/media/Home_TEK_WH_070413_57.34a3e12685406576981d.jpg",
+    "static/media/Heritage_Frankfurtmaessan.jpg": "/shopping-cart-project/static/media/Heritage_Frankfurtmaessan.d0fb0266d8cd8d85eea2.jpg",
     "static/media/Homepage_Slider_Danko_Jones_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_Danko_Jones_1920x640Px.eebec432046d4ef35038.jpg",
+    "static/media/Heritage_historic_hagstrom_guitars.jpg": "/shopping-cart-project/static/media/Heritage_historic_hagstrom_guitars.f6b40b6b2ac66621de49.jpg",
     "static/media/Home_HSSUVIK60_Side_Final.jpg": "/shopping-cart-project/static/media/Home_HSSUVIK60_Side_Final.9d8cbc6ae08dccd2d103.jpg",
     "static/media/Gibson_Les_Paul_Standard.png": "/shopping-cart-project/static/media/Gibson_Les_Paul_Standard.4f1d6342d2fcf0f15c96.png",
     "static/media/Ibanez_FRM150_Paul_Gilbert_Signature.png": "/shopping-cart-project/static/media/Ibanez_FRM150_Paul_Gilbert_Signature.43233605dc872bce0a12.png",
@@ -59,10 +66,10 @@
     "static/media/slick.woff": "/shopping-cart-project/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/shopping-cart-project/index.html",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.eee1d81a.js.map": "/shopping-cart-project/static/js/main.eee1d81a.js.map"
+    "main.4be9c914.js.map": "/shopping-cart-project/static/js/main.4be9c914.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.eee1d81a.js"
+    "static/js/main.4be9c914.js"
   ]
 }
