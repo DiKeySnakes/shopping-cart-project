@@ -4,6 +4,12 @@ import SimpleSlider from './SimpleSlider';
 import Home_Viking_Jacob_Widen from '../assets/images/Home_Viking_Jacob-Widen.jpg';
 import Home_HSSUVIK60_Side_Final from '../assets/images/Home_HSSUVIK60_Side_Final.jpg';
 import Home_TEK_WH_070413_57 from '../assets/images/Home_TEK_WH_070413_57.jpg';
+import Home_HS_H8II_Bass_2017 from '../assets/images/Home_HS_H8II_Bass_2017.jpg';
+import Home_HS_Super_Swede_Bass_2017 from '../assets/images/Home_HS_Super_Swede_Bass_2017.jpg';
+import Home_HS_Swede_Bass_Test_2017 from '../assets/images/Home_HS_Swede_Bass_Test_2017.jpg';
+import Home_viking_teaser from '../assets/images/Home_viking_teaser.jpg';
+import Home_ultramax_teaser from '../assets/images/Home_ultramax_teaser.jpg';
+import Home_h8_2_bass_teaser from '../assets/images/Home_h8_2_bass_teaser.jpg';
 import CustomHeader from './CustomHeader';
 
 const MediaCenter = styled.section`
@@ -79,9 +85,6 @@ const Paragraph = styled.p`
   font-family: 'Signika Negative', sans-serif;
   font-size: 2vmin;
   padding: 0 0 2vmin;
-  /* line-height: 1.6rem; */
-  /* font-weight: 600; */
-  /* margin-top: 3rem; */
   @media (max-width: 800px) {
     font-size: 3vmin;
   }
@@ -110,6 +113,120 @@ const Image = styled.img`
   alt: ${(props) => props.alt};
 `;
 
+const News = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: calc(10% - 15px);
+  padding-right: calc(10% - 15px);
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+`;
+
+const NewsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+`;
+
+const NewsTitle = styled.h3`
+  display: flex;
+  flex-direction: row;
+  font-size: 3vmin;
+  font-weight: 400;
+  line-height: 110%;
+  font-family: 'Bitter', serif;
+  color: #333333;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  @media (max-width: 800px) {
+    font-size: 5vmin;
+  }
+  @media (max-width: 350px) {
+    font-size: 7vmin;
+  }
+`;
+
+const NewsParagraph = styled.p`
+  color: #333333;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 1.7vmin;
+  padding: 0 0 2vmin;
+  @media (max-width: 800px) {
+    font-size: 2.2vmin;
+  }
+  @media (max-width: 550px) {
+    font-size: 3.2vmin;
+  }
+`;
+
+const Teaser = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #111111;
+  padding-left: calc(10% - 15px);
+  padding-right: calc(10% - 15px);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+`;
+
+const TeaserWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+`;
+
+const TeaserHeader = styled.h3`
+  display: flex;
+  flex-direction: row;
+  font-size: 2.2vmin;
+  font-weight: 400;
+  line-height: 110%;
+  font-family: 'Bitter', serif;
+  color: #ffffff;
+  position: absolute;
+  top: 3rem;
+  left: 3.5rem;
+  z-index: 10;
+  @media (max-width: 800px) {
+    font-size: 4.2vmin;
+  }
+  @media (max-width: 350px) {
+    font-size: 6.2vmin;
+  }
+`;
+
+const TeaserText = styled.p`
+  color: #ffffff;
+  font-family: 'Bitter', serif;
+  font-weight: 800;
+  font-size: 2.2vmin;
+  padding: 0 0 2vmin;
+  position: absolute;
+  top: 4.5rem;
+  left: 3.5rem;
+  z-index: 10;
+  @media (max-width: 800px) {
+    font-size: 4.2vmin;
+  }
+  @media (max-width: 550px) {
+    font-size: 6.2vmin;
+  }
+`;
+
 const ButtonWrapper = styled.div`
   width: 100%;
   height: 5rem;
@@ -120,23 +237,23 @@ const ButtonWrapper = styled.div`
 `;
 
 const Button = styled.button`
-  margin-top: 2rem;
-  padding: 0.5rem 1rem;
-  font-size: 3vmin;
-  background-color: #b20600;
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+  font-size: 2vmin;
+  background-color: #9b0600;
+  font-family: 'Signika Negative', sans-serif;
   border: none;
-  border-radius: 0.5rem;
   cursor: pointer;
   color: #eeeeee;
   text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.9);
-  @media (max-width: 950px) {
-    font-size: 2.5vmin;
+  @media (max-width: 800px) {
+    font-size: 3vmin;
   }
   @media (max-width: 650px) {
-    font-size: 2.2vmin;
+    font-size: 3.5vmin;
   }
   @media (max-width: 430px) {
-    font-size: 2vmin;
+    font-size: 4vmin;
   }
 `;
 
@@ -162,6 +279,39 @@ const Home = () => {
         </MediaWrapper>
       </MediaCenter>
       <CustomHeader />
+      <News>
+        <NewsWrapper>
+          <Link to='/Products' style={{ textDecoration: 'none' }}>
+            <Image src={Home_HS_H8II_Bass_2017} alt='' />
+            <NewsTitle>H8II Bass</NewsTitle>
+            <NewsParagraph>8-String Reissue RetroScape Series</NewsParagraph>
+            <Button>
+              <i className='fa-solid fa-angles-right fa-sm'></i> Read More
+            </Button>
+          </Link>
+        </NewsWrapper>
+        <NewsWrapper>
+          <Link to='/Products' style={{ textDecoration: 'none' }}>
+            <Image src={Home_HS_Super_Swede_Bass_2017} alt='' />
+            <NewsTitle>Super Swede Bass</NewsTitle>
+            <NewsParagraph>Authentic Re-Creation</NewsParagraph>
+            <Button>
+              <i className='fa-solid fa-angles-right fa-sm'></i> Read More
+            </Button>
+          </Link>
+        </NewsWrapper>
+        <NewsWrapper>
+          <Link to='/Products' style={{ textDecoration: 'none' }}>
+            <Image src={Home_HS_Swede_Bass_Test_2017} alt='' />
+            <NewsTitle>Swede Bass</NewsTitle>
+            <NewsParagraph>Vintage Shortscale</NewsParagraph>
+            <Button>
+              <i className='fa-solid fa-angles-right fa-sm'></i> Read More
+            </Button>
+          </Link>
+        </NewsWrapper>
+      </News>
+      <CustomHeader />
       <MediaCenter>
         <MediaWrapperReverse>
           <MediaBody>
@@ -179,6 +329,30 @@ const Home = () => {
           </ImageWrapper>
         </MediaWrapperReverse>
       </MediaCenter>
+      <CustomHeader />
+      <Teaser>
+        <TeaserWrapper>
+          <Link to='/Products' style={{ textDecoration: 'none' }}>
+            <Image src={Home_viking_teaser} alt='' />
+            <TeaserHeader>HAGSTROM</TeaserHeader>
+            <TeaserText>VIKING®</TeaserText>
+          </Link>
+        </TeaserWrapper>
+        <TeaserWrapper>
+          <Link to='/Products' style={{ textDecoration: 'none' }}>
+            <Image src={Home_ultramax_teaser} alt='' />
+            <TeaserHeader>HAGSTROM</TeaserHeader>
+            <TeaserText>ULTRA MAX</TeaserText>
+          </Link>
+        </TeaserWrapper>
+        <TeaserWrapper>
+          <Link to='/Products' style={{ textDecoration: 'none' }}>
+            <Image src={Home_h8_2_bass_teaser} alt='' />
+            <TeaserHeader>HAGSTROM</TeaserHeader>
+            <TeaserText>H8II BASS</TeaserText>
+          </Link>
+        </TeaserWrapper>
+      </Teaser>
       <CustomHeader />
       <MediaCenter>
         <MediaWrapper>

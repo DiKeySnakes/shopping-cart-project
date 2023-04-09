@@ -69,7 +69,7 @@ const Bottom = styled.div`
 `;
 
 const Edge = styled.div`
-  width: 25%;
+  width: calc(25% + 15px);
   height: 6rem;
   display: flex;
   flex-direction: column;
