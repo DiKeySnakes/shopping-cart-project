@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.2f2b47a1.js",
+    "main.js": "/shopping-cart-project/static/js/main.85962028.js",
     "static/media/Fender_Telecaster_Electric_guitar.png": "/shopping-cart-project/static/media/Fender_Telecaster_Electric_guitar.da0408974d7d58db5dd3.png",
     "static/media/ESP_LTD_EC_200QM.png": "/shopping-cart-project/static/media/ESP_LTD_EC_200QM.b4a9f72143ffc7f217a3.png",
     "static/media/C_F_Martin&Company_Acoustic_guitar_Martin_D_28_Dreadnought.png": "/shopping-cart-project/static/media/C_F_Martin&Company_Acoustic_guitar_Martin_D_28_Dreadnought.76b1c799ef36f7cdc25c.png",
@@ -20,6 +20,7 @@
     "static/media/Ibanez_RG_Red.png": "/shopping-cart-project/static/media/Ibanez_RG_Red.094dd9ef8b8798affac0.png",
     "static/media/Ibanez_Acoustic_Dreadnought.png": "/shopping-cart-project/static/media/Ibanez_Acoustic_Dreadnought.04e23bfd5c99b48122a5.png",
     "static/media/Gibson_SG_Standard_electric_guitar.png": "/shopping-cart-project/static/media/Gibson_SG_Standard_electric_guitar.bada552c949ec1fc4694.png",
+    "static/media/WISBORG_Foto_Hagstrom_final.jpg": "/shopping-cart-project/static/media/WISBORG_Foto_Hagstrom_final.7987da95d6c380feb9f5.jpg",
     "static/media/Gibson_ES_345_Electric_guitar.png": "/shopping-cart-project/static/media/Gibson_ES_345_Electric_guitar.3b1fa27ad387041757ae.png",
     "static/media/Fender_Jazz_Bass.png": "/shopping-cart-project/static/media/Fender_Jazz_Bass.56a45facfa3fe9438814.png",
     "static/media/Gibson_B_B_King.png": "/shopping-cart-project/static/media/Gibson_B_B_King.59259286d55e8ca037a5.png",
@@ -48,10 +49,13 @@
     "static/media/Home_h8_2_bass_teaser.jpg": "/shopping-cart-project/static/media/Home_h8_2_bass_teaser.f7bd9888caf74721b24d.jpg",
     "static/media/Home_ultramax_teaser.jpg": "/shopping-cart-project/static/media/Home_ultramax_teaser.21ca7f803769c64029c1.jpg",
     "static/media/Jackson_Guitars_V.png": "/shopping-cart-project/static/media/Jackson_Guitars_V.e7309917c7e41402dc96.png",
+    "static/media/Home_HSVIK6704_teaser.jpg": "/shopping-cart-project/static/media/Home_HSVIK6704_teaser.5ba8111a430ea59b8348.jpg",
+    "static/media/Home_HSSUSWEB03_teaser.jpg": "/shopping-cart-project/static/media/Home_HSSUSWEB03_teaser.c4dfe7831c44947d8872.jpg",
     "static/media/Homepage_Slider_Super_SwedeMKIII_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_Super_SwedeMKIII_1920x640Px.60bbef3f7de60f086544.jpg",
     "static/media/Homepage_Slider_Paramore_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_Paramore_1920x640Px.0b00c0f1ab5a7b32f171.jpg",
     "static/media/Homepage_Slider_SwedeMKIII_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_SwedeMKIII_1920x640Px.b1de66c2c25a1c422826.jpg",
     "static/media/Heritage_Sven_Ingvars.jpg": "/shopping-cart-project/static/media/Heritage_Sven_Ingvars.7fc25649534c23151dd7.jpg",
+    "static/media/Pat_Smear.jpg": "/shopping-cart-project/static/media/Pat_Smear.6b02bf1d300e1d322b26.jpg",
     "static/media/Homepage_Slider_Super_Swede_Book_2021_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_Super_Swede_Book_2021_1920x640Px.ed6cafeb80a3fc4f224b.jpg",
     "static/media/Homepage_Slider_Alvar_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_Alvar_1920x640Px.07e339d968534317b034.jpg",
     "static/media/Acoustic_electric_guitar_Hagström.png": "/shopping-cart-project/static/media/Acoustic_electric_guitar_Hagström.2a045dd50ace42ce05ab.png",
@@ -60,22 +64,30 @@
     "static/media/Home_TEK_WH_070413_57.jpg": "/shopping-cart-project/static/media/Home_TEK_WH_070413_57.34a3e12685406576981d.jpg",
     "static/media/Heritage_Frankfurtmaessan.jpg": "/shopping-cart-project/static/media/Heritage_Frankfurtmaessan.d0fb0266d8cd8d85eea2.jpg",
     "static/media/Homepage_Slider_Danko_Jones_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_Danko_Jones_1920x640Px.eebec432046d4ef35038.jpg",
+    "static/media/Dweezil_Zappa.jpg": "/shopping-cart-project/static/media/Dweezil_Zappa.0152d0a41b236c037051.jpg",
     "static/media/Heritage_historic_hagstrom_guitars.jpg": "/shopping-cart-project/static/media/Heritage_historic_hagstrom_guitars.f6b40b6b2ac66621de49.jpg",
+    "static/media/Enrico_Santacatterina_Hagstrom_Fantomen.jpg": "/shopping-cart-project/static/media/Enrico_Santacatterina_Hagstrom_Fantomen.c89f7ab81e406deafe18.jpg",
     "static/media/Home_HSSUVIK60_Side_Final.jpg": "/shopping-cart-project/static/media/Home_HSSUVIK60_Side_Final.9d8cbc6ae08dccd2d103.jpg",
     "static/media/Gibson_Les_Paul_Standard.png": "/shopping-cart-project/static/media/Gibson_Les_Paul_Standard.4f1d6342d2fcf0f15c96.png",
     "static/media/Ibanez_FRM150_Paul_Gilbert_Signature.png": "/shopping-cart-project/static/media/Ibanez_FRM150_Paul_Gilbert_Signature.43233605dc872bce0a12.png",
+    "static/media/Tezz_Roberts.jpg": "/shopping-cart-project/static/media/Tezz_Roberts.2d611bcf7dff2b8f4a5d.jpg",
+    "static/media/Ginger_Wildheart.jpg": "/shopping-cart-project/static/media/Ginger_Wildheart.4f023ca125a189a66a8a.jpg",
     "static/media/Home_viking_teaser.jpg": "/shopping-cart-project/static/media/Home_viking_teaser.4bc5d87dab6c6a5a1604.jpg",
+    "static/media/Home_Pat_teaser_2.jpg": "/shopping-cart-project/static/media/Home_Pat_teaser_2.8b195698bee3b89bdddb.jpg",
+    "static/media/Justin_York.jpg": "/shopping-cart-project/static/media/Justin_York.ca566117b16f06072561.jpg",
+    "static/media/Todd_Kerns_by_Tomi_Vesaharju.jpg": "/shopping-cart-project/static/media/Todd_Kerns_by_Tomi_Vesaharju.13acf2fe33fcd0d8d9f5.jpg",
     "static/media/Logo_Hagstrom_white.svg": "/shopping-cart-project/static/media/Logo_Hagstrom_white.87cf298c0b3ed5b13028a4a3d670dbf0.svg",
     "static/media/slick.svg": "/shopping-cart-project/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/shopping-cart-project/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/shopping-cart-project/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/shopping-cart-project/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/shopping-cart-project/index.html",
+    "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.2f2b47a1.js.map": "/shopping-cart-project/static/js/main.2f2b47a1.js.map"
+    "main.85962028.js.map": "/shopping-cart-project/static/js/main.85962028.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.2f2b47a1.js"
+    "static/js/main.85962028.js"
   ]
 }
