@@ -115,7 +115,13 @@ const SecondaryHeader = () => {
       <Wrapper>
         <LeftWrapper>
           <Edge />
-          <Left>Store Locator</Left>
+          <Left>
+            <Link
+              to='/Artists'
+              style={{ textDecoration: 'none', color: '#333333' }}>
+              Artists playing Hagstrom
+            </Link>
+          </Left>
         </LeftWrapper>
         <LogoWrapper>
           <Logo src={history} alt='' />

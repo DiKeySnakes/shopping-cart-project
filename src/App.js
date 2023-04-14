@@ -8,6 +8,7 @@ import MoreInfo from './components/MoreInfo';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
+import Artists from './components/Artists';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path='/Products' element={<Products />} />
         <Route path='/Contacts' element={<Contacts />} />
         <Route path='/Heritage' element={<Heritage />} />
+        <Route path='/Artists' element={<Artists />} />
         <Route path='/Cart' element={<Cart />} />
         <Route path='/MoreInfo' element={<MoreInfo />} />
         <Route path='*' element={<NotFound />} />

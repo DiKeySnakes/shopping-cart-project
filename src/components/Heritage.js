@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import History_Main_Image from '../assets/images/History_Main_Image.jpg';
 import Heritage_historic_hagstrom_guitars from '../assets/images/Heritage_historic_hagstrom_guitars.jpg';
 import Heritage_Frankfurtmaessan from '../assets/images/Heritage_Frankfurtmaessan.jpg';
 import Heritage_butikdrottninggatan from '../assets/images/Heritage_butikdrottninggatan.jpg';
@@ -20,7 +21,7 @@ const IntroBackground = styled.div`
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  background-image: url(${Heritage_historic_hagstrom_guitars});
+  background-image: url(${History_Main_Image});
   display: flex;
   flex-direction: column;
   justify-content: center;

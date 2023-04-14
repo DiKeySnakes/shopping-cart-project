@@ -501,7 +501,7 @@ const Home = () => {
           paddingLeft: '10%',
           paddingRight: '10%',
         }}>
-        <Link to='/Products'>
+        <Link to='/Artists'>
           <ArtistsButton>
             <i className='fa-solid fa-angles-right fa-sm'></i> show all artists
           </ArtistsButton>
