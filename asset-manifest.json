@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.85962028.js",
+    "main.js": "/shopping-cart-project/static/js/main.8cf48144.js",
     "static/media/Fender_Telecaster_Electric_guitar.png": "/shopping-cart-project/static/media/Fender_Telecaster_Electric_guitar.da0408974d7d58db5dd3.png",
     "static/media/ESP_LTD_EC_200QM.png": "/shopping-cart-project/static/media/ESP_LTD_EC_200QM.b4a9f72143ffc7f217a3.png",
     "static/media/C_F_Martin&Company_Acoustic_guitar_Martin_D_28_Dreadnought.png": "/shopping-cart-project/static/media/C_F_Martin&Company_Acoustic_guitar_Martin_D_28_Dreadnought.76b1c799ef36f7cdc25c.png",
@@ -71,7 +71,9 @@
     "static/media/Gibson_Les_Paul_Standard.png": "/shopping-cart-project/static/media/Gibson_Les_Paul_Standard.4f1d6342d2fcf0f15c96.png",
     "static/media/Ibanez_FRM150_Paul_Gilbert_Signature.png": "/shopping-cart-project/static/media/Ibanez_FRM150_Paul_Gilbert_Signature.43233605dc872bce0a12.png",
     "static/media/Tezz_Roberts.jpg": "/shopping-cart-project/static/media/Tezz_Roberts.2d611bcf7dff2b8f4a5d.jpg",
+    "static/media/History_Main_Image.jpg": "/shopping-cart-project/static/media/History_Main_Image.726e5b8923ff650b1b38.jpg",
     "static/media/Ginger_Wildheart.jpg": "/shopping-cart-project/static/media/Ginger_Wildheart.4f023ca125a189a66a8a.jpg",
+    "static/media/Artists_Main_Image.jpg": "/shopping-cart-project/static/media/Artists_Main_Image.b08e1df7185e2d87427f.jpg",
     "static/media/Home_viking_teaser.jpg": "/shopping-cart-project/static/media/Home_viking_teaser.4bc5d87dab6c6a5a1604.jpg",
     "static/media/Home_Pat_teaser_2.jpg": "/shopping-cart-project/static/media/Home_Pat_teaser_2.8b195698bee3b89bdddb.jpg",
     "static/media/Justin_York.jpg": "/shopping-cart-project/static/media/Justin_York.ca566117b16f06072561.jpg",
@@ -84,10 +86,10 @@
     "index.html": "/shopping-cart-project/index.html",
     "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.85962028.js.map": "/shopping-cart-project/static/js/main.85962028.js.map"
+    "main.8cf48144.js.map": "/shopping-cart-project/static/js/main.8cf48144.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.85962028.js"
+    "static/js/main.8cf48144.js"
   ]
 }
