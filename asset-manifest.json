@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.cd69245b.js",
+    "main.js": "/shopping-cart-project/static/js/main.63996151.js",
     "static/media/Fender_Telecaster_Electric_guitar.png": "/shopping-cart-project/static/media/Fender_Telecaster_Electric_guitar.da0408974d7d58db5dd3.png",
     "static/media/ESP_LTD_EC_200QM.png": "/shopping-cart-project/static/media/ESP_LTD_EC_200QM.b4a9f72143ffc7f217a3.png",
     "static/media/C_F_Martin&Company_Acoustic_guitar_Martin_D_28_Dreadnought.png": "/shopping-cart-project/static/media/C_F_Martin&Company_Acoustic_guitar_Martin_D_28_Dreadnought.76b1c799ef36f7cdc25c.png",
@@ -100,6 +100,7 @@
     "static/media/Tezz_Roberts.jpg": "/shopping-cart-project/static/media/Tezz_Roberts.2d611bcf7dff2b8f4a5d.jpg",
     "static/media/Jorge_Escobedo_Sober.jpg": "/shopping-cart-project/static/media/Jorge_Escobedo_Sober.82aec18da72373df9efa.jpg",
     "static/media/Matthias_Reim.jpg": "/shopping-cart-project/static/media/Matthias_Reim.22fc1ea9098d67b165f4.jpg",
+    "static/media/Home_Headstock.png": "/shopping-cart-project/static/media/Home_Headstock.51f86b54b3017c8d26ef.png",
     "static/media/Ivan_Gomez_Singh.jpg": "/shopping-cart-project/static/media/Ivan_Gomez_Singh.8441b3c472e171c43535.jpg",
     "static/media/History_Main_Image.jpg": "/shopping-cart-project/static/media/History_Main_Image.726e5b8923ff650b1b38.jpg",
     "static/media/Eddie_Reyes_Taking_Back_Sunday.jpg": "/shopping-cart-project/static/media/Eddie_Reyes_Taking_Back_Sunday.3e4ebd986bcbccff9bed.jpg",
@@ -135,10 +136,10 @@
     "index.html": "/shopping-cart-project/index.html",
     "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.cd69245b.js.map": "/shopping-cart-project/static/js/main.cd69245b.js.map"
+    "main.63996151.js.map": "/shopping-cart-project/static/js/main.63996151.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.cd69245b.js"
+    "static/js/main.63996151.js"
   ]
 }
