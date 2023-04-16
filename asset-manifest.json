@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.63996151.js",
+    "main.js": "/shopping-cart-project/static/js/main.c13a0acb.js",
     "static/media/Fender_Telecaster_Electric_guitar.png": "/shopping-cart-project/static/media/Fender_Telecaster_Electric_guitar.da0408974d7d58db5dd3.png",
     "static/media/ESP_LTD_EC_200QM.png": "/shopping-cart-project/static/media/ESP_LTD_EC_200QM.b4a9f72143ffc7f217a3.png",
     "static/media/C_F_Martin&Company_Acoustic_guitar_Martin_D_28_Dreadnought.png": "/shopping-cart-project/static/media/C_F_Martin&Company_Acoustic_guitar_Martin_D_28_Dreadnought.76b1c799ef36f7cdc25c.png",
@@ -136,10 +136,10 @@
     "index.html": "/shopping-cart-project/index.html",
     "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.63996151.js.map": "/shopping-cart-project/static/js/main.63996151.js.map"
+    "main.c13a0acb.js.map": "/shopping-cart-project/static/js/main.c13a0acb.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.63996151.js"
+    "static/js/main.c13a0acb.js"
   ]
 }
