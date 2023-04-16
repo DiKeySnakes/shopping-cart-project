@@ -28,19 +28,29 @@ const Image = styled.img`
 `;
 
 const Canvas = styled.div`
-  width: 70vmin;
+  width: 70em;
   color: #eeeeee;
   position: absolute;
   top: 0;
   right: 7%;
-  padding: 5rem 3rem 2rem;
+  padding: 5em 3em 2em;
   background: #000;
   background: linear-gradient(315deg, transparent 15px, rgba(0, 0, 0, 0.5) 0)
       bottom right,
     linear-gradient(45deg, transparent 15px, rgba(0, 0, 0, 0.5) 0) bottom left;
   background-size: 50% 100%;
   background-repeat: no-repeat;
-  @media (max-width: 800px) {
+  @media (max-width: 1480px) {
+    width: 65em;
+  }
+  @media (max-width: 1280px) {
+    width: 60em;
+  }
+  @media (max-width: 1024px) {
+    width: 55em;
+    padding: 3em 2em 1em;
+  }
+  @media (max-width: 768px) {
     position: relative;
     width: 100%;
     min-height: 100%;
@@ -57,9 +67,18 @@ const CanvasTheme = styled.h2`
   font-weight: normal;
   line-height: 110%;
   color: #fff;
-  font-size: 3vmin;
+  font-size: 3rem;
   margin: 0 0 16px;
-  @media (max-width: 800px) {
+  @media (max-width: 1480px) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 1280px) {
+    font-size: 2.2rem;
+  }
+  @media (max-width: 1024px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 768px) {
     font-size: 4vmin;
   }
 `;
@@ -68,32 +87,50 @@ const CanvasClaim = styled.h2`
   font-family: 'Bitter', serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 5vmin;
+  font-size: 5rem;
   line-height: 110%;
   color: #fff;
   margin: 0 0 16px;
-  @media (max-width: 800px) {
+  @media (max-width: 1480px) {
+    font-size: 4rem;
+  }
+  @media (max-width: 1280px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 1024px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 768px) {
     font-size: 6vmin;
   }
 `;
 
 const CanvasText = styled.p`
   font-family: 'Signika Negative', sans-serif;
-  font-size: 2vmin;
+  font-size: 2rem;
   padding-bottom: 16px;
-  margin-bottom: 3rem;
+  margin-bottom: 1em;
   line-height: 150%;
-  @media (max-width: 800px) {
+  @media (max-width: 1480px) {
+    font-size: 1.8rem;
+  }
+  @media (max-width: 1280px) {
+    font-size: 1.6rem;
+  }
+  @media (max-width: 1024px) {
+    font-size: 1.4rem;
+  }
+  @media (max-width: 768px) {
     padding-bottom: 0;
     margin-bottom: 16px;
-    font-size: 2.5vmin;
+    font-size: 3.5vmin;
   }
 `;
 
 const Button = styled.button`
   padding: 1rem 2rem;
-  margin-bottom: 3rem;
-  font-size: 2vmin;
+  margin-bottom: 1em;
+  font-size: 2rem;
   font-weight: 700;
   background-color: transparent;
   font-family: 'Signika Negative', sans-serif;
@@ -107,7 +144,7 @@ const Button = styled.button`
     text-shadow: none;
   }
   text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.9);
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     font-size: 3vmin;
     margin-bottom: 16px;
   }
@@ -127,7 +164,7 @@ const HeadstockWrapper = styled.div`
   margin: 16px 0px 0px auto;
   height: 125px;
   width: 75px;
-  @media (max-width: 800px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
@@ -191,7 +228,7 @@ export default function SimpleSlider() {
           <CanvasText>
             The smaller brother of the Hagstrom Viking which perfectly lives up
             to its Norse origins. A true best friend and fellow fighting
-            companion. Photo: The Wildhearts © Trudi Knight
+            companion.{<br />} Photo: The Wildhearts © Trudi Knight
           </CanvasText>
           <Button>
             <i className='fa-solid fa-angles-right fa-sm'></i> Explore The
@@ -210,8 +247,8 @@ export default function SimpleSlider() {
           <CanvasText>
             The Ultra Max shares the same small body concept of the Ultra Swede,
             yet with a slightly larger proportioned mahogany body topped with a
-            thick custom carved flame maple top. Photo: Danko Jones © Björn
-            Olsson
+            thick custom carved flame maple top.{<br />} Photo: Danko Jones ©
+            Björn Olsson
           </CanvasText>
           <Button>
             <i className='fa-solid fa-angles-right fa-sm'></i> Explore The
@@ -230,7 +267,7 @@ export default function SimpleSlider() {
           <CanvasText>
             Each Artist Project instrument we deliver to guitarists worldwide is
             identical in every way to the guitar Justin and Taylor use in their
-            studio and on stage. Photo: Paramore © Trudi Knight
+            studio and on stage.{<br />} Photo: Paramore © Trudi Knight
           </CanvasText>
           <Button>
             <i className='fa-solid fa-angles-right fa-sm'></i> Explore The
