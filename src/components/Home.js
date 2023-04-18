@@ -1,7 +1,9 @@
+import ScrollToTop from 'react-scroll-to-top';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import SimpleSlider from './SimpleSlider';
 import FramedImage from './FramedImage';
+import { ReactComponent as MySVG } from '../assets/ScrollIcon.svg';
 import artistsHomeList from './artistsHomeList';
 import Home_Viking_Jacob_Widen from '../assets/images/Home_Viking_Jacob-Widen.jpg';
 import Home_HSSUVIK60_Side_Final from '../assets/images/Home_HSSUVIK60_Side_Final.jpg';
@@ -515,6 +517,18 @@ const Home = () => {
           </Button>
         </Link>
       </ButtonWrapper>
+      <ScrollToTop
+        smooth
+        component={<MySVG style={{ width: '16', height: '16' }} />}
+        top={300}
+        color={'gray'}
+        width={'16'}
+        height={'16'}
+        style={{
+          border: '1px solid gray',
+          borderRadius: '0',
+        }}
+      />
     </>
   );
 };

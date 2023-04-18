@@ -1,3 +1,5 @@
+import ScrollToTop from 'react-scroll-to-top';
+import { ReactComponent as MySVG } from '../assets/ScrollIcon.svg';
 import styled from 'styled-components';
 import History_Main_Image from '../assets/images/History_Main_Image.jpg';
 import Heritage_historic_hagstrom_guitars from '../assets/images/Heritage_historic_hagstrom_guitars.jpg';
@@ -360,6 +362,18 @@ const Heritage = () => {
             </Figure>
           </RightContentWrapper>
         </MainContentWrapper>
+        <ScrollToTop
+          smooth
+          component={<MySVG style={{ width: '16', height: '16' }} />}
+          top={300}
+          color={'gray'}
+          width={'16'}
+          height={'16'}
+          style={{
+            border: '1px solid gray',
+            borderRadius: '0',
+          }}
+        />
       </Wrapper>
     </>
   );
