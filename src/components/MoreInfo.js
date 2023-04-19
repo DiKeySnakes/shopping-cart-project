@@ -37,7 +37,7 @@ const Wrapper = styled.div`
 `;
 
 const IntroContainer = styled.div`
-  width: 1170px;
+  max-width: 1170px;
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -47,21 +47,6 @@ const IntroContainer = styled.div`
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
-  @media (max-width: 1200px) {
-    width: 1170px;
-  }
-  @media (max-width: 992px) {
-    width: 970px;
-  }
-  @media (max-width: 768px) {
-    width: 750px;
-  }
-  @media (max-width: 650px) {
-    width: 620px;
-  }
-  @media (max-width: 450px) {
-    width: 420px;
-  }
 `;
 
 const IntroTitle = styled.div`
@@ -219,7 +204,7 @@ const LogoSpan = styled.span`
   opacity: 0.3;
 `;
 
-const Teaser = styled.div`
+const Details = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
@@ -232,41 +217,22 @@ const Teaser = styled.div`
   }
 `;
 
-const TeaserWrapper = styled.div`
+const DetailsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 15px;
 `;
 
-const TeaserHeader = styled.h3`
-  display: flex;
-  flex-direction: row;
-  font-size: 2.2vmin;
-  font-weight: 400;
-  line-height: 110%;
-  font-family: 'Bitter', serif;
-  color: #ffffff;
-  top: 3rem;
-  left: 3.5rem;
-  z-index: 10;
-  @media (max-width: 800px) {
-    font-size: 4.2vmin;
-  }
-  @media (max-width: 350px) {
-    font-size: 6.2vmin;
-  }
-`;
-
-const TeaserText = styled.p`
+const DetailsText = styled.p`
   color: #333333;
   font-family: 'Signika Negative', sans-serif;
-  font-size: 2.2vmin;
+  font-size: 2vmin;
   @media (max-width: 800px) {
-    font-size: 4.2vmin;
+    font-size: 3vmin;
   }
   @media (max-width: 550px) {
-    font-size: 6.2vmin;
+    font-size: 4vmin;
   }
 `;
 
@@ -346,53 +312,44 @@ const MoreInfo = () => {
           </RightContentWrapper>
         </MainContentWrapper>
         <MainContentWrapper>
-          <Teaser>
-            <TeaserWrapper>
+          <Details>
+            <DetailsWrapper>
               <Image src={HSSWEMK3_Details_1} alt='' />
-              <TeaserHeader></TeaserHeader>
-              <TeaserText>Crimson Flame Finish</TeaserText>
-            </TeaserWrapper>
-            <TeaserWrapper>
+              <DetailsText>Crimson Flame Finish</DetailsText>
+            </DetailsWrapper>
+            <DetailsWrapper>
               <Image src={HSSWEMK3_Details_2} alt='' />
-              <TeaserHeader></TeaserHeader>
-              <TeaserText>Iconic headstock</TeaserText>
-            </TeaserWrapper>
-            <TeaserWrapper>
+              <DetailsText>Iconic headstock</DetailsText>
+            </DetailsWrapper>
+            <DetailsWrapper>
               <Image src={HSSWEMK3_Details_3} alt='' />
-              <TeaserHeader></TeaserHeader>
-              <TeaserText>Included C-51 Case</TeaserText>
-            </TeaserWrapper>
-            <TeaserWrapper>
+              <DetailsText>Included C-51 Case</DetailsText>
+            </DetailsWrapper>
+            <DetailsWrapper>
               <Image src={HSSWEMK3_Details_4} alt='' />
-              <TeaserHeader></TeaserHeader>
-              <TeaserText>Dark Storm Finish</TeaserText>
-            </TeaserWrapper>
-            <TeaserWrapper>
+              <DetailsText>Dark Storm Finish</DetailsText>
+            </DetailsWrapper>
+            <DetailsWrapper>
               <Image src={HSSWEMK3_Details_5} alt='' />
-              <TeaserHeader></TeaserHeader>
-              <TeaserText>Lundgren Design AlNiCo-2 No. 2 Pickups</TeaserText>
-            </TeaserWrapper>
-            <TeaserWrapper>
+              <DetailsText>Lundgren Design AlNiCo-2 No. 2 Pickups</DetailsText>
+            </DetailsWrapper>
+            <DetailsWrapper>
               <Image src={HSSWEMK3_Details_6} alt='' />
-              <TeaserHeader></TeaserHeader>
-              <TeaserText>Mandarin Burst Finish</TeaserText>
-            </TeaserWrapper>
-            <TeaserWrapper>
+              <DetailsText>Mandarin Burst Finish</DetailsText>
+            </DetailsWrapper>
+            <DetailsWrapper>
               <Image src={HSSWEMK3_Details_7} alt='' />
-              <TeaserHeader></TeaserHeader>
-              <TeaserText>Long Travel Tune-O-Matic Bridge</TeaserText>
-            </TeaserWrapper>
-            <TeaserWrapper>
+              <DetailsText>Long Travel Tune-O-Matic Bridge</DetailsText>
+            </DetailsWrapper>
+            <DetailsWrapper>
               <Image src={HSSWEMK3_Details_8} alt='' />
-              <TeaserHeader></TeaserHeader>
-              <TeaserText>Gold Finish</TeaserText>
-            </TeaserWrapper>
-            <TeaserWrapper>
+              <DetailsText>Gold Finish</DetailsText>
+            </DetailsWrapper>
+            <DetailsWrapper>
               <Image src={HSSWEMK3_Details_9} alt='' />
-              <TeaserHeader></TeaserHeader>
-              <TeaserText>Swede Cutaway</TeaserText>
-            </TeaserWrapper>
-          </Teaser>
+              <DetailsText>Swede Cutaway</DetailsText>
+            </DetailsWrapper>
+          </Details>
         </MainContentWrapper>
         <LightboxWrapper>
           <Lightbox
