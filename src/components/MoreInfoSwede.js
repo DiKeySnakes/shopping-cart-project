@@ -482,7 +482,7 @@ const Button = styled.button`
   }
 `;
 
-const MoreInfo = () => {
+const MoreInfoSwede = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -902,4 +902,4 @@ const MoreInfo = () => {
   );
 };
 
-export default MoreInfo;
+export default MoreInfoSwede;
