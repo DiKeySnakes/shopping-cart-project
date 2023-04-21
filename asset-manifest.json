@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.afa9110b.js",
+    "main.js": "/shopping-cart-project/static/js/main.65325c59.js",
     "static/media/Fender_Telecaster_Electric_guitar.png": "/shopping-cart-project/static/media/Fender_Telecaster_Electric_guitar.da0408974d7d58db5dd3.png",
     "static/media/ESP_LTD_EC_200QM.png": "/shopping-cart-project/static/media/ESP_LTD_EC_200QM.b4a9f72143ffc7f217a3.png",
     "static/media/Fender_Stratocaster_American_Deluxe_Series.png": "/shopping-cart-project/static/media/Fender_Stratocaster_American_Deluxe_Series.38a4683d96db528d85fd.png",
@@ -56,6 +56,7 @@
     "static/media/Homepage_Slider_SwedeMKIII_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_SwedeMKIII_1920x640Px.b1de66c2c25a1c422826.jpg",
     "static/media/Heritage_Sven_Ingvars.jpg": "/shopping-cart-project/static/media/Heritage_Sven_Ingvars.7fc25649534c23151dd7.jpg",
     "static/media/Thomas_Wallin_Takida.jpg": "/shopping-cart-project/static/media/Thomas_Wallin_Takida.089857da946269cceebb.jpg",
+    "static/media/Swede_Header.jpg": "/shopping-cart-project/static/media/Swede_Header.21e0cc3c35d37690a29f.jpg",
     "static/media/Micko_Larkin_Courtney_Love.jpg": "/shopping-cart-project/static/media/Micko_Larkin_Courtney_Love.8812ef20d511c33dcabe.jpg",
     "static/media/Big_Country.jpg": "/shopping-cart-project/static/media/Big_Country.f9fce0f3996fa4c5cbfb.jpg",
     "static/media/Pat_Smear.jpg": "/shopping-cart-project/static/media/Pat_Smear.6b02bf1d300e1d322b26.jpg",
@@ -156,10 +157,10 @@
     "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "static/media/ScrollIcon.svg": "/shopping-cart-project/static/media/ScrollIcon.a1eb858b6e5366f1bd5779a8e0ec1c44.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.afa9110b.js.map": "/shopping-cart-project/static/js/main.afa9110b.js.map"
+    "main.65325c59.js.map": "/shopping-cart-project/static/js/main.65325c59.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.afa9110b.js"
+    "static/js/main.65325c59.js"
   ]
 }
