@@ -10,7 +10,7 @@ import 'yet-another-react-lightbox/plugins/thumbnails.css';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import Swede_Hero from '../assets/images/Swede_Hero_350x453Px.png';
-import Homepage_Slider_SwedeMKIII_1920x640Px from '../assets/images/Homepage_Slider_SwedeMKIII_1920x640Px.jpg';
+import Swede_Header from '../assets/images/Swede_Header.jpg';
 import HagstromSwedeCrimsonFlame from '../assets/images/HagstromSwedeCrimsonFlame.png';
 import HagstromSwedeCrimsonFlameBack from '../assets/images/HagstromSwedeCrimsonFlameBack.png';
 import HagstromSwedeDarkStorm from '../assets/images/HagstromSwedeDarkStorm.png';
@@ -64,20 +64,20 @@ const IntroContainer = styled.div`
   @media (max-width: 970px) {
     width: 750px;
   }
-  @media (max-width: 770px) {
-    width: 700px;
+  @media (max-width: 780px) {
+    width: 660px;
   }
-  @media (max-width: 670px) {
-    width: 600px;
+  @media (max-width: 680px) {
+    width: 560px;
   }
-  @media (max-width: 570px) {
-    width: 500px;
+  @media (max-width: 580px) {
+    width: 460px;
   }
-  @media (max-width: 470px) {
-    width: 400px;
+  @media (max-width: 480px) {
+    width: 360px;
   }
-  @media (max-width: 370px) {
-    width: 300px;
+  @media (max-width: 380px) {
+    width: 260px;
   }
 `;
 
@@ -482,13 +482,13 @@ const Button = styled.button`
   }
 `;
 
-const MoreInfoSwede = () => {
+const MoreInfo = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
       <Wrapper>
         <ImageWrapper>
-          <Image src={Homepage_Slider_SwedeMKIII_1920x640Px} alt='' />
+          <Image src={Swede_Header} alt='' />
           <IntroContainer>
             <IntroTitle>
               Swede
@@ -902,4 +902,4 @@ const MoreInfoSwede = () => {
   );
 };
 
-export default MoreInfoSwede;
+export default MoreInfo;

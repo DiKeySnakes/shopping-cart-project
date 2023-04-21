@@ -64,20 +64,20 @@ const IntroContainer = styled.div`
   @media (max-width: 970px) {
     width: 750px;
   }
-  @media (max-width: 770px) {
-    width: 670px;
+  @media (max-width: 780px) {
+    width: 660px;
   }
-  @media (max-width: 670px) {
-    width: 570px;
+  @media (max-width: 680px) {
+    width: 560px;
   }
-  @media (max-width: 570px) {
-    width: 470px;
+  @media (max-width: 580px) {
+    width: 460px;
   }
-  @media (max-width: 470px) {
-    width: 370px;
+  @media (max-width: 480px) {
+    width: 360px;
   }
-  @media (max-width: 370px) {
-    width: 270px;
+  @media (max-width: 380px) {
+    width: 260px;
   }
 `;
 
