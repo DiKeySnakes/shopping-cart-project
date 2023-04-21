@@ -1,8 +1,7 @@
-import HagstromSwedeCrimsonFlameVertical from '../assets/images/HagstromSwedeCrimsonFlameVertical.png';
-import FenderStratocaster from '../assets/images/Fender_Stratocaster.png';
-import Hagstrom from '../assets/images/Acoustic_electric_guitar_Hagström.png';
-import Cort from '../assets/images/Bass_guitar_Cort.png';
-import MartinAndCompany from '../assets/images/C_F_Martin&Company_Acoustic_guitar_Martin_D_28_Dreadnought.png';
+import Swede_Crimson_Flame_Vertical from '../assets/images/Swede_Crimson_Flame_Vertical.png';
+import Swede_Mandarin_Burst_Vertical from '../assets/images/Swede_Mandarin_Burst_Vertical.png';
+import Swede_Dark_Storm_Vertical from '../assets/images/Swede_Dark_Storm_Vertical.png';
+import Swede_Gold_Vertical from '../assets/images/Swede_Gold_Vertical.png';
 import TakamineEF381SC from '../assets/images/Dreadnought_Takamine_EF381SC_Twelve_String_Acoustic_Guitar.png';
 import ESPLTDEC200QM from '../assets/images/ESP_LTD_EC_200QM.png';
 import ESPLTDEC1000BassGuitar from '../assets/images/ESP_LTD_EC_1000_Bass_guitar.png';
@@ -35,37 +34,30 @@ import { nanoid } from '@reduxjs/toolkit';
 
 const productsList = [
   {
-    src: HagstromSwedeCrimsonFlameVertical,
-    name: 'Hagstrom Swede Crimson Flame',
+    src: Swede_Crimson_Flame_Vertical,
+    name: 'Swede Crimson Flame',
     price: '3500',
     quantity: 1,
     id: nanoid(),
   },
   {
-    src: FenderStratocaster,
-    name: 'Fender Stratocaster',
-    price: '700',
+    src: Swede_Mandarin_Burst_Vertical,
+    name: 'Swede Mandarin Burst',
+    price: '3500',
     quantity: 1,
     id: nanoid(),
   },
   {
-    src: Hagstrom,
-    name: 'Hagström',
-    price: '900',
+    src: Swede_Dark_Storm_Vertical,
+    name: 'Swede Dark Storm',
+    price: '3500',
     quantity: 1,
     id: nanoid(),
   },
   {
-    src: Cort,
-    name: 'Cort Bass Guitar',
-    price: '500',
-    quantity: 1,
-    id: nanoid(),
-  },
-  {
-    src: MartinAndCompany,
-    name: 'Martin & Company Acoustic Guitar',
-    price: '800',
+    src: Swede_Gold_Vertical,
+    name: 'Swede Gold',
+    price: '3500',
     quantity: 1,
     id: nanoid(),
   },
