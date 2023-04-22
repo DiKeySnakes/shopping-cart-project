@@ -235,10 +235,12 @@ export default function SimpleSlider() {
             to its Norse origins. A true best friend and fellow fighting
             companion.{<br />} Photo: The Wildhearts © Trudi Knight
           </CanvasText>
-          <Button>
-            <i className='fa-solid fa-angles-right fa-sm'></i> Explore The
-            Hagstrom Alvar
-          </Button>
+          <Link to='/MoreInfoAlvar'>
+            <Button>
+              <i className='fa-solid fa-angles-right fa-sm'></i> Explore The
+              Hagstrom Alvar
+            </Button>
+          </Link>
           <HeadstockWrapper>
             <Image src={Home_Headstock} alt='' />
           </HeadstockWrapper>
