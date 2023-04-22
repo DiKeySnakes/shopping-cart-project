@@ -305,6 +305,7 @@ const Quote = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #333333;
+  margin-top: 7rem;
 `;
 
 const QuoteContentWrapper = styled.div`

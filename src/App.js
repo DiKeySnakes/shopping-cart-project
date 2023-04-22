@@ -5,6 +5,8 @@ import Products from './components/Products';
 import Contacts from './components/Contacts';
 import Heritage from './components/Heritage';
 import MoreInfo from './components/MoreInfo';
+import MoreInfoSwede from './components/MoreInfoSwede';
+import MoreInfoSuperSwede from './components/MoreInfoSuperSwede';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
@@ -24,6 +26,8 @@ function App() {
         <Route path='/Artists' element={<Artists />} />
         <Route path='/Cart' element={<Cart />} />
         <Route path='/MoreInfo' element={<MoreInfo />} />
+        <Route path='/MoreInfoSwede' element={<MoreInfoSwede />} />
+        <Route path='/MoreInfoSuperSwede' element={<MoreInfoSuperSwede />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />

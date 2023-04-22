@@ -194,7 +194,7 @@ const Products = () => {
 
   const handleAddToCartClick = (e) => {
     const target = e.target;
-    const itemId = target.parentNode.parentNode.id;
+    const itemId = target.parentNode.parentNode.firstChild.id;
     console.log('itemId:', itemId);
     const item = productsList.find((elem) => elem.id === itemId);
     console.log('item:', item);
@@ -213,7 +213,7 @@ const Products = () => {
 
   const handleMoreInfoClick = (e) => {
     const target = e.target;
-    const itemId = target.parentNode.parentNode.parentNode.id;
+    const itemId = target.parentNode.parentNode.parentNode.firstChild.id;
     console.log('itemId:', itemId);
     const item = productsList.find((elem) => elem.id === itemId);
     console.log('item:', item);
@@ -243,7 +243,7 @@ const Products = () => {
                   <Button key={nanoid()} onClick={handleAddToCartClick}>
                     Add to cart
                   </Button>
-                  <Link to='/MoreInfo'>
+                  <Link key={nanoid()} to={elem.info}>
                     <Button key={nanoid()} onClick={handleMoreInfoClick}>
                       <i className='fa-solid fa-angles-right fa-sm'></i> More
                       info

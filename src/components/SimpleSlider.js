@@ -2,6 +2,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import Homepage_Slider_SwedeMKIII_1920x640Px from '../assets/images/Homepage_Slider_SwedeMKIII_1920x640Px.jpg';
 import Homepage_Slider_Super_SwedeMKIII_1920x640Px from '../assets/images/Homepage_Slider_Super_SwedeMKIII_1920x640Px.jpg';
 import Homepage_Slider_Alvar_1920x640Px from '../assets/images/Homepage_Slider_Alvar_1920x640Px.jpg';
@@ -193,10 +194,12 @@ export default function SimpleSlider() {
             contemporary development and emotional design, catapults this Swede
             generation into an exciting new era.
           </CanvasText>
-          <Button>
-            <i className='fa-solid fa-angles-right fa-sm'></i> Explore The
-            Hagstrom Swede
-          </Button>
+          <Link to='/MoreInfoSwede'>
+            <Button>
+              <i className='fa-solid fa-angles-right fa-sm'></i> Explore The
+              Hagstrom Swede
+            </Button>
+          </Link>
           <HeadstockWrapper>
             <Image src={Home_Headstock} alt='' />
           </HeadstockWrapper>
@@ -211,10 +214,12 @@ export default function SimpleSlider() {
             While popular classics tend to remain unchanged, only truly creative
             minds dare to have them reimagined.
           </CanvasText>
-          <Button>
-            <i className='fa-solid fa-angles-right fa-sm'></i> Explore The
-            Hagstrom Super Swede
-          </Button>
+          <Link to='/MoreInfoSuperSwede'>
+            <Button>
+              <i className='fa-solid fa-angles-right fa-sm'></i> Explore The
+              Hagstrom Super Swede
+            </Button>
+          </Link>
           <HeadstockWrapper>
             <Image src={Home_Headstock} alt='' />
           </HeadstockWrapper>

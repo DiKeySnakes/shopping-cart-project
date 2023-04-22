@@ -9,31 +9,30 @@ import 'yet-another-react-lightbox/styles.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Swede_Hero from '../assets/images/Swede_Hero_350x453Px.png';
-import Swede_Header from '../assets/images/Swede_Header.jpg';
-import HagstromSwedeCrimsonFlame from '../assets/images/HagstromSwedeCrimsonFlame.png';
-import HagstromSwedeCrimsonFlameBack from '../assets/images/HagstromSwedeCrimsonFlameBack.png';
-import HagstromSwedeDarkStorm from '../assets/images/HagstromSwedeDarkStorm.png';
-import HagstromSwedeDarkStormBack from '../assets/images/HagstromSwedeDarkStormBack.png';
-import HagstromSwedeGold from '../assets/images/HagstromSwedeGold.png';
-import HagstromSwedeGoldBack from '../assets/images/HagstromSwedeGoldBack.png';
-import HagstromSwedeMandarinBurst from '../assets/images/HagstromSwedeMandarinBurst.png';
-import HagstromSwedeMandarinBurstBack from '../assets/images/HagstromSwedeMandarinBurstBack.png';
+import Super_Swede_Hero from '../assets/images/Super_Swede_Hero_350x453Px.png';
+import Super_Swede_Header from '../assets/images/Super_Swede_Header.jpg';
+import HagstromSuperSwedeCrimsonFlame from '../assets/images/HagstromSuperSwedeCrimsonFlame.png';
+import HagstromSuperSwedeCrimsonFlameBack from '../assets/images/HagstromSuperSwedeCrimsonFlameBack.png';
+import HagstromSuperSwedeDarkStorm from '../assets/images/HagstromSuperSwedeDarkStorm.png';
+import HagstromSuperSwedeDarkStormBack from '../assets/images/HagstromSuperSwedeDarkStormBack.png';
+import HagstromSuperSwedeXtraSpecialOldPale from '../assets/images/HagstromSuperSwedeXtraSpecialOldPale.png';
+import HagstromSuperSwedeFallSkyGloss from '../assets/images/HagstromSuperSwedeFallSkyGloss.png';
+import HagstromSuperSwedeFallSkyGlossBack from '../assets/images/HagstromSuperSwedeFallSkyGlossBack.png';
 import Logo_Hagstrom_Lilie_Black from '../assets/images/Logo_Hagstrom_Lilie_Black.png';
 import Colors_HAGSTROM_Crimson_Flame from '../assets/images/Colors_HAGSTROM_Crimson_Flame.png';
 import Colors_HAGSTROM_Dark_Storm from '../assets/images/Colors_HAGSTROM_Dark_Storm.png';
-import Colors_HAGSTROM_Mandarin_Burst from '../assets/images/Colors_HAGSTROM_Mandarin_Burst.png';
-import Colors_HAGSTROM_Gold from '../assets/images/Colors_HAGSTROM_Gold.png';
+import Colors_HAGSTROM_X_tra_Special_Old_Pale from '../assets/images/Colors_HAGSTROM_X_tra_Special_Old_Pale.png';
+import Colors_HAGSTROM_Fall_Sky_Gloss from '../assets/images/Colors_HAGSTROM_Fall_Sky_Gloss.png';
 import Logo_Hagstrom_Lilie from '../assets/images/Logo_Hagstrom_Lilie.png';
-import HSSWEMK3_Details_1 from '../assets/images/HSSWEMK3_Details_345x276Px_01.jpg';
-import HSSWEMK3_Details_2 from '../assets/images/HSSWEMK3_Details_345x276Px_02.jpg';
-import HSSWEMK3_Details_3 from '../assets/images/HSSWEMK3_Details_345x276Px_03.jpg';
-import HSSWEMK3_Details_4 from '../assets/images/HSSWEMK3_Details_345x276Px_04.jpg';
-import HSSWEMK3_Details_5 from '../assets/images/HSSWEMK3_Details_345x276Px_05.jpg';
-import HSSWEMK3_Details_6 from '../assets/images/HSSWEMK3_Details_345x276Px_06.jpg';
-import HSSWEMK3_Details_7 from '../assets/images/HSSWEMK3_Details_345x276Px_07.jpg';
-import HSSWEMK3_Details_8 from '../assets/images/HSSWEMK3_Details_345x276Px_08.jpg';
-import HSSWEMK3_Details_9 from '../assets/images/HSSWEMK3_Details_345x276Px_09.jpg';
+import HSSUSWEMK3_Details_1 from '../assets/images/HSSUSWEMK3_Details_345x276Px_01.jpg';
+import HSSUSWEMK3_Details_2 from '../assets/images/HSSUSWEMK3_Details_345x276Px_02.jpg';
+import HSSUSWEMK3_Details_3 from '../assets/images/HSSUSWEMK3_Details_345x276Px_03.jpg';
+import HSSUSWEMK3_Details_4 from '../assets/images/HSSUSWEMK3_Details_345x276Px_04.jpg';
+import HSSUSWEMK3_Details_5 from '../assets/images/HSSUSWEMK3_Details_345x276Px_05.jpg';
+import HSSUSWEMK3_Details_6 from '../assets/images/HSSUSWEMK3_Details_345x276Px_06.jpg';
+import HSSUSWEMK3_Details_7 from '../assets/images/HSSUSWEMK3_Details_345x276Px_07.jpg';
+import HSSUSWEMK3_Details_8 from '../assets/images/HSSUSWEMK3_Details_345x276Px_08.jpg';
+import HSSUSWEMK3_Details_9 from '../assets/images/HSSUSWEMK3_Details_345x276Px_09.jpg';
 import Detail_expander from '../assets/images/Detail_expander.jpg';
 import Detail_resinator_wood from '../assets/images/Detail_resinator_wood.jpg';
 import Detail_locking_mechanic from '../assets/images/Detail_locking_mechanic.jpg';
@@ -325,6 +324,16 @@ const QuoteText = styled.p`
   font-size: 2vmin;
   padding: 2vmin 2vmin 2vmin;
   margin: 2vmin;
+  & a {
+    color: #ddd;
+    float: right;
+    margin-top: 3rem;
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
+  }
+  & a:hover {
+    border-bottom: 1px solid #fff;
+  }
   @media (max-width: 800px) {
     font-size: 3vmin;
   }
@@ -483,36 +492,39 @@ const Button = styled.button`
   }
 `;
 
-const MoreInfoSwede = () => {
+const MoreInfoSuperSwede = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
       <Wrapper>
         <ImageWrapper>
-          <Image src={Swede_Header} alt='' />
+          <Image src={Super_Swede_Header} alt='' />
           <IntroContainer>
             <IntroTitle>
-              Swede
+              Super Swede
               <IntroParagraph>Reimagined. Redefined. Revived.</IntroParagraph>
             </IntroTitle>
-            <IntroImage src={Swede_Hero} alt='' />
+            <IntroImage src={Super_Swede_Hero} alt='' />
           </IntroContainer>
         </ImageWrapper>
         <MainContentWrapper>
           <LeftContentWrapper>
-            <MediaTitle>Hagstrom Swede</MediaTitle>
+            <MediaTitle>Hagstrom Super Swede</MediaTitle>
             <Paragraph>
               <LogoSpan>
                 <Logo src={Logo_Hagstrom_Lilie_Black} alt='' />
               </LogoSpan>
-              The Swede with a shorter scale length of 24.75 inches (628mm)
-              produces a thick and warm tone that is both articulate and
-              harmonically rich. Its lower string tension allows for longer
-              sustain, providing an expressive and versatile tone. The equipped
-              Lundgren Design No. 2 AlNiCo-2 pickups are each specially
-              calibrated to capture the natural, balanced tone of the
-              instrument. With their clear and well-defined distinction, these
-              pickups allow the soulful character of the Swede to shine through.
+              The Super Swede with its longer scale length of 25.5 inches
+              (648mm), delivers a snappy and focused tone that features a
+              well-defined low-end presence. Its higher string tension delivers
+              a clear and articulate tone, well balanced and evenly defined. The
+              Lundgren Design No. 2 pickup in the neck position and No. 5 pickup
+              in the bridge position were carefully paired to deliver a wide
+              diversity of tonal options. The AlNiCo-2 neck pickup produces warm
+              and clear tones, while the AlNiCo-5 bridge pickup delivers a
+              powerful and articulate tone. Combined together, they provide a
+              perfect balance of expression and clarity that allows the Super
+              Swede's natural tone to transpire.
             </Paragraph>
           </LeftContentWrapper>
           <RightContentWrapper>
@@ -536,19 +548,19 @@ const MoreInfoSwede = () => {
               </ColorsWrapper>
               <ColorsWrapper>
                 <Image
-                  src={Colors_HAGSTROM_Mandarin_Burst}
+                  src={Colors_HAGSTROM_X_tra_Special_Old_Pale}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Mandarin Burst</ColorsText>
+                <ColorsText>X-tra Special Old Pale</ColorsText>
               </ColorsWrapper>
               <ColorsWrapper>
                 <Image
-                  src={Colors_HAGSTROM_Gold}
+                  src={Colors_HAGSTROM_Fall_Sky_Gloss}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Gold</ColorsText>
+                <ColorsText>Fall Sky Gloss</ColorsText>
               </ColorsWrapper>
             </Colors>
           </RightContentWrapper>
@@ -556,40 +568,42 @@ const MoreInfoSwede = () => {
         <MainContentWrapper>
           <Details>
             <DetailsWrapper>
-              <Image src={HSSWEMK3_Details_1} alt='' />
+              <Image src={HSSUSWEMK3_Details_1} alt='' />
               <DetailsText>Crimson Flame Finish</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSWEMK3_Details_2} alt='' />
+              <Image src={HSSUSWEMK3_Details_2} alt='' />
               <DetailsText>Iconic headstock</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSWEMK3_Details_3} alt='' />
+              <Image src={HSSUSWEMK3_Details_3} alt='' />
               <DetailsText>Included C-51 Case</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSWEMK3_Details_4} alt='' />
+              <Image src={HSSUSWEMK3_Details_4} alt='' />
               <DetailsText>Dark Storm Finish</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSWEMK3_Details_5} alt='' />
-              <DetailsText>Lundgren Design AlNiCo-2 No. 2 Pickups</DetailsText>
+              <Image src={HSSUSWEMK3_Details_5} alt='' />
+              <DetailsText>
+                Lundgren Design AlNiCo-2 No. 5/2 Pickups
+              </DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSWEMK3_Details_6} alt='' />
-              <DetailsText>Mandarin Burst Finish</DetailsText>
+              <Image src={HSSUSWEMK3_Details_6} alt='' />
+              <DetailsText>X-tra Special Old Pale Finish</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSWEMK3_Details_7} alt='' />
+              <Image src={HSSUSWEMK3_Details_7} alt='' />
               <DetailsText>Long Travel Tune-O-Matic Bridge</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSWEMK3_Details_8} alt='' />
-              <DetailsText>Gold Finish</DetailsText>
+              <Image src={HSSUSWEMK3_Details_8} alt='' />
+              <DetailsText>Fall Sky Gloss Finish</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSWEMK3_Details_9} alt='' />
-              <DetailsText>Swede Cutaway</DetailsText>
+              <Image src={HSSUSWEMK3_Details_9} alt='' />
+              <DetailsText>Super Swede Cutaway</DetailsText>
             </DetailsWrapper>
           </Details>
         </MainContentWrapper>
@@ -601,10 +615,16 @@ const MoreInfoSwede = () => {
               style={{ width: '100px', height: 'auto', margin: '2vmin' }}
             />
             <QuoteText>
-              “Can't go wrong with my faithful Hagstrom Swede. Not too many
-              guitars out there anyway that withstand the constant beating I put
-              them thru! She's a taker, sharing all of my road life's antics.
-              Get a Hagstrom Swede, be inspired, you'll never look back.”
+              ”I have been playing music since 20 years. I play various types of
+              music such as jazz, hard rock and reggae. This guitar can play all
+              kinds of my music styles. I don't like to compare my guitars but
+              this one has a different class.“{<br />}
+              <a
+                href='https://www.ultimate-guitar.com/reviews/electric_guitars/hagstrom/super_swede/33059/'
+                target='_blank'
+                rel='noopener noreferrer'>
+                Ultimate-Guitar.com/Super-Swede-Review
+              </a>
             </QuoteText>
           </QuoteContentWrapper>
         </Quote>
@@ -627,20 +647,20 @@ const MoreInfoSwede = () => {
             open={open}
             close={() => setOpen(false)}
             slides={[
-              { src: HagstromSwedeCrimsonFlame },
-              { src: HagstromSwedeCrimsonFlameBack },
-              { src: HagstromSwedeDarkStorm },
-              { src: HagstromSwedeDarkStormBack },
-              { src: HagstromSwedeGold },
-              { src: HagstromSwedeGoldBack },
-              { src: HagstromSwedeMandarinBurst },
-              { src: HagstromSwedeMandarinBurstBack },
+              { src: HagstromSuperSwedeCrimsonFlame },
+              { src: HagstromSuperSwedeCrimsonFlameBack },
+              { src: HagstromSuperSwedeDarkStorm },
+              { src: HagstromSuperSwedeDarkStormBack },
+              { src: HagstromSuperSwedeXtraSpecialOldPale },
+              { src: HagstromSuperSwedeDarkStormBack },
+              { src: HagstromSuperSwedeFallSkyGloss },
+              { src: HagstromSuperSwedeFallSkyGlossBack },
             ]}
           />
         </LightboxWrapper>
         <SpecsWrapper>
           <LeftSpecsWrapper>
-            <MediaTitle>Swede Specs</MediaTitle>
+            <MediaTitle>Super Swede Specs</MediaTitle>
             <ul>
               <li>Body: Mahogany</li>
               <li>Top: ¾” Carved Maple Top w/ Top Grade Flame Maple Veneer</li>
@@ -652,12 +672,12 @@ const MoreInfoSwede = () => {
                 fret access
               </li>
               <li>
-                Neck Thickness: 1st fret 21 mm (excludes FB, paint clear coat),
+                Neck Thickness: 1st fret 21 mm (excludes FB, paint clear coat)
                 12th fret 22.5 mm (excludes FB, paint clear coat)
               </li>
               <li>Trussrod: Dual Action H-Expander™</li>
               <li>Fingerboard: Resinator™</li>
-              <li>Scale Length: 24.75” (629 mm)</li>
+              <li>Scale Length: 25.50” (648 mm)</li>
               <li>Radius: 14.4“</li>
               <li>
                 Inlays: Ivoriod Hagstrom Crest inlays – Lions on 12th fret
@@ -677,8 +697,8 @@ const MoreInfoSwede = () => {
                 Calibrated – 7.3K) Humbucker - Splitable
               </li>
               <li>
-                Pickup Bridge: Lundgren Design AlNiCo-2 No. 2 (Medium Output –
-                Calibrated- 8.3K) Humbucker - Splitable
+                Pickup Bridge: Lundgren Design AlNiCo-2 No. 5 (High Output –
+                Calibrated – 13.2K) Humbucker - Splitable
               </li>
               <li>
                 Switch: 3-Way Toggle Switch w/Hagstrom Brass Plated Cap (Chrome
@@ -702,7 +722,9 @@ const MoreInfoSwede = () => {
                 Plated)
               </li>
               <li>Pickguard: Single Ply Ivory or 3-ply Black/White/Black</li>
-              <li>Pickup Frames: Hagstrom Standard Pickup Frames</li>
+              <li>
+                Pickup Frames: Hagstrom “Standard” Humbucker Pickup Frame set
+              </li>
               <li>Strap Buttons: Set of 3, with dual mount at base of body</li>
               <li>Strings: D’Addario (10-46)</li>
               <li>Case: Included C-51</li>
@@ -710,7 +732,7 @@ const MoreInfoSwede = () => {
             </ul>
           </LeftSpecsWrapper>
           <RightSpecsWrapper>
-            <MediaTitle>Swede Standards</MediaTitle>
+            <MediaTitle>Super Swede Standards</MediaTitle>
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
@@ -903,4 +925,4 @@ const MoreInfoSwede = () => {
   );
 };
 
-export default MoreInfoSwede;
+export default MoreInfoSuperSwede;
