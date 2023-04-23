@@ -41,16 +41,19 @@ Modal.setAppElement('#root');
 const Wrapper = styled.div`
   width: 100%;
   margin-bottom: 8rem;
+  padding-left: 16px;
+  padding-right: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
 const CardContainer = styled.div`
-  margin: 4rem;
+  margin: 4rem 0;
+  max-width: 1170px;
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   align-items: center;
   @media (max-width: 1300px) {
@@ -73,6 +76,7 @@ const CardWrapper = styled.div`
 
 const Card = styled.div`
   max-width: 50vmin;
+  min-height: 60vmin;
   padding: 5rem;
   display: flex;
   flex-direction: column;
@@ -131,7 +135,19 @@ const Description = styled.div`
   font-family: 'Bitter', serif;
   font-size: 2.5vmin;
   color: #333333;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
+`;
+
+const DescriptionSecondary = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 2vmin;
+  color: #333333;
 `;
 
 const Paragraph = styled.p`
@@ -239,6 +255,7 @@ const Products = () => {
                 </Card>
                 <Description>${elem.price}</Description>
                 <Description>{elem.name}</Description>
+                <DescriptionSecondary>{elem.color}</DescriptionSecondary>
                 <ButtonGroup>
                   <Button key={nanoid()} onClick={handleAddToCartClick}>
                     Add to cart

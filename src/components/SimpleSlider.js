@@ -257,10 +257,12 @@ export default function SimpleSlider() {
             thick custom carved flame maple top.{<br />} Photo: Danko Jones ©
             Björn Olsson
           </CanvasText>
-          <Button>
-            <i className='fa-solid fa-angles-right fa-sm'></i> Explore The
-            Hagstrom Ultra Max
-          </Button>
+          <Link to='/MoreInfoUltraMax'>
+            <Button>
+              <i className='fa-solid fa-angles-right fa-sm'></i> Explore The
+              Hagstrom Ultra Max
+            </Button>
+          </Link>
           <HeadstockWrapper>
             <Image src={Home_Headstock} alt='' />
           </HeadstockWrapper>

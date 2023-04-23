@@ -13,48 +13,39 @@ import { Table } from '@react-to-styled/table';
 
 const Wrapper = styled.div`
   width: 100%;
-  margin-top: 12rem;
-  margin-bottom: 12rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
-  /* background-color: #f5c7a9; */
 `;
 
 const CardContainer = styled.div`
   padding: 0 5rem;
-  width: 50vw;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-around;
   align-items: center;
   gap: 3rem;
-  @media (max-width: 1670px) {
+  @media (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr);
-    width: 40vw;
-  }
-  @media (max-width: 800px) {
-    width: 100vw;
+    padding: 0 16px;
   }
 `;
 
 const Card = styled.div`
   max-width: 70vmin;
-  height: 60vmin;
-  padding: 2rem;
+  min-height: 60vmin;
+  padding: 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #eee9da;
   border: 2px solid black;
   border-radius: 1rem;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   overflow: hidden;
   object-fit: contain;
-  @media (max-width: 800px) {
-    max-width: 100vw;
-    height: 65vmin;
+  @media (max-width: 768px) {
+    max-width: 100%;
+    min-height: 80vmin;
   }
 `;
 
@@ -78,6 +69,7 @@ const Image = styled.img`
 const DescriptionWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  margin-left: 16px;
 `;
 
 const Description = styled.div`
@@ -87,34 +79,49 @@ const Description = styled.div`
   align-items: center;
   text-align: center;
   overflow: hidden;
-  font-size: 2vmin;
-  color: #f00;
-  margin-top: 1rem;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 2.5vmin;
+  color: #333333;
+  @media (max-width: 768px) {
+    font-size: 4vmin;
+  }
+`;
+
+const ButtonWrapper = styled.div`
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
 `;
 
 const Button = styled.button`
-  padding: 0.5vmin 1vmin;
+  padding: 1rem 2rem;
   font-size: 2vmin;
-  background-color: #b20600;
+  background-color: #9b0600;
+  font-family: 'Signika Negative', sans-serif;
   border: none;
-  border-radius: 0.5rem;
   cursor: pointer;
   color: #eeeeee;
   text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.9);
-  @media (max-width: 950px) {
-    font-size: 1.8vmin;
+  @media (max-width: 800px) {
+    font-size: 3vmin;
   }
   @media (max-width: 650px) {
-    font-size: 1.5vmin;
+    font-size: 3.5vmin;
+  }
+  @media (max-width: 430px) {
+    font-size: 4vmin;
   }
 `;
 
 const ButtonGroup = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 2rem;
 `;
 
 const TotalWrapper = styled.div`
@@ -125,49 +132,40 @@ const TotalWrapper = styled.div`
   align-items: center;
   text-align: center;
   overflow: hidden;
+  font-family: 'Bitter', serif;
+  font-weight: 400;
   font-size: 3vmin;
-  color: #f00;
+  color: #333333;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  border: 2px solid #f00;
+  border: 1px dotted #333333;
   border-radius: 0.5rem;
 `;
 
 const ReceiptWrapper = styled.div`
-  width: 60vw;
-  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  /* z-index: 5; */
-  /* background-color: #f5c7a9; */
-  @media (max-width: 800px) {
-    position: static;
-    width: 100vw;
+  margin-bottom: 3rem;
+  padding: 0 16px;
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;
 
 const Receipt = styled.div`
-  width: 55vw;
-  height: 75vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: top;
   align-items: center;
-  background-color: #eee9da;
   border: 2px solid black;
   border-radius: 1rem;
-  overflow-y: scroll;
   overflow-x: hidden;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-  @media (max-width: 800px) {
-    width: 90vw;
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;
 
@@ -206,9 +204,17 @@ const Cart = () => {
   };
 
   const columns = {
-    title: {
-      header: 'Title',
+    brand: {
+      header: 'Brand',
+      Cell: ({ data: { brand } }) => <span>{brand}</span>,
+    },
+    model: {
+      header: 'Model',
       Cell: ({ data: { name } }) => <span>{name}</span>,
+    },
+    color: {
+      header: 'Color',
+      Cell: ({ data: { color } }) => <span>{color}</span>,
     },
     quantity: {
       header: 'Quantity',
@@ -246,47 +252,6 @@ const Cart = () => {
 
   return (
     <Wrapper>
-      <CardContainer>
-        {cart.map((elem) => {
-          return (
-            <Card key={nanoid()} id={elem.id}>
-              <ImageWrapper key={nanoid()}>
-                <Image key={nanoid()} src={elem.src} alt={elem.name} />
-              </ImageWrapper>
-              <DescriptionWrapper>
-                <Description
-                  style={{
-                    textDecoration: 'underline',
-                    fontSize: '3vmin',
-                  }}>
-                  {elem.name}
-                </Description>
-                <Description>Price: ${elem.price}</Description>
-                <TotalWrapper>
-                  Total: ${elem.quantity * elem.price}
-                </TotalWrapper>
-                <ButtonGroup style={{ justifyContent: 'space-around' }}>
-                  <Button key={nanoid()} onClick={handleDecrementQuantity}>
-                    -
-                  </Button>
-                  <span style={{ fontSize: '2vmin' }}>{elem.quantity}</span>
-                  <Button key={nanoid()} onClick={handleIncrementQuantity}>
-                    +
-                  </Button>
-                </ButtonGroup>
-                <ButtonGroup>
-                  <Button key={nanoid()} onClick={handleRemoveItem}>
-                    Delete item
-                  </Button>
-                  <Link to='/Products'>
-                    <Button key={nanoid()}>Continue shopping</Button>
-                  </Link>
-                </ButtonGroup>
-              </DescriptionWrapper>
-            </Card>
-          );
-        })}
-      </CardContainer>
       <ReceiptWrapper>
         <Receipt>
           <h1 style={{ fontSize: '5vmin' }}>Order № {Date.now()}</h1>
@@ -314,6 +279,50 @@ const Cart = () => {
           </Subtotal>
         </Receipt>
       </ReceiptWrapper>
+      <CardContainer>
+        {cart.map((elem) => {
+          return (
+            <Card key={nanoid()} id={elem.id}>
+              <ImageWrapper key={nanoid()}>
+                <Image key={nanoid()} src={elem.src} alt={elem.name} />
+              </ImageWrapper>
+              <DescriptionWrapper>
+                <Description>Brand: {elem.brand}</Description>
+                <Description>Model: {elem.name}</Description>
+                <Description>Color: {elem.color}</Description>
+                <Description>Price: ${elem.price}</Description>
+                <TotalWrapper>
+                  Total: ${elem.quantity * elem.price}
+                </TotalWrapper>
+                <ButtonGroup>
+                  <Button key={nanoid()} onClick={handleDecrementQuantity}>
+                    -
+                  </Button>
+                  <span style={{ fontSize: '3vmin' }}>{elem.quantity}</span>
+                  <Button key={nanoid()} onClick={handleIncrementQuantity}>
+                    +
+                  </Button>
+                </ButtonGroup>
+                <ButtonWrapper>
+                  <Button
+                    key={nanoid()}
+                    onClick={handleRemoveItem}
+                    style={{ marginBottom: '16px' }}>
+                    <i className='fa-regular fa-trash-can'></i>
+                    <nbsp /> Delete item
+                  </Button>
+                  <Link to='/Products'>
+                    <Button key={nanoid()} style={{ marginBottom: '16px' }}>
+                      <i className='fa-solid fa-angles-right fa-sm'></i>{' '}
+                      Continue shopping
+                    </Button>
+                  </Link>
+                </ButtonWrapper>
+              </DescriptionWrapper>
+            </Card>
+          );
+        })}
+      </CardContainer>
     </Wrapper>
   );
 };
