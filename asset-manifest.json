@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.4c5b2536.js",
+    "main.js": "/shopping-cart-project/static/js/main.139ecaf8.js",
     "static/media/WISBORG_Foto_Hagstrom_final.jpg": "/shopping-cart-project/static/media/WISBORG_Foto_Hagstrom_final.7987da95d6c380feb9f5.jpg",
     "static/media/Ultra_Max_Fall_Sky_Satin_Vertical.png": "/shopping-cart-project/static/media/Ultra_Max_Fall_Sky_Satin_Vertical.b55b96c92518b9643e78.png",
     "static/media/HagstromUltraMaxFallSkySatin.png": "/shopping-cart-project/static/media/HagstromUltraMaxFallSkySatin.0f05c283db8b4abc4d64.png",
@@ -130,6 +130,7 @@
     "static/media/Charlie_Bedford.jpg": "/shopping-cart-project/static/media/Charlie_Bedford.f3984d50e50a6c259447.jpg",
     "static/media/Colors_HAGSTROM_Mandarin_Burst.png": "/shopping-cart-project/static/media/Colors_HAGSTROM_Mandarin_Burst.be0b02c6971fed2b5d71.png",
     "static/media/Arne_Wiese_MotorradKaffee.jpg": "/shopping-cart-project/static/media/Arne_Wiese_MotorradKaffee.f209dda38435cc2a7348.jpg",
+    "static/media/Acoustic_Guitars_Header.jpg": "/shopping-cart-project/static/media/Acoustic_Guitars_Header.038a0fd347c99a19e72a.jpg",
     "static/media/Beto_Grammatico_Salta_La_Blanca.jpg": "/shopping-cart-project/static/media/Beto_Grammatico_Salta_La_Blanca.383b87328fc0b7ac7ebc.jpg",
     "static/media/HSSWEMK3_Details_345x276Px_03.jpg": "/shopping-cart-project/static/media/HSSWEMK3_Details_345x276Px_03.6bf519c727c3e2d689df.jpg",
     "static/media/Andreas_Klemens_TSY_2012.jpg": "/shopping-cart-project/static/media/Andreas_Klemens_TSY_2012.25ed3b23c492e296f8fb.jpg",
@@ -158,6 +159,7 @@
     "static/media/Alvar_Header.jpg": "/shopping-cart-project/static/media/Alvar_Header.1ef2c5e8e190e7fedac4.jpg",
     "static/media/Jacob_Widen_Gabriel_Grahn4.jpg": "/shopping-cart-project/static/media/Jacob_Widen_Gabriel_Grahn4.1e50a7d992f88acea8e2.jpg",
     "static/media/Artists_Main_Image.jpg": "/shopping-cart-project/static/media/Artists_Main_Image.b08e1df7185e2d87427f.jpg",
+    "static/media/Electric_Guitars_Header.jpg": "/shopping-cart-project/static/media/Electric_Guitars_Header.b08e1df7185e2d87427f.jpg",
     "static/media/Rodrigo_Gonzalez.jpg": "/shopping-cart-project/static/media/Rodrigo_Gonzalez.213ea5d372fadcc880dd.jpg",
     "static/media/Home_viking_teaser.jpg": "/shopping-cart-project/static/media/Home_viking_teaser.4bc5d87dab6c6a5a1604.jpg",
     "static/media/JT_Woodruff_Hawthorn_Heights.jpg": "/shopping-cart-project/static/media/JT_Woodruff_Hawthorn_Heights.7114ddb3d0803eeb7492.jpg",
@@ -189,10 +191,10 @@
     "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "static/media/ScrollIcon.svg": "/shopping-cart-project/static/media/ScrollIcon.a1eb858b6e5366f1bd5779a8e0ec1c44.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.4c5b2536.js.map": "/shopping-cart-project/static/js/main.4c5b2536.js.map"
+    "main.139ecaf8.js.map": "/shopping-cart-project/static/js/main.139ecaf8.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.4c5b2536.js"
+    "static/js/main.139ecaf8.js"
   ]
 }
