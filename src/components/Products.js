@@ -1,3 +1,5 @@
+import ScrollToTop from 'react-scroll-to-top';
+import { ReactComponent as MySVG } from '../assets/ScrollIcon.svg';
 import styled from 'styled-components';
 import productsList from './productsList';
 import { useDispatch, useSelector } from 'react-redux';
@@ -13,6 +15,8 @@ import { nanoid } from '@reduxjs/toolkit';
 import Modal from 'react-modal';
 import { useState } from 'react';
 import Frame_products from '../assets/images/Frame_products.png';
+import Electric_Guitars_Header from '../assets/images/Electric_Guitars_Header.jpg';
+import CustomHeader from '../components/CustomHeader';
 
 const customStyles = {
   content: {
@@ -41,28 +45,58 @@ Modal.setAppElement('#root');
 const Wrapper = styled.div`
   width: 100%;
   margin-bottom: 8rem;
-  padding-left: 16px;
-  padding-right: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
+const IntroBackground = styled.div`
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url(${Electric_Guitars_Header});
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 800px) {
+    height: 200px;
+  }
+`;
+
+const IntroTitle = styled.h1`
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 5vmin;
+  line-height: 80%;
+  font-family: 'Bitter', serif;
+  @media (max-width: 800px) {
+    font-size: 7vmin;
+  }
+  @media (max-width: 350px) {
+    font-size: 9vmin;
+  }
+`;
+
 const CardContainer = styled.div`
-  margin: 4rem 0;
-  max-width: 1170px;
+  width: 100%;
   display: grid;
   gap: 2rem;
+  padding-left: 10%;
+  padding-right: 10%;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 1300px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @media (max-width: 870px) {
+  @media (max-width: 1400px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (max-width: 650px) {
+  @media (max-width: 810px) {
     grid-template-columns: repeat(1, 1fr);
   }
 `;
@@ -70,13 +104,13 @@ const CardContainer = styled.div`
 const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  border: 2px solid #333333;
+  border: 2px dotted #333333;
   border-radius: 1rem;
 `;
 
 const Card = styled.div`
-  max-width: 50vmin;
-  min-height: 60vmin;
+  max-width: 80vmin;
+  min-height: 80vmin;
   padding: 5rem;
   display: flex;
   flex-direction: column;
@@ -88,10 +122,6 @@ const Card = styled.div`
   cursor: pointer;
   overflow: hidden;
   position: relative;
-  @media (max-width: 650px) {
-    max-width: 60vmin;
-    height: 80vmin;
-  }
 `;
 
 const ImageWrapper = styled.div`
@@ -99,9 +129,6 @@ const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 800px) {
-    width: 80vmin;
-  }
 `;
 
 const Image = styled.img`
@@ -135,7 +162,12 @@ const Description = styled.div`
   font-family: 'Bitter', serif;
   font-size: 2.5vmin;
   color: #333333;
-  /* margin-top: 1rem; */
+  @media (max-width: 1400px) {
+    font-size: 3.5vmin;
+  }
+  @media (max-width: 768px) {
+    font-size: 4.5vmin;
+  }
 `;
 
 const DescriptionSecondary = styled.div`
@@ -148,6 +180,12 @@ const DescriptionSecondary = styled.div`
   font-family: 'Signika Negative', sans-serif;
   font-size: 2vmin;
   color: #333333;
+  @media (max-width: 1400px) {
+    font-size: 3.5vmin;
+  }
+  @media (max-width: 768px) {
+    font-size: 4.5vmin;
+  }
 `;
 
 const Paragraph = styled.p`
@@ -196,7 +234,7 @@ const Products = () => {
   }
 
   function afterOpenModal() {
-    subtitle.style.color = '#f00';
+    subtitle.style.color = '#333333';
     subtitle.style.fontSize = 'calc(1.5rem + 2vmin)';
   }
 
@@ -241,6 +279,10 @@ const Products = () => {
   return (
     <>
       <Wrapper>
+        <IntroBackground>
+          <IntroTitle>HAGSTROM GUITARS</IntroTitle>
+        </IntroBackground>
+        <CustomHeader />
         <CardContainer>
           {productsList.map((elem) => {
             return (
@@ -272,6 +314,7 @@ const Products = () => {
           })}
         </CardContainer>
       </Wrapper>
+      <CustomHeader />
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
@@ -280,13 +323,25 @@ const Products = () => {
         contentLabel='Modal'>
         <h1 ref={(_subtitle) => (subtitle = _subtitle)}>{`${message}`}</h1>
         <Paragraph>Product successfully added to your shopping cart</Paragraph>
-        <ButtonGroup>
+        <ButtonGroup style={{ width: '60%', justifyContent: 'space-between' }}>
           <Link to='/Cart'>
             <Button>View Cart</Button>
           </Link>
           <Button onClick={() => closeModal()}>Close</Button>
         </ButtonGroup>
       </Modal>
+      <ScrollToTop
+        smooth
+        component={<MySVG style={{ width: '16', height: '16' }} />}
+        top={300}
+        color={'gray'}
+        width={'16'}
+        height={'16'}
+        style={{
+          border: '1px solid gray',
+          borderRadius: '0',
+        }}
+      />
     </>
   );
 };

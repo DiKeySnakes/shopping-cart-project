@@ -1,3 +1,7 @@
+import ScrollToTop from 'react-scroll-to-top';
+import { ReactComponent as MySVG } from '/home/dikeysnakes/repos/shopping-cart-project/src/assets/ScrollIcon.svg';
+import CustomHeader from '../../components/CustomHeader';
+import Acoustic_Guitars_Header from '/home/dikeysnakes/repos/shopping-cart-project/src/assets/images/Acoustic_Guitars_Header.jpg';
 import {
   selectCart,
   incrementQuantity,
@@ -13,22 +17,58 @@ import { Table } from '@react-to-styled/table';
 
 const Wrapper = styled.div`
   width: 100%;
-  margin-top: 5rem;
   margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
 `;
 
+const IntroBackground = styled.div`
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url(${Acoustic_Guitars_Header});
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 800px) {
+    height: 200px;
+  }
+`;
+
+const IntroTitle = styled.h1`
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 5vmin;
+  line-height: 80%;
+  font-family: 'Bitter', serif;
+  @media (max-width: 800px) {
+    font-size: 7vmin;
+  }
+  @media (max-width: 350px) {
+    font-size: 9vmin;
+  }
+`;
+
 const CardContainer = styled.div`
-  padding: 0 5rem;
+  padding-left: 10%;
+  padding-right: 10%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-around;
   align-items: center;
   gap: 3rem;
-  @media (max-width: 768px) {
+  @media (max-width: 1650px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 1024px) {
     grid-template-columns: repeat(1, 1fr);
-    padding: 0 16px;
   }
 `;
 
@@ -43,9 +83,9 @@ const Card = styled.div`
   border-radius: 1rem;
   overflow: hidden;
   object-fit: contain;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     max-width: 100%;
-    min-height: 80vmin;
+    min-height: 60vmin;
   }
 `;
 
@@ -82,6 +122,9 @@ const Description = styled.div`
   font-family: 'Signika Negative', sans-serif;
   font-size: 2.5vmin;
   color: #333333;
+  @media (max-width: 1024px) {
+    font-size: 3.2vmin;
+  }
   @media (max-width: 768px) {
     font-size: 4vmin;
   }
@@ -89,12 +132,20 @@ const Description = styled.div`
 
 const ButtonWrapper = styled.div`
   width: 100%;
-  height: 12rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-top: 3rem;
+`;
+
+const ProductsButtonWrapper = styled.div`
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Button = styled.button`
@@ -120,7 +171,7 @@ const Button = styled.button`
 const ButtonGroup = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 `;
 
@@ -140,16 +191,22 @@ const TotalWrapper = styled.div`
   margin-bottom: 3rem;
   border: 1px dotted #333333;
   border-radius: 0.5rem;
+  @media (max-width: 1024px) {
+    font-size: 3.5vmin;
+  }
+  @media (max-width: 768px) {
+    font-size: 4vmin;
+  }
 `;
 
 const ReceiptWrapper = styled.div`
   width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 3rem;
-  padding: 0 16px;
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -252,6 +309,10 @@ const Cart = () => {
 
   return (
     <Wrapper>
+      <IntroBackground>
+        <IntroTitle>HAGSTROM GUITARS</IntroTitle>
+      </IntroBackground>
+      <CustomHeader />
       <ReceiptWrapper>
         <Receipt>
           <h1 style={{ fontSize: '5vmin' }}>Order № {Date.now()}</h1>
@@ -279,6 +340,7 @@ const Cart = () => {
           </Subtotal>
         </Receipt>
       </ReceiptWrapper>
+      <CustomHeader />
       <CardContainer>
         {cart.map((elem) => {
           return (
@@ -307,22 +369,36 @@ const Cart = () => {
                   <Button
                     key={nanoid()}
                     onClick={handleRemoveItem}
-                    style={{ marginBottom: '16px' }}>
+                    style={{ width: '100%', marginBottom: '16px' }}>
                     <i className='fa-regular fa-trash-can'></i>
                     <nbsp /> Delete item
                   </Button>
-                  <Link to='/Products'>
-                    <Button key={nanoid()} style={{ marginBottom: '16px' }}>
-                      <i className='fa-solid fa-angles-right fa-sm'></i>{' '}
-                      Continue shopping
-                    </Button>
-                  </Link>
                 </ButtonWrapper>
               </DescriptionWrapper>
             </Card>
           );
         })}
       </CardContainer>
+      <CustomHeader />
+      <ProductsButtonWrapper>
+        <Link to='/Products'>
+          <Button>
+            <i className='fa-solid fa-angles-right fa-sm'></i> Continue shopping
+          </Button>
+        </Link>
+      </ProductsButtonWrapper>
+      <ScrollToTop
+        smooth
+        component={<MySVG style={{ width: '16', height: '16' }} />}
+        top={300}
+        color={'gray'}
+        width={'16'}
+        height={'16'}
+        style={{
+          border: '1px solid gray',
+          borderRadius: '0',
+        }}
+      />
     </Wrapper>
   );
 };
