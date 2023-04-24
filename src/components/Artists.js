@@ -2,6 +2,7 @@ import ScrollToTop from 'react-scroll-to-top';
 import { ReactComponent as MySVG } from '../assets/ScrollIcon.svg';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { nanoid } from '@reduxjs/toolkit';
 import FramedImage from '../components/FramedImage';
 import ArtistsCustomHeader from './ArtistsCustomHeader';
 import artistsList from './artistsList';
@@ -62,8 +63,6 @@ const ArtistsContainer = styled.div`
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-around;
   align-items: top;
-  /* padding-left: calc(10% - 15px); */
-  /* padding-right: calc(10% - 15px); */
   @media (max-width: 1200px) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -146,29 +145,32 @@ const Button = styled.button`
 
 const Artists = () => {
   return (
-    <Wrapper>
-      <IntroBackground>
-        <IntroTitle>WE LOVE TO PLAY HAGSTROM</IntroTitle>
+    <Wrapper key={nanoid()}>
+      <IntroBackground key={nanoid()}>
+        <IntroTitle key={nanoid()}>WE LOVE TO PLAY HAGSTROM</IntroTitle>
       </IntroBackground>
-      <MainContentWrapper>
-        <ArtistsCustomHeader />
-        <ArtistsContainer>
+      <MainContentWrapper key={nanoid()}>
+        <ArtistsCustomHeader key={nanoid()} />
+        <ArtistsContainer key={nanoid()}>
           {artistsList.map((elem) => {
             return (
-              <ArtistsWrapper>
-                <FramedImage src={elem.src} alt={elem.alt} />
-                <ArtistsTitle>{elem.name}</ArtistsTitle>
-                <ArtistsParagraph>{elem.description}</ArtistsParagraph>
+              <ArtistsWrapper key={nanoid()}>
+                <FramedImage src={elem.src} alt={elem.alt} key={nanoid()} />
+                <ArtistsTitle key={nanoid()}>{elem.name}</ArtistsTitle>
+                <ArtistsParagraph key={nanoid()}>
+                  {elem.description}
+                </ArtistsParagraph>
               </ArtistsWrapper>
             );
           })}
         </ArtistsContainer>
-        <ArtistsCustomHeader />
+        <ArtistsCustomHeader key={nanoid()} />
       </MainContentWrapper>
-      <ButtonWrapper>
-        <Link to='/Products'>
-          <Button>
-            <i className='fa-solid fa-angles-right fa-sm'></i> Shop Now
+      <ButtonWrapper key={nanoid()}>
+        <Link to='/Products' key={nanoid()}>
+          <Button key={nanoid()}>
+            <i className='fa-solid fa-angles-right fa-sm' key={nanoid()}></i>{' '}
+            Shop Now
           </Button>
         </Link>
       </ButtonWrapper>

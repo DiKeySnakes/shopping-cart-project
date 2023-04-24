@@ -19,6 +19,7 @@ import Home_HSSUSWEB03_teaser from '../assets/images/Home_HSSUSWEB03_teaser.jpg'
 import Home_Pat_teaser_2 from '../assets/images/Home_Pat_teaser_2.jpg';
 import CustomHeader from './CustomHeader';
 import CustomHeaderText from './CustomHeaderText';
+import { nanoid } from '@reduxjs/toolkit';
 
 const MediaCenter = styled.section`
   width: 100%;
@@ -349,15 +350,15 @@ const Home = () => {
   return (
     <>
       <SimpleSlider />
-      <CustomHeader />
-      <MediaCenter>
-        <MediaWrapper>
-          <ImageWrapper>
-            <Image src={Home_Viking_Jacob_Widen} alt=''></Image>
+      <CustomHeader key={nanoid()} />
+      <MediaCenter key={nanoid()}>
+        <MediaWrapper key={nanoid()}>
+          <ImageWrapper key={nanoid()}>
+            <Image src={Home_Viking_Jacob_Widen} alt='' key={nanoid()}></Image>
           </ImageWrapper>
-          <MediaBody>
-            <MediaTitle>Instant Feel</MediaTitle>
-            <Paragraph>
+          <MediaBody key={nanoid()}>
+            <MediaTitle key={nanoid()}>Instant Feel</MediaTitle>
+            <Paragraph key={nanoid()}>
               The minute you lay your hands on a Hagstrom and strum it for the
               first time, you can instantly feel why Hagstrom has legions of
               devoted fans and why so many pro musicians have made it their
@@ -366,45 +367,67 @@ const Home = () => {
           </MediaBody>
         </MediaWrapper>
       </MediaCenter>
-      <CustomHeader />
-      <News>
-        <NewsWrapper>
-          <Link to='/Products' style={{ textDecoration: 'none' }}>
-            <FramedImage src={Home_HS_H8II_Bass_2017} alt='' />
-            <NewsTitle>H8II Bass</NewsTitle>
-            <NewsParagraph>8-String Reissue RetroScape Series</NewsParagraph>
-            <Button>
-              <i className='fa-solid fa-angles-right fa-sm'></i> Read More
+      <CustomHeader key={nanoid()} />
+      <News key={nanoid()}>
+        <NewsWrapper key={nanoid()}>
+          <Link
+            to='/Products'
+            style={{ textDecoration: 'none' }}
+            key={nanoid()}>
+            <FramedImage src={Home_HS_H8II_Bass_2017} alt='' key={nanoid()} />
+            <NewsTitle key={nanoid()}>H8II Bass</NewsTitle>
+            <NewsParagraph key={nanoid()}>
+              8-String Reissue RetroScape Series
+            </NewsParagraph>
+            <Button key={nanoid()}>
+              <i className='fa-solid fa-angles-right fa-sm' key={nanoid()}></i>{' '}
+              Read More
             </Button>
           </Link>
         </NewsWrapper>
-        <NewsWrapper>
-          <Link to='/Products' style={{ textDecoration: 'none' }}>
-            <FramedImage src={Home_HS_Super_Swede_Bass_2017} alt='' />
-            <NewsTitle>Super Swede Bass</NewsTitle>
-            <NewsParagraph>Authentic Re-Creation</NewsParagraph>
-            <Button>
-              <i className='fa-solid fa-angles-right fa-sm'></i> Read More
+        <NewsWrapper key={nanoid()}>
+          <Link
+            to='/Products'
+            style={{ textDecoration: 'none' }}
+            key={nanoid()}>
+            <FramedImage
+              src={Home_HS_Super_Swede_Bass_2017}
+              alt=''
+              key={nanoid()}
+            />
+            <NewsTitle key={nanoid()}>Super Swede Bass</NewsTitle>
+            <NewsParagraph key={nanoid()}>Authentic Re-Creation</NewsParagraph>
+            <Button key={nanoid()}>
+              <i className='fa-solid fa-angles-right fa-sm' key={nanoid()}></i>{' '}
+              Read More
             </Button>
           </Link>
         </NewsWrapper>
-        <NewsWrapper>
-          <Link to='/Products' style={{ textDecoration: 'none' }}>
-            <FramedImage src={Home_HS_Swede_Bass_Test_2017} alt='' />
-            <NewsTitle>Swede Bass</NewsTitle>
-            <NewsParagraph>Vintage Shortscale</NewsParagraph>
-            <Button>
-              <i className='fa-solid fa-angles-right fa-sm'></i> Read More
+        <NewsWrapper key={nanoid()}>
+          <Link
+            to='/Products'
+            style={{ textDecoration: 'none' }}
+            key={nanoid()}>
+            <FramedImage
+              src={Home_HS_Swede_Bass_Test_2017}
+              alt=''
+              key={nanoid()}
+            />
+            <NewsTitle key={nanoid()}>Swede Bass</NewsTitle>
+            <NewsParagraph key={nanoid()}>Vintage Shortscale</NewsParagraph>
+            <Button key={nanoid()}>
+              <i className='fa-solid fa-angles-right fa-sm' key={nanoid()}></i>{' '}
+              Read More
             </Button>
           </Link>
         </NewsWrapper>
       </News>
-      <CustomHeader />
-      <MediaCenter>
-        <MediaWrapperReverse>
-          <MediaBody>
-            <MediaTitle>Constant Innovation</MediaTitle>
-            <Paragraph>
+      <CustomHeader key={nanoid()} />
+      <MediaCenter key={nanoid()}>
+        <MediaWrapperReverse key={nanoid()}>
+          <MediaBody key={nanoid()}>
+            <MediaTitle key={nanoid()}>Constant Innovation</MediaTitle>
+            <Paragraph key={nanoid()}>
               Hagstrom’s unmistakable headstock is iconic. Hagstrom guitars are
               also known for their playing comfort and tonal versatility, the
               result of design innovations such as our aerospace engineered
@@ -412,44 +435,56 @@ const Home = () => {
               pickups, and unique hardware.
             </Paragraph>
           </MediaBody>
-          <ImageWrapper>
-            <Image src={Home_HSSUVIK60_Side_Final} alt=''></Image>
+          <ImageWrapper key={nanoid()}>
+            <Image
+              src={Home_HSSUVIK60_Side_Final}
+              alt=''
+              key={nanoid()}></Image>
           </ImageWrapper>
         </MediaWrapperReverse>
       </MediaCenter>
-      <CustomHeader />
-      <Teaser>
-        <TeaserWrapper>
-          <Link to='/Products' style={{ textDecoration: 'none' }}>
-            <Image src={Home_viking_teaser} alt='' />
-            <TeaserHeader>HAGSTROM</TeaserHeader>
-            <TeaserText>VIKING®</TeaserText>
+      <CustomHeader key={nanoid()} />
+      <Teaser key={nanoid()}>
+        <TeaserWrapper key={nanoid()}>
+          <Link
+            to='/Products'
+            style={{ textDecoration: 'none' }}
+            key={nanoid()}>
+            <Image src={Home_viking_teaser} alt='' key={nanoid()} />
+            <TeaserHeader key={nanoid()}>HAGSTROM</TeaserHeader>
+            <TeaserText key={nanoid()}>VIKING®</TeaserText>
           </Link>
         </TeaserWrapper>
-        <TeaserWrapper>
-          <Link to='/Products' style={{ textDecoration: 'none' }}>
-            <Image src={Home_ultramax_teaser} alt='' />
-            <TeaserHeader>HAGSTROM</TeaserHeader>
-            <TeaserText>ULTRA MAX</TeaserText>
+        <TeaserWrapper key={nanoid()}>
+          <Link
+            to='/Products'
+            style={{ textDecoration: 'none' }}
+            key={nanoid()}>
+            <Image src={Home_ultramax_teaser} alt='' key={nanoid()} />
+            <TeaserHeader key={nanoid()}>HAGSTROM</TeaserHeader>
+            <TeaserText key={nanoid()}>ULTRA MAX</TeaserText>
           </Link>
         </TeaserWrapper>
-        <TeaserWrapper>
-          <Link to='/Products' style={{ textDecoration: 'none' }}>
-            <Image src={Home_h8_2_bass_teaser} alt='' />
-            <TeaserHeader>HAGSTROM</TeaserHeader>
-            <TeaserText>H8II BASS</TeaserText>
+        <TeaserWrapper key={nanoid()}>
+          <Link
+            to='/Products'
+            style={{ textDecoration: 'none' }}
+            key={nanoid()}>
+            <Image src={Home_h8_2_bass_teaser} alt='' key={nanoid()} />
+            <TeaserHeader key={nanoid()}>HAGSTROM</TeaserHeader>
+            <TeaserText key={nanoid()}>H8II BASS</TeaserText>
           </Link>
         </TeaserWrapper>
       </Teaser>
-      <CustomHeader />
-      <MediaCenter>
-        <MediaWrapper>
-          <ImageWrapper>
-            <Image src={Home_TEK_WH_070413_57} alt=''></Image>
+      <CustomHeader key={nanoid()} />
+      <MediaCenter key={nanoid()}>
+        <MediaWrapper key={nanoid()}>
+          <ImageWrapper key={nanoid()}>
+            <Image src={Home_TEK_WH_070413_57} alt='' key={nanoid()}></Image>
           </ImageWrapper>
-          <MediaBody>
-            <MediaTitle>Distinct Sound</MediaTitle>
-            <Paragraph>
+          <MediaBody key={nanoid()}>
+            <MediaTitle key={nanoid()}>Distinct Sound</MediaTitle>
+            <Paragraph key={nanoid()}>
               The Hagstrom features contribute to that distinct and unmatched
               sound, which has jumpstarted many careers around the world. Now
               fasten your seatbelts and let us take you on a ride to explore the
@@ -461,59 +496,73 @@ const Home = () => {
           </MediaBody>
         </MediaWrapper>
       </MediaCenter>
-      <CustomHeader />
-      <Teaser>
-        <TeaserWrapper>
-          <Link to='/Products' style={{ textDecoration: 'none' }}>
-            <Image src={Home_HSVIK6704_teaser} alt='' />
-            <TeaserHeader>HAGSTROM</TeaserHeader>
-            <TeaserText>'67 VIKING® II</TeaserText>
+      <CustomHeader key={nanoid()} />
+      <Teaser key={nanoid()}>
+        <TeaserWrapper key={nanoid()}>
+          <Link
+            to='/Products'
+            style={{ textDecoration: 'none' }}
+            key={nanoid()}>
+            <Image src={Home_HSVIK6704_teaser} alt='' key={nanoid()} />
+            <TeaserHeader key={nanoid()}>HAGSTROM</TeaserHeader>
+            <TeaserText key={nanoid()}>'67 VIKING® II</TeaserText>
           </Link>
         </TeaserWrapper>
-        <TeaserWrapper>
-          <Link to='/Products' style={{ textDecoration: 'none' }}>
-            <Image src={Home_HSSUSWEB03_teaser} alt='' />
-            <TeaserHeader>HAGSTROM</TeaserHeader>
-            <TeaserText>SUPER SWEDE BASS</TeaserText>
+        <TeaserWrapper key={nanoid()}>
+          <Link
+            to='/Products'
+            style={{ textDecoration: 'none' }}
+            key={nanoid()}>
+            <Image src={Home_HSSUSWEB03_teaser} alt='' key={nanoid()} />
+            <TeaserHeader key={nanoid()}>HAGSTROM</TeaserHeader>
+            <TeaserText key={nanoid()}>SUPER SWEDE BASS</TeaserText>
           </Link>
         </TeaserWrapper>
-        <TeaserWrapper>
-          <Link to='/Products' style={{ textDecoration: 'none' }}>
-            <Image src={Home_Pat_teaser_2} alt='' />
-            <TeaserHeader>HAGSTROM</TeaserHeader>
-            <TeaserText>PAT SMEAR</TeaserText>
+        <TeaserWrapper key={nanoid()}>
+          <Link
+            to='/Products'
+            style={{ textDecoration: 'none' }}
+            key={nanoid()}>
+            <Image src={Home_Pat_teaser_2} alt='' key={nanoid()} />
+            <TeaserHeader key={nanoid()}>HAGSTROM</TeaserHeader>
+            <TeaserText key={nanoid()}>PAT SMEAR</TeaserText>
           </Link>
         </TeaserWrapper>
       </Teaser>
       <CustomHeaderText text='ARTISTS' />
-      <Artists>
+      <Artists key={nanoid()}>
         {artistsHomeList.map((elem) => {
           return (
-            <ArtistsWrapper>
-              <FramedImage src={elem.src} alt={elem.alt} />
-              <ArtistsTitle>{elem.name}</ArtistsTitle>
-              <ArtistsParagraph>{elem.description}</ArtistsParagraph>
+            <ArtistsWrapper key={nanoid()}>
+              <FramedImage src={elem.src} alt={elem.alt} key={nanoid()} />
+              <ArtistsTitle key={nanoid()}>{elem.name}</ArtistsTitle>
+              <ArtistsParagraph key={nanoid()}>
+                {elem.description}
+              </ArtistsParagraph>
             </ArtistsWrapper>
           );
         })}
       </Artists>
       <ButtonWrapper
+        key={nanoid()}
         style={{
           justifyContent: 'right',
           paddingLeft: '10%',
           paddingRight: '10%',
         }}>
-        <Link to='/Artists'>
-          <ArtistsButton>
-            <i className='fa-solid fa-angles-right fa-sm'></i> show all artists
+        <Link to='/Artists' key={nanoid()}>
+          <ArtistsButton key={nanoid()}>
+            <i className='fa-solid fa-angles-right fa-sm' key={nanoid()}></i>{' '}
+            show all artists
           </ArtistsButton>
         </Link>
       </ButtonWrapper>
-      <CustomHeader />
-      <ButtonWrapper>
+      <CustomHeader key={nanoid()} />
+      <ButtonWrapper key={nanoid()}>
         <Link to='/Products'>
-          <Button>
-            <i className='fa-solid fa-angles-right fa-sm'></i> Shop Now
+          <Button key={nanoid()}>
+            <i className='fa-solid fa-angles-right fa-sm' key={nanoid()}></i>{' '}
+            Shop Now
           </Button>
         </Link>
       </ButtonWrapper>

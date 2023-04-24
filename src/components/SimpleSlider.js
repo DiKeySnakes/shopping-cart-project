@@ -3,6 +3,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import Homepage_Slider_SwedeMKIII_1920x640Px from '../assets/images/Homepage_Slider_SwedeMKIII_1920x640Px.jpg';
 import Homepage_Slider_Super_SwedeMKIII_1920x640Px from '../assets/images/Homepage_Slider_Super_SwedeMKIII_1920x640Px.jpg';
 import Homepage_Slider_Alvar_1920x640Px from '../assets/images/Homepage_Slider_Alvar_1920x640Px.jpg';
@@ -297,10 +298,12 @@ export default function SimpleSlider() {
             acoustic guitars, made by a Swedish innovative company founded in
             the 1920s by a young entrepreneur, Albin Hagström (1905–1952)...
           </CanvasText>
-          <Button>
-            <i className='fa-solid fa-angles-right fa-sm'></i> Explore Super
-            Swede DeLuxe book
-          </Button>
+          <HashLink to='/Heritage#book'>
+            <Button>
+              <i className='fa-solid fa-angles-right fa-sm'></i> Explore Super
+              Swede DeLuxe book
+            </Button>
+          </HashLink>
           <HeadstockWrapper>
             <Image src={Home_Headstock} alt='' />
           </HeadstockWrapper>

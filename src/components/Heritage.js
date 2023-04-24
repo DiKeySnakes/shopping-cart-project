@@ -273,6 +273,7 @@ const Heritage = () => {
               one out today. Enjoy!
             </Paragraph>
             <Image
+              id='book'
               src={Heritage_History_Super_Swede_book}
               alt=''
               style={{ marginBottom: '2rem' }}
