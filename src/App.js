@@ -4,6 +4,9 @@ import Home from './components/Home';
 import Products from './components/Products';
 import Contacts from './components/Contacts';
 import Heritage from './components/Heritage';
+import ElectricGuitars from './components/ElectricGuitars';
+import Basses from './components/Basses';
+import AcousticGuitars from './components/AcousticGuitars';
 import MoreInfo from './components/MoreInfo';
 import MoreInfoSwede from './components/MoreInfoSwede';
 import MoreInfoSuperSwede from './components/MoreInfoSuperSwede';
@@ -27,6 +30,9 @@ function App() {
         <Route path='/Heritage' element={<Heritage />} />
         <Route path='/Artists' element={<Artists />} />
         <Route path='/Cart' element={<Cart />} />
+        <Route path='/ElectricGuitars' element={<ElectricGuitars />} />
+        <Route path='/Basses' element={<Basses />} />
+        <Route path='/AcousticGuitars' element={<AcousticGuitars />} />
         <Route path='/MoreInfo' element={<MoreInfo />} />
         <Route path='/MoreInfoSwede' element={<MoreInfoSwede />} />
         <Route path='/MoreInfoSuperSwede' element={<MoreInfoSuperSwede />} />

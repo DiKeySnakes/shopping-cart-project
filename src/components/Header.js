@@ -98,9 +98,9 @@ function Header(props) {
         <NavLink to='/Products'>
           <i className='fa-brands fa-shopify'></i> Products
         </NavLink>
-        <NavLink to='/Contacts'>
-          <i className='fa-solid fa-address-card'></i> Contacts
-        </NavLink>
+        <NavLink to='/ElectricGuitars'>Electric Guitars</NavLink>
+        <NavLink to='/Basses'>Basses</NavLink>
+        <NavLink to='/AcousticGuitars'>AcousticGuitars</NavLink>
         <NavLink to='/Cart'>
           <i className='fa-solid fa-cart-shopping'></i> Cart
         </NavLink>
