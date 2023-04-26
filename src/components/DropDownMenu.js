@@ -102,7 +102,7 @@ const DropDownMenu = () => {
               textDecoration: 'none',
               color: '#eeeeee',
             }}>
-            <i className='fa-solid fa-house'></i> Home
+            Home
           </Link>
           <Link
             to='/Products'
@@ -114,7 +114,7 @@ const DropDownMenu = () => {
               textDecoration: 'none',
               color: '#eeeeee',
             }}>
-            <i className='fa-brands fa-shopify'></i> Products
+            Products
           </Link>
           <Link
             to='/ElectricGuitars'
@@ -126,7 +126,7 @@ const DropDownMenu = () => {
               textDecoration: 'none',
               color: '#eeeeee',
             }}>
-            <i className='fa-solid fa-guitar'></i> Electric Guitars
+            Electric Guitars
           </Link>
           <Link
             to='/Basses'
@@ -138,7 +138,7 @@ const DropDownMenu = () => {
               textDecoration: 'none',
               color: '#eeeeee',
             }}>
-            <i className='fa-solid fa-guitar'></i> Basses
+            Basses
           </Link>
           <Link
             to='/AcousticGuitars'
@@ -150,7 +150,7 @@ const DropDownMenu = () => {
               textDecoration: 'none',
               color: '#eeeeee',
             }}>
-            <i className='fa-solid fa-guitar'></i> Acoustic Guitars
+            Acoustic Guitars
           </Link>
           <Link
             to='/Cart'

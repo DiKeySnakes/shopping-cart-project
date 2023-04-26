@@ -218,7 +218,7 @@ const Receipt = styled.div`
   flex-direction: column;
   justify-content: top;
   align-items: center;
-  border: 2px solid black;
+  border: 2px dotted #111111;
   border-radius: 1rem;
   overflow-x: hidden;
   @media (max-width: 768px) {

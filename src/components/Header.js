@@ -110,21 +110,11 @@ function Header(props) {
       </CartWrapper>
       <DropDownMenu />
       <AnchorGroup>
-        <NavLink to='/'>
-          <i className='fa-solid fa-house'></i> Home
-        </NavLink>
-        <NavLink to='/Products'>
-          <i className='fa-brands fa-shopify'></i> Products
-        </NavLink>
-        <NavLink to='/ElectricGuitars'>
-          <i className='fa-solid fa-guitar'></i> Electric Guitars
-        </NavLink>
-        <NavLink to='/Basses'>
-          <i className='fa-solid fa-guitar'></i> Basses
-        </NavLink>
-        <NavLink to='/AcousticGuitars'>
-          <i className='fa-solid fa-guitar'></i> AcousticGuitars
-        </NavLink>
+        <NavLink to='/'> Home</NavLink>
+        <NavLink to='/Products'> Products</NavLink>
+        <NavLink to='/ElectricGuitars'>Electric Guitars</NavLink>
+        <NavLink to='/Basses'>Basses</NavLink>
+        <NavLink to='/AcousticGuitars'>AcousticGuitars</NavLink>
       </AnchorGroup>
     </Wrapper>
   );
