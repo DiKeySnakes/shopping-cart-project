@@ -35,7 +35,7 @@ const DropDown = styled.div`
       height: 50vmin;
     }
     @media (max-width: 650px) {
-      height: 55vmin;
+      height: 60vmin;
     }
     @media (max-width: 480px) {
       height: 70vmin;
