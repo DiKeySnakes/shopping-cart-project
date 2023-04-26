@@ -23,10 +23,7 @@ const DropDown = styled.div`
       height: 38vmin;
     }
     @media (max-width: 1150px) {
-      height: 37vmin;
-    }
-    @media (max-width: 1024px) {
-      height: 37vmin;
+      height: 38vmin;
     }
     @media (max-width: 968px) {
       height: 39vmin;
@@ -67,15 +64,6 @@ const DropDownButton = styled.button`
   color: #eeeeee;
   @media (max-width: 1300px) {
     display: block;
-    width: 22vmin;
-  }
-  @media (max-width: 1150px) {
-    width: 22vmin;
-  }
-  @media (max-width: 1024px) {
-    width: 21vmin;
-  }
-  @media (max-width: 968px) {
     width: 22vmin;
   }
   @media (max-width: 868px) {
