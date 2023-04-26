@@ -79,7 +79,7 @@ const Card = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: 2px solid black;
+  border: 2px dotted #111111;
   border-radius: 1rem;
   overflow: hidden;
   object-fit: contain;

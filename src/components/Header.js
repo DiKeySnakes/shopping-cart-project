@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Logo from '../assets/images/Logo_Hagstrom_white.svg';
 import { NavLink } from 'react-router-dom';
 import { Counter } from '../features/counter/Counter';
+import DropDownMenu from './DropDownMenu';
 
 const Wrapper = styled.div`
   width: 100vw;
@@ -20,7 +21,7 @@ const Wrapper = styled.div`
   font-size: 2vmin;
   font-weight: 400;
   & .active {
-    color: yellow;
+    border-bottom: 1px dotted #eeeeee;
   }
   a {
     margin-right: 3rem;
@@ -28,11 +29,11 @@ const Wrapper = styled.div`
     color: #eeeeee;
     font-family: 'Bitter', serif;
   }
-  @media (max-width: 650px) {
-    font-size: 2vmin;
+  @media (max-width: 768px) {
+    font-size: 3vmin;
   }
   @media (max-width: 430px) {
-    font-size: 3vmin;
+    font-size: 3.5vmin;
   }
 `;
 
@@ -74,11 +75,22 @@ const LogoWrapper = styled.div`
   align-items: center;
 `;
 
+const CartWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  white-space: nowrap;
+`;
+
 const AnchorGroup = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 1300px) {
+    display: none;
+  }
 `;
 
 function Header(props) {
@@ -88,9 +100,15 @@ function Header(props) {
         <LogoWrapper>
           <Image src={Logo} alt='Logo'></Image>
         </LogoWrapper>
-        <Title>Guitar Shop</Title>
+        <Title></Title>
       </TitleWrapper>
-      <Counter />
+      <CartWrapper>
+        <NavLink to='/Cart' style={{ marginRight: '1rem' }}>
+          <i className='fa-solid fa-cart-shopping'></i> Cart
+        </NavLink>
+        <Counter />
+      </CartWrapper>
+      <DropDownMenu />
       <AnchorGroup>
         <NavLink to='/'>
           <i className='fa-solid fa-house'></i> Home
@@ -98,11 +116,14 @@ function Header(props) {
         <NavLink to='/Products'>
           <i className='fa-brands fa-shopify'></i> Products
         </NavLink>
-        <NavLink to='/ElectricGuitars'>Electric Guitars</NavLink>
-        <NavLink to='/Basses'>Basses</NavLink>
-        <NavLink to='/AcousticGuitars'>AcousticGuitars</NavLink>
-        <NavLink to='/Cart'>
-          <i className='fa-solid fa-cart-shopping'></i> Cart
+        <NavLink to='/ElectricGuitars'>
+          <i className='fa-solid fa-guitar'></i> Electric Guitars
+        </NavLink>
+        <NavLink to='/Basses'>
+          <i className='fa-solid fa-guitar'></i> Basses
+        </NavLink>
+        <NavLink to='/AcousticGuitars'>
+          <i className='fa-solid fa-guitar'></i> AcousticGuitars
         </NavLink>
       </AnchorGroup>
     </Wrapper>
