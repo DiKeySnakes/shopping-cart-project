@@ -4,31 +4,25 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { nanoid } from '@reduxjs/toolkit';
 import GuitarsCustomHeader from './GuitarsCustomHeader';
-import Artists_Main_Image from '../assets/images/Artists_Main_Image.jpg';
-import Electric_Guitars_Pat_Smear from '../assets/images/Electric_Guitars_Pat_Smear.png';
-import Electric_Guitars_Paramore_Impala from '../assets/images/Electric_Guitars_Paramore_Impala.png';
-import Electric_Guitars_Paramore_Viking_Gold from '../assets/images/Electric_Guitars_Paramore_Viking_Gold.png';
-import Electric_Guitars_Paramore_Viking_Brown from '../assets/images/Electric_Guitars_Paramore_Viking_Brown.png';
-import Electric_Guitars_Fantomen_Custom from '../assets/images/Electric_Guitars_Fantomen_Custom.png';
-import Electric_Guitars_Fantomen from '../assets/images/Electric_Guitars_Fantomen.png';
-import Electric_Guitars_Impala from '../assets/images/Electric_Guitars_Impala.png';
-import Electric_Guitars_HIII from '../assets/images/Electric_Guitars_HIII.png';
-import Electric_Guitars_Super_Swede_MK3 from '../assets/images/Electric_Guitars_Super_Swede_MK3.png';
-import Electric_Guitars_Swede_MK3 from '../assets/images/Electric_Guitars_Swede_MK3.png';
-import Electric_Guitars_Ultra_Max from '../assets/images/Electric_Guitars_Ultra_Max.png';
-import Electric_Guitars_Ultra_Swede from '../assets/images/Electric_Guitars_Ultra_Swede.png';
-import Electric_Guitars_Ultra_Swede_ESN from '../assets/images/Electric_Guitars_Ultra_Swede_ESN.png';
-import Electric_Guitars_Alvar from '../assets/images/Electric_Guitars_Alvar.png';
-import Electric_Guitars_Super_Viking from '../assets/images/Electric_Guitars_Super_Viking.png';
-import Electric_Guitars_Viking from '../assets/images/Electric_Guitars_Viking.png';
-import Electric_Guitars_67_Viking_II from '../assets/images/Electric_Guitars_67_Viking_II.png';
-import Electric_Guitars_Viking_Deluxe_Baritone from '../assets/images/Electric_Guitars_Viking_Deluxe_Baritone.png';
-import Electric_Guitars_Viking_12 from '../assets/images/Electric_Guitars_Viking_12.png';
-import Electric_Guitars_Tremar_Viking_Deluxe from '../assets/images/Electric_Guitars_Tremar_Viking_Deluxe.png';
-import Electric_Guitars_HJ500 from '../assets/images/Electric_Guitars_HJ500.png';
-import Electric_Guitars_HJ500_Tremar from '../assets/images/Electric_Guitars_HJ500_Tremar.png';
-import Electric_Guitars_HJ800 from '../assets/images/Electric_Guitars_HJ800.png';
-import Electric_Guitars_HL550 from '../assets/images/Electric_Guitars_HL550.png';
+import Acoustic_Guitars_Header from '../assets/images/Acoustic_Guitars_Header.jpg';
+import Acoustic_Guitars_Orsa_Dreadnought from '../assets/images/Acoustic_Guitars_Orsa_Dreadnought.png';
+import Acoustic_Guitars_Dalarna_Dreadnought_CE from '../assets/images/Acoustic_Guitars_Dalarna_Dreadnought_CE.png';
+import Acoustic_Guitars_Orsa_Grand_Auditorium from '../assets/images/Acoustic_Guitars_Orsa_Grand_Auditorium.png';
+import Acoustic_Guitars_Dalarna_Grand_Auditorium_CE from '../assets/images/Acoustic_Guitars_Dalarna_Grand_Auditorium_CE.png';
+import Acoustic_Guitars_Elfdalia_Dreadnought from '../assets/images/Acoustic_Guitars_Elfdalia_Dreadnought.png';
+import Acoustic_Guitars_Elfdalia_Dreadnought_CE from '../assets/images/Acoustic_Guitars_Elfdalia_Dreadnought_CE.png';
+import Acoustic_Guitars_Elfdalia_Grand_Auditorium from '../assets/images/Acoustic_Guitars_Elfdalia_Grand_Auditorium.png';
+import Acoustic_Guitars_Elfdalia_Grand_Auditorium_CE from '../assets/images/Acoustic_Guitars_Elfdalia_Grand_Auditorium_CE.png';
+import Acoustic_Guitars_Mora_Concert_II from '../assets/images/Acoustic_Guitars_Mora_Concert_II.png';
+import Acoustic_Guitars_Mora_Concert from '../assets/images/Acoustic_Guitars_Mora_Concert.png';
+import Acoustic_Guitars_Mora_Dreadnought_II from '../assets/images/Acoustic_Guitars_Mora_Dreadnought_II.png';
+import Acoustic_Guitars_Mora_Dreadnought from '../assets/images/Acoustic_Guitars_Mora_Dreadnought.png';
+import Acoustic_Guitars_Siljan_Dreadnought_II from '../assets/images/Acoustic_Guitars_Siljan_Dreadnought_II.png';
+import Acoustic_Guitars_Siljan_Dreadnought_CE from '../assets/images/Acoustic_Guitars_Siljan_Dreadnought_CE.png';
+import Acoustic_Guitars_Siljan_Grand_Auditorium_II from '../assets/images/Acoustic_Guitars_Siljan_Grand_Auditorium_II.png';
+import Acoustic_Guitars_Siljan_Grand_Auditorium_CE from '../assets/images/Acoustic_Guitars_Siljan_Grand_Auditorium_CE.png';
+import Acoustic_Guitars_Siljan_12 from '../assets/images/Acoustic_Guitars_Siljan_12.png';
+import Acoustic_Guitars_Seafarer_Parlour_CE from '../assets/images/Acoustic_Guitars_Seafarer_Parlour_CE.png';
 
 const Wrapper = styled.div`
   display: flex;
@@ -51,7 +45,7 @@ const IntroBackground = styled.div`
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  background-image: url(${Artists_Main_Image});
+  background-image: url(${Acoustic_Guitars_Header});
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -194,13 +188,36 @@ const AcousticGuitars = () => {
   return (
     <Wrapper key={nanoid()}>
       <IntroBackground key={nanoid()}>
-        <IntroTitle key={nanoid()}>ELECTRIC GUITARS</IntroTitle>
+        <IntroTitle key={nanoid()}>ACOUSTIC GUITARS</IntroTitle>
       </IntroBackground>
       <MainContentWrapper key={nanoid()}>
         <GuitarsCustomHeader key={nanoid()} />
         <Row key={nanoid()}>
-          <RowTitle key={nanoid()}>Signature Series</RowTitle>
-          <RowParagraph key={nanoid()}>Hagstrom Signature Models</RowParagraph>
+          <RowTitle key={nanoid()}>Orsa</RowTitle>
+          <RowParagraph key={nanoid()}>
+            Hagstrom’s Orsa series is named after a town in the beautiful
+            forested lake district near the original Hagstrom factory in Sweden.
+          </RowParagraph>
+          <RowParagraph key={nanoid()}>
+            Ovangol is a material with the appearance and density of rosewood.
+            Hagstrom has selected this material because it is safely harvested
+            from managed forests and fully compliant under all of the CITES
+            endangered hardwood regulations. When married to a solid Sitka
+            spruce top Ovangol produces the warm, full spectrum sound associated
+            with rosewood. Our dreadnought body shape enhances the guitar’s bass
+            response.{<br />} The Orsa’s body, fingerboard, and headstock are
+            exquisitely bound with hard Maple, creating a refined accompaniment
+            to the rich colors of the Ovangol back and sides. A Maple heel cap
+            completes the elegant incorporation of organic materials into the
+            ornamental design of the guitar.
+          </RowParagraph>
+          <RowParagraph key={nanoid()}>
+            A fingerboard and bridge made of our unique Resinator™ material,
+            with the density, hardness, and sophisticated texture of ebony,
+            contribute a level of tonal articulation usually found only in much
+            more expensive instruments. Fishman’s ISYS pickup and preamp round
+            out the package with authentic and expressive amplification support.
+          </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
               to='/Products'
@@ -209,39 +226,73 @@ const AcousticGuitars = () => {
               <ImageWrapper key={nanoid()}>
                 <Image
                   key={nanoid()}
-                  src={Electric_Guitars_Pat_Smear}
+                  src={Acoustic_Guitars_Orsa_Dreadnought}
                   alt=''
                   style={{ width: '130px', height: '230px' }}
                 />
-                <ItemText key={nanoid()}>Pat Smear Signature</ItemText>
+                <ItemText key={nanoid()}>Dreadnought</ItemText>
+              </ImageWrapper>
+            </Link>
+            <Link
+              to='/Products'
+              style={{ textDecoration: 'none' }}
+              key={nanoid()}>
+              <ImageWrapper key={nanoid()}>
+                <Image
+                  key={nanoid()}
+                  src={Acoustic_Guitars_Dalarna_Dreadnought_CE}
+                  alt=''
+                  style={{ width: '130px', height: '230px' }}
+                />
+                <ItemText key={nanoid()}>Dreadnought CE</ItemText>
+              </ImageWrapper>
+            </Link>
+            <Link
+              to='/Products'
+              style={{ textDecoration: 'none' }}
+              key={nanoid()}>
+              <ImageWrapper key={nanoid()}>
+                <Image
+                  key={nanoid()}
+                  src={Acoustic_Guitars_Orsa_Grand_Auditorium}
+                  alt=''
+                  style={{ width: '130px', height: '230px' }}
+                />
+                <ItemText key={nanoid()}>Grand Auditorium</ItemText>
+              </ImageWrapper>
+            </Link>
+            <Link
+              to='/Products'
+              style={{ textDecoration: 'none' }}
+              key={nanoid()}>
+              <ImageWrapper key={nanoid()}>
+                <Image
+                  key={nanoid()}
+                  src={Acoustic_Guitars_Dalarna_Grand_Auditorium_CE}
+                  alt=''
+                  style={{ width: '130px', height: '230px' }}
+                />
+                <ItemText key={nanoid()}>Grand Auditorium CE</ItemText>
               </ImageWrapper>
             </Link>
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
         <Row key={nanoid()}>
-          <RowTitle key={nanoid()}>Artist Project</RowTitle>
+          <RowTitle key={nanoid()}>Elfdalia II</RowTitle>
           <RowParagraph key={nanoid()}>
-            Our new Hagstrom “Artist Project” series is a unique line of
-            instruments that has been specially created in unison with a chosen
-            few of our Hagstrom Artists.
-          </RowParagraph>
-          <RowParagraph key={nanoid()}>
-            Each instrument is a representation of the musician’s creativity and
-            specific demands, as each of these featured Artist’s has been given
-            free hands to uniquely customize each of their own ideal instruments
-            to create a perfect tool of musical expression.
-          </RowParagraph>
-          <RowParagraph key={nanoid()}>
-            Guitarists will appreciate each of these finer details and features
-            that each of the instruments presents, while players can be ensured
-            that each attribute and specification has been specifically pondered
-            and scrutinized by each of these professional musicians.
-          </RowParagraph>
-          <RowParagraph key={nanoid()}>
-            The Artist Project instruments result in a captivating tool that
-            will offer a unique playability, tone and visually compelling
-            guitar, shared by both the player and their fans.
+            The Elfdalia models using a solid Cedar top with Mahogany back and
+            sides, provides a very “lively tone“ as the Cedar top brings out the
+            upper-mid range, and has a tendency to be harmonically active. Cedar
+            is a great material to help express the instruments overtones. Cedar
+            being a darker wood than spruce, the wood grain within the Cedar top
+            is often much tighter than spruce. This tighter grain allows the top
+            of the instrument to vibrate more, providing a more responsive tone.
+            Cedar works very well for both flat pickers and finger style
+            technique. With the Elfdalia models, the icing on the cake is the
+            gold hardware which will catch the attention of the player and the
+            audience. The look of the instrument properly matches the
+            instruments responsive tone.
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
@@ -251,11 +302,11 @@ const AcousticGuitars = () => {
               <ImageWrapper key={nanoid()}>
                 <Image
                   key={nanoid()}
-                  src={Electric_Guitars_Paramore_Impala}
+                  src={Acoustic_Guitars_Elfdalia_Dreadnought}
                   alt=''
                   style={{ width: '130px', height: '230px' }}
                 />
-                <ItemText key={nanoid()}>Impala Copperburst</ItemText>
+                <ItemText key={nanoid()}>Dreadnought</ItemText>
               </ImageWrapper>
             </Link>
             <Link
@@ -265,11 +316,11 @@ const AcousticGuitars = () => {
               <ImageWrapper key={nanoid()}>
                 <Image
                   key={nanoid()}
-                  src={Electric_Guitars_Paramore_Viking_Gold}
+                  src={Acoustic_Guitars_Elfdalia_Dreadnought_CE}
                   alt=''
                   style={{ width: '130px', height: '230px' }}
                 />
-                <ItemText key={nanoid()}>Viking® Gold Top</ItemText>
+                <ItemText key={nanoid()}>Dreadnought CE</ItemText>
               </ImageWrapper>
             </Link>
             <Link
@@ -279,23 +330,44 @@ const AcousticGuitars = () => {
               <ImageWrapper key={nanoid()}>
                 <Image
                   key={nanoid()}
-                  src={Electric_Guitars_Paramore_Viking_Brown}
+                  src={Acoustic_Guitars_Elfdalia_Grand_Auditorium}
                   alt=''
                   style={{ width: '130px', height: '230px' }}
                 />
-                <ItemText key={nanoid()}>Super Viking® Trans Brown</ItemText>
+                <ItemText key={nanoid()}>Grand Auditorium</ItemText>
+              </ImageWrapper>
+            </Link>
+            <Link
+              to='/Products'
+              style={{ textDecoration: 'none' }}
+              key={nanoid()}>
+              <ImageWrapper key={nanoid()}>
+                <Image
+                  key={nanoid()}
+                  src={Acoustic_Guitars_Elfdalia_Grand_Auditorium_CE}
+                  alt=''
+                  style={{ width: '130px', height: '230px' }}
+                />
+                <ItemText key={nanoid()}>Grand Auditorium CE</ItemText>
               </ImageWrapper>
             </Link>
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
         <Row key={nanoid()}>
-          <RowTitle key={nanoid()}>Fantomen</RowTitle>
+          <RowTitle key={nanoid()}>Mora II</RowTitle>
           <RowParagraph key={nanoid()}>
-            You can find the Fantomen on stage with Ghost. You don’t have to be
-            a Nameless Ghoul to play it, and you can be sure the guitar
-            available at your Hagstrom dealer is identical in every way to those
-            on stage with Ghost!
+            The Mora models using a solid Mahogany top with Mahogany back and
+            sides provides a more brilliant and brighter tone with a generous
+            amount of mids. However, the model produces a rather full tone
+            without being considered “trebly“or “thin“. As most acoustic guitars
+            on the market today use a combination of different tone woods, this
+            single species of wood provides a truly unique tone, where the
+            instrument seems to be specially voiced for soloing and finger
+            picking styles, as single notes and phrasing seem to jump out from
+            the instrument. Cosmetically speaking, the brownish hues from the
+            darker tone wood will attract many players looking for a new stage
+            companion.
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
@@ -305,11 +377,11 @@ const AcousticGuitars = () => {
               <ImageWrapper key={nanoid()}>
                 <Image
                   key={nanoid()}
-                  src={Electric_Guitars_Fantomen_Custom}
+                  src={Acoustic_Guitars_Mora_Concert_II}
                   alt=''
                   style={{ width: '130px', height: '230px' }}
                 />
-                <ItemText key={nanoid()}>Fantomen Custom</ItemText>
+                <ItemText key={nanoid()}>Concert</ItemText>
               </ImageWrapper>
             </Link>
             <Link
@@ -319,30 +391,54 @@ const AcousticGuitars = () => {
               <ImageWrapper key={nanoid()}>
                 <Image
                   key={nanoid()}
-                  src={Electric_Guitars_Fantomen}
+                  src={Acoustic_Guitars_Mora_Concert}
                   alt=''
                   style={{ width: '130px', height: '230px' }}
                 />
-                <ItemText key={nanoid()}>Fantomen</ItemText>
+                <ItemText key={nanoid()}>Concert CE</ItemText>
+              </ImageWrapper>
+            </Link>
+            <Link
+              to='/Products'
+              style={{ textDecoration: 'none' }}
+              key={nanoid()}>
+              <ImageWrapper key={nanoid()}>
+                <Image
+                  key={nanoid()}
+                  src={Acoustic_Guitars_Mora_Dreadnought_II}
+                  alt=''
+                  style={{ width: '130px', height: '230px' }}
+                />
+                <ItemText key={nanoid()}>Dreadnought</ItemText>
+              </ImageWrapper>
+            </Link>
+            <Link
+              to='/Products'
+              style={{ textDecoration: 'none' }}
+              key={nanoid()}>
+              <ImageWrapper key={nanoid()}>
+                <Image
+                  key={nanoid()}
+                  src={Acoustic_Guitars_Mora_Dreadnought}
+                  alt=''
+                  style={{ width: '130px', height: '230px' }}
+                />
+                <ItemText key={nanoid()}>Dreadnought CE</ItemText>
               </ImageWrapper>
             </Link>
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
         <Row key={nanoid()}>
-          <RowTitle key={nanoid()}>RetroScape Series</RowTitle>
-          <RowParagraph key={nanoid()}>Noun (plural Retroscapes)</RowParagraph>
+          <RowTitle key={nanoid()}>Siljan II</RowTitle>
           <RowParagraph key={nanoid()}>
-            1. A landscape or setting filled with things from the past.
-          </RowParagraph>
-          <RowParagraph key={nanoid()}>
-            Hagstrom’s RetroScape Series consist of authentically recreated
-            guitars from the rich landscape of our history. Our mission is to
-            bring modern playability to these great designs without compromising
-            any of the badass-retro-vibe coolness that they offer to any
-            guitarist who wants to break away from the current crowd by reaching
-            back in time - Rock-n-Roll’s formative years … Hagstrom’s
-            RetroScape.
+            The Siljan models using a high grade Sitka Spruce top with Mahogany
+            back and sides provides a warm round and well balanced tone which
+            will only continue to improve as time passes. Sitka Spruce is
+            considered to be one of the more prestigious spruce origins
+            originating from the Northern West coast in North America. Tonally,
+            it is known for producing a slightly higher output and responds
+            exceptionally well for flat pickers.
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
@@ -352,11 +448,11 @@ const AcousticGuitars = () => {
               <ImageWrapper key={nanoid()}>
                 <Image
                   key={nanoid()}
-                  src={Electric_Guitars_Impala}
+                  src={Acoustic_Guitars_Siljan_Dreadnought_II}
                   alt=''
                   style={{ width: '130px', height: '230px' }}
                 />
-                <ItemText key={nanoid()}>Impala</ItemText>
+                <ItemText key={nanoid()}>Dreadnought</ItemText>
               </ImageWrapper>
             </Link>
             <Link
@@ -366,34 +462,68 @@ const AcousticGuitars = () => {
               <ImageWrapper key={nanoid()}>
                 <Image
                   key={nanoid()}
-                  src={Electric_Guitars_HIII}
+                  src={Acoustic_Guitars_Siljan_Dreadnought_CE}
                   alt=''
                   style={{ width: '130px', height: '230px' }}
                 />
-                <ItemText key={nanoid()}>H-III</ItemText>
+                <ItemText key={nanoid()}>Dreadnought CE</ItemText>
+              </ImageWrapper>
+            </Link>
+            <Link
+              to='/Products'
+              style={{ textDecoration: 'none' }}
+              key={nanoid()}>
+              <ImageWrapper key={nanoid()}>
+                <Image
+                  key={nanoid()}
+                  src={Acoustic_Guitars_Siljan_Grand_Auditorium_II}
+                  alt=''
+                  style={{ width: '130px', height: '230px' }}
+                />
+                <ItemText key={nanoid()}>Grand Auditorium</ItemText>
+              </ImageWrapper>
+            </Link>
+            <Link
+              to='/Products'
+              style={{ textDecoration: 'none' }}
+              key={nanoid()}>
+              <ImageWrapper key={nanoid()}>
+                <Image
+                  key={nanoid()}
+                  src={Acoustic_Guitars_Siljan_Grand_Auditorium_CE}
+                  alt=''
+                  style={{ width: '130px', height: '230px' }}
+                />
+                <ItemText key={nanoid()}>Grand Auditorium CE</ItemText>
+              </ImageWrapper>
+            </Link>
+            <Link
+              to='/Products'
+              style={{ textDecoration: 'none' }}
+              key={nanoid()}>
+              <ImageWrapper key={nanoid()}>
+                <Image
+                  key={nanoid()}
+                  src={Acoustic_Guitars_Siljan_12}
+                  alt=''
+                  style={{ width: '130px', height: '230px' }}
+                />
+                <ItemText key={nanoid()}>Grand Auditorium 12 String</ItemText>
               </ImageWrapper>
             </Link>
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
         <Row key={nanoid()}>
-          <RowTitle key={nanoid()}>Super Swede | The New Generation</RowTitle>
-          <RowParagraph key={nanoid()} style={{ fontWeight: '800' }}>
-            Reimagined. Redefined. Revived.
-          </RowParagraph>
+          <RowTitle key={nanoid()}>Seafarer II</RowTitle>
           <RowParagraph key={nanoid()}>
-            Popular classics often remain untouched. Creative minds continue to
-            challenge and reconsider these concepts to be fully reimagined. The
-            Super Swede with its longer scale length of 25.5 inches (648mm),
-            provides a snappy and focused tone that features a well-defined
-            low-end presence. Its higher string tension delivers a clear and
-            articulate sound, well balanced and evenly defined. The Lundgren
-            Design No. 2 pickup in the neck position and No. 5 pickup in the
-            bridge position were carefully paired to offer a wide diversity of
-            tonal options. The AlNiCo-2 neck pickup produces warm and clear
-            tones, while the AlNiCo-5 bridge pickup churns out a powerful and
-            articulate one. Combined they are a perfect balance of expression
-            and clarity that allows the Super Swede's natural tone to transpire.
+            Parlor-sized bodies have been used by acoustic guitar builders for
+            centuries. A compact, easy-to-hold size and focused, intimate
+            voicings have made parlor guitars attractive tools for vocal
+            accompaniment and small ensembles through the ages. Blues and folk
+            musicians embraced them in the early 20th century, and the body
+            shape has become one of the standard offerings among fine guitar
+            producers.
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
@@ -403,317 +533,45 @@ const AcousticGuitars = () => {
               <ImageWrapper key={nanoid()}>
                 <Image
                   key={nanoid()}
-                  src={Electric_Guitars_Super_Swede_MK3}
+                  src={Acoustic_Guitars_Seafarer_Parlour_CE}
                   alt=''
                   style={{ width: '130px', height: '230px' }}
                 />
-                <ItemText key={nanoid()}>Super Swede NewGen</ItemText>
+                <ItemText key={nanoid()}>Parlour CE</ItemText>
               </ImageWrapper>
             </Link>
           </ItemBox>
         </Row>
-        <GuitarsCustomHeader key={nanoid()} />
         <Row key={nanoid()}>
-          <RowTitle key={nanoid()}>Swede | The New Generation</RowTitle>
-          <RowParagraph key={nanoid()} style={{ fontWeight: '800' }}>
-            Reimagined. Redefined. Revived.
+          <RowTitle key={nanoid()}>Hagstrom Acoustics</RowTitle>
+          <RowParagraph key={nanoid()}>
+            Dalarna is a historical province located in central Sweden, home to
+            the town of Älvdalen where Albin Hagström established an accordion
+            factory in 1925, and where Hagstrom guitar production began in the
+            1950’s. A region steeped in folklore and with a rich tradition of
+            art and craftsmanship, it is a source of inspiration for Hagstrom’s
+            acoustic guitars. In homage to the birthplace of Hagstrom guitars,
+            we have adopted local names from around the region for our acoustic
+            series: Siljan, Mora, Efldalia, and, of course, Dalarna.
           </RowParagraph>
           <RowParagraph key={nanoid()}>
-            Popular classics often remain untouched. Creative minds continue to
-            challenge and reconsider these concepts to be fully reimagined. The
-            Swede with a short scale length of 24.75 inches (628mm) produces a
-            thick and warm tone that is both articulate and harmonically rich.
-            Its lower string tension allows for longer sustain, providing an
-            expressive and versatile tone. aThe equipped Lundgren Design No. 2
-            AlNiCo-2 pickups are each specially calibrated to capture the
-            natural, balanced voice of the instrument. With their clear and
-            well-defined distinction, these pickups allow the soulful character
-            of the Swede to shine through.
+            Each model has been carefully developed to produce a unique tone
+            with the help of hand-selected and aged timbers, and traditional
+            body designs such as Dreadnought, Grand Auditorium, and Concert. A
+            feature common to all Hagstrom acoustic guitars is the incorporation
+            of our unique Resinator™ material into both fingerboards and
+            bridges. The consistency, density, and stability of Resinator™ wood
+            is ideally suited to the acoustic guitar, and contributes to the
+            rich sonic fingerprint of Hagstrom acoustics.
           </RowParagraph>
-          <ItemBox key={nanoid()}>
-            <Link
-              to='/Products'
-              style={{ textDecoration: 'none' }}
-              key={nanoid()}>
-              <ImageWrapper key={nanoid()}>
-                <Image
-                  key={nanoid()}
-                  src={Electric_Guitars_Swede_MK3}
-                  alt=''
-                  style={{ width: '130px', height: '230px' }}
-                />
-                <ItemText key={nanoid()}>Swede NewGen</ItemText>
-              </ImageWrapper>
-            </Link>
-          </ItemBox>
-        </Row>
-        <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
-          <RowTitle key={nanoid()}>Ultra Max</RowTitle>
-          <RowParagraph key={nanoid()}>
-            Since the introduction of the profoundly successful Hagstrom Ultra
-            Swede in 2007, guitarists all over the world have been stunned at
-            the instruments willingness to offer players a premium performing
-            and sounding instrument at a very modest cost. Over the years our
-            designers have explored the details of the Ultra Swede and have 
-            finally created an upscaled sibling of the Ultra Swede, where we now
-            proudly introduce the “Ultra Max”.
+          <RowParagraph>
+            Beautifully designed cosmetic features such as headstocks, rosettes,
+            tuners and other details, together with the finest of materials and
+            Hagstrom’s design innovation creates a range of acoustic guitars
+            that are a fitting tribute to the legacy started nearly a century
+            ago in Dalarna by Albin Hagström.
           </RowParagraph>
-          <ItemBox key={nanoid()}>
-            <Link
-              to='/Products'
-              style={{ textDecoration: 'none' }}
-              key={nanoid()}>
-              <ImageWrapper key={nanoid()}>
-                <Image
-                  key={nanoid()}
-                  src={Electric_Guitars_Ultra_Max}
-                  alt=''
-                  style={{ width: '130px', height: '230px' }}
-                />
-                <ItemText key={nanoid()}>Ultra Max</ItemText>
-              </ImageWrapper>
-            </Link>
-          </ItemBox>
         </Row>
-        <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
-          <RowTitle key={nanoid()}>Ultra Swede</RowTitle>
-          <RowParagraph key={nanoid()}>
-            Impressive. Fantastic tone, perfect balance and dressed to kill. The
-            best of both worlds, the fusion of Vintage and Modern.
-          </RowParagraph>
-          <ItemBox key={nanoid()}>
-            <Link
-              to='/Products'
-              style={{ textDecoration: 'none' }}
-              key={nanoid()}>
-              <ImageWrapper key={nanoid()}>
-                <Image
-                  key={nanoid()}
-                  src={Electric_Guitars_Ultra_Swede}
-                  alt=''
-                  style={{ width: '130px', height: '230px' }}
-                />
-                <ItemText key={nanoid()}>Ultra Swede</ItemText>
-              </ImageWrapper>
-            </Link>
-            <Link
-              to='/Products'
-              style={{ textDecoration: 'none' }}
-              key={nanoid()}>
-              <ImageWrapper key={nanoid()}>
-                <Image
-                  key={nanoid()}
-                  src={Electric_Guitars_Ultra_Swede_ESN}
-                  alt=''
-                  style={{ width: '130px', height: '230px' }}
-                />
-                <ItemText key={nanoid()}>Ultra Swede ESN</ItemText>
-              </ImageWrapper>
-            </Link>
-          </ItemBox>
-        </Row>
-        <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
-          <RowTitle key={nanoid()}>Alvar</RowTitle>
-          <ItemBox key={nanoid()}>
-            <Link
-              to='/Products'
-              style={{ textDecoration: 'none' }}
-              key={nanoid()}>
-              <ImageWrapper key={nanoid()}>
-                <Image
-                  key={nanoid()}
-                  src={Electric_Guitars_Alvar}
-                  alt=''
-                  style={{ width: '130px', height: '230px' }}
-                />
-                <ItemText key={nanoid()}>Alvar</ItemText>
-              </ImageWrapper>
-            </Link>
-          </ItemBox>
-        </Row>
-        <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
-          <RowTitle key={nanoid()}>Super Viking®</RowTitle>
-          <RowParagraph key={nanoid()}>
-            Upping the ante in the semi hollow realm with a gammut of sound and
-            stunning looks. The Super Viking's® 25.5" scale length, offers a
-            brighter and more focused tone, providing sustain on end.
-          </RowParagraph>
-          <RowParagraph key={nanoid()}>
-            In combination with individual coil split from Humbucker to Single
-            Coil mode, you get one of the most versatile sixtrings out there.
-          </RowParagraph>
-          <ItemBox key={nanoid()}>
-            <Link
-              to='/Products'
-              style={{ textDecoration: 'none' }}
-              key={nanoid()}>
-              <ImageWrapper key={nanoid()}>
-                <Image
-                  key={nanoid()}
-                  src={Electric_Guitars_Super_Viking}
-                  alt=''
-                  style={{ width: '130px', height: '230px' }}
-                />
-                <ItemText key={nanoid()}>Super Viking®</ItemText>
-              </ImageWrapper>
-            </Link>
-          </ItemBox>
-        </Row>
-        <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
-          <RowTitle key={nanoid()}>Viking®</RowTitle>
-          <RowParagraph key={nanoid()}>
-            The All-Rounder. It covers all genres, from blues to rock/fusion,
-            jazz - and back. Vikings® took no prisoners and neither will this
-            versatile and elegant instrument.
-          </RowParagraph>
-          <ItemBox key={nanoid()}>
-            <Link
-              to='/Products'
-              style={{ textDecoration: 'none' }}
-              key={nanoid()}>
-              <ImageWrapper key={nanoid()}>
-                <Image
-                  key={nanoid()}
-                  src={Electric_Guitars_Viking}
-                  alt=''
-                  style={{ width: '130px', height: '230px' }}
-                />
-                <ItemText key={nanoid()}>Viking®</ItemText>
-              </ImageWrapper>
-            </Link>
-            <Link
-              to='/Products'
-              style={{ textDecoration: 'none' }}
-              key={nanoid()}>
-              <ImageWrapper key={nanoid()}>
-                <Image
-                  key={nanoid()}
-                  src={Electric_Guitars_67_Viking_II}
-                  alt=''
-                  style={{ width: '130px', height: '230px' }}
-                />
-                <ItemText key={nanoid()}>'67 Viking® II</ItemText>
-              </ImageWrapper>
-            </Link>
-            <Link
-              to='/Products'
-              style={{ textDecoration: 'none' }}
-              key={nanoid()}>
-              <ImageWrapper key={nanoid()}>
-                <Image
-                  key={nanoid()}
-                  src={Electric_Guitars_Viking_Deluxe_Baritone}
-                  alt=''
-                  style={{ width: '130px', height: '230px' }}
-                />
-                <ItemText key={nanoid()}>Viking® Deluxe Baritone</ItemText>
-              </ImageWrapper>
-            </Link>
-            <Link
-              to='/Products'
-              style={{ textDecoration: 'none' }}
-              key={nanoid()}>
-              <ImageWrapper key={nanoid()}>
-                <Image
-                  key={nanoid()}
-                  src={Electric_Guitars_Viking_12}
-                  alt=''
-                  style={{ width: '130px', height: '230px' }}
-                />
-                <ItemText key={nanoid()}>Viking® Deluxe 12-String</ItemText>
-              </ImageWrapper>
-            </Link>
-            <Link
-              to='/Products'
-              style={{ textDecoration: 'none' }}
-              key={nanoid()}>
-              <ImageWrapper key={nanoid()}>
-                <Image
-                  key={nanoid()}
-                  src={Electric_Guitars_Tremar_Viking_Deluxe}
-                  alt=''
-                  style={{ width: '130px', height: '230px' }}
-                />
-                <ItemText key={nanoid()}>Tremar Viking® Deluxe</ItemText>
-              </ImageWrapper>
-            </Link>
-          </ItemBox>
-        </Row>
-        <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
-          <RowTitle key={nanoid()}>Jazz Models</RowTitle>
-          <RowParagraph key={nanoid()}>
-            Truly masterful. An outstanding hollowbody archtop, also deemed
-            jazz-guitar is the pinnacle of the artform called lutherie. And the
-            master’s craft is unmistakably written all over these fine models.
-            Not only responsible for the iconic shape of the Hagstrom headstock,
-            James “Jimmy” D’Aquisto‘s cooperation with Hagstrom is legendary.
-          </RowParagraph>
-          <ItemBox key={nanoid()}>
-            <Link
-              to='/Products'
-              style={{ textDecoration: 'none' }}
-              key={nanoid()}>
-              <ImageWrapper key={nanoid()}>
-                <Image
-                  key={nanoid()}
-                  src={Electric_Guitars_HJ500}
-                  alt=''
-                  style={{ width: '130px', height: '230px' }}
-                />
-                <ItemText key={nanoid()}>HJ500</ItemText>
-              </ImageWrapper>
-            </Link>
-            <Link
-              to='/Products'
-              style={{ textDecoration: 'none' }}
-              key={nanoid()}>
-              <ImageWrapper key={nanoid()}>
-                <Image
-                  key={nanoid()}
-                  src={Electric_Guitars_HJ500_Tremar}
-                  alt=''
-                  style={{ width: '130px', height: '230px' }}
-                />
-                <ItemText key={nanoid()}>Tremar HJ500</ItemText>
-              </ImageWrapper>
-            </Link>
-            <Link
-              to='/Products'
-              style={{ textDecoration: 'none' }}
-              key={nanoid()}>
-              <ImageWrapper key={nanoid()}>
-                <Image
-                  key={nanoid()}
-                  src={Electric_Guitars_HJ800}
-                  alt=''
-                  style={{ width: '130px', height: '230px' }}
-                />
-                <ItemText key={nanoid()}>HJ800</ItemText>
-              </ImageWrapper>
-            </Link>
-            <Link
-              to='/Products'
-              style={{ textDecoration: 'none' }}
-              key={nanoid()}>
-              <ImageWrapper key={nanoid()}>
-                <Image
-                  key={nanoid()}
-                  src={Electric_Guitars_HL550}
-                  alt=''
-                  style={{ width: '130px', height: '230px' }}
-                />
-                <ItemText key={nanoid()}>HL550</ItemText>
-              </ImageWrapper>
-            </Link>
-          </ItemBox>
-        </Row>
-        <GuitarsCustomHeader key={nanoid()} />
       </MainContentWrapper>
       <ButtonWrapper key={nanoid()}>
         <Link to='/Products' key={nanoid()}>

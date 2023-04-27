@@ -114,7 +114,7 @@ function Header(props) {
         <NavLink to='/Products'> Products</NavLink>
         <NavLink to='/ElectricGuitars'>Electric Guitars</NavLink>
         <NavLink to='/Basses'>Basses</NavLink>
-        <NavLink to='/AcousticGuitars'>AcousticGuitars</NavLink>
+        <NavLink to='/AcousticGuitars'>Acoustic Guitars</NavLink>
       </AnchorGroup>
     </Wrapper>
   );
