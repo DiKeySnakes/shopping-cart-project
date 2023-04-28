@@ -9,6 +9,11 @@ import Basses from './components/Basses';
 import AcousticGuitars from './components/AcousticGuitars';
 import MoreInfo from './components/MoreInfo';
 import MoreInfoPatSmear from './components/MoreInfoPatSmear';
+import MoreInfoImpalaCopperburst from './components/MoreInfoImpalaCopperburst';
+import MoreInfoRetroScapeImpala from './components/MoreInfoRetroScapeImpala';
+import MoreInfoViking from './components/MoreInfoViking';
+import MoreInfoVikingGoldTop from './components/MoreInfoVikingGoldTop';
+import MoreInfoSuperVikingTransBrown from './components/MoreInfoSuperVikingTransBrown';
 import MoreInfoSwede from './components/MoreInfoSwede';
 import MoreInfoSuperSwede from './components/MoreInfoSuperSwede';
 import MoreInfoAlvar from './components/MoreInfoAlvar';
@@ -36,6 +41,23 @@ function App() {
         <Route path='/AcousticGuitars' element={<AcousticGuitars />} />
         <Route path='/MoreInfo' element={<MoreInfo />} />
         <Route path='/MoreInfoPatSmear' element={<MoreInfoPatSmear />} />
+        <Route
+          path='/MoreInfoImpalaCopperburst'
+          element={<MoreInfoImpalaCopperburst />}
+        />
+        <Route
+          path='/MoreInfoRetroScapeImpala'
+          element={<MoreInfoRetroScapeImpala />}
+        />
+        <Route path='/MoreInfoViking' element={<MoreInfoViking />} />
+        <Route
+          path='/MoreInfoVikingGoldTop'
+          element={<MoreInfoVikingGoldTop />}
+        />
+        <Route
+          path='/MoreInfoSuperVikingTransBrown'
+          element={<MoreInfoSuperVikingTransBrown />}
+        />
         <Route path='/MoreInfoSwede' element={<MoreInfoSwede />} />
         <Route path='/MoreInfoSuperSwede' element={<MoreInfoSuperSwede />} />
         <Route path='/MoreInfoAlvar' element={<MoreInfoAlvar />} />
