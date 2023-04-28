@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.a70d559a.js",
+    "main.js": "/shopping-cart-project/static/js/main.a413f002.js",
     "static/media/WISBORG_Foto_Hagstrom_final.jpg": "/shopping-cart-project/static/media/WISBORG_Foto_Hagstrom_final.7987da95d6c380feb9f5.jpg",
     "static/media/Ultra_Max_Fall_Sky_Satin_Vertical.png": "/shopping-cart-project/static/media/Ultra_Max_Fall_Sky_Satin_Vertical.b55b96c92518b9643e78.png",
     "static/media/HagstromUltraMaxFallSkySatin.png": "/shopping-cart-project/static/media/HagstromUltraMaxFallSkySatin.0f05c283db8b4abc4d64.png",
     "static/media/HagstromSuperSwedeFallSkyGloss.png": "/shopping-cart-project/static/media/HagstromSuperSwedeFallSkyGloss.f81f82d5ef739a6745c4.png",
     "static/media/SuperSwedeFallSkyGlossVertical.png": "/shopping-cart-project/static/media/SuperSwedeFallSkyGlossVertical.185c20f91f756edbd6b9.png",
+    "static/media/Artist_Project_Impala_Copperburst_Vertical.png": "/shopping-cart-project/static/media/Artist_Project_Impala_Copperburst_Vertical.b8e6fc654b7bd5b243ca.png",
     "static/media/Ultra_Max_Golden_Eagle_Burst_Vertical.png": "/shopping-cart-project/static/media/Ultra_Max_Golden_Eagle_Burst_Vertical.c888f3f0db852e404ce9.png",
     "static/media/HagstromImpalaCopperburst.png": "/shopping-cart-project/static/media/HagstromImpalaCopperburst.74fdf036cd5cf8f76b55.png",
     "static/media/HagstromUltraMaxGoldenEagleBurst.png": "/shopping-cart-project/static/media/HagstromUltraMaxGoldenEagleBurst.1e126259ecd3132bc1ee.png",
@@ -251,10 +252,10 @@
     "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "static/media/ScrollIcon.svg": "/shopping-cart-project/static/media/ScrollIcon.a1eb858b6e5366f1bd5779a8e0ec1c44.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.a70d559a.js.map": "/shopping-cart-project/static/js/main.a70d559a.js.map"
+    "main.a413f002.js.map": "/shopping-cart-project/static/js/main.a413f002.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.a70d559a.js"
+    "static/js/main.a413f002.js"
   ]
 }
