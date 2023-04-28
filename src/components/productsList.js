@@ -15,6 +15,7 @@ import Ultra_Max_Black_Satin_Vertical from '../assets/images/Ultra_Max_Black_Sat
 import Ultra_Max_Golden_Eagle_Burst_Vertical from '../assets/images/Ultra_Max_Golden_Eagle_Burst_Vertical.png';
 import Ultra_Max_Cosmic_Black_Burst_Satin_Vertical from '../assets/images/Ultra_Max_Cosmic_Black_Burst_Satin_Vertical.png';
 import Ultra_Max_Milky_Mandarin_Satin_Vertical from '../assets/images/Ultra_Max_Milky_Mandarin_Satin_Vertical.png';
+import Pat_Smear_Signature_Black_Gloss from '../assets/images/Pat_Smear_Signature_Black_Gloss.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -186,6 +187,16 @@ const productsList = [
     color: 'Milky Mandarin Satin',
     info: '/MoreInfoUltraMax',
     price: '3500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Pat_Smear_Signature_Black_Gloss,
+    brand: 'Hagstrom',
+    name: 'Pat Smear Signature',
+    color: 'Black Gloss',
+    info: '/MoreInfoPatSmear',
+    price: '1100',
     quantity: 1,
     id: nanoid(),
   },

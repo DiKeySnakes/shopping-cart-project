@@ -203,7 +203,7 @@ const ElectricGuitars = () => {
           <RowParagraph key={nanoid()}>Hagstrom Signature Models</RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
-              to='/Products'
+              to='/MoreInfoPatSmear'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>

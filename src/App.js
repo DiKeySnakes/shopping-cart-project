@@ -8,6 +8,7 @@ import ElectricGuitars from './components/ElectricGuitars';
 import Basses from './components/Basses';
 import AcousticGuitars from './components/AcousticGuitars';
 import MoreInfo from './components/MoreInfo';
+import MoreInfoPatSmear from './components/MoreInfoPatSmear';
 import MoreInfoSwede from './components/MoreInfoSwede';
 import MoreInfoSuperSwede from './components/MoreInfoSuperSwede';
 import MoreInfoAlvar from './components/MoreInfoAlvar';
@@ -34,6 +35,7 @@ function App() {
         <Route path='/Basses' element={<Basses />} />
         <Route path='/AcousticGuitars' element={<AcousticGuitars />} />
         <Route path='/MoreInfo' element={<MoreInfo />} />
+        <Route path='/MoreInfoPatSmear' element={<MoreInfoPatSmear />} />
         <Route path='/MoreInfoSwede' element={<MoreInfoSwede />} />
         <Route path='/MoreInfoSuperSwede' element={<MoreInfoSuperSwede />} />
         <Route path='/MoreInfoAlvar' element={<MoreInfoAlvar />} />
