@@ -17,6 +17,7 @@ import Ultra_Max_Cosmic_Black_Burst_Satin_Vertical from '../assets/images/Ultra_
 import Ultra_Max_Milky_Mandarin_Satin_Vertical from '../assets/images/Ultra_Max_Milky_Mandarin_Satin_Vertical.png';
 import Pat_Smear_Signature_Black_Gloss from '../assets/images/Pat_Smear_Signature_Black_Gloss.png';
 import Artist_Project_Impala_Copperburst_Vertical from '../assets/images/Artist_Project_Impala_Copperburst_Vertical.png';
+import Artist_Project_Viking_Gold_Top_Vertical from '../assets/images/Artist_Project_Viking_Gold_Top_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -207,6 +208,16 @@ const productsList = [
     name: 'Artist Project Impala',
     color: 'Copperburst',
     info: '/MoreInfoImpalaCopperburst',
+    price: '1200',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Artist_Project_Viking_Gold_Top_Vertical,
+    brand: 'Hagstrom',
+    name: 'Artist Project Viking',
+    color: 'Gold Top',
+    info: '/MoreInfoVikingGoldTop',
     price: '1200',
     quantity: 1,
     id: nanoid(),
