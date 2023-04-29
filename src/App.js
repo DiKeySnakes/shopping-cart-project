@@ -14,6 +14,8 @@ import MoreInfoRetroScapeImpala from './components/MoreInfoRetroScapeImpala';
 import MoreInfoViking from './components/MoreInfoViking';
 import MoreInfoVikingGoldTop from './components/MoreInfoVikingGoldTop';
 import MoreInfoSuperVikingTransBrown from './components/MoreInfoSuperVikingTransBrown';
+import MoreInfoFantomenCustom from './components/MoreInfoFantomenCustom';
+import MoreInfoFantomen from './components/MoreInfoFantomen';
 import MoreInfoSwede from './components/MoreInfoSwede';
 import MoreInfoSuperSwede from './components/MoreInfoSuperSwede';
 import MoreInfoAlvar from './components/MoreInfoAlvar';
@@ -58,6 +60,11 @@ function App() {
           path='/MoreInfoSuperVikingTransBrown'
           element={<MoreInfoSuperVikingTransBrown />}
         />
+        <Route
+          path='/MoreInfoFantomenCustom'
+          element={<MoreInfoFantomenCustom />}
+        />
+        <Route path='/MoreInfoFantomen' element={<MoreInfoFantomen />} />
         <Route path='/MoreInfoSwede' element={<MoreInfoSwede />} />
         <Route path='/MoreInfoSuperSwede' element={<MoreInfoSuperSwede />} />
         <Route path='/MoreInfoAlvar' element={<MoreInfoAlvar />} />

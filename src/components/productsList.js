@@ -19,6 +19,11 @@ import Pat_Smear_Signature_Black_Gloss from '../assets/images/Pat_Smear_Signatur
 import Artist_Project_Impala_Copperburst_Vertical from '../assets/images/Artist_Project_Impala_Copperburst_Vertical.png';
 import Artist_Project_Viking_Gold_Top_Vertical from '../assets/images/Artist_Project_Viking_Gold_Top_Vertical.png';
 import Artist_Project_Super_Viking_Trans_Brown_Vertical from '../assets/images/Artist_Project_Super_Viking_Trans_Brown_Vertical.png';
+import Fantomen_Custom_Black_Gloss_Vertical from '../assets/images/Fantomen_Custom_Black_Gloss_Vertical.png';
+import Fantomen_Custom_White_Gloss_Vertical from '../assets/images/Fantomen_Custom_White_Gloss_Vertical.png';
+import Fantomen_White_Gloss_Vertical from '../assets/images/Fantomen_White_Gloss_Vertical.png';
+import Fantomen_Black_Gloss_Vertical from '../assets/images/Fantomen_Black_Gloss_Vertical.png';
+import Fantomen_Tobacco_Sunburst_Vertical from '../assets/images/Fantomen_Tobacco_Sunburst_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -230,6 +235,56 @@ const productsList = [
     color: 'Transparent Brown',
     info: '/MoreInfoSuperVikingTransBrown',
     price: '1200',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Fantomen_Custom_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Fantomen Custom',
+    color: 'Black Gloss',
+    info: '/MoreInfoFantomenCustom',
+    price: '1300',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Fantomen_Custom_White_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Fantomen Custom',
+    color: 'White Gloss',
+    info: '/MoreInfoFantomenCustom',
+    price: '1300',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Fantomen_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Fantomen',
+    color: 'Black Gloss',
+    info: '/MoreInfoFantomen',
+    price: '1300',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Fantomen_White_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Fantomen',
+    color: 'White Gloss',
+    info: '/MoreInfoFantomen',
+    price: '1300',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Fantomen_Tobacco_Sunburst_Vertical,
+    brand: 'Hagstrom',
+    name: 'Fantomen',
+    color: 'Tobacco Sunburst',
+    info: '/MoreInfoFantomen',
+    price: '1300',
     quantity: 1,
     id: nanoid(),
   },
