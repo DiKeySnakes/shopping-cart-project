@@ -9,21 +9,19 @@ import 'yet-another-react-lightbox/styles.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Pat_Smear_Hero from '../assets/images/Pat_Smear_Hero.png';
-import Pat_Smear_Header from '../assets/images/Pat_Smear_Header.jpg';
+import Super_Viking_Trans_Brown_Hero from '../assets/images/Super_Viking_Trans_Brown_Hero.png';
+import Super_Viking_Trans_Brown_Header from '../assets/images/Super_Viking_Trans_Brown_Header.jpg';
 import Logo_Hagstrom_Lilie_Black from '../assets/images/Logo_Hagstrom_Lilie_Black.png';
-import Colors_Black_Gloss from '../assets/images/Colors_Black_Gloss.png';
-import HSPASS09_Details_1 from '../assets/images/HSPASS09_Details_345x276Px_01.jpg';
-import HSPASS09_Details_2 from '../assets/images/HSPASS09_Details_345x276Px_02.jpg';
-import HSPASS09_Details_3 from '../assets/images/HSPASS09_Details_345x276Px_03.jpg';
-import HSPASS09_Details_4 from '../assets/images/HSPASS09_Details_345x276Px_04.jpg';
-import HSPASS09_Details_5 from '../assets/images/HSPASS09_Details_345x276Px_05.jpg';
-import The_Germs_Logo from '../assets/images/The_Germs_Logo.png';
-import HagstromPatSmearBlackGloss from '../assets/images/HagstromPatSmearBlackGloss.png';
-import HagstromPatSmearBlackGlossBack from '../assets/images/HagstromPatSmearBlackGlossBack.png';
+import Colors_Transparent_Brown from '../assets/images/Colors_Transparent_Brown.png';
+import HSSUVIK91_detail_body from '../assets/images/HSSUVIK91_detail_body.jpg';
+import HSSUVIK91_detail_head from '../assets/images/HSSUVIK91_detail_head.jpg';
+import HSSUVIK91_detail_pick from '../assets/images/HSSUVIK91_detail_pick.jpg';
+import HagstromSuperVikingTransBrown from '../assets/images/HagstromSuperVikingTransBrown.png';
+import HagstromSuperVikingTransBrownBack from '../assets/images/HagstromSuperVikingTransBrownBack.png';
 import Detail_tuning_peg from '../assets/images/Detail_tuning_peg.jpg';
 import Detail_expander from '../assets/images/Detail_expander.jpg';
 import Detail_resinator_wood from '../assets/images/Detail_resinator_wood.jpg';
+import Detail_set_neck from '../assets/images/Detail_set_neck.jpg';
 import ReactPlayer from 'react-player';
 
 const Wrapper = styled.div`
@@ -525,52 +523,86 @@ const MoreInfoSuperVikingTransBrown = () => {
     <>
       <Wrapper>
         <ImageWrapper>
-          <Image src={Pat_Smear_Header} alt='' />
+          <Image src={Super_Viking_Trans_Brown_Header} alt='' />
           <IntroContainer>
             <IntroTitle>
-              Pat Smear
-              <IntroParagraph>A Deep Bond</IntroParagraph>
+              Super Viking® Trans Brown
+              <IntroParagraph>Artist Project</IntroParagraph>
             </IntroTitle>
-            <IntroImage src={Pat_Smear_Hero} alt='' />
+            <IntroImage src={Super_Viking_Trans_Brown_Hero} alt='' />
           </IntroContainer>
         </ImageWrapper>
         <MainContentWrapper>
           <LeftContentWrapper>
-            <MediaTitle>Hagstrom Pat Smear Signature</MediaTitle>
+            <MediaTitle>Hagstrom Super Viking® Trans Brown</MediaTitle>
             <Paragraph>
               <LogoSpan>
                 <Logo src={Logo_Hagstrom_Lilie_Black} alt='' />
               </LogoSpan>
-              Pat Smear needs no introduction. He has been in the vanguard of
-              music history his entire career, from the early years as a
-              founding member of the seminal punk band “The Germs”, to his stint
-              with the legendary Nirvana, and on to his current role laying down
-              colossal riffs for the Foo Fighters. Hagstrom has been his
-              instrument of choice since the 1970’s, creating a deep and
-              authentic bond that has lasted decades.
+              In 2012 Justin York purchased a Hagstrom Viking® to use on tour
+              with Paramore, and the rest of the story is history. He has since
+              become a true partner and friend to Hagstrom. When Paramore was
+              preparing for extensive international touring to support their
+              recent album, we began discussions about what an ideal set of
+              touring guitars might be for him. After more than one year of
+              collaboration, the result is a pair of Vikings® that Hagstrom is
+              proud to introduce to guitarists worldwide.
             </Paragraph>
             <Paragraph>
-              We at Hagstrom Guitars were both pleased and honored to be given
-              the task of transforming his privately customized and road-proven
-              vintage Hagstrom into the Pat Smear Signature guitar you see here.
-              An additional source of pride for us is that the Pat Smear
-              Signature guitar you find at your Hagstrom dealer is identical to
-              the one Pat plays night after night on some of the largest stages
-              in the world.
+              As primary touring guitarist for Paramore, Justin’s role is to
+              provide the supporting foundation of the band’s guitar sounds for
+              each song. A band with a rich history like Paramore requires a
+              broad range of guitar styles and textures. So, one of our main
+              objectives was to create instruments with a broad tonal range
+              easily accessible during a stage performance, a task Hagstrom is
+              more than equal to.
+            </Paragraph>
+            <MediaTitle>A rich and classic vibe</MediaTitle>
+            <Paragraph>
+              Justin wanted his Super Viking® to exude a rich, classic vibe. We
+              developed a warm, transparent brown finish which we applied to
+              maple specially selected for an interesting and more prominent
+              grain. The result is gorgeous, with the rich brown finish
+              highlighting fascinating grain patterns, making each instrument
+              visually unique. Vintage-style “witch hat” knobs, same as used on
+              our RetroScape models, complete the vintage vibe this guitar
+              oozes. The Super Viking’s® 25.5” (648mm) scale length adds some
+              extra snap and articulation to each note, and Justin requested our
+              “Ultra-Thin” 17mm neck profile to match a vintage (c. 1965)
+              Viking® model in his Hagstrom collection.
             </Paragraph>
             <Paragraph>
-              Pick one up at your Hagstrom dealer and join us in this unique,
-              historic relationship.
+              A Hagstrom Custom 58 humbucking pickup in the bridge position
+              provides classic rock tones. Justin chose our “P-Urified” P90
+              humbucker-sized pickup for the neck position which exhibits that
+              classic warm, round sound; tonal magic happens when this pickup
+              interacts with our custom tone control and the P90 ranges to an
+              astonishingly clear and pristine single-coil clarity. Individual
+              coil-split is available for the Custom 58 via the push/pull tone
+              control, providing an even more expansive sonic palette.
             </Paragraph>
-            <MediaTitle>A Combination of H-II and Super Swede</MediaTitle>
+            <MediaTitle>Finally, a useable tone control</MediaTitle>
             <Paragraph>
-              This slick black beauty is a voluptuous blend of vintage Hagstrom
-              H-IIN-OT and modern-day Super Swede. Its sleek mahogany body and
-              deeply contoured maple top provide a deep, projecting platform for
-              Hagstrom’s Custom 58 AlNiCo humbucking pickups, enabling the
-              guitar to cut through the mix and sit right in the middle of the
-              Foo’s triple-guitar onslaught. Elegant, clean tones meet highly
-              saturated distortion. Just what Pat ordered.
+              The tone control is often a source of frustration for guitarists.
+              This is because the design has historically been based on a
+              passive treble-cut concept. The complete tonal spectrum is passed
+              through the circuit when the control is fully open, and as it’s
+              dialed down treble frequencies are eliminated. Many guitarists
+              find this approach unusable, since the tone often becomes muddy
+              and excessively “dark” as the treble component is eliminated.
+              Working with Justin we have developed a tone control which does
+              the exact opposite. Instead{<br />} of filtering treble
+              frequencies, we filter the bass as the control is cut. The full
+              treble spectrum is always available, and the tone control performs
+              a bass-cut function. Justin finds this is much more useable on
+              stage, and we think all Hagstrom guitarists will too.
+            </Paragraph>
+            <MediaTitle>
+              The other models from the Paramore Artist Project
+            </MediaTitle>
+            <Paragraph>
+              <Link to='/MoreInfoImpalaCopperburst'>Impala Copperburst</Link> -{' '}
+              <Link to='/MoreInfoVikingGoldTop'>Viking® Gold Top</Link>
             </Paragraph>
           </LeftContentWrapper>
           <RightContentWrapper>
@@ -578,11 +610,11 @@ const MoreInfoSuperVikingTransBrown = () => {
             <Colors>
               <ColorsWrapper>
                 <Image
-                  src={Colors_Black_Gloss}
+                  src={Colors_Transparent_Brown}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Black Gloss</ColorsText>
+                <ColorsText>Transparent Brown</ColorsText>
               </ColorsWrapper>
             </Colors>
           </RightContentWrapper>
@@ -590,46 +622,35 @@ const MoreInfoSuperVikingTransBrown = () => {
         <MainContentWrapper>
           <Details>
             <DetailsWrapper>
-              <Image src={HSPASS09_Details_1} alt='' />
-              <DetailsText>The Germs Logo around Toggle Switch</DetailsText>
+              <Image src={HSSUVIK91_detail_body} alt='' />
+              <DetailsText></DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSPASS09_Details_2} alt='' />
-              <DetailsText>Block Stop Tailpiece</DetailsText>
+              <Image src={HSSUVIK91_detail_head} alt='' />
+              <DetailsText></DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSPASS09_Details_3} alt='' />
-              <DetailsText>Body Silhouette</DetailsText>
-            </DetailsWrapper>
-            <DetailsWrapper>
-              <Image src={HSPASS09_Details_4} alt='' />
-              <DetailsText>Pat’s Signature</DetailsText>
-            </DetailsWrapper>
-            <DetailsWrapper>
-              <Image src={HSPASS09_Details_5} alt='' />
-              <DetailsText>Side</DetailsText>
+              <Image src={HSSUVIK91_detail_pick} alt='' />
+              <DetailsText></DetailsText>
             </DetailsWrapper>
           </Details>
         </MainContentWrapper>
         <Quote>
           <QuoteContentWrapper>
-            <Image
-              src={The_Germs_Logo}
-              alt=''
-              style={{ width: '100px', height: 'auto', margin: '2vmin' }}
-            />
             <QuoteText>
-              “If you don't know this name, you damn well should. As well as
-              being one third of Foo Fighters' triple-pronged guitar assault,
-              Pat was also in Nirvana and played in the Germs before that. If
-              signature guitars are a reward for influence, Pat Smear has
-              definitely earned it.”{<br />}
-              <a
-                href='https://www.musicradar.com/reviews/guitars/hagstrom-pat-smear-signature-electric-588555'
-                target='_blank'
-                rel='noopener noreferrer'>
-                musicradar.com/pat-smear-review
-              </a>
+              “When I dreamed up these guitars I knew they had to have vintage
+              vibe and familiarity along with modern player features to deliver
+              the most tonally diverse guitars possible on stage and in the
+              studio. I basically took elements from my six favorite Hagstroms
+              and proposed something I’ve always wanted... the ability to cut
+              muddy bass with the turn of a knob. I use it to clean up a neck
+              pickup or give my bridge a little retro bite. It really opens up
+              new tones I’ve never experienced before from a semi-hollowbody,
+              and I couldn’t be happier with how these guitars turned out.”
+              {<br />}
+              <span style={{ marginTop: '16px', float: 'right' }}>
+                - Justin York
+              </span>
             </QuoteText>
           </QuoteContentWrapper>
         </Quote>
@@ -652,83 +673,63 @@ const MoreInfoSuperVikingTransBrown = () => {
             open={open}
             close={() => setOpen(false)}
             slides={[
-              { src: HagstromPatSmearBlackGloss },
-              { src: HagstromPatSmearBlackGlossBack },
+              { src: HagstromSuperVikingTransBrown },
+              { src: HagstromSuperVikingTransBrownBack },
             ]}
           />
         </LightboxWrapper>
         <SpecsWrapper>
           <LeftSpecsWrapper>
-            <MediaTitle>Pat Smear Signature Specs</MediaTitle>
+            <MediaTitle>Super Viking® Trans Brown Specs</MediaTitle>
             <MediaTitleSecondary>Body</MediaTitleSecondary>
             <ul>
-              <li>Material: Mahogany</li>
-              <li>Top: Custom Carved Maple</li>
+              <li>Material: Ply Maple</li>
+              <li>Top: Contoured</li>
+              <li>Style: Semi-Hollow</li>
             </ul>
             <MediaTitleSecondary>Neck</MediaTitleSecondary>
             <ul>
-              <li>Material: Mahogany</li>
               <li>Joint: Set Neck</li>
-              <li>Trussrod: H-Expander™</li>
+              <li>Material: Canadian Hard Maple</li>
+              <li>Truss Rod: H-Expander™</li>
             </ul>
             <MediaTitleSecondary>Fingerboard/Nut</MediaTitleSecondary>
             <ul>
               <li>Material: Resinator™</li>
-              <li>Position Marks: Hagstrom Pearl Block Inlay</li>
-              <li>Fretboard Radius: 15“</li>
+              <li>Radius: 15"</li>
+              <li>Inlays: Pearl Block</li>
               <li>Frets: 22 Medium Jumbo</li>
-              <li>Scale Length: 24,75“ / 628 mm</li>
-              <li>Nut: Graph Tech™ Black Tusq XL</li>
+              <li>Scale Length: 25.5" (648 mm)</li>
+              <li>Nut: GraphTech Black Tusq XL</li>
               <li>Nut Width: 43 mm</li>
             </ul>
             <MediaTitleSecondary>Electronics</MediaTitleSecondary>
             <ul>
-              <li>Pickups: 2 x Hagstrom Custom 58 AlNiCo</li>
-              <li>Pickup: Selector 3-Way Toggle Switch</li>
-              <li>Controls: 2 x Volume 2 x Tone</li>
+              <li>1 x Hagstrom ‘58 Custom Humbucker - Bridge Position</li>
+              <li>1 x Hagstrom “P-Uri ed” P90 Humbucker - Neck Position</li>
+              <li>3-way Toggle Switch Pickup Selector</li>
+              <li>2 x Volume Control</li>
+              <li>
+                2 x Tone Control with Push/Pull Coil Split on bridge tone pot
+              </li>
             </ul>
             <MediaTitleSecondary>Parts</MediaTitleSecondary>
             <ul>
-              <li>Tuning Keys: Hagstrom 18:1 Die Cast</li>
               <li>
-                Stoptail Bridge: Long Travel Tune-O-Matic Roller Bridge &
-                Hagstrom Stop
+                Bridge: Long Travel Tune-O-Matic with Hagstrom Trapeze Tail
+                Piece
               </li>
-              <li>Tailpiece with Brass String Blocks</li>
-              <li>String Setup 10-46 - .010, .013, .017, .026, .036, .046</li>
+              <li>Tuning Keys: Hagstrom Design 18:1</li>
+              <li>Strings: D'Addario EXP 110 (10-46)</li>
             </ul>
             <MediaTitleSecondary>Case</MediaTitleSecondary>
             <ul>
-              <li>Hagstrom Case C-50</li>
-              <li>Hagstrom Bag E-20</li>
+              <li>Case C55</li>
+              <li>Bag E25</li>
             </ul>
           </LeftSpecsWrapper>
           <RightSpecsWrapper>
-            <MediaTitle>Pat Smear Signature Standards</MediaTitle>
-            <StandardsWrapper>
-              <StandardsImageWrapper>
-                <Image
-                  src={Detail_tuning_peg}
-                  alt=''
-                  style={{
-                    height: 'auto',
-                    maxWidth: '100%',
-                    verticalAlign: 'top',
-                  }}
-                />
-              </StandardsImageWrapper>
-              <StandardsTextWrapper>
-                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Hagstrom Machine Heads
-                </h4>
-                <p>
-                  Hagstrom models use 18:1 or 15:1 gear ratio machine heads
-                  based on our own designs to insure accurate tuning. Viking®
-                  and HB series basses feature machine heads with a 17:1 gear
-                  ratio.
-                </p>
-              </StandardsTextWrapper>
-            </StandardsWrapper>
+            <MediaTitle>Super Viking® Standards</MediaTitle>
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
@@ -763,6 +764,30 @@ const MoreInfoSuperVikingTransBrown = () => {
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
+                  src={Detail_tuning_peg}
+                  alt=''
+                  style={{
+                    height: 'auto',
+                    maxWidth: '100%',
+                    verticalAlign: 'top',
+                  }}
+                />
+              </StandardsImageWrapper>
+              <StandardsTextWrapper>
+                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
+                  Machine Heads
+                </h4>
+                <p>
+                  Hagstrom models use 18:1 or 15:1 gear ratio machine heads
+                  based on our own designs to insure accurate tuning. Viking®
+                  and HB series basses feature machine heads with a 17:1 gear
+                  ratio.
+                </p>
+              </StandardsTextWrapper>
+            </StandardsWrapper>
+            <StandardsWrapper>
+              <StandardsImageWrapper>
+                <Image
                   src={Detail_resinator_wood}
                   alt=''
                   style={{
@@ -791,20 +816,48 @@ const MoreInfoSuperVikingTransBrown = () => {
                 </p>
               </StandardsTextWrapper>
             </StandardsWrapper>
+            <StandardsWrapper>
+              <StandardsImageWrapper>
+                <Image
+                  src={Detail_set_neck}
+                  alt=''
+                  style={{
+                    height: 'auto',
+                    maxWidth: '100%',
+                    verticalAlign: 'top',
+                  }}
+                />
+              </StandardsImageWrapper>
+              <StandardsTextWrapper>
+                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
+                  Set Neck
+                </h4>
+                <p>
+                  Hagstrom uses a variety of different neck joints throughout
+                  our range. Our set-neck recipe is the classic and time-tested
+                  Mortise and Tenon joint, a design that most efficiently
+                  transfers string energy from neck to body, and can often only
+                  be found on more expensive custom-built guitars. A team of
+                  experienced and dedicated craftsmen hand carves every neck
+                  joint, insuring perfect execution of this traditional
+                  technique preferred by luthiers for generations.
+                </p>
+              </StandardsTextWrapper>
+            </StandardsWrapper>
           </RightSpecsWrapper>
         </SpecsWrapper>
         <VideoWrapper>
           <MediaTitle>
             <a
-              href='https://youtu.be/NmOzDBbitrg'
+              href='https://youtu.be/_t-nRXwAL1k'
               target='_blank'
               rel='noopener noreferrer'>
-              Pat Smear Signature Video
+              Paramore - NPR Music Tiny Desk Concert
             </a>
           </MediaTitle>
           <Video>
             <ReactPlayer
-              url='https://youtu.be/NmOzDBbitrg'
+              url='https://youtu.be/_t-nRXwAL1k'
               width='100%'
               height='100%'
             />
