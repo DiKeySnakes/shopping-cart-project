@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.d4880fd2.js",
+    "main.js": "/shopping-cart-project/static/js/main.326a9cf6.js",
     "static/media/HagstromVikingGoldTop.png": "/shopping-cart-project/static/media/HagstromVikingGoldTop.610b80976c5b9f7c1d1d.png",
     "static/media/Artist_Project_Viking_Gold_Top_Vertical.png": "/shopping-cart-project/static/media/Artist_Project_Viking_Gold_Top_Vertical.e60f693fff0d2397d4b7.png",
     "static/media/HagstromSuperVikingTransBrown.png": "/shopping-cart-project/static/media/HagstromSuperVikingTransBrown.a5a54d440ad11f3cf7ce.png",
@@ -312,10 +312,10 @@
     "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "static/media/ScrollIcon.svg": "/shopping-cart-project/static/media/ScrollIcon.a1eb858b6e5366f1bd5779a8e0ec1c44.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.d4880fd2.js.map": "/shopping-cart-project/static/js/main.d4880fd2.js.map"
+    "main.326a9cf6.js.map": "/shopping-cart-project/static/js/main.326a9cf6.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.d4880fd2.js"
+    "static/js/main.326a9cf6.js"
   ]
 }
