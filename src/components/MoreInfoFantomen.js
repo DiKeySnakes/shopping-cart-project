@@ -42,6 +42,29 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const IntroBackground = styled.div`
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(${Fantomen_Custom_Header});
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 3rem;
+  position: relative;
+  @media (max-width: 1170px) {
+    height: 400px;
+  }
+  @media (max-width: 768px) {
+    height: 300px;
+  }
+  @media (max-width: 550px) {
+    height: 200px;
+  }
+`;
+
 const IntroContainer = styled.div`
   width: 1170px;
   position: absolute;
@@ -77,6 +100,7 @@ const IntroContainer = styled.div`
 `;
 
 const IntroTitle = styled.div`
+  width: 100%;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -84,9 +108,8 @@ const IntroTitle = styled.div`
   align-items: center;
   text-align: center;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
-  font-style: italic;
   font-weight: bold;
-  font-size: 5vmin;
+  font-size: 7vmin;
   line-height: 80%;
   font-family: 'Bitter', serif;
   @media (max-width: 800px) {
@@ -100,7 +123,9 @@ const IntroTitle = styled.div`
 const IntroParagraph = styled.p`
   font-family: 'Signika Negative', sans-serif;
   font-weight: normal;
-  font-size: 0.5em;
+  font-size: 0.4em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 `;
 
 const IntroImage = styled.img`
@@ -137,14 +162,6 @@ const Image = styled.img`
   object-fit: contain;
   src: ${(props) => props.src};
   alt: ${(props) => props.alt};
-`;
-
-const ImageWrapper = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  position: relative;
 `;
 
 const MainContentWrapper = styled.div`
@@ -534,8 +551,7 @@ const MoreInfoFantomen = () => {
   return (
     <>
       <Wrapper>
-        <ImageWrapper>
-          <Image src={Fantomen_Custom_Header} alt='' />
+        <IntroBackground>
           <IntroContainer>
             <IntroTitle>
               <Image
@@ -547,7 +563,7 @@ const MoreInfoFantomen = () => {
             </IntroTitle>
             <IntroImage src={Fantomen_Hero} alt='' />
           </IntroContainer>
-        </ImageWrapper>
+        </IntroBackground>
         <MainContentWrapper>
           <LeftContentWrapper>
             <MediaTitle>Hagstrom Fantomen</MediaTitle>
