@@ -397,7 +397,7 @@ const ElectricGuitars = () => {
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
-              to='/Products'
+              to='/MoreInfoSuperSwede'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
@@ -432,7 +432,7 @@ const ElectricGuitars = () => {
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
-              to='/Products'
+              to='/MoreInfoSwede'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
@@ -461,7 +461,7 @@ const ElectricGuitars = () => {
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
-              to='/Products'
+              to='/MoreInfoUltraMax'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
@@ -519,7 +519,7 @@ const ElectricGuitars = () => {
           <RowTitle key={nanoid()}>Alvar</RowTitle>
           <ItemBox key={nanoid()}>
             <Link
-              to='/Products'
+              to='/MoreInfoAlvar'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>

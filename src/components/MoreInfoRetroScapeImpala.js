@@ -541,7 +541,7 @@ const VideoWrapper = styled.div`
 
 const Video = styled.div`
   width: 84vmin;
-  height: 56vmin;
+  height: 48vmin;
   display: flex;
   flex-direction: row;
 `;
@@ -610,7 +610,7 @@ const MoreInfoRetroScapeImpala = () => {
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Black Gloss</ColorsText>
+                <ColorsText>Black</ColorsText>
               </ColorsWrapper>
               <ColorsWrapper>
                 <Image

@@ -541,7 +541,7 @@ const VideoWrapper = styled.div`
 
 const Video = styled.div`
   width: 84vmin;
-  height: 56vmin;
+  height: 48vmin;
   display: flex;
   flex-direction: row;
 `;

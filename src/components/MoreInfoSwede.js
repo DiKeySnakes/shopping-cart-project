@@ -40,11 +40,35 @@ import Detail_locking_mechanic from '../assets/images/Detail_locking_mechanic.jp
 import Detail_sustain_block_tailpiece from '../assets/images/Detail_sustain_block_tailpiece.jpg';
 import Detail_nape_tenon from '../assets/images/Detail_nape_tenon.jpg';
 import Detail_stainless_steel_fret from '../assets/images/Detail_stainless_steel_fret.jpg';
+import ReactPlayer from 'react-player';
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+const IntroBackground = styled.div`
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(${Swede_Header});
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 3rem;
+  position: relative;
+  @media (max-width: 1170px) {
+    height: 400px;
+  }
+  @media (max-width: 768px) {
+    height: 300px;
+  }
+  @media (max-width: 550px) {
+    height: 200px;
+  }
 `;
 
 const IntroContainer = styled.div`
@@ -82,6 +106,7 @@ const IntroContainer = styled.div`
 `;
 
 const IntroTitle = styled.div`
+  width: 100%;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -89,9 +114,8 @@ const IntroTitle = styled.div`
   align-items: center;
   text-align: center;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
-  font-style: italic;
   font-weight: bold;
-  font-size: 5vmin;
+  font-size: 7vmin;
   line-height: 80%;
   font-family: 'Bitter', serif;
   @media (max-width: 800px) {
@@ -105,7 +129,9 @@ const IntroTitle = styled.div`
 const IntroParagraph = styled.p`
   font-family: 'Signika Negative', sans-serif;
   font-weight: normal;
-  font-size: 0.5em;
+  font-size: 0.4em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 `;
 
 const IntroImage = styled.img`
@@ -142,14 +168,6 @@ const Image = styled.img`
   object-fit: contain;
   src: ${(props) => props.src};
   alt: ${(props) => props.alt};
-`;
-
-const ImageWrapper = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  position: relative;
 `;
 
 const MainContentWrapper = styled.div`
@@ -483,13 +501,28 @@ const Button = styled.button`
   }
 `;
 
+const VideoWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+`;
+
+const Video = styled.div`
+  width: 84vmin;
+  height: 48vmin;
+  display: flex;
+  flex-direction: row;
+`;
+
 const MoreInfoSwede = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
       <Wrapper>
-        <ImageWrapper>
-          <Image src={Swede_Header} alt='' />
+        <IntroBackground>
           <IntroContainer>
             <IntroTitle>
               Swede
@@ -497,7 +530,7 @@ const MoreInfoSwede = () => {
             </IntroTitle>
             <IntroImage src={Swede_Hero} alt='' />
           </IntroContainer>
-        </ImageWrapper>
+        </IntroBackground>
         <MainContentWrapper>
           <LeftContentWrapper>
             <MediaTitle>Hagstrom Swede</MediaTitle>
@@ -878,6 +911,15 @@ const MoreInfoSwede = () => {
             </StandardsWrapper>
           </RightSpecsWrapper>
         </SpecsWrapper>
+        <VideoWrapper>
+          <Video>
+            <ReactPlayer
+              url='https://youtu.be/BLI5lSsmpXA'
+              width='100%'
+              height='100%'
+            />
+          </Video>
+        </VideoWrapper>
         <ButtonWrapper>
           <Link to='/Products'>
             <Button>
