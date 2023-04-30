@@ -25,52 +25,55 @@ import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
 import Artists from './components/Artists';
 import { Route, Routes } from 'react-router-dom';
+import ScrollToTopHelper from './components/ScrollToTopHelper';
 
 function App() {
   return (
     <div className='App'>
       <Header />
       <SecondaryHeader />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/Products' element={<Products />} />
-        <Route path='/Contacts' element={<Contacts />} />
-        <Route path='/Heritage' element={<Heritage />} />
-        <Route path='/Artists' element={<Artists />} />
-        <Route path='/Cart' element={<Cart />} />
-        <Route path='/ElectricGuitars' element={<ElectricGuitars />} />
-        <Route path='/Basses' element={<Basses />} />
-        <Route path='/AcousticGuitars' element={<AcousticGuitars />} />
-        <Route path='/MoreInfo' element={<MoreInfo />} />
-        <Route path='/MoreInfoPatSmear' element={<MoreInfoPatSmear />} />
-        <Route
-          path='/MoreInfoImpalaCopperburst'
-          element={<MoreInfoImpalaCopperburst />}
-        />
-        <Route
-          path='/MoreInfoRetroScapeImpala'
-          element={<MoreInfoRetroScapeImpala />}
-        />
-        <Route path='/MoreInfoViking' element={<MoreInfoViking />} />
-        <Route
-          path='/MoreInfoVikingGoldTop'
-          element={<MoreInfoVikingGoldTop />}
-        />
-        <Route
-          path='/MoreInfoSuperVikingTransBrown'
-          element={<MoreInfoSuperVikingTransBrown />}
-        />
-        <Route
-          path='/MoreInfoFantomenCustom'
-          element={<MoreInfoFantomenCustom />}
-        />
-        <Route path='/MoreInfoFantomen' element={<MoreInfoFantomen />} />
-        <Route path='/MoreInfoSwede' element={<MoreInfoSwede />} />
-        <Route path='/MoreInfoSuperSwede' element={<MoreInfoSuperSwede />} />
-        <Route path='/MoreInfoAlvar' element={<MoreInfoAlvar />} />
-        <Route path='/MoreInfoUltraMax' element={<MoreInfoUltraMax />} />
-        <Route path='*' element={<NotFound />} />
-      </Routes>
+      <ScrollToTopHelper>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/Products' element={<Products />} />
+          <Route path='/Contacts' element={<Contacts />} />
+          <Route path='/Heritage' element={<Heritage />} />
+          <Route path='/Artists' element={<Artists />} />
+          <Route path='/Cart' element={<Cart />} />
+          <Route path='/ElectricGuitars' element={<ElectricGuitars />} />
+          <Route path='/Basses' element={<Basses />} />
+          <Route path='/AcousticGuitars' element={<AcousticGuitars />} />
+          <Route path='/MoreInfo' element={<MoreInfo />} />
+          <Route path='/MoreInfoPatSmear' element={<MoreInfoPatSmear />} />
+          <Route
+            path='/MoreInfoImpalaCopperburst'
+            element={<MoreInfoImpalaCopperburst />}
+          />
+          <Route
+            path='/MoreInfoRetroScapeImpala'
+            element={<MoreInfoRetroScapeImpala />}
+          />
+          <Route path='/MoreInfoViking' element={<MoreInfoViking />} />
+          <Route
+            path='/MoreInfoVikingGoldTop'
+            element={<MoreInfoVikingGoldTop />}
+          />
+          <Route
+            path='/MoreInfoSuperVikingTransBrown'
+            element={<MoreInfoSuperVikingTransBrown />}
+          />
+          <Route
+            path='/MoreInfoFantomenCustom'
+            element={<MoreInfoFantomenCustom />}
+          />
+          <Route path='/MoreInfoFantomen' element={<MoreInfoFantomen />} />
+          <Route path='/MoreInfoSwede' element={<MoreInfoSwede />} />
+          <Route path='/MoreInfoSuperSwede' element={<MoreInfoSuperSwede />} />
+          <Route path='/MoreInfoAlvar' element={<MoreInfoAlvar />} />
+          <Route path='/MoreInfoUltraMax' element={<MoreInfoUltraMax />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+      </ScrollToTopHelper>
       <Footer />
     </div>
   );

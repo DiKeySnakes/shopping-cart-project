@@ -9,19 +9,29 @@ import 'yet-another-react-lightbox/styles.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Pat_Smear_Hero from '../assets/images/Pat_Smear_Hero.png';
-import Pat_Smear_Header from '../assets/images/Pat_Smear_Header.jpg';
+import Retroscape_Impala_Hero from '../assets/images/Retroscape_Impala_Hero.png';
+import Retroscape_Impala_Header from '../assets/images/Retroscape_Impala_Header.jpg';
 import Logo_Hagstrom_Lilie_Black from '../assets/images/Logo_Hagstrom_Lilie_Black.png';
-import Colors_Black_Gloss from '../assets/images/Colors_Black_Gloss.png';
-import HSPASS09_Details_1 from '../assets/images/HSPASS09_Details_345x276Px_01.jpg';
-import HSPASS09_Details_2 from '../assets/images/HSPASS09_Details_345x276Px_02.jpg';
-import HSPASS09_Details_3 from '../assets/images/HSPASS09_Details_345x276Px_03.jpg';
-import HSPASS09_Details_4 from '../assets/images/HSPASS09_Details_345x276Px_04.jpg';
-import HSPASS09_Details_5 from '../assets/images/HSPASS09_Details_345x276Px_05.jpg';
-import The_Germs_Logo from '../assets/images/The_Germs_Logo.png';
-import HagstromPatSmearBlackGloss from '../assets/images/HagstromPatSmearBlackGloss.png';
-import HagstromPatSmearBlackGlossBack from '../assets/images/HagstromPatSmearBlackGlossBack.png';
-import Detail_tuning_peg from '../assets/images/Detail_tuning_peg.jpg';
+import Colors_Retroscape_Black_Gloss from '../assets/images/Colors_Retroscape_Black_Gloss.png';
+import Colors_Retroscape_Brown_Burst from '../assets/images/Colors_Retroscape_Brown_Burst.png';
+import Colors_Retroscape_Tobacco_Sunburst from '../assets/images/Colors_Retroscape_Tobacco_Sunburst.png';
+import Colors_Retroscape_Cherry_Sunburst from '../assets/images/Colors_Retroscape_Cherry_Sunburst.png';
+import HSIMP18_IMP_TSB_Body_Final from '../assets/images/HSIMP18_IMP_TSB_Body_Final.jpg';
+import HSIMP09_IMP_BLK_Body_Final from '../assets/images/HSIMP09_IMP_BLK_Body_Final.jpg';
+import HSIMP08_IMP_CSB_Body_Final from '../assets/images/HSIMP08_IMP_CSB_Body_Final.jpg';
+import HSCOR08_Detail_COR_TSB_Vintage_Tremar from '../assets/images/HSCOR08_Detail_COR_TSB_Vintage_Tremar.jpg';
+import HSCOR18_Detail_COR_TSB_Logo_Final from '../assets/images/HSCOR18_Detail_COR_TSB_Logo_Final.jpg';
+import HSCOR18_Headstock_HII_HIII_IMP_COR_Side_Final from '../assets/images/HSCOR18_Headstock_HII_HIII_IMP_COR_Side_Final.jpg';
+import Logo_Retroscape_bg from '../assets/images/Logo_Retroscape_bg.png';
+import Hagstrom_Retroscape_Impala_Cherry_Sunburst from '../assets/images/Hagstrom_Retroscape_Impala_Cherry_Sunburst.png';
+import Hagstrom_Retroscape_Impala_Cherry_Sunburst_Back from '../assets/images/Hagstrom_Retroscape_Impala_Cherry_Sunburst_Back.png';
+import Hagstrom_Retroscape_Impala_Black from '../assets/images/Hagstrom_Retroscape_Impala_Black.png';
+import Hagstrom_Retroscape_Impala_Black_Back from '../assets/images/Hagstrom_Retroscape_Impala_Black_Back.png';
+import Hagstrom_Retroscape_Impala_Tobacco_Sunburst from '../assets/images/Hagstrom_Retroscape_Impala_Tobacco_Sunburst.png';
+import Hagstrom_Retroscape_Impala_Tobacco_Sunburst_Back from '../assets/images/Hagstrom_Retroscape_Impala_Tobacco_Sunburst_Back.png';
+import Hagstrom_Retroscape_Impala_Brown_Burst from '../assets/images/Hagstrom_Retroscape_Impala_Brown_Burst.png';
+import Detail_fantomen_set_neck from '../assets/images/Detail_fantomen_set_neck.jpg';
+import Detail_vintage_tremar_retroscape from '../assets/images/Detail_vintage_tremar_retroscape.jpg';
 import Detail_expander from '../assets/images/Detail_expander.jpg';
 import Detail_resinator_wood from '../assets/images/Detail_resinator_wood.jpg';
 import ReactPlayer from 'react-player';
@@ -30,6 +40,29 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+const IntroBackground = styled.div`
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(${Retroscape_Impala_Header});
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 3rem;
+  position: relative;
+  @media (max-width: 1170px) {
+    height: 400px;
+  }
+  @media (max-width: 768px) {
+    height: 300px;
+  }
+  @media (max-width: 550px) {
+    height: 200px;
+  }
 `;
 
 const IntroContainer = styled.div`
@@ -67,6 +100,7 @@ const IntroContainer = styled.div`
 `;
 
 const IntroTitle = styled.div`
+  width: 100%;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -74,9 +108,8 @@ const IntroTitle = styled.div`
   align-items: center;
   text-align: center;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
-  font-style: italic;
   font-weight: bold;
-  font-size: 5vmin;
+  font-size: 7vmin;
   line-height: 80%;
   font-family: 'Bitter', serif;
   @media (max-width: 800px) {
@@ -90,7 +123,9 @@ const IntroTitle = styled.div`
 const IntroParagraph = styled.p`
   font-family: 'Signika Negative', sans-serif;
   font-weight: normal;
-  font-size: 0.5em;
+  font-size: 0.4em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 `;
 
 const IntroImage = styled.img`
@@ -127,14 +162,6 @@ const Image = styled.img`
   object-fit: contain;
   src: ${(props) => props.src};
   alt: ${(props) => props.alt};
-`;
-
-const ImageWrapper = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  position: relative;
 `;
 
 const MainContentWrapper = styled.div`
@@ -524,53 +551,54 @@ const MoreInfoRetroScapeImpala = () => {
   return (
     <>
       <Wrapper>
-        <ImageWrapper>
-          <Image src={Pat_Smear_Header} alt='' />
+        <IntroBackground>
           <IntroContainer>
             <IntroTitle>
-              Pat Smear
-              <IntroParagraph>A Deep Bond</IntroParagraph>
+              Impala
+              <IntroParagraph>Perfectly Balanced Uproar</IntroParagraph>
             </IntroTitle>
-            <IntroImage src={Pat_Smear_Hero} alt='' />
+            <IntroImage src={Retroscape_Impala_Hero} alt='' />
           </IntroContainer>
-        </ImageWrapper>
+        </IntroBackground>
         <MainContentWrapper>
           <LeftContentWrapper>
-            <MediaTitle>Hagstrom Pat Smear Signature</MediaTitle>
+            <MediaTitle>Hagstrom Impala</MediaTitle>
             <Paragraph>
               <LogoSpan>
                 <Logo src={Logo_Hagstrom_Lilie_Black} alt='' />
               </LogoSpan>
-              Pat Smear needs no introduction. He has been in the vanguard of
-              music history his entire career, from the early years as a
-              founding member of the seminal punk band “The Germs”, to his stint
-              with the legendary Nirvana, and on to his current role laying down
-              colossal riffs for the Foo Fighters. Hagstrom has been his
-              instrument of choice since the 1970’s, creating a deep and
-              authentic bond that has lasted decades.
+              Hagstrom introduced the Impala and Condor models in 1963, and the
+              instruments quickly found their way into the hands of many
+              professional and aspiring musicians throughout the world. This was
+              a period of great experimentation and innovation in electric
+              guitar design. With their futuristic body shapes and unique
+              assortment of tone-shaping options, the Impala and Condor stood
+              out and became integral in creating great music and inspiring
+              amazing artists. They have become highly sought after as
+              collectibles, and vintage instruments still find their way onto
+              stages worldwide. Now, don’t look any further. Back and here to
+              stay: the all new Condor and Impala models.
+            </Paragraph>
+            <MediaTitle>Fits like a Glove</MediaTitle>
+            <Paragraph>
+              With their re-introduction in 2015, Hagstrom has taken great care
+              to keep the set-neck “soul” of the Impala and Condor intact while
+              incorporating important design improvements that will immediately
+              appeal to modern players. The neck profile has been slightly
+              rounded, weight balance has been optimized, and important
+              improvements to the “Vintage Tremar” vibrato unit have been made.
+              Finally, an improved switching array maintains the look and
+              function of the originals while incorporating modern, dependable,
+              and ergonomic slide switches.
             </Paragraph>
             <Paragraph>
-              We at Hagstrom Guitars were both pleased and honored to be given
-              the task of transforming his privately customized and road-proven
-              vintage Hagstrom into the Pat Smear Signature guitar you see here.
-              An additional source of pride for us is that the Pat Smear
-              Signature guitar you find at your Hagstrom dealer is identical to
-              the one Pat plays night after night on some of the largest stages
-              in the world.
-            </Paragraph>
-            <Paragraph>
-              Pick one up at your Hagstrom dealer and join us in this unique,
-              historic relationship.
-            </Paragraph>
-            <MediaTitle>A Combination of H-II and Super Swede</MediaTitle>
-            <Paragraph>
-              This slick black beauty is a voluptuous blend of vintage Hagstrom
-              H-IIN-OT and modern-day Super Swede. Its sleek mahogany body and
-              deeply contoured maple top provide a deep, projecting platform for
-              Hagstrom’s Custom 58 AlNiCo humbucking pickups, enabling the
-              guitar to cut through the mix and sit right in the middle of the
-              Foo’s triple-guitar onslaught. Elegant, clean tones meet highly
-              saturated distortion. Just what Pat ordered.
+              Since the tone of these instruments carved such a powerful space
+              in the hearts of players, countless hours have been spent to
+              reproduce the essence of the original pickups used in the Impala
+              and Condor. The hard work has paid off with Hagstrom’s AlNiCo 5
+              “Retro-S” pickups, which expertly recreate the essence of the ‘60s
+              sound and, at the same time, keep the door open for more modern
+              sonic possibilities.
             </Paragraph>
           </LeftContentWrapper>
           <RightContentWrapper>
@@ -578,11 +606,35 @@ const MoreInfoRetroScapeImpala = () => {
             <Colors>
               <ColorsWrapper>
                 <Image
-                  src={Colors_Black_Gloss}
+                  src={Colors_Retroscape_Black_Gloss}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
                 <ColorsText>Black Gloss</ColorsText>
+              </ColorsWrapper>
+              <ColorsWrapper>
+                <Image
+                  src={Colors_Retroscape_Brown_Burst}
+                  alt=''
+                  style={{ width: '70px', height: 'auto' }}
+                />
+                <ColorsText>Brown Burst</ColorsText>
+              </ColorsWrapper>
+              <ColorsWrapper>
+                <Image
+                  src={Colors_Retroscape_Tobacco_Sunburst}
+                  alt=''
+                  style={{ width: '70px', height: 'auto' }}
+                />
+                <ColorsText>Tobacco Sunburst</ColorsText>
+              </ColorsWrapper>
+              <ColorsWrapper>
+                <Image
+                  src={Colors_Retroscape_Cherry_Sunburst}
+                  alt=''
+                  style={{ width: '70px', height: 'auto' }}
+                />
+                <ColorsText>Cherry Sunburst</ColorsText>
               </ColorsWrapper>
             </Colors>
           </RightContentWrapper>
@@ -590,46 +642,45 @@ const MoreInfoRetroScapeImpala = () => {
         <MainContentWrapper>
           <Details>
             <DetailsWrapper>
-              <Image src={HSPASS09_Details_1} alt='' />
-              <DetailsText>The Germs Logo around Toggle Switch</DetailsText>
+              <Image src={HSIMP18_IMP_TSB_Body_Final} alt='' />
+              <DetailsText>Impala Tobacco Sunburst</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSPASS09_Details_2} alt='' />
-              <DetailsText>Block Stop Tailpiece</DetailsText>
+              <Image src={HSIMP09_IMP_BLK_Body_Final} alt='' />
+              <DetailsText>Impale Black</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSPASS09_Details_3} alt='' />
-              <DetailsText>Body Silhouette</DetailsText>
+              <Image src={HSIMP08_IMP_CSB_Body_Final} alt='' />
+              <DetailsText>Impala Cherry Sunburst</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSPASS09_Details_4} alt='' />
-              <DetailsText>Pat’s Signature</DetailsText>
+              <Image src={HSCOR08_Detail_COR_TSB_Vintage_Tremar} alt='' />
+              <DetailsText>Retroscape Vintage Tremar</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSPASS09_Details_5} alt='' />
-              <DetailsText>Side</DetailsText>
+              <Image src={HSCOR18_Detail_COR_TSB_Logo_Final} alt='' />
+              <DetailsText>Hagstrom Vintage Logo</DetailsText>
+            </DetailsWrapper>
+            <DetailsWrapper>
+              <Image
+                src={HSCOR18_Headstock_HII_HIII_IMP_COR_Side_Final}
+                alt=''
+              />
+              <DetailsText>Restroscape Headstock</DetailsText>
             </DetailsWrapper>
           </Details>
         </MainContentWrapper>
         <Quote>
           <QuoteContentWrapper>
             <Image
-              src={The_Germs_Logo}
+              src={Logo_Retroscape_bg}
               alt=''
-              style={{ width: '100px', height: 'auto', margin: '2vmin' }}
+              style={{ width: '170px', height: 'auto', margin: '2vmin' }}
             />
             <QuoteText>
-              “If you don't know this name, you damn well should. As well as
-              being one third of Foo Fighters' triple-pronged guitar assault,
-              Pat was also in Nirvana and played in the Germs before that. If
-              signature guitars are a reward for influence, Pat Smear has
-              definitely earned it.”{<br />}
-              <a
-                href='https://www.musicradar.com/reviews/guitars/hagstrom-pat-smear-signature-electric-588555'
-                target='_blank'
-                rel='noopener noreferrer'>
-                musicradar.com/pat-smear-review
-              </a>
+              Hagstrom introduced the Impala and Condor models in 1963, and the
+              instruments quickly found their way into the hands of many
+              professional and aspiring musicians throughout the world.
             </QuoteText>
           </QuoteContentWrapper>
         </Quote>
@@ -652,63 +703,76 @@ const MoreInfoRetroScapeImpala = () => {
             open={open}
             close={() => setOpen(false)}
             slides={[
-              { src: HagstromPatSmearBlackGloss },
-              { src: HagstromPatSmearBlackGlossBack },
+              { src: Hagstrom_Retroscape_Impala_Cherry_Sunburst },
+              { src: Hagstrom_Retroscape_Impala_Cherry_Sunburst_Back },
+              { src: Hagstrom_Retroscape_Impala_Black },
+              { src: Hagstrom_Retroscape_Impala_Black_Back },
+              { src: Hagstrom_Retroscape_Impala_Tobacco_Sunburst },
+              { src: Hagstrom_Retroscape_Impala_Tobacco_Sunburst_Back },
+              { src: Hagstrom_Retroscape_Impala_Brown_Burst },
+              { src: Hagstrom_Retroscape_Impala_Tobacco_Sunburst_Back },
             ]}
           />
         </LightboxWrapper>
         <SpecsWrapper>
           <LeftSpecsWrapper>
-            <MediaTitle>Pat Smear Signature Specs</MediaTitle>
+            <MediaTitle>Impala Specs</MediaTitle>
             <MediaTitleSecondary>Body</MediaTitleSecondary>
             <ul>
               <li>Material: Mahogany</li>
-              <li>Top: Custom Carved Maple</li>
+              <li>Style: Asymmetric Double Cutaway</li>
+              <li>Binding: None</li>
             </ul>
             <MediaTitleSecondary>Neck</MediaTitleSecondary>
             <ul>
-              <li>Material: Mahogany</li>
               <li>Joint: Set Neck</li>
-              <li>Trussrod: H-Expander™</li>
+              <li>Material: Mahogany</li>
+              <li>Binding: None</li>
+              <li>Truss Rod: H-Expander™</li>
             </ul>
             <MediaTitleSecondary>Fingerboard/Nut</MediaTitleSecondary>
             <ul>
               <li>Material: Resinator™</li>
-              <li>Position Marks: Hagstrom Pearl Block Inlay</li>
-              <li>Fretboard Radius: 15“</li>
+              <li>Radius: 15"</li>
+              <li>Inlays: 6 mm Pearl Dot</li>
               <li>Frets: 22 Medium Jumbo</li>
-              <li>Scale Length: 24,75“ / 628 mm</li>
-              <li>Nut: Graph Tech™ Black Tusq XL</li>
-              <li>Nut Width: 43 mm</li>
+              <li>Scale Length: 24.75" (628 mm)</li>
+              <li>Nut: GraphTech Black Tusq XL</li>
+              <li>Nut Width: 43mm</li>
             </ul>
             <MediaTitleSecondary>Electronics</MediaTitleSecondary>
             <ul>
-              <li>Pickups: 2 x Hagstrom Custom 58 AlNiCo</li>
-              <li>Pickup: Selector 3-Way Toggle Switch</li>
-              <li>Controls: 2 x Volume 2 x Tone</li>
+              <li>Pickups: 2 x Hagstrom AlNiCo-5 Retro-S</li>
+              <li>Pickup Selection:</li>
+              <ul>
+                <li>Neck Pickup On/Off</li>
+                <li>Neck Tone On/Off</li>
+                <li>Bridge Pickup On/Off</li>
+                <li>Bridge Tone On/Off</li>
+                <li>Mute On/Off</li>
+                <li>Top (Bass Cut) On/Off</li>
+              </ul>
+              <li>Controls: 1 x Volume with R/C Tone Circuit</li>
             </ul>
             <MediaTitleSecondary>Parts</MediaTitleSecondary>
             <ul>
-              <li>Tuning Keys: Hagstrom 18:1 Die Cast</li>
-              <li>
-                Stoptail Bridge: Long Travel Tune-O-Matic Roller Bridge &
-                Hagstrom Stop
-              </li>
-              <li>Tailpiece with Brass String Blocks</li>
-              <li>String Setup 10-46 - .010, .013, .017, .026, .036, .046</li>
+              <li>Bridge: Long Travel T-O-M Roller Bridge</li>
+              <li>Tailpiece: Hagstrom Vintage Tremar</li>
+              <li>Machine Keys: Hagstrom 15:1 Ratio Die Cast</li>
+              <li>Strings: D'Addario EXP 110 (10-46)</li>
             </ul>
-            <MediaTitleSecondary>Case</MediaTitleSecondary>
+            <MediaTitleSecondary>Optional</MediaTitleSecondary>
             <ul>
-              <li>Hagstrom Case C-50</li>
-              <li>Hagstrom Bag E-20</li>
+              <li>Hagstrom Bag: E-20</li>
+              <li>Hagstrom Case: C-48</li>
             </ul>
           </LeftSpecsWrapper>
           <RightSpecsWrapper>
-            <MediaTitle>Pat Smear Signature Standards</MediaTitle>
+            <MediaTitle>Impala Standards</MediaTitle>
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
-                  src={Detail_tuning_peg}
+                  src={Detail_fantomen_set_neck}
                   alt=''
                   style={{
                     height: 'auto',
@@ -719,13 +783,42 @@ const MoreInfoRetroScapeImpala = () => {
               </StandardsImageWrapper>
               <StandardsTextWrapper>
                 <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Hagstrom Machine Heads
+                  Set Neck
                 </h4>
                 <p>
-                  Hagstrom models use 18:1 or 15:1 gear ratio machine heads
-                  based on our own designs to insure accurate tuning. Viking®
-                  and HB series basses feature machine heads with a 17:1 gear
-                  ratio.
+                  Hagstrom uses a variety of different neck joints throughout
+                  our range. Our set-neck recipe is the classic and time-tested
+                  Mortise and Tenon joint, a design that most efficiently
+                  transfers string energy from neck to body, and can often only
+                  be found on more expensive custom-built guitars. A team of
+                  experienced and dedicated craftsmen hand carves every neck
+                  joint, insuring perfect execution of this traditional
+                  technique preferred by luthiers for generations.
+                </p>
+              </StandardsTextWrapper>
+            </StandardsWrapper>
+            <StandardsWrapper>
+              <StandardsImageWrapper>
+                <Image
+                  src={Detail_vintage_tremar_retroscape}
+                  alt=''
+                  style={{
+                    height: 'auto',
+                    maxWidth: '100%',
+                    verticalAlign: 'top',
+                  }}
+                />
+              </StandardsImageWrapper>
+              <StandardsTextWrapper>
+                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
+                  Vintage Tremar
+                </h4>
+                <p>
+                  In combination with the trusted long travel Tune-O-Matic
+                  roller bridge and the Graphtech Black TUSQ XL nut, the
+                  re-engineered Vintage Tremar vibrato unit keeps it original
+                  appearance while tremendously improving its functionality.
+                  Smooth vibrato action and great tuning stability included.
                 </p>
               </StandardsTextWrapper>
             </StandardsWrapper>
@@ -796,15 +889,32 @@ const MoreInfoRetroScapeImpala = () => {
         <VideoWrapper>
           <MediaTitle>
             <a
-              href='https://youtu.be/NmOzDBbitrg'
+              href='https://youtu.be/CZFBSyo89ww'
               target='_blank'
               rel='noopener noreferrer'>
-              Pat Smear Signature Video
+              Hagstrom Impala Review by Premier Guitar
             </a>
           </MediaTitle>
           <Video>
             <ReactPlayer
-              url='https://youtu.be/NmOzDBbitrg'
+              url='https://youtu.be/CZFBSyo89ww'
+              width='100%'
+              height='100%'
+            />
+          </Video>
+        </VideoWrapper>
+        <VideoWrapper>
+          <MediaTitle>
+            <a
+              href='https://youtu.be/iM-tyijKioY'
+              target='_blank'
+              rel='noopener noreferrer'>
+              Hagstrom Impala Demo by Justin York
+            </a>
+          </MediaTitle>
+          <Video>
+            <ReactPlayer
+              url='https://youtu.be/iM-tyijKioY'
               width='100%'
               height='100%'
             />
