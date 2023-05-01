@@ -28,6 +28,10 @@ import Retroscape_Impala_Black_Vertical from '../assets/images/Retroscape_Impala
 import Retroscape_Impala_Brown_Burst_Vertical from '../assets/images/Retroscape_Impala_Brown_Burst_Vertical.png';
 import Retroscape_Impala_Cherry_Sunburst_Vertical from '../assets/images/Retroscape_Impala_Cherry_Sunburst_Vertical.png';
 import Retroscape_Impala_Tobacco_Sunburst_Vertical from '../assets/images/Retroscape_Impala_Tobacco_Sunburst_Vertical.png';
+import Retroscape_HIII_3_Tone_Sunburst_Vertical from '../assets/images/Retroscape_HIII_3_Tone_Sunburst_Vertical.png';
+import Retroscape_HIII_Aged_Sky_Blue_Vertical from '../assets/images/Retroscape_HIII_Aged_Sky_Blue_Vertical.png';
+import Retroscape_HIII_Black_Vertical from '../assets/images/Retroscape_HIII_Black_Vertical.png';
+import Retroscape_HIII_White_Vertical from '../assets/images/Retroscape_HIII_White_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -329,6 +333,46 @@ const productsList = [
     color: 'Tobacco Sunburst',
     info: '/MoreInfoRetroScapeImpala',
     price: '1150',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Retroscape_HIII_3_Tone_Sunburst_Vertical,
+    brand: 'Hagstrom',
+    name: 'Retroscape H-III',
+    color: '3 Tone Sunburst',
+    info: '/MoreInfoRetroScapeHIII',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Retroscape_HIII_Aged_Sky_Blue_Vertical,
+    brand: 'Hagstrom',
+    name: 'Retroscape H-III',
+    color: 'Aged Sky Blue',
+    info: '/MoreInfoRetroScapeHIII',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Retroscape_HIII_Black_Vertical,
+    brand: 'Hagstrom',
+    name: 'Retroscape H-III',
+    color: 'Black',
+    info: '/MoreInfoRetroScapeHIII',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Retroscape_HIII_White_Vertical,
+    brand: 'Hagstrom',
+    name: 'Retroscape H-III',
+    color: 'White',
+    info: '/MoreInfoRetroScapeHIII',
+    price: '1250',
     quantity: 1,
     id: nanoid(),
   },

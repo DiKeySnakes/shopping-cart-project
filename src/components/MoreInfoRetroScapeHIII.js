@@ -9,31 +9,32 @@ import 'yet-another-react-lightbox/styles.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Retroscape_Impala_Hero from '../assets/images/Retroscape_Impala_Hero.png';
-import Retroscape_Impala_Header from '../assets/images/Retroscape_Impala_Header.jpg';
+import Retroscape_HIII_Hero from '../assets/images/Retroscape_HIII_Hero.png';
+import Retroscape_HIII_Header from '../assets/images/Retroscape_HIII_Header.jpg';
 import Logo_Hagstrom_Lilie_Black from '../assets/images/Logo_Hagstrom_Lilie_Black.png';
 import Colors_Retroscape_Black_Gloss from '../assets/images/Colors_Retroscape_Black_Gloss.png';
-import Colors_Retroscape_Brown_Burst from '../assets/images/Colors_Retroscape_Brown_Burst.png';
-import Colors_Retroscape_Tobacco_Sunburst from '../assets/images/Colors_Retroscape_Tobacco_Sunburst.png';
-import Colors_Retroscape_Cherry_Sunburst from '../assets/images/Colors_Retroscape_Cherry_Sunburst.png';
-import HSIMP18_IMP_TSB_Body_Final from '../assets/images/HSIMP18_IMP_TSB_Body_Final.jpg';
-import HSIMP09_IMP_BLK_Body_Final from '../assets/images/HSIMP09_IMP_BLK_Body_Final.jpg';
-import HSIMP08_IMP_CSB_Body_Final from '../assets/images/HSIMP08_IMP_CSB_Body_Final.jpg';
+import Colors_RetroScape_3_Tone_Sunburst from '../assets/images/Colors_RetroScape_3_Tone_Sunburst.png';
+import Colors_RetroScape_Aged_Sky_Blue from '../assets/images/Colors_RetroScape_Aged_Sky_Blue.png';
+import Colors_RetroScape_White from '../assets/images/Colors_RetroScape_White.png';
+import HSH309_HIII_BLK_Body_Final from '../assets/images/HSH309_HIII_BLK_Body_Final.jpg';
+import HSH361_HIII_ABE_Body_Final from '../assets/images/HSH361_HIII_ABE_Body_Final.jpg';
+import HSH361_Detail_HIII_ABE_Persp from '../assets/images/HSH361_Detail_HIII_ABE_Persp.jpg';
+import HSH361_Detail_HIII_ABE_Switches from '../assets/images/HSH361_Detail_HIII_ABE_Switches.jpg';
 import HSCOR08_Detail_COR_TSB_Vintage_Tremar from '../assets/images/HSCOR08_Detail_COR_TSB_Vintage_Tremar.jpg';
-import HSCOR18_Detail_COR_TSB_Logo_Final from '../assets/images/HSCOR18_Detail_COR_TSB_Logo_Final.jpg';
 import HSCOR18_Headstock_HII_HIII_IMP_COR_Side_Final from '../assets/images/HSCOR18_Headstock_HII_HIII_IMP_COR_Side_Final.jpg';
 import Logo_Retroscape_bg from '../assets/images/Logo_Retroscape_bg.png';
-import Hagstrom_Retroscape_Impala_Cherry_Sunburst from '../assets/images/Hagstrom_Retroscape_Impala_Cherry_Sunburst.png';
-import Hagstrom_Retroscape_Impala_Cherry_Sunburst_Back from '../assets/images/Hagstrom_Retroscape_Impala_Cherry_Sunburst_Back.png';
-import Hagstrom_Retroscape_Impala_Black from '../assets/images/Hagstrom_Retroscape_Impala_Black.png';
-import Hagstrom_Retroscape_Impala_Black_Back from '../assets/images/Hagstrom_Retroscape_Impala_Black_Back.png';
-import Hagstrom_Retroscape_Impala_Tobacco_Sunburst from '../assets/images/Hagstrom_Retroscape_Impala_Tobacco_Sunburst.png';
-import Hagstrom_Retroscape_Impala_Tobacco_Sunburst_Back from '../assets/images/Hagstrom_Retroscape_Impala_Tobacco_Sunburst_Back.png';
-import Hagstrom_Retroscape_Impala_Brown_Burst from '../assets/images/Hagstrom_Retroscape_Impala_Brown_Burst.png';
-import Detail_fantomen_set_neck from '../assets/images/Detail_fantomen_set_neck.jpg';
+import Hagstrom_Retroscape_HIII_White from '../assets/images/Hagstrom_Retroscape_HIII_White.png';
+import Hagstrom_Retroscape_HIII_White_Back from '../assets/images/Hagstrom_Retroscape_HIII_White_Back.png';
+import Hagstrom_Retroscape_HIII_3_Tone_Sunburst from '../assets/images/Hagstrom_Retroscape_HIII_3_Tone_Sunburst.png';
+import Hagstrom_Retroscape_HIII_3_Tone_Sunburst_Back from '../assets/images/Hagstrom_Retroscape_HIII_3_Tone_Sunburst_Back.png';
+import Hagstrom_Retroscape_HIII_Black from '../assets/images/Hagstrom_Retroscape_HIII_Black.png';
+import Hagstrom_Retroscape_HIII_Black_Back from '../assets/images/Hagstrom_Retroscape_HIII_Black_Back.png';
+import Hagstrom_Retroscape_HIII_Aged_Sky_Blue from '../assets/images/Hagstrom_Retroscape_HIII_Aged_Sky_Blue.png';
+import Hagstrom_Retroscape_HIII_Aged_Sky_Blue_Back from '../assets/images/Hagstrom_Retroscape_HIII_Aged_Sky_Blue_Back.png';
 import Detail_vintage_tremar_retroscape from '../assets/images/Detail_vintage_tremar_retroscape.jpg';
 import Detail_expander from '../assets/images/Detail_expander.jpg';
 import Detail_resinator_wood from '../assets/images/Detail_resinator_wood.jpg';
+import Detail_bolt_on_neck from '../assets/images/Detail_bolt_on_neck.jpg';
 import ReactPlayer from 'react-player';
 
 const Wrapper = styled.div`
@@ -48,7 +49,7 @@ const IntroBackground = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(${Retroscape_Impala_Header});
+  background-image: url(${Retroscape_HIII_Header});
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -496,6 +497,18 @@ const RightSpecsWrapper = styled.div`
   border-left: 1.5px solid rgba(0, 0, 0, 0.3);
   padding-left: 15px;
   padding-right: 15px;
+  & ul {
+    font-size: 2vmin;
+    font-family: 'Signika Negative', sans-serif;
+    color: #333333;
+    margin: 16px;
+    @media (max-width: 800px) {
+      font-size: 2.5vmin;
+    }
+    @media (max-width: 550px) {
+      font-size: 3vmin;
+    }
+  }
   @media (max-width: 800px) {
     border: none;
   }
@@ -546,7 +559,7 @@ const Video = styled.div`
   flex-direction: row;
 `;
 
-const MoreInfoRetroScapeImpala = () => {
+const MoreInfoRetroScapeHIII = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -554,51 +567,47 @@ const MoreInfoRetroScapeImpala = () => {
         <IntroBackground>
           <IntroContainer>
             <IntroTitle>
-              Impala
-              <IntroParagraph>Perfectly Balanced Uproar</IntroParagraph>
+              H-III
+              <IntroParagraph>H-Story reborn</IntroParagraph>
             </IntroTitle>
-            <IntroImage src={Retroscape_Impala_Hero} alt='' />
+            <IntroImage src={Retroscape_HIII_Hero} alt='' />
           </IntroContainer>
         </IntroBackground>
         <MainContentWrapper>
           <LeftContentWrapper>
-            <MediaTitle>Hagstrom Impala</MediaTitle>
+            <MediaTitle>Hagstrom H-III</MediaTitle>
             <Paragraph>
               <LogoSpan>
                 <Logo src={Logo_Hagstrom_Lilie_Black} alt='' />
               </LogoSpan>
-              Hagstrom introduced the Impala and Condor models in 1963, and the
-              instruments quickly found their way into the hands of many
-              professional and aspiring musicians throughout the world. This was
-              a period of great experimentation and innovation in electric
-              guitar design. With their futuristic body shapes and unique
-              assortment of tone-shaping options, the Impala and Condor stood
-              out and became integral in creating great music and inspiring
-              amazing artists. They have become highly sought after as
-              collectibles, and vintage instruments still find their way onto
-              stages worldwide. Now, don’t look any further. Back and here to
-              stay: the all new Condor and Impala models.
+              The H-II and H-III were introduced in 1965, so 2015 marks the 50th
+              anniversary of these iconic guitars. Known for their quirky
+              switches and easy playability, they quickly achieved wide
+              popularity. Favorites among punk and grunge bands looking for a
+              hard-rocking individualist statement, H-IIs and H-IIIs have been
+              showing up in the hands of artists such as Aaron North (The Icarus
+              Line, Nine Inch Nails) for years. Many people have been asking for
+              these classics to be re-issued, and we at Hagstrom are happy to
+              comply with lovingly recreated and updated versions of these great
+              classics.
             </Paragraph>
-            <MediaTitle>Fits like a Glove</MediaTitle>
+            <MediaTitle>Let me out</MediaTitle>
             <Paragraph>
-              With their re-introduction in 2015, Hagstrom has taken great care
-              to keep the set-neck “soul” of the Impala and Condor intact while
-              incorporating important design improvements that will immediately
-              appeal to modern players. The neck profile has been slightly
-              rounded, weight balance has been optimized, and important
-              improvements to the “Vintage Tremar” vibrato unit have been made.
-              Finally, an improved switching array maintains the look and
-              function of the originals while incorporating modern, dependable,
-              and ergonomic slide switches.
+              A comfortably profiled Canadian Maple neck is bolted to a
+              hand-selected American Alder body insuring that the original
+              attack and “bite” of the H-II and H-III is maintained. The classic
+              6-in-line Hagstrom headstock design, used for the first production
+              of H-IIs and H-IIIs, has been slightly updated, and the “Vintage
+              Tremar” has been re-engineered for functional improvements without
+              sacrificing its original appearance.
             </Paragraph>
             <Paragraph>
-              Since the tone of these instruments carved such a powerful space
-              in the hearts of players, countless hours have been spent to
-              reproduce the essence of the original pickups used in the Impala
-              and Condor. The hard work has paid off with Hagstrom’s AlNiCo 5
-              “Retro-S” pickups, which expertly recreate the essence of the ‘60s
-              sound and, at the same time, keep the door open for more modern
-              sonic possibilities.
+              Hagstrom has taken great care in recreating the original pickups,
+              and the new ceramic „C-Spin“ pickups do an excellent job of
+              matching the originals’ sonic glory. Tone-shaping functionality is
+              enhanced by incorporating Hagstrom’s new RC-Circuit into the
+              volume control, which allows for volume reduction without the loss
+              of that high frequency “shimmer”.
             </Paragraph>
           </LeftContentWrapper>
           <RightContentWrapper>
@@ -614,27 +623,27 @@ const MoreInfoRetroScapeImpala = () => {
               </ColorsWrapper>
               <ColorsWrapper>
                 <Image
-                  src={Colors_Retroscape_Brown_Burst}
+                  src={Colors_RetroScape_3_Tone_Sunburst}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Brown Burst</ColorsText>
+                <ColorsText>3-Tone Sunburst</ColorsText>
               </ColorsWrapper>
               <ColorsWrapper>
                 <Image
-                  src={Colors_Retroscape_Tobacco_Sunburst}
+                  src={Colors_RetroScape_Aged_Sky_Blue}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Tobacco Sunburst</ColorsText>
+                <ColorsText>Aged Sky Blue</ColorsText>
               </ColorsWrapper>
               <ColorsWrapper>
                 <Image
-                  src={Colors_Retroscape_Cherry_Sunburst}
+                  src={Colors_RetroScape_White}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Cherry Sunburst</ColorsText>
+                <ColorsText>White</ColorsText>
               </ColorsWrapper>
             </Colors>
           </RightContentWrapper>
@@ -642,24 +651,24 @@ const MoreInfoRetroScapeImpala = () => {
         <MainContentWrapper>
           <Details>
             <DetailsWrapper>
-              <Image src={HSIMP18_IMP_TSB_Body_Final} alt='' />
-              <DetailsText>Impala Tobacco Sunburst</DetailsText>
+              <Image src={HSH309_HIII_BLK_Body_Final} alt='' />
+              <DetailsText>H-III Black</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSIMP09_IMP_BLK_Body_Final} alt='' />
-              <DetailsText>Impala Black</DetailsText>
-            </DetailsWrapper>
-            <DetailsWrapper>
-              <Image src={HSIMP08_IMP_CSB_Body_Final} alt='' />
-              <DetailsText>Impala Cherry Sunburst</DetailsText>
+              <Image src={HSH361_HIII_ABE_Body_Final} alt='' />
+              <DetailsText>H-III Aged Sky Blue</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
               <Image src={HSCOR08_Detail_COR_TSB_Vintage_Tremar} alt='' />
               <DetailsText>Retroscape Vintage Tremar</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSCOR18_Detail_COR_TSB_Logo_Final} alt='' />
-              <DetailsText>Hagstrom Vintage Logo</DetailsText>
+              <Image src={HSH361_Detail_HIII_ABE_Persp} alt='' />
+              <DetailsText>H-III Pick Ups</DetailsText>
+            </DetailsWrapper>
+            <DetailsWrapper>
+              <Image src={HSH361_Detail_HIII_ABE_Switches} alt='' />
+              <DetailsText>H-III Switches</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
               <Image
@@ -678,9 +687,9 @@ const MoreInfoRetroScapeImpala = () => {
               style={{ width: '170px', height: 'auto', margin: '2vmin' }}
             />
             <QuoteText>
-              Hagstrom introduced the Impala and Condor models in 1963, and the
-              instruments quickly found their way into the hands of many
-              professional and aspiring musicians throughout the world.
+              We are proud to offer the H-II and H-III once again to Hagstrom
+              fans worldwide in 2015, the 50th anniversary of their
+              introduction.
             </QuoteText>
           </QuoteContentWrapper>
         </Quote>
@@ -703,30 +712,30 @@ const MoreInfoRetroScapeImpala = () => {
             open={open}
             close={() => setOpen(false)}
             slides={[
-              { src: Hagstrom_Retroscape_Impala_Cherry_Sunburst },
-              { src: Hagstrom_Retroscape_Impala_Cherry_Sunburst_Back },
-              { src: Hagstrom_Retroscape_Impala_Black },
-              { src: Hagstrom_Retroscape_Impala_Black_Back },
-              { src: Hagstrom_Retroscape_Impala_Tobacco_Sunburst },
-              { src: Hagstrom_Retroscape_Impala_Tobacco_Sunburst_Back },
-              { src: Hagstrom_Retroscape_Impala_Brown_Burst },
-              { src: Hagstrom_Retroscape_Impala_Tobacco_Sunburst_Back },
+              { src: Hagstrom_Retroscape_HIII_White },
+              { src: Hagstrom_Retroscape_HIII_White_Back },
+              { src: Hagstrom_Retroscape_HIII_3_Tone_Sunburst },
+              { src: Hagstrom_Retroscape_HIII_3_Tone_Sunburst_Back },
+              { src: Hagstrom_Retroscape_HIII_Black },
+              { src: Hagstrom_Retroscape_HIII_Black_Back },
+              { src: Hagstrom_Retroscape_HIII_Aged_Sky_Blue },
+              { src: Hagstrom_Retroscape_HIII_Aged_Sky_Blue_Back },
             ]}
           />
         </LightboxWrapper>
         <SpecsWrapper>
           <LeftSpecsWrapper>
-            <MediaTitle>Impala Specs</MediaTitle>
+            <MediaTitle>Hagstrom H-III Specs</MediaTitle>
             <MediaTitleSecondary>Body</MediaTitleSecondary>
             <ul>
-              <li>Material: Mahogany</li>
-              <li>Style: Asymmetric Double Cutaway</li>
+              <li>Material: American Alder</li>
+              <li>Style: Double Cutaway</li>
               <li>Binding: None</li>
             </ul>
             <MediaTitleSecondary>Neck</MediaTitleSecondary>
             <ul>
-              <li>Joint: Set Neck</li>
-              <li>Material: Mahogany</li>
+              <li>Joint: Bolt On</li>
+              <li>Material: Canadian Hard Maple</li>
               <li>Binding: None</li>
               <li>Truss Rod: H-Expander™</li>
             </ul>
@@ -742,86 +751,37 @@ const MoreInfoRetroScapeImpala = () => {
             </ul>
             <MediaTitleSecondary>Electronics</MediaTitleSecondary>
             <ul>
-              <li>Pickups: 2 x Hagstrom AlNiCo-5 Retro-S</li>
+              <li>Pickups: 3 x Hagstrom Ceramic C-Spin</li>
               <li>Pickup Selection:</li>
               <ul>
                 <li>Neck Pickup On/Off</li>
-                <li>Neck Tone On/Off</li>
+                <li>Middle Pickup On/Off</li>
                 <li>Bridge Pickup On/Off</li>
-                <li>Bridge Tone On/Off</li>
+                <li>Master Tone On/Off</li>
                 <li>Mute On/Off</li>
                 <li>Top (Bass Cut) On/Off</li>
               </ul>
-              <li>Controls: 1 x Volume with R/C Tone Circuit</li>
+              <li>Controls:</li>
+              <ul>
+                <li>1 x Volume with R/C Tone Circuit</li>
+                <li>Kill Switch on Upper Horn</li>
+              </ul>
             </ul>
             <MediaTitleSecondary>Parts</MediaTitleSecondary>
             <ul>
               <li>Bridge: Long Travel T-O-M Roller Bridge</li>
               <li>Tailpiece: Hagstrom Vintage Tremar</li>
-              <li>Machine Keys: Hagstrom 15:1 Ratio Die Cast</li>
+              <li>Machine Keys: Hagstrom 15:1 Die Cast</li>
               <li>Strings: D'Addario EXP 110 (10-46)</li>
             </ul>
             <MediaTitleSecondary>Optional</MediaTitleSecondary>
             <ul>
               <li>Hagstrom Bag: E-20</li>
-              <li>Hagstrom Case: C-48</li>
+              <li>Hagstrom Case: C-49</li>
             </ul>
           </LeftSpecsWrapper>
           <RightSpecsWrapper>
-            <MediaTitle>Impala Standards</MediaTitle>
-            <StandardsWrapper>
-              <StandardsImageWrapper>
-                <Image
-                  src={Detail_fantomen_set_neck}
-                  alt=''
-                  style={{
-                    height: 'auto',
-                    maxWidth: '100%',
-                    verticalAlign: 'top',
-                  }}
-                />
-              </StandardsImageWrapper>
-              <StandardsTextWrapper>
-                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Set Neck
-                </h4>
-                <p>
-                  Hagstrom uses a variety of different neck joints throughout
-                  our range. Our set-neck recipe is the classic and time-tested
-                  Mortise and Tenon joint, a design that most efficiently
-                  transfers string energy from neck to body, and can often only
-                  be found on more expensive custom-built guitars. A team of
-                  experienced and dedicated craftsmen hand carves every neck
-                  joint, insuring perfect execution of this traditional
-                  technique preferred by luthiers for generations.
-                </p>
-              </StandardsTextWrapper>
-            </StandardsWrapper>
-            <StandardsWrapper>
-              <StandardsImageWrapper>
-                <Image
-                  src={Detail_vintage_tremar_retroscape}
-                  alt=''
-                  style={{
-                    height: 'auto',
-                    maxWidth: '100%',
-                    verticalAlign: 'top',
-                  }}
-                />
-              </StandardsImageWrapper>
-              <StandardsTextWrapper>
-                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Vintage Tremar
-                </h4>
-                <p>
-                  In combination with the trusted long travel Tune-O-Matic
-                  roller bridge and the Graphtech Black TUSQ XL nut, the
-                  re-engineered Vintage Tremar vibrato unit keeps it original
-                  appearance while tremendously improving its functionality.
-                  Smooth vibrato action and great tuning stability included.
-                </p>
-              </StandardsTextWrapper>
-            </StandardsWrapper>
+            <MediaTitle>H-III Standards</MediaTitle>
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
@@ -856,6 +816,30 @@ const MoreInfoRetroScapeImpala = () => {
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
+                  src={Detail_bolt_on_neck}
+                  alt=''
+                  style={{
+                    height: 'auto',
+                    maxWidth: '100%',
+                    verticalAlign: 'top',
+                  }}
+                />
+              </StandardsImageWrapper>
+              <StandardsTextWrapper>
+                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>Bolt-On</h4>
+                <p>
+                  <ul>
+                    <li>Slightly brighter and more vivid tone</li>
+                    <li>Ample amounts of attack/"snap"</li>
+                    <li>Strong resonance and sustain</li>
+                    <li>Great serviceability</li>
+                  </ul>
+                </p>
+              </StandardsTextWrapper>
+            </StandardsWrapper>
+            <StandardsWrapper>
+              <StandardsImageWrapper>
+                <Image
                   src={Detail_resinator_wood}
                   alt=''
                   style={{
@@ -884,37 +868,45 @@ const MoreInfoRetroScapeImpala = () => {
                 </p>
               </StandardsTextWrapper>
             </StandardsWrapper>
+            <StandardsWrapper>
+              <StandardsImageWrapper>
+                <Image
+                  src={Detail_vintage_tremar_retroscape}
+                  alt=''
+                  style={{
+                    height: 'auto',
+                    maxWidth: '100%',
+                    verticalAlign: 'top',
+                  }}
+                />
+              </StandardsImageWrapper>
+              <StandardsTextWrapper>
+                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
+                  Vintage Tremar
+                </h4>
+                <p>
+                  In combination with the trusted long travel Tune-O-Matic
+                  roller bridge and the Graphtech Black TUSQ XL nut, the
+                  re-engineered Vintage Tremar vibrato unit keeps it original
+                  appearance while tremendously improving its functionality.
+                  Smooth vibrato action and great tuning stability included.
+                </p>
+              </StandardsTextWrapper>
+            </StandardsWrapper>
           </RightSpecsWrapper>
         </SpecsWrapper>
         <VideoWrapper>
           <MediaTitle>
             <a
-              href='https://youtu.be/CZFBSyo89ww'
+              href='https://youtu.be/HusbQgGzw00'
               target='_blank'
               rel='noopener noreferrer'>
-              Hagstrom Impala Review by Premier Guitar
+              Hagstrom H-III Demo by Justin York
             </a>
           </MediaTitle>
           <Video>
             <ReactPlayer
-              url='https://youtu.be/CZFBSyo89ww'
-              width='100%'
-              height='100%'
-            />
-          </Video>
-        </VideoWrapper>
-        <VideoWrapper>
-          <MediaTitle>
-            <a
-              href='https://youtu.be/iM-tyijKioY'
-              target='_blank'
-              rel='noopener noreferrer'>
-              Hagstrom Impala Demo by Justin York
-            </a>
-          </MediaTitle>
-          <Video>
-            <ReactPlayer
-              url='https://youtu.be/iM-tyijKioY'
+              url='https://youtu.be/HusbQgGzw00'
               width='100%'
               height='100%'
             />
@@ -945,4 +937,4 @@ const MoreInfoRetroScapeImpala = () => {
   );
 };
 
-export default MoreInfoRetroScapeImpala;
+export default MoreInfoRetroScapeHIII;

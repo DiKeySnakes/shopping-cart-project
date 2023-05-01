@@ -11,6 +11,7 @@ import MoreInfo from './components/MoreInfo';
 import MoreInfoPatSmear from './components/MoreInfoPatSmear';
 import MoreInfoImpalaCopperburst from './components/MoreInfoImpalaCopperburst';
 import MoreInfoRetroScapeImpala from './components/MoreInfoRetroScapeImpala';
+import MoreInfoRetroScapeHIII from './components/MoreInfoRetroScapeHIII';
 import MoreInfoViking from './components/MoreInfoViking';
 import MoreInfoVikingGoldTop from './components/MoreInfoVikingGoldTop';
 import MoreInfoSuperVikingTransBrown from './components/MoreInfoSuperVikingTransBrown';
@@ -52,6 +53,10 @@ function App() {
           <Route
             path='/MoreInfoRetroScapeImpala'
             element={<MoreInfoRetroScapeImpala />}
+          />
+          <Route
+            path='/MoreInfoRetroScapeHIII'
+            element={<MoreInfoRetroScapeHIII />}
           />
           <Route path='/MoreInfoViking' element={<MoreInfoViking />} />
           <Route
