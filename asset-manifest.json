@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.efc1db04.js",
+    "main.js": "/shopping-cart-project/static/js/main.f7ceed6a.js",
     "static/media/HagstromVikingGoldTop.png": "/shopping-cart-project/static/media/HagstromVikingGoldTop.610b80976c5b9f7c1d1d.png",
     "static/media/Artist_Project_Viking_Gold_Top_Vertical.png": "/shopping-cart-project/static/media/Artist_Project_Viking_Gold_Top_Vertical.e60f693fff0d2397d4b7.png",
     "static/media/HagstromSuperVikingTransBrown.png": "/shopping-cart-project/static/media/HagstromSuperVikingTransBrown.a5a54d440ad11f3cf7ce.png",
@@ -209,7 +209,7 @@
     "static/media/Matthias_Reim.jpg": "/shopping-cart-project/static/media/Matthias_Reim.22fc1ea9098d67b165f4.jpg",
     "static/media/Home_Headstock.png": "/shopping-cart-project/static/media/Home_Headstock.51f86b54b3017c8d26ef.png",
     "static/media/Ivan_Gomez_Singh.jpg": "/shopping-cart-project/static/media/Ivan_Gomez_Singh.8441b3c472e171c43535.jpg",
-    "static/media/History_Main_Image.jpg": "/shopping-cart-project/static/media/History_Main_Image.726e5b8923ff650b1b38.jpg",
+    "static/media/Hagstrom_History_Header.jpg": "/shopping-cart-project/static/media/Hagstrom_History_Header.726e5b8923ff650b1b38.jpg",
     "static/media/Eddie_Reyes_Taking_Back_Sunday.jpg": "/shopping-cart-project/static/media/Eddie_Reyes_Taking_Back_Sunday.3e4ebd986bcbccff9bed.jpg",
     "static/media/Impala_Copperburst_Header.jpg": "/shopping-cart-project/static/media/Impala_Copperburst_Header.b8b2af286dc8e88baad0.jpg",
     "static/media/Gregory_Hinde.jpg": "/shopping-cart-project/static/media/Gregory_Hinde.00f160af302b77df4f81.jpg",
@@ -331,10 +331,10 @@
     "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "static/media/ScrollIcon.svg": "/shopping-cart-project/static/media/ScrollIcon.a1eb858b6e5366f1bd5779a8e0ec1c44.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.efc1db04.js.map": "/shopping-cart-project/static/js/main.efc1db04.js.map"
+    "main.f7ceed6a.js.map": "/shopping-cart-project/static/js/main.f7ceed6a.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.efc1db04.js"
+    "static/js/main.f7ceed6a.js"
   ]
 }
