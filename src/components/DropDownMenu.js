@@ -93,7 +93,7 @@ const DropDownMenu = () => {
           <i className='fa-solid fa-bars'></i> MENU
         </DropDownButton>
         <DropDownContent>
-          {/* <Link
+          <Link
             to='/'
             key={nanoid()}
             style={{
@@ -104,7 +104,7 @@ const DropDownMenu = () => {
               color: '#eeeeee',
             }}>
             Home
-          </Link> */}
+          </Link>
           <Link
             to='/Products'
             key={nanoid()}

@@ -79,7 +79,7 @@ const NavLinks = styled.div`
   flex-direction: row;
   justify-content: space-around;
   float: left;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 `;
 
 const ShareLinks = styled.div`
@@ -87,7 +87,7 @@ const ShareLinks = styled.div`
   flex-direction: row;
   justify-content: space-around;
   float: right;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   @media (max-width: 992px) {
     display: none;
   }
