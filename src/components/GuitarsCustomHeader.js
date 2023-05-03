@@ -8,8 +8,6 @@ const Wrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* margin-top: 7vmin; */
-  /* margin-bottom: 7vmin; */
 `;
 
 const LeftWrapper = styled.div`

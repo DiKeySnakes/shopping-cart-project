@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   height: 8rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #111111;
   position: fixed;
@@ -20,9 +20,6 @@ const Wrapper = styled.div`
   z-index: 10;
   font-size: 2vmin;
   font-weight: 400;
-  & .active {
-    border-bottom: 1px dotted #eeeeee;
-  }
   a {
     margin-right: 3rem;
     text-decoration: none;
@@ -67,8 +64,8 @@ const Image = styled.img`
 `;
 
 const LogoWrapper = styled.div`
-  width: 12vmin;
-  height: 4vmin;
+  width: 15vmin;
+  height: 5vmin;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -88,6 +85,9 @@ const AnchorGroup = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  & .active {
+    border-bottom: 1px dotted #eeeeee;
+  }
   @media (max-width: 1300px) {
     display: none;
   }
@@ -97,9 +97,11 @@ function Header(props) {
   return (
     <Wrapper>
       <TitleWrapper>
-        <LogoWrapper>
-          <Image src={Logo} alt='Logo'></Image>
-        </LogoWrapper>
+        <NavLink to='/'>
+          <LogoWrapper>
+            <Image src={Logo} alt='Logo'></Image>
+          </LogoWrapper>
+        </NavLink>
         <Title></Title>
       </TitleWrapper>
       <CartWrapper>
@@ -110,7 +112,6 @@ function Header(props) {
       </CartWrapper>
       <DropDownMenu />
       <AnchorGroup>
-        <NavLink to='/'> Home</NavLink>
         <NavLink to='/Products'> Products</NavLink>
         <NavLink to='/ElectricGuitars'>Electric Guitars</NavLink>
         <NavLink to='/Basses'>Basses</NavLink>

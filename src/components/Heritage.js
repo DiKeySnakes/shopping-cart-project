@@ -1,7 +1,8 @@
 import ScrollToTop from 'react-scroll-to-top';
 import { ReactComponent as MySVG } from '../assets/ScrollIcon.svg';
 import styled from 'styled-components';
-import History_Main_Image from '../assets/images/History_Main_Image.jpg';
+import { NavLink } from 'react-router-dom';
+import Hagstrom_History_Header from '../assets/images/Hagstrom_History_Header.jpg';
 import Heritage_historic_hagstrom_guitars from '../assets/images/Heritage_historic_hagstrom_guitars.jpg';
 import Heritage_Frankfurtmaessan from '../assets/images/Heritage_Frankfurtmaessan.jpg';
 import Heritage_butikdrottninggatan from '../assets/images/Heritage_butikdrottninggatan.jpg';
@@ -17,18 +18,77 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const NavContainer = styled.div`
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+const NavWrapper = styled.div`
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2vmin;
+  font-weight: 400;
+  padding-left: 16px;
+  padding-right: 16px;
+  & .active {
+    border-bottom: 1px dotted #111111;
+  }
+  a {
+    text-decoration: none;
+    color: #111111;
+    font-family: 'Signika Negative', sans-serif;
+  }
+  & a:hover {
+    border-bottom: 1px solid #111111;
+  }
+  span {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 3vmin;
+  }
+  @media (max-width: 430px) {
+    font-size: 3.5vmin;
+  }
+`;
+
+const NavLinks = styled.div`
+  width: 66, 66666667%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  float: left;
+  white-space: nowrap;
+`;
+
+const ShareLinks = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  float: right;
+  white-space: nowrap;
+  @media (max-width: 992px) {
+    display: none;
+  }
+`;
+
 const IntroBackground = styled.div`
   width: 100%;
   height: 300px;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
-  background-image: url(${History_Main_Image});
+  background-image: url(${Hagstrom_History_Header});
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   @media (max-width: 800px) {
     height: 200px;
   }
@@ -70,6 +130,7 @@ const FirstHeader = styled.h2`
   line-height: 110%;
   font-family: 'Bitter', serif;
   color: #333333;
+  margin-top: 3rem;
   margin-bottom: 2rem;
   @media (max-width: 1200px) {
     padding-left: 15px;
@@ -151,14 +212,19 @@ const Figcaption = styled.figcaption`
   color: #333333;
   font-family: 'Signika Negative', sans-serif;
   font-size: 2vmin;
-  line-height: 2.2vmin;
   margin-top: 1rem;
   margin-bottom: 2rem;
   @media (max-width: 800px) {
-    font-size: 2vmin;
+    font-size: 2.5vmin;
   }
   @media (max-width: 550px) {
-    font-size: 2vmin;
+    font-size: 3vmin;
+  }
+  @media (max-width: 450px) {
+    font-size: 3.5vmin;
+  }
+  @media (max-width: 350px) {
+    font-size: 4vmin;
   }
 `;
 
@@ -194,6 +260,32 @@ const Heritage = () => {
         <IntroBackground>
           <IntroTitle>HAGSTROM HISTORY</IntroTitle>
         </IntroBackground>
+        <NavContainer>
+          <NavWrapper>
+            <NavLinks>
+              <NavLink to='/'>Home</NavLink>
+              <span>/</span>
+              <span style={{ fontFamily: 'Signika Negative, sans-serif' }}>
+                Stories
+              </span>
+              <span>/</span>
+              <NavLink>Hagstrom History</NavLink>
+            </NavLinks>
+            <ShareLinks>
+              <NavLink>
+                <i className='fa-brands fa-square-facebook'></i> share
+              </NavLink>
+              <span>/</span>
+              <NavLink>
+                <i className='fa-brands fa-square-twitter'></i> tweet
+              </NavLink>
+              <span>/</span>
+              <NavLink>
+                <i className='fa-solid fa-square-envelope'></i> mail
+              </NavLink>
+            </ShareLinks>
+          </NavWrapper>
+        </NavContainer>
         <FirstHeader>
           In 1958, Swedish-based Hagstrom started manufacturing electric guitars
           and basses.

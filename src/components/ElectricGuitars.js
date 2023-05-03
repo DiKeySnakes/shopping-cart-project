@@ -2,6 +2,7 @@ import ScrollToTop from 'react-scroll-to-top';
 import { ReactComponent as MySVG } from '../assets/ScrollIcon.svg';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { nanoid } from '@reduxjs/toolkit';
 import GuitarsCustomHeader from './GuitarsCustomHeader';
 import Artists_Main_Image from '../assets/images/Artists_Main_Image.jpg';
@@ -36,6 +37,65 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const NavContainer = styled.div`
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+const NavWrapper = styled.div`
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2vmin;
+  font-weight: 400;
+  padding-left: 16px;
+  padding-right: 16px;
+  & .active {
+    border-bottom: 1px dotted #111111;
+  }
+  a {
+    text-decoration: none;
+    color: #111111;
+    font-family: 'Signika Negative', sans-serif;
+  }
+  & a:hover {
+    border-bottom: 1px solid #111111;
+  }
+  span {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 3vmin;
+  }
+  @media (max-width: 430px) {
+    font-size: 3.5vmin;
+  }
+`;
+
+const NavLinks = styled.div`
+  width: 66, 66666667%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  float: left;
+  white-space: nowrap;
+`;
+
+const ShareLinks = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  float: right;
+  white-space: nowrap;
+  @media (max-width: 992px) {
+    display: none;
+  }
+`;
+
 const MainContentWrapper = styled.div`
   max-width: 1170px;
   display: flex;
@@ -56,7 +116,7 @@ const IntroBackground = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   @media (max-width: 800px) {
     height: 200px;
   }
@@ -196,9 +256,31 @@ const ElectricGuitars = () => {
       <IntroBackground key={nanoid()}>
         <IntroTitle key={nanoid()}>ELECTRIC GUITARS</IntroTitle>
       </IntroBackground>
+      <NavContainer>
+        <NavWrapper>
+          <NavLinks>
+            <NavLink to='/'>Home</NavLink>
+            <span>/</span>
+            <NavLink>Electric Guitars</NavLink>
+          </NavLinks>
+          <ShareLinks>
+            <NavLink>
+              <i className='fa-brands fa-square-facebook'></i> share
+            </NavLink>
+            <span>/</span>
+            <NavLink>
+              <i className='fa-brands fa-square-twitter'></i> tweet
+            </NavLink>
+            <span>/</span>
+            <NavLink>
+              <i className='fa-solid fa-square-envelope'></i> mail
+            </NavLink>
+          </ShareLinks>
+        </NavWrapper>
+      </NavContainer>
       <MainContentWrapper key={nanoid()}>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='signature'>
           <RowTitle key={nanoid()}>Signature Series</RowTitle>
           <RowParagraph key={nanoid()}>Hagstrom Signature Models</RowParagraph>
           <ItemBox key={nanoid()}>
@@ -219,7 +301,7 @@ const ElectricGuitars = () => {
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='artistProject'>
           <RowTitle key={nanoid()}>Artist Project</RowTitle>
           <RowParagraph key={nanoid()}>
             Our new Hagstrom “Artist Project” series is a unique line of
@@ -289,7 +371,7 @@ const ElectricGuitars = () => {
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='fantomen'>
           <RowTitle key={nanoid()}>Fantomen</RowTitle>
           <RowParagraph key={nanoid()}>
             You can find the Fantomen on stage with Ghost. You don’t have to be
@@ -329,7 +411,7 @@ const ElectricGuitars = () => {
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='retroscape'>
           <RowTitle key={nanoid()}>RetroScape Series</RowTitle>
           <RowParagraph key={nanoid()}>Noun (plural Retroscapes)</RowParagraph>
           <RowParagraph key={nanoid()}>
@@ -376,7 +458,7 @@ const ElectricGuitars = () => {
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='superSwede'>
           <RowTitle key={nanoid()}>Super Swede | The New Generation</RowTitle>
           <RowParagraph key={nanoid()} style={{ fontWeight: '800' }}>
             Reimagined. Redefined. Revived.
@@ -413,7 +495,7 @@ const ElectricGuitars = () => {
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='swede'>
           <RowTitle key={nanoid()}>Swede | The New Generation</RowTitle>
           <RowParagraph key={nanoid()} style={{ fontWeight: '800' }}>
             Reimagined. Redefined. Revived.
@@ -448,7 +530,7 @@ const ElectricGuitars = () => {
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='ultraMax'>
           <RowTitle key={nanoid()}>Ultra Max</RowTitle>
           <RowParagraph key={nanoid()}>
             Since the introduction of the profoundly successful Hagstrom Ultra
@@ -515,7 +597,7 @@ const ElectricGuitars = () => {
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='alvar'>
           <RowTitle key={nanoid()}>Alvar</RowTitle>
           <ItemBox key={nanoid()}>
             <Link

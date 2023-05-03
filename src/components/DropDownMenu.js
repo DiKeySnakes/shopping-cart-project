@@ -18,8 +18,9 @@ const DropDown = styled.div`
   position: relative;
   display: inline-block;
   &:hover ${DropDownContent} {
-    height: 40vmin;
-    @media (max-width: 1300px) {
+    height: auto;
+    /* height: 40vmin; */
+    /* @media (max-width: 1300px) {
       height: 38vmin;
     }
     @media (max-width: 1150px) {
@@ -42,7 +43,7 @@ const DropDown = styled.div`
     }
     @media (max-width: 350px) {
       height: 80vmin;
-    }
+    } */
   }
   @media (max-width: 768px) {
     font-size: 2.5vmin;
@@ -92,7 +93,7 @@ const DropDownMenu = () => {
           <i className='fa-solid fa-bars'></i> MENU
         </DropDownButton>
         <DropDownContent>
-          <Link
+          {/* <Link
             to='/'
             key={nanoid()}
             style={{
@@ -103,7 +104,7 @@ const DropDownMenu = () => {
               color: '#eeeeee',
             }}>
             Home
-          </Link>
+          </Link> */}
           <Link
             to='/Products'
             key={nanoid()}

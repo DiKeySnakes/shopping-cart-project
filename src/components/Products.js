@@ -11,6 +11,7 @@ import {
   selectInfo,
 } from '../features/info/infoSlice';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { nanoid } from '@reduxjs/toolkit';
 import Modal from 'react-modal';
 import { useState } from 'react';
@@ -51,6 +52,65 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const NavContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+`;
+
+const NavWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2vmin;
+  font-weight: 400;
+  & .active {
+    border-bottom: 1px dotted #111111;
+  }
+  a {
+    text-decoration: none;
+    color: #111111;
+    font-family: 'Signika Negative', sans-serif;
+  }
+  & a:hover {
+    border-bottom: 1px solid #111111;
+  }
+  span {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 3vmin;
+  }
+  @media (max-width: 430px) {
+    font-size: 3.5vmin;
+  }
+`;
+
+const NavLinks = styled.div`
+  width: 66, 66666667%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  float: left;
+  white-space: nowrap;
+`;
+
+const ShareLinks = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  float: right;
+  white-space: nowrap;
+  @media (max-width: 992px) {
+    display: none;
+  }
+`;
+
 const IntroBackground = styled.div`
   width: 100%;
   height: 300px;
@@ -62,6 +122,7 @@ const IntroBackground = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
   @media (max-width: 800px) {
     height: 200px;
   }
@@ -283,6 +344,28 @@ const Products = () => {
         <IntroBackground>
           <IntroTitle>HAGSTROM GUITARS</IntroTitle>
         </IntroBackground>
+        <NavContainer>
+          <NavWrapper>
+            <NavLinks>
+              <NavLink to='/'>Home</NavLink>
+              <span>/</span>
+              <NavLink>Products</NavLink>
+            </NavLinks>
+            <ShareLinks>
+              <NavLink>
+                <i className='fa-brands fa-square-facebook'></i> share
+              </NavLink>
+              <span>/</span>
+              <NavLink>
+                <i className='fa-brands fa-square-twitter'></i> tweet
+              </NavLink>
+              <span>/</span>
+              <NavLink>
+                <i className='fa-solid fa-square-envelope'></i> mail
+              </NavLink>
+            </ShareLinks>
+          </NavWrapper>
+        </NavContainer>
         <CustomHeader />
         <CardContainer>
           {productsList.map((elem) => {

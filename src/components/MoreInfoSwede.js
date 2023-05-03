@@ -9,6 +9,8 @@ import 'yet-another-react-lightbox/styles.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import Swede_Hero from '../assets/images/Swede_Hero_350x453Px.png';
 import Swede_Header from '../assets/images/Swede_Header.jpg';
 import HagstromSwedeCrimsonFlame from '../assets/images/HagstromSwedeCrimsonFlame.png';
@@ -48,6 +50,65 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const NavContainer = styled.div`
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+const NavWrapper = styled.div`
+  width: 1170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2vmin;
+  font-weight: 400;
+  padding-left: 16px;
+  padding-right: 16px;
+  & .active {
+    border-bottom: 1px dotted #111111;
+  }
+  a {
+    text-decoration: none;
+    color: #111111;
+    font-family: 'Signika Negative', sans-serif;
+  }
+  & a:hover {
+    border-bottom: 1px solid #111111;
+  }
+  span {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 3vmin;
+  }
+  @media (max-width: 430px) {
+    font-size: 3.5vmin;
+  }
+`;
+
+const NavLinks = styled.div`
+  width: 66, 66666667%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  float: left;
+  white-space: nowrap;
+`;
+
+const ShareLinks = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  float: right;
+  white-space: nowrap;
+  @media (max-width: 992px) {
+    display: none;
+  }
+`;
+
 const IntroBackground = styled.div`
   width: 100%;
   height: 500px;
@@ -58,7 +119,7 @@ const IntroBackground = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   position: relative;
   @media (max-width: 1170px) {
     height: 400px;
@@ -174,7 +235,7 @@ const MainContentWrapper = styled.div`
   max-width: 1170px;
   display: flex;
   flex-direction: row;
-  margin-top: 5rem;
+  margin-top: 2rem;
   @media (max-width: 800px) {
     flex-direction: column;
   }
@@ -531,6 +592,32 @@ const MoreInfoSwede = () => {
             <IntroImage src={Swede_Hero} alt='' />
           </IntroContainer>
         </IntroBackground>
+        <NavContainer>
+          <NavWrapper>
+            <NavLinks>
+              <NavLink to='/'>Home</NavLink>
+              <span>/</span>
+              <NavLink to='/ElectricGuitars'>Electric Guitars</NavLink>
+              <span>/</span>
+              <HashLink to='/ElectricGuitars#swede'>Swede</HashLink>
+              <span>/</span>
+              <NavLink>Swede NewGen</NavLink>
+            </NavLinks>
+            <ShareLinks>
+              <NavLink>
+                <i className='fa-brands fa-square-facebook'></i> share
+              </NavLink>
+              <span>/</span>
+              <NavLink>
+                <i className='fa-brands fa-square-twitter'></i> tweet
+              </NavLink>
+              <span>/</span>
+              <NavLink>
+                <i className='fa-solid fa-square-envelope'></i> mail
+              </NavLink>
+            </ShareLinks>
+          </NavWrapper>
+        </NavContainer>
         <MainContentWrapper>
           <LeftContentWrapper>
             <MediaTitle>Hagstrom Swede</MediaTitle>
