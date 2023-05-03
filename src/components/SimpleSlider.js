@@ -279,10 +279,12 @@ export default function SimpleSlider() {
             identical in every way to the guitar Justin and Taylor use in their
             studio and on stage.{<br />} Photo: Paramore © Trudi Knight
           </CanvasText>
-          <Button>
-            <i className='fa-solid fa-angles-right fa-sm'></i> Explore The
-            Newest Artist Project
-          </Button>
+          <HashLink to='/ElectricGuitars#artistProject'>
+            <Button>
+              <i className='fa-solid fa-angles-right fa-sm'></i> Explore The
+              Newest Artist Project
+            </Button>
+          </HashLink>
           <HeadstockWrapper>
             <Image src={Home_Headstock} alt='' />
           </HeadstockWrapper>

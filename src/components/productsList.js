@@ -32,6 +32,13 @@ import Retroscape_HIII_3_Tone_Sunburst_Vertical from '../assets/images/Retroscap
 import Retroscape_HIII_Aged_Sky_Blue_Vertical from '../assets/images/Retroscape_HIII_Aged_Sky_Blue_Vertical.png';
 import Retroscape_HIII_Black_Vertical from '../assets/images/Retroscape_HIII_Black_Vertical.png';
 import Retroscape_HIII_White_Vertical from '../assets/images/Retroscape_HIII_White_Vertical.png';
+import Super_Viking_Wild_Cherry_Transparent_Vertical from '../assets/images/Super_Viking_Wild_Cherry_Transparent_Vertical.png';
+import Super_Viking_Black_Gloss_Vertical from '../assets/images/Super_Viking_Black_Gloss_Vertical.png';
+import Super_Viking_Tobacco_Sunburst_Vertical from '../assets/images/Super_Viking_Tobacco_Sunburst_Vertical.png';
+import Super_Viking_Dandy_Dandelion_Vertical from '../assets/images/Super_Viking_Dandy_Dandelion_Vertical.png';
+import Super_Viking_Dark_Baltic_Sea_Vertical from '../assets/images/Super_Viking_Dark_Baltic_Sea_Vertical.png';
+import Super_Viking_Mandarin_Flame_Vertical from '../assets/images/Super_Viking_Mandarin_Flame_Vertical.png';
+import Super_Viking_Lefthand_Wild_Cherry_Transparent_Vertical from '../assets/images/Super_Viking_Lefthand_Wild_Cherry_Transparent_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -372,6 +379,76 @@ const productsList = [
     name: 'Retroscape H-III',
     color: 'White',
     info: '/MoreInfoRetroScapeHIII',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Super_Viking_Wild_Cherry_Transparent_Vertical,
+    brand: 'Hagstrom',
+    name: 'Super Viking',
+    color: 'Wild Cherry Transparent',
+    info: '/MoreInfoSuperViking',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Super_Viking_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Super Viking',
+    color: 'Black Gloss',
+    info: '/MoreInfoSuperViking',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Super_Viking_Tobacco_Sunburst_Vertical,
+    brand: 'Hagstrom',
+    name: 'Super Viking',
+    color: 'Tobacco Sunburst',
+    info: '/MoreInfoSuperViking',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Super_Viking_Dandy_Dandelion_Vertical,
+    brand: 'Hagstrom',
+    name: 'Super Viking',
+    color: 'Dandy Dandelion',
+    info: '/MoreInfoSuperViking',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Super_Viking_Dark_Baltic_Sea_Vertical,
+    brand: 'Hagstrom',
+    name: 'Super Viking',
+    color: 'Dark Baltic Sea',
+    info: '/MoreInfoSuperViking',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Super_Viking_Mandarin_Flame_Vertical,
+    brand: 'Hagstrom',
+    name: 'Super Viking',
+    color: 'Mandarin Flame',
+    info: '/MoreInfoSuperViking',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Super_Viking_Lefthand_Wild_Cherry_Transparent_Vertical,
+    brand: 'Hagstrom',
+    name: 'Super Viking Lefthand',
+    color: 'Wild Cherry Transparent',
+    info: '/MoreInfoSuperViking',
     price: '1250',
     quantity: 1,
     id: nanoid(),
