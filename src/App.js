@@ -22,6 +22,8 @@ import MoreInfoSuperSwede from './components/MoreInfoSuperSwede';
 import MoreInfoAlvar from './components/MoreInfoAlvar';
 import MoreInfoUltraMax from './components/MoreInfoUltraMax';
 import MoreInfoSuperViking from './components/MoreInfoSuperViking';
+import MoreInfoUltraSwede from './components/MoreInfoUltraSwede';
+import MoreInfoUltraSwedeESN from './components/MoreInfoUltraSwedeESN';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
@@ -77,6 +79,11 @@ function App() {
           <Route path='/MoreInfoSuperSwede' element={<MoreInfoSuperSwede />} />
           <Route path='/MoreInfoAlvar' element={<MoreInfoAlvar />} />
           <Route path='/MoreInfoUltraMax' element={<MoreInfoUltraMax />} />
+          <Route
+            path='/MoreInfoUltraSwedeESN'
+            element={<MoreInfoUltraSwedeESN />}
+          />
+          <Route path='/MoreInfoUltraSwede' element={<MoreInfoUltraSwede />} />
           <Route
             path='/MoreInfoSuperViking'
             element={<MoreInfoSuperViking />}

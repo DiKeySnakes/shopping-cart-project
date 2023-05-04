@@ -559,7 +559,7 @@ const ElectricGuitars = () => {
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='ultraSwede'>
           <RowTitle key={nanoid()}>Ultra Swede</RowTitle>
           <RowParagraph key={nanoid()}>
             Impressive. Fantastic tone, perfect balance and dressed to kill. The
@@ -567,7 +567,7 @@ const ElectricGuitars = () => {
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
-              to='/Products'
+              to='/MoreInfoUltraSwede'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
@@ -581,7 +581,7 @@ const ElectricGuitars = () => {
               </ImageWrapper>
             </Link>
             <Link
-              to='/Products'
+              to='/MoreInfoUltraSwedeESN'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>

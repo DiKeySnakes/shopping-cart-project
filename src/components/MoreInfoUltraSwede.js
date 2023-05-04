@@ -579,7 +579,7 @@ const Button = styled.button`
   }
 `;
 
-const MoreInfoUltraMax = () => {
+const MoreInfoUltraSwede = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -955,4 +955,4 @@ const MoreInfoUltraMax = () => {
   );
 };
 
-export default MoreInfoUltraMax;
+export default MoreInfoUltraSwede;

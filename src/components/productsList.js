@@ -39,6 +39,9 @@ import Super_Viking_Dandy_Dandelion_Vertical from '../assets/images/Super_Viking
 import Super_Viking_Dark_Baltic_Sea_Vertical from '../assets/images/Super_Viking_Dark_Baltic_Sea_Vertical.png';
 import Super_Viking_Mandarin_Flame_Vertical from '../assets/images/Super_Viking_Mandarin_Flame_Vertical.png';
 import Super_Viking_Lefthand_Wild_Cherry_Transparent_Vertical from '../assets/images/Super_Viking_Lefthand_Wild_Cherry_Transparent_Vertical.png';
+import Ultra_Swede_ESN_Black_Gloss_Vertical from '../assets/images/Ultra_Swede_ESN_Black_Gloss_Vertical.png';
+import Ultra_Swede_ESN_Tobacco_Sunburst_Vertical from '../assets/images/Ultra_Swede_ESN_Tobacco_Sunburst_Vertical.png';
+import Ultra_Swede_ESN_Wild_Cherry_Transparent_Vertical from '../assets/images/Ultra_Swede_ESN_Wild_Cherry_Transparent_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -449,6 +452,36 @@ const productsList = [
     name: 'Super Viking Lefthand',
     color: 'Wild Cherry Transparent',
     info: '/MoreInfoSuperViking',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Ultra_Swede_ESN_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Ultra Swede ESN',
+    color: 'Black Gloss',
+    info: '/MoreInfoUltraSwedeESN',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Ultra_Swede_ESN_Tobacco_Sunburst_Vertical,
+    brand: 'Hagstrom',
+    name: 'Ultra Swede ESN',
+    color: 'Tobacco Sunburst',
+    info: '/MoreInfoUltraSwedeESN',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Ultra_Swede_ESN_Wild_Cherry_Transparent_Vertical,
+    brand: 'Hagstrom',
+    name: 'Ultra Swede ESN',
+    color: 'Wild Cherry Transparent',
+    info: '/MoreInfoUltraSwedeESN',
     price: '1250',
     quantity: 1,
     id: nanoid(),

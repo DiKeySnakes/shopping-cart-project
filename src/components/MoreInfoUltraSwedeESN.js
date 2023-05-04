@@ -11,31 +11,23 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import Ultra_Max_Hero from '../assets/images/Ultra_Max_Hero.png';
-import Ultra_Max_Header from '../assets/images/Ultra_Max_Header.jpg';
-import HagstromUltraMaxDarkStorm from '../assets/images/HagstromUltraMaxDarkStorm.png';
-import HagstromUltraMaxFallSkySatin from '../assets/images/HagstromUltraMaxFallSkySatin.png';
-import HagstromUltraMaxMilkyMandarinSatin from '../assets/images/HagstromUltraMaxMilkyMandarinSatin.png';
-import HagstromUltraMaxBlackSatin from '../assets/images/HagstromUltraMaxBlackSatin.png';
-import HagstromUltraMaxCosmicBlackBurstSatin from '../assets/images/HagstromUltraMaxCosmicBlackBurstSatin.png';
-import HagstromUltraMaxGoldenEagleBurst from '../assets/images/HagstromUltraMaxGoldenEagleBurst.png';
+import Ultra_Swede_ESN_Hero from '../assets/images/Ultra_Swede_ESN_Hero.png';
+import Ultra_Swede_ESN_Header from '../assets/images/Ultra_Swede_ESN_Header.jpg';
+import Hagstrom_Ultra_Swede_ESN_Black_Gloss from '../assets/images/Hagstrom_Ultra_Swede_ESN_Black_Gloss.png';
+import Hagstrom_Ultra_Swede_ESN_Black_Gloss_Back from '../assets/images/Hagstrom_Ultra_Swede_ESN_Black_Gloss_Back.png';
+import Hagstrom_Ultra_Swede_ESN_Wild_Cherry_Transparent from '../assets/images/Hagstrom_Ultra_Swede_ESN_Wild_Cherry_Transparent.png';
+import Hagstrom_Ultra_Swede_ESN_Wild_Cherry_Transparent_Back from '../assets/images/Hagstrom_Ultra_Swede_ESN_Wild_Cherry_Transparent_Back.png';
+import Hagstrom_Ultra_Swede_ESN_Tobacco_Sunburst from '../assets/images/Hagstrom_Ultra_Swede_ESN_Tobacco_Sunburst.png';
+import Hagstrom_Ultra_Swede_ESN_Tobacco_Sunburst_Back from '../assets/images/Hagstrom_Ultra_Swede_ESN_Tobacco_Sunburst_Back.png';
 import Logo_Hagstrom_Lilie_Black from '../assets/images/Logo_Hagstrom_Lilie_Black.png';
-import Colors_Dark_Storm from '../assets/images/Colors_Dark_Storm.png';
-import Colors_Fall_Sky_Satin from '../assets/images/Colors_Fall_Sky_Satin.png';
-import Colors_Milky_Mandarin_Satin from '../assets/images/Colors_Milky_Mandarin_Satin.png';
-import Colors_Black_Satin from '../assets/images/Colors_Black_Satin.png';
-import Colors_Cosmic_Black_Burst_Satin from '../assets/images/Colors_Cosmic_Black_Burst_Satin.png';
-import Colors_Golden_Eagle_Burst_Flamed from '../assets/images/Colors_Golden_Eagle_Burst_Flamed.png';
+import Colors_Black_Gloss from '../assets/images/Colors_Black_Gloss.png';
+import Colors_Wild_Cherry_Transparent from '../assets/images/Colors_Wild_Cherry_Transparent.png';
+import Colors_Tobacco_Sunburst from '../assets/images/Colors_Tobacco_Sunburst.png';
 import Logo_Hagstrom_Lilie from '../assets/images/Logo_Hagstrom_Lilie.png';
-import Ultra_Max_Details_1 from '../assets/images/Ultra_Max_Details_1.jpg';
-import Ultra_Max_Details_2 from '../assets/images/Ultra_Max_Details_2.jpg';
-import Ultra_Max_Details_3 from '../assets/images/Ultra_Max_Details_3.jpg';
-import Ultra_Max_Details_4 from '../assets/images/Ultra_Max_Details_4.jpg';
-import Ultra_Max_Details_5 from '../assets/images/Ultra_Max_Details_5.jpg';
-import Ultra_Max_Details_6 from '../assets/images/Ultra_Max_Details_6.jpg';
 import Detail_expander from '../assets/images/Detail_expander.jpg';
 import Detail_tuning_peg from '../assets/images/Detail_tuning_peg.jpg';
 import Detail_sustain_block_tailpiece from '../assets/images/Detail_sustain_block_tailpiece.jpg';
+import Detail_bolt_on_neck_esn from '../assets/images/Detail_bolt_on_neck_esn.jpg';
 
 const Wrapper = styled.div`
   display: flex;
@@ -106,7 +98,7 @@ const IntroBackground = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(${Ultra_Max_Header});
+  background-image: url(${Ultra_Swede_ESN_Header});
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -320,38 +312,6 @@ const LogoSpan = styled.span`
   display: block;
   float: left;
   opacity: 0.3;
-`;
-
-const Details = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
-  gap: 2rem;
-  @media (max-width: 992px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media (max-width: 650px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-`;
-
-const DetailsWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 15px;
-`;
-
-const DetailsText = styled.p`
-  color: #333333;
-  font-family: 'Signika Negative', sans-serif;
-  font-size: 2vmin;
-  @media (max-width: 800px) {
-    font-size: 3vmin;
-  }
-  @media (max-width: 550px) {
-    font-size: 4vmin;
-  }
 `;
 
 const Colors = styled.div`
@@ -579,7 +539,7 @@ const Button = styled.button`
   }
 `;
 
-const MoreInfoUltraMax = () => {
+const MoreInfoUltraSwedeESN = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -587,10 +547,12 @@ const MoreInfoUltraMax = () => {
         <IntroBackground>
           <IntroContainer>
             <IntroTitle>
-              Ultra Max
-              <IntroParagraph></IntroParagraph>
+              Ultra Swede ESN
+              <IntroParagraph>
+                Essential Elements - Extraordinary Performance
+              </IntroParagraph>
             </IntroTitle>
-            <IntroImage src={Ultra_Max_Hero} alt='' />
+            <IntroImage src={Ultra_Swede_ESN_Hero} alt='' />
           </IntroContainer>
         </IntroBackground>
         <NavContainer>
@@ -600,9 +562,9 @@ const MoreInfoUltraMax = () => {
               <span>/</span>
               <NavLink to='/ElectricGuitars'>Electric Guitars</NavLink>
               <span>/</span>
-              <HashLink to='/ElectricGuitars#ultraMax'>Ultra Max</HashLink>
+              <HashLink to='/ElectricGuitars#ultraSwede'>Ultra Swede</HashLink>
               <span>/</span>
-              <NavLink>Ultra Max</NavLink>
+              <NavLink>Ultra Swede ESN</NavLink>
             </NavLinks>
             <ShareLinks>
               <NavLink>
@@ -621,54 +583,24 @@ const MoreInfoUltraMax = () => {
         </NavContainer>
         <MainContentWrapper>
           <LeftContentWrapper>
-            <MediaTitle>Hagstrom Ultra Max</MediaTitle>
+            <MediaTitle>Hagstrom Ultra Swede ESN</MediaTitle>
             <Paragraph>
               <LogoSpan>
                 <Logo src={Logo_Hagstrom_Lilie_Black} alt='' />
               </LogoSpan>
-              The Ultra Max shares the same small body concept of the Ultra
-              Swede, yet with a slightly larger proportioned mahogany body
-              topped with a thick custom carved flame maple top. The body joins
-              to a mahogany set neck utilizing a mortise and tenon neck joint
-              with a 25.50” scale length, which naturally features our
-              H-Expander™ truss-rod and Resinator™ fingerboard. Its sleek and
-              “ultra-comfortable fast neck” is paralleled with our Custom 60
-              Alnico-5 pickups with their eloquent Aluminum Brushed covers,
-              delivering the cutting voice that this instrument demands.
-            </Paragraph>
-            <MediaTitle>Mighty Punch and Hot Sizzle</MediaTitle>
-            <Paragraph>
-              Each of the Ultra Max’s specially wound Custom 60 humbucking
-              pickups utilizes Nylon coated wire united with an Alnico 5 magnet
-              (unmistakably familiar to the “Custom 58”). However, the Custom 60
-              ultimately packs a mighty punch and hot sizzle compared to the
-              vintage voiced Custom 58. Each pickup is controlled with its own
-              independent Volume pot featuring our standard R/C circuit on each
-              potentiometer, to help focus on its cleaner tones with a slight
-              turn of the pot. It’s single Master Tone also features a dual coil
-              split, using its push/pull tone configuration to allow for players
-              to switch from “Full Humbucker Tilt” to “Spanky Single Coil Clean”
-              in a heartbeat.
-            </Paragraph>
-            <MediaTitle>Drop Tunings, Flexibilty and Playability</MediaTitle>
-            <Paragraph>
-              The Ultra Max combines all of the power, long sustain, clarity and
-              attack, as found with the “Ultra Swede”, yet offers players a
-              fresh tonal pallet with additional flexibility and comfortable
-              playability with its compact body. With its longer 25.50” scale
-              length the Ultra Max handles drop tunings with ease, where players
-              looking for a slightly slimmed body with a searing tone will have
-              found their long-term mate.
-            </Paragraph>
-            <Paragraph>
-              The Ultra Max is available in four beautiful satin finishes: Satin
-              Black, Fall Sky, Milky Mandarin, and Satin Cosmic Black Burst.
-            </Paragraph>
-            <Paragraph>
-              The most surprising aspect of these instruments will be their
-              shockingly reasonable price. These are Hagstrom through and
-              through, and built to be driven long and hard. Experience the new
-              Hagstrom Ultra Max at your Hagstrom dealer.
+              The essential Hagstrom pro features packaged together for today’s
+              modern player in the most affordable platform we’ve ever offered.
+              Of course, the ESN is equipped with Hagstrom’s exclusive
+              H-Expander Trussrod™ for the ultimate in neck stability. Our
+              Sustain-Block Tailpiece™ uses six massive brass blocks to
+              individually couple each string directly to the body, generating a
+              clear, bell-like sustain way beyond the ESN’s price-class. Added
+              to the mix is a matched pair of Hagstrom-designed Custom 62
+              open-coil humbucking pickups for a tight, controlled modern tone
+              suitable for a wide spectrum of musical styles. A solid carved
+              mahogany body bolted to a maple neck featuring Hagstrom’s
+              UltraSlim-D profile, one of the fastest you’ll ever play,
+              completes this value-priced yet feature-rich package.
             </Paragraph>
           </LeftContentWrapper>
           <RightContentWrapper>
@@ -676,82 +608,30 @@ const MoreInfoUltraMax = () => {
             <Colors>
               <ColorsWrapper>
                 <Image
-                  src={Colors_Dark_Storm}
+                  src={Colors_Black_Gloss}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Dark Storm</ColorsText>
+                <ColorsText>Black Gloss</ColorsText>
               </ColorsWrapper>
               <ColorsWrapper>
                 <Image
-                  src={Colors_Fall_Sky_Satin}
+                  src={Colors_Wild_Cherry_Transparent}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Fall Sky Satin</ColorsText>
+                <ColorsText>Wild Cherry Transparent</ColorsText>
               </ColorsWrapper>
               <ColorsWrapper>
                 <Image
-                  src={Colors_Milky_Mandarin_Satin}
+                  src={Colors_Tobacco_Sunburst}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Milky Mandarin Satin</ColorsText>
-              </ColorsWrapper>
-              <ColorsWrapper>
-                <Image
-                  src={Colors_Black_Satin}
-                  alt=''
-                  style={{ width: '70px', height: 'auto' }}
-                />
-                <ColorsText>Black Satin</ColorsText>
-              </ColorsWrapper>
-              <ColorsWrapper>
-                <Image
-                  src={Colors_Cosmic_Black_Burst_Satin}
-                  alt=''
-                  style={{ width: '70px', height: 'auto' }}
-                />
-                <ColorsText>Cosmic Black Burst Satin</ColorsText>
-              </ColorsWrapper>
-              <ColorsWrapper>
-                <Image
-                  src={Colors_Golden_Eagle_Burst_Flamed}
-                  alt=''
-                  style={{ width: '70px', height: 'auto' }}
-                />
-                <ColorsText>Golden Eagle Burst Flamed</ColorsText>
+                <ColorsText>Colors Tobacco Sunburst</ColorsText>
               </ColorsWrapper>
             </Colors>
           </RightContentWrapper>
-        </MainContentWrapper>
-        <MainContentWrapper>
-          <Details>
-            <DetailsWrapper>
-              <Image src={Ultra_Max_Details_1} alt='' />
-              <DetailsText>Ultra Max Black Satin</DetailsText>
-            </DetailsWrapper>
-            <DetailsWrapper>
-              <Image src={Ultra_Max_Details_2} alt='' />
-              <DetailsText>Ultra Max Fall Sky Satin</DetailsText>
-            </DetailsWrapper>
-            <DetailsWrapper>
-              <Image src={Ultra_Max_Details_3} alt='' />
-              <DetailsText>Ultra Max Milky Mandarin Satin</DetailsText>
-            </DetailsWrapper>
-            <DetailsWrapper>
-              <Image src={Ultra_Max_Details_4} alt='' />
-              <DetailsText>Ultra Max Cosmic Black Burst</DetailsText>
-            </DetailsWrapper>
-            <DetailsWrapper>
-              <Image src={Ultra_Max_Details_5} alt='' />
-              <DetailsText>Hagstrom Headstock</DetailsText>
-            </DetailsWrapper>
-            <DetailsWrapper>
-              <Image src={Ultra_Max_Details_6} alt='' />
-              <DetailsText>Coil Split Option Push/Pull</DetailsText>
-            </DetailsWrapper>
-          </Details>
         </MainContentWrapper>
         <Quote>
           <QuoteContentWrapper>
@@ -787,64 +667,90 @@ const MoreInfoUltraMax = () => {
             open={open}
             close={() => setOpen(false)}
             slides={[
-              { src: HagstromUltraMaxDarkStorm },
-              { src: HagstromUltraMaxFallSkySatin },
-              { src: HagstromUltraMaxMilkyMandarinSatin },
-              { src: HagstromUltraMaxBlackSatin },
-              { src: HagstromUltraMaxCosmicBlackBurstSatin },
-              { src: HagstromUltraMaxGoldenEagleBurst },
+              { src: Hagstrom_Ultra_Swede_ESN_Black_Gloss },
+              { src: Hagstrom_Ultra_Swede_ESN_Black_Gloss_Back },
+              { src: Hagstrom_Ultra_Swede_ESN_Wild_Cherry_Transparent },
+              { src: Hagstrom_Ultra_Swede_ESN_Wild_Cherry_Transparent_Back },
+              { src: Hagstrom_Ultra_Swede_ESN_Tobacco_Sunburst },
+              { src: Hagstrom_Ultra_Swede_ESN_Tobacco_Sunburst_Back },
             ]}
           />
         </LightboxWrapper>
         <SpecsWrapper>
           <LeftSpecsWrapper>
-            <MediaTitle>Ultra Max Specs</MediaTitle>
+            <MediaTitle>Ultra Swede ESN Specs</MediaTitle>
             <MediaTitleSecondary>Body</MediaTitleSecondary>
             <ul>
               <li>Material: Mahogany</li>
-              <li>Top: Custom Carved Flame Maple</li>
+              <li>Top: Carved</li>
               <li>Style: Single Cutaway</li>
-              <li>Binding: White Perloid</li>
             </ul>
             <MediaTitleSecondary>Neck</MediaTitleSecondary>
             <ul>
-              <li>Joint: Set Neck</li>
-              <li>Material: Mahogany</li>
+              <li>Joint: Bolt-On</li>
+              <li>Material: Maple</li>
               <li>Profile: UltraSlim „D”</li>
               <li>Truss Rod: H-Expander™</li>
             </ul>
             <MediaTitleSecondary>Fingerboard/Nut</MediaTitleSecondary>
             <ul>
-              <li>Material: Resinator™ Fingerboard /</li>
+              <li>Material: Baked Jatoba</li>
               <li>Radius: 15"</li>
-              <li>Inlays: Pearloid Block</li>
+              <li>Inlays: 6 mm Pearloid Dots</li>
               <li>Frets: 22 Medium Jumbo</li>
-              <li>Scale Length: 25.50" (648 mm)</li>
+              <li>Scale Length: 24.75" (628 mm)</li>
               <li>Nut: GraphTech Black Tusq XL</li>
               <li>Nut Width: 43 mm</li>
             </ul>
             <MediaTitleSecondary>Electronics</MediaTitleSecondary>
             <ul>
-              <li>Pickups: 2 x Custom 60 AlNiCo-5 Humbucker</li>
-              <li>Brushed Aluminum Cover</li>
+              <li>
+                Pickups: 2 x Hagstrom Custom 62 Open Coil Ceramic Humbucker
+              </li>
               <li>Pickup Selector: 3-Way Toggle Switch</li>
-              <li>Controls: 1 x Tone Control with Push-Pull Coil Split</li>
+              <li>Controls: 1 x Volume with R/C Circuit & 1 x Tone</li>
             </ul>
             <MediaTitleSecondary>Parts</MediaTitleSecondary>
             <ul>
-              <li>Bridge: Long Travel Tune-O-Matic</li>
-              <li>Hagstrom Sustain Block Tailpiece</li>
-              <li>Tuning Keys: Hagstrom Design 15:1</li>
-              <li>Strings: D'Addario (10-46)</li>
+              <li>
+                Bridge: Long Travel Tune-O-Matic with Hagstrom Stop Tailpiece
+                and Single Brass String Blocks
+              </li>
+              <li>Tuning Keys: Hagstrom Design 18:1</li>
+              <li>Strings: D'Addario EXP 110 (10-46)</li>
             </ul>
             <MediaTitleSecondary>Optional Cases</MediaTitleSecondary>
             <ul>
-              <li>Case C53</li>
+              <li>Case C52</li>
               <li>Bag E20</li>
             </ul>
           </LeftSpecsWrapper>
           <RightSpecsWrapper>
-            <MediaTitle>Ultra Max Standards</MediaTitle>
+            <MediaTitle>Ultra Swede ESN Standards</MediaTitle>
+            <StandardsWrapper>
+              <StandardsImageWrapper>
+                <Image
+                  src={Detail_tuning_peg}
+                  alt=''
+                  style={{
+                    height: 'auto',
+                    maxWidth: '100%',
+                    verticalAlign: 'top',
+                  }}
+                />
+              </StandardsImageWrapper>
+              <StandardsTextWrapper>
+                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
+                  Hagstrom Machine Heads
+                </h4>
+                <p>
+                  Hagstrom models use 18:1 or 15:1 gear ratio machine heads
+                  based on our own designs to insure accurate tuning. Viking®
+                  and HB series basses feature machine heads with a 17:1 gear
+                  ratio.
+                </p>
+              </StandardsTextWrapper>
+            </StandardsWrapper>
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
@@ -879,30 +785,6 @@ const MoreInfoUltraMax = () => {
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
-                  src={Detail_tuning_peg}
-                  alt=''
-                  style={{
-                    height: 'auto',
-                    maxWidth: '100%',
-                    verticalAlign: 'top',
-                  }}
-                />
-              </StandardsImageWrapper>
-              <StandardsTextWrapper>
-                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Machine Heads
-                </h4>
-                <p>
-                  Hagstrom models use 18:1 or 15:1 gear ratio machine heads
-                  based on our own designs to insure accurate tuning. Viking®
-                  and HB series basses feature machine heads with a 17:1 gear
-                  ratio.
-                </p>
-              </StandardsTextWrapper>
-            </StandardsWrapper>
-            <StandardsWrapper>
-              <StandardsImageWrapper>
-                <Image
                   src={Detail_sustain_block_tailpiece}
                   alt=''
                   style={{
@@ -925,6 +807,30 @@ const MoreInfoUltraMax = () => {
                   coupled directly to the guitar’s body. The blocks are detached
                   from one another to reduce interference between the strings,
                   maximizing each string’s unique contribution.
+                </p>
+              </StandardsTextWrapper>
+            </StandardsWrapper>
+            <StandardsWrapper>
+              <StandardsImageWrapper>
+                <Image
+                  src={Detail_bolt_on_neck_esn}
+                  alt=''
+                  style={{
+                    height: 'auto',
+                    maxWidth: '100%',
+                    verticalAlign: 'top',
+                  }}
+                />
+              </StandardsImageWrapper>
+              <StandardsTextWrapper>
+                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>Bolt-On</h4>
+                <p>
+                  <ul style={{ paddingLeft: '16px' }}>
+                    <li>Slightly brighter and more vivid tone</li>
+                    <li>Ample amounts of attack/"snap"</li>
+                    <li>Strong resonance and sustain</li>
+                    <li>Great serviceability</li>
+                  </ul>
                 </p>
               </StandardsTextWrapper>
             </StandardsWrapper>
@@ -955,4 +861,4 @@ const MoreInfoUltraMax = () => {
   );
 };
 
-export default MoreInfoUltraMax;
+export default MoreInfoUltraSwedeESN;
