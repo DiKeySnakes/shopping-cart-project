@@ -42,6 +42,10 @@ import Super_Viking_Lefthand_Wild_Cherry_Transparent_Vertical from '../assets/im
 import Ultra_Swede_ESN_Black_Gloss_Vertical from '../assets/images/Ultra_Swede_ESN_Black_Gloss_Vertical.png';
 import Ultra_Swede_ESN_Tobacco_Sunburst_Vertical from '../assets/images/Ultra_Swede_ESN_Tobacco_Sunburst_Vertical.png';
 import Ultra_Swede_ESN_Wild_Cherry_Transparent_Vertical from '../assets/images/Ultra_Swede_ESN_Wild_Cherry_Transparent_Vertical.png';
+import Ultra_Swede_Black_Gloss_Vertical from '../assets/images/Ultra_Swede_Black_Gloss_Vertical.png';
+import Ultra_Swede_Burgundy_Burst_Vertical from '../assets/images/Ultra_Swede_Burgundy_Burst_Vertical.png';
+import Ultra_Swede_Cosmic_Black_Burst_Vertical from '../assets/images/Ultra_Swede_Cosmic_Black_Burst_Vertical.png';
+import Ultra_Swede_Worn_Denim_Vertical from '../assets/images/Ultra_Swede_Worn_Denim_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -482,6 +486,46 @@ const productsList = [
     name: 'Ultra Swede ESN',
     color: 'Wild Cherry Transparent',
     info: '/MoreInfoUltraSwedeESN',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Ultra_Swede_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Ultra Swede',
+    color: 'Black Gloss',
+    info: '/MoreInfoUltraSwede',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Ultra_Swede_Burgundy_Burst_Vertical,
+    brand: 'Hagstrom',
+    name: 'Ultra Swede',
+    color: 'Burgundy Burst',
+    info: '/MoreInfoUltraSwede',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Ultra_Swede_Cosmic_Black_Burst_Vertical,
+    brand: 'Hagstrom',
+    name: 'Ultra Swede',
+    color: 'Cosmic Black Burst',
+    info: '/MoreInfoUltraSwede',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Ultra_Swede_Worn_Denim_Vertical,
+    brand: 'Hagstrom',
+    name: 'Ultra Swede',
+    color: 'Worn Denim',
+    info: '/MoreInfoUltraSwede',
     price: '1250',
     quantity: 1,
     id: nanoid(),
