@@ -11,28 +11,30 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import Viking_Hero from '../assets/images/Viking_Hero.png';
-import Viking_Header from '../assets/images/Viking_Header.jpg';
-import Viking_White_Gloss from '../assets/images/Viking_White_Gloss.png';
-import Viking_Wild_Cherry_Transparent from '../assets/images/Viking_Wild_Cherry_Transparent.png';
-import Viking_Black_Gloss from '../assets/images/Viking_Black_Gloss.png';
-import Viking_Tobacco_Sunburst from '../assets/images/Viking_Tobacco_Sunburst.png';
+import Ultra_Swede_Hero from '../assets/images/Ultra_Swede_Hero.png';
+import Ultra_Swede_ESN_Header from '../assets/images/Ultra_Swede_ESN_Header.jpg';
+import HSULSWE09_Ultra_Swede_Black_Gloss from '../assets/images/HSULSWE09_Ultra_Swede_Black_Gloss.png';
+import HSULSWE_Ultra_Swede_Back from '../assets/images/HSULSWE_Ultra_Swede_Back.png';
+import HSULSWE25_Ultra_Swede_Burgundy_Burst from '../assets/images/HSULSWE25_Ultra_Swede_Burgundy_Burst.png';
+import HSULSWE_Ultra_Swede_Worn_Denim from '../assets/images/HSULSWE_Ultra_Swede_Worn_Denim.png';
+import HSULSWE41_Ultra_Swede_Cosmic_Black_Burst from '../assets/images/HSULSWE41_Ultra_Swede_Cosmic_Black_Burst.png';
+import HSULSWE43_Ultra_Swede_Tobacco_Sunburst from '../assets/images/HSULSWE43_Ultra_Swede_Tobacco_Sunburst.png';
 import Logo_Hagstrom_Lilie_Black from '../assets/images/Logo_Hagstrom_Lilie_Black.png';
 import Colors_Black_Gloss from '../assets/images/Colors_Black_Gloss.png';
-import Colors_Wild_Cherry_Transparent from '../assets/images/Colors_Wild_Cherry_Transparent.png';
-import Colors_Tobacco_Sunburst from '../assets/images/Colors_Tobacco_Sunburst.png';
-import Colors_White_Gloss from '../assets/images/Colors_White_Gloss.png';
+import Colors_Cosmic_Black_Burst from '../assets/images/Colors_Cosmic_Black_Burst.png';
+import Colors_Burgundy_Burst from '../assets/images/Colors_Burgundy_Burst.png';
+import Colors_Worn_Denim from '../assets/images/Colors_Worn_Denim.png';
 import Logo_Hagstrom_Lilie from '../assets/images/Logo_Hagstrom_Lilie.png';
-import HSVIK_Details_345x276_0002 from '../assets/images/HSVIK_Details_345x276_0002.jpg';
-import HSVIK_Details_345x276_0003 from '../assets/images/HSVIK_Details_345x276_0003.jpg';
+import UltraSwede_Body_Details_01 from '../assets/images/UltraSwede_Body_Details_01.jpg';
 import Detail_resinator_wood from '../assets/images/Detail_resinator_wood.jpg';
 import Detail_expander from '../assets/images/Detail_expander.jpg';
 import Detail_tuning_peg from '../assets/images/Detail_tuning_peg.jpg';
 import Detail_set_neck from '../assets/images/Detail_set_neck.jpg';
-import Detail_trapez_bridge from '../assets/images/Detail_trapez_bridge.jpg';
+import Detail_sustain_block_tailpiece from '../assets/images/Detail_sustain_block_tailpiece.jpg';
 import ReactAudioPlayer from 'react-audio-player';
-import viking_bridge_neck from '../assets/sounds/viking_bridge_neck.ogg';
-import viking_neck_clean from '../assets/sounds/viking_neck_clean.ogg';
+import UltraSwede_Bridge from '../assets/sounds/UltraSwede_Bridge.ogg';
+import UltraSwede_Neck from '../assets/sounds/UltraSwede_Neck.ogg';
+import ReactPlayer from 'react-player';
 
 const Wrapper = styled.div`
   display: flex;
@@ -103,7 +105,7 @@ const IntroBackground = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(${Viking_Header});
+  background-image: url(${Ultra_Swede_ESN_Header});
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -586,7 +588,22 @@ const Button = styled.button`
   }
 `;
 
-const MoreInfoViking = () => {
+const VideoWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Video = styled.div`
+  width: 84vmin;
+  height: 48vmin;
+  display: flex;
+  flex-direction: row;
+`;
+
+const MoreInfoViking67 = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -594,10 +611,10 @@ const MoreInfoViking = () => {
         <IntroBackground>
           <IntroContainer>
             <IntroTitle>
-              Viking®
-              <IntroParagraph>Conquer The World</IntroParagraph>
+              Ultra Swede
+              <IntroParagraph>21st Century Swedish Classic</IntroParagraph>
             </IntroTitle>
-            <IntroImage src={Viking_Hero} alt='' />
+            <IntroImage src={Ultra_Swede_Hero} alt='' />
           </IntroContainer>
         </IntroBackground>
         <NavContainer>
@@ -607,9 +624,9 @@ const MoreInfoViking = () => {
               <span>/</span>
               <NavLink to='/ElectricGuitars'>Electric Guitars</NavLink>
               <span>/</span>
-              <HashLink to='/ElectricGuitars#viking'>Viking®</HashLink>
+              <HashLink to='/ElectricGuitars#ultraSwede'>Ultra Swede</HashLink>
               <span>/</span>
-              <NavLink>Viking®</NavLink>
+              <NavLink>Ultra Swede</NavLink>
             </NavLinks>
             <ShareLinks>
               <NavLink>
@@ -628,26 +645,40 @@ const MoreInfoViking = () => {
         </NavContainer>
         <MainContentWrapper>
           <LeftContentWrapper>
-            <MediaTitle>Hagstrom Viking®</MediaTitle>
+            <MediaTitle>Hagstrom Ultra Swede</MediaTitle>
             <Paragraph>
               <LogoSpan>
                 <Logo src={Logo_Hagstrom_Lilie_Black} alt='' />
               </LogoSpan>
-              Enter a true Scandinavian warrior! The Viking® stands proudly next
-              to its solid-body siblings, the Swede and Super Swede. It is THE
-              undisputed all-time classic of the Hagstrom range, and is one of
-              the finest and most affordable semi-hollow guitars on the market
-              today. With its meticulously crafted laminated maple body, solid
-              center-sustain-block, and hard-maple set neck, it churns out
-              sounds as diverse as they come. Hagstrom’s prominent, yet
-              not-too-hot HJ50 humbucking pickups deliver a broad sonic palette
-              ranging from Blues to Rock to Jazz-Fusion to 60’s Beat and beyond.
-              You can even take it on a shred spin.
+              A slender, compact body joined to an ultra-slim neck profiled in a
+              easy “D” shape is combined with the rich and powerful sound of
+              Hagstrom’s Custom 62 pickups. The tone is truly “ultra-licious”,
+              both in humbucking mode and in coil-split mode for single-coil
+              sounds. The Ultra Swede is everything that makes a Hagstrom
+              special combined together in a platform for the 21st century.
             </Paragraph>
-            <Paragraph>Viking® Crunch</Paragraph>
-            <ReactAudioPlayer src={viking_bridge_neck} controls />
-            <Paragraph style={{ marginTop: '19px' }}>Viking® Clean</Paragraph>
-            <ReactAudioPlayer src={viking_neck_clean} controls />
+            <MediaTitle>The Power and the Glory</MediaTitle>
+            <Paragraph>
+              Hagstrom’s Custom Ceramic 62 pickups shine in both humbucker and
+              in single-coil mode. A tight and raucous humbucker attack is
+              complemented by a lush and airy single-coil tone when the pickup
+              coils are split.
+            </Paragraph>
+            <MediaTitle>Ultrathin Neck</MediaTitle>
+            <Paragraph>
+              Vintage Hagstrom necks were known as the “fastest in the world”
+              and the Ultra Swede easily lives up to this legacy. Its
+              H-Expander™ truss rod, Resinator™ fingerboard, and slim “D”
+              profile provide an ultra-comfortable playing surface that can
+              handle the lowest action settings. Pull the trigger and let those
+              fingers fly!
+            </Paragraph>
+            <Paragraph>Ultra Swede Bridge Pick Up</Paragraph>
+            <ReactAudioPlayer src={UltraSwede_Bridge} controls />
+            <Paragraph style={{ marginTop: '19px' }}>
+              Ultra Swede Neck Pick Up
+            </Paragraph>
+            <ReactAudioPlayer src={UltraSwede_Neck} controls />
           </LeftContentWrapper>
           <RightContentWrapper>
             <MediaTitle>Colors</MediaTitle>
@@ -662,46 +693,38 @@ const MoreInfoViking = () => {
               </ColorsWrapper>
               <ColorsWrapper>
                 <Image
-                  src={Colors_Wild_Cherry_Transparent}
+                  src={Colors_Cosmic_Black_Burst}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Wild Cherry Transparent</ColorsText>
+                <ColorsText>Cosmic Black Burst</ColorsText>
               </ColorsWrapper>
               <ColorsWrapper>
                 <Image
-                  src={Colors_Tobacco_Sunburst}
+                  src={Colors_Burgundy_Burst}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Tobacco Sunburst</ColorsText>
+                <ColorsText>Burgundy Burst</ColorsText>
               </ColorsWrapper>
               <ColorsWrapper>
                 <Image
-                  src={Colors_White_Gloss}
+                  src={Colors_Worn_Denim}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>White Gloss</ColorsText>
+                <ColorsText>Worn Denim</ColorsText>
               </ColorsWrapper>
             </Colors>
             <MediaTitle>Colors Lefthand</MediaTitle>
             <Colors>
               <ColorsWrapper>
                 <Image
-                  src={Colors_Black_Gloss}
+                  src={Colors_Cosmic_Black_Burst}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Black Gloss</ColorsText>
-              </ColorsWrapper>
-              <ColorsWrapper>
-                <Image
-                  src={Colors_Wild_Cherry_Transparent}
-                  alt=''
-                  style={{ width: '70px', height: 'auto' }}
-                />
-                <ColorsText>Wild Cherry Transparent</ColorsText>
+                <ColorsText>Cosmic Black Burst</ColorsText>
               </ColorsWrapper>
             </Colors>
           </RightContentWrapper>
@@ -709,12 +732,8 @@ const MoreInfoViking = () => {
         <MainContentWrapper>
           <Details>
             <DetailsWrapper>
-              <Image src={HSVIK_Details_345x276_0002} alt='' />
-              <DetailsText>Hagstrom Viking® Jacob Widén</DetailsText>
-            </DetailsWrapper>
-            <DetailsWrapper>
-              <Image src={HSVIK_Details_345x276_0003} alt='' />
-              <DetailsText>Hagstrom Viking®</DetailsText>
+              <Image src={UltraSwede_Body_Details_01} alt='' />
+              <DetailsText>Ultra Swede Body</DetailsText>
             </DetailsWrapper>
           </Details>
         </MainContentWrapper>
@@ -752,33 +771,35 @@ const MoreInfoViking = () => {
             open={open}
             close={() => setOpen(false)}
             slides={[
-              { src: Viking_White_Gloss },
-              { src: Viking_Wild_Cherry_Transparent },
-              { src: Viking_Black_Gloss },
-              { src: Viking_Tobacco_Sunburst },
+              { src: HSULSWE09_Ultra_Swede_Black_Gloss },
+              { src: HSULSWE_Ultra_Swede_Back },
+              { src: HSULSWE25_Ultra_Swede_Burgundy_Burst },
+              { src: HSULSWE_Ultra_Swede_Worn_Denim },
+              { src: HSULSWE41_Ultra_Swede_Cosmic_Black_Burst },
+              { src: HSULSWE43_Ultra_Swede_Tobacco_Sunburst },
             ]}
           />
         </LightboxWrapper>
         <SpecsWrapper>
           <LeftSpecsWrapper>
-            <MediaTitle>Viking® Specs</MediaTitle>
+            <MediaTitle>Ultra Swede Specs</MediaTitle>
             <MediaTitleSecondary>Body</MediaTitleSecondary>
             <ul>
-              <li>Material: Ply Maple</li>
-              <li>Top: Contoured</li>
-              <li>Style: Semi-Hollow</li>
+              <li>Material: 2 piece Basswood</li>
+              <li>Top: Maple</li>
+              <li>Style: Single Cutaway</li>
             </ul>
             <MediaTitleSecondary>Neck</MediaTitleSecondary>
             <ul>
               <li>Joint: Set Neck</li>
-              <li>Material: Canadian Hard Maple</li>
+              <li>Material: Maple</li>
               <li>Truss Rod: H-Expander™</li>
             </ul>
             <MediaTitleSecondary>Fingerboard/Nut</MediaTitleSecondary>
             <ul>
               <li>Material: Resinator™</li>
               <li>Radius: 15"</li>
-              <li>Inlays: Block Inlays</li>
+              <li>Inlays: Select Block Pearl/Abalone</li>
               <li>Frets: 22 Medium Jumbo</li>
               <li>Scale Length: 24.75" (628 mm)</li>
               <li>Nut: GraphTech Black Tusq XL</li>
@@ -786,27 +807,60 @@ const MoreInfoViking = () => {
             </ul>
             <MediaTitleSecondary>Electronics</MediaTitleSecondary>
             <ul>
-              <li>Pickups: 2 x Hagstrom HJ-50</li>
+              <li>Pickups: 2 x Hagstrom Custom 62</li>
               <li>Pickup Selector: 3-Way Toggle Switch</li>
-              <li>Controls: 2 x Volume / 2 x Tone</li>
+              <li>
+                Controls: 1 x Volume / 1 x Tone / Mini Toggle coil split switch
+              </li>
             </ul>
             <MediaTitleSecondary>Parts</MediaTitleSecondary>
             <ul>
               <li>
-                Bridge: Long Travel Tune-O-Matic with Hagstrom Trapeze Tail
-                Piece
+                Bridge: Long Travel Tune-O-Matic with Hagstrom Stop Tailpiece
+                and Single Brass String Blocks
               </li>
               <li>Tuning Keys: Hagstrom Design 18:1</li>
               <li>Strings: D'Addario EXP 110 (10-46)</li>
             </ul>
             <MediaTitleSecondary>Optional Cases</MediaTitleSecondary>
             <ul>
-              <li>Case C55</li>
-              <li>Bag E25</li>
+              <li>Case C52</li>
+              <li>Bag E20</li>
             </ul>
           </LeftSpecsWrapper>
           <RightSpecsWrapper>
-            <MediaTitle>Viking® Standards</MediaTitle>
+            <MediaTitle>Ultra Swede Standards</MediaTitle>
+            <StandardsWrapper>
+              <StandardsImageWrapper>
+                <Image
+                  src={Detail_resinator_wood}
+                  alt=''
+                  style={{
+                    height: 'auto',
+                    maxWidth: '100%',
+                    verticalAlign: 'top',
+                  }}
+                />
+              </StandardsImageWrapper>
+              <StandardsTextWrapper>
+                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
+                  Resinator Wood
+                </h4>
+                <p>
+                  Resinator™ wood is a wood composite material that is both more
+                  uniform in density and more stable than any standard wood
+                  product. These characteristics eliminate dead spots or “wolf
+                  tones” sometimes associated with conventional wood
+                  fingerboards. Resinator™ wood has an articulate sound similar
+                  to high quality ebony, but without any of the problems
+                  associated with ebony. It provides a stable and clear tone,
+                  and also adds higher overtones and harmonics which uniquely
+                  detail each note. Like our H-Expander™ truss rod, Resinator™
+                  wood is a major contributor to the distinctive “Hagstrom
+                  tone”.
+                </p>
+              </StandardsTextWrapper>
+            </StandardsWrapper>
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
@@ -865,37 +919,6 @@ const MoreInfoViking = () => {
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
-                  src={Detail_resinator_wood}
-                  alt=''
-                  style={{
-                    height: 'auto',
-                    maxWidth: '100%',
-                    verticalAlign: 'top',
-                  }}
-                />
-              </StandardsImageWrapper>
-              <StandardsTextWrapper>
-                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Resinator Wood
-                </h4>
-                <p>
-                  Resinator™ wood is a wood composite material that is both more
-                  uniform in density and more stable than any standard wood
-                  product. These characteristics eliminate dead spots or “wolf
-                  tones” sometimes associated with conventional wood
-                  fingerboards. Resinator™ wood has an articulate sound similar
-                  to high quality ebony, but without any of the problems
-                  associated with ebony. It provides a stable and clear tone,
-                  and also adds higher overtones and harmonics which uniquely
-                  detail each note. Like our H-Expander™ truss rod, Resinator™
-                  wood is a major contributor to the distinctive “Hagstrom
-                  tone”.
-                </p>
-              </StandardsTextWrapper>
-            </StandardsWrapper>
-            <StandardsWrapper>
-              <StandardsImageWrapper>
-                <Image
                   src={Detail_set_neck}
                   alt=''
                   style={{
@@ -924,7 +947,7 @@ const MoreInfoViking = () => {
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
-                  src={Detail_trapez_bridge}
+                  src={Detail_sustain_block_tailpiece}
                   alt=''
                   style={{
                     height: 'auto',
@@ -935,20 +958,39 @@ const MoreInfoViking = () => {
               </StandardsImageWrapper>
               <StandardsTextWrapper>
                 <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Trapeze Stringholder/Tailpiece
+                  Sustain Block Tailpiece
                 </h4>
                 <p>
-                  The classic Viking® trapeze stringholder/-tailpiece design, is
-                  a work of art in itself. Right underneath the top part, where
-                  the two beautifully swept beams meet, it features a string
-                  claw for easy access and super comfortable string changes.
-                  Adorned with the legendary Hagstrom crest it truly is elegance
-                  defined.
+                  Hagstrom’s unique Sustain Block Tailpiece™ was the result of
+                  design work starting in 1976 and made its first appearance on
+                  Swede and Super Swede guitars produced in 1978. Since then it
+                  has been a signature feature on many of our solid body models.
+                  Each string terminates in a single, massive brass block
+                  coupled directly to the guitar’s body. The blocks are detached
+                  from one another to reduce interference between the strings,
+                  maximizing each string’s unique contribution.
                 </p>
               </StandardsTextWrapper>
             </StandardsWrapper>
           </RightSpecsWrapper>
         </SpecsWrapper>
+        <VideoWrapper>
+          <MediaTitle>
+            <a
+              href='https://youtu.be/a0XMR4VVB5c'
+              target='_blank'
+              rel='noopener noreferrer'>
+              Hagstrom Ultra Swede Demo by James Frankland
+            </a>
+          </MediaTitle>
+          <Video>
+            <ReactPlayer
+              url='https://youtu.be/a0XMR4VVB5c'
+              width='100%'
+              height='100%'
+            />
+          </Video>
+        </VideoWrapper>
         <ButtonWrapper>
           <Link to='/Products'>
             <Button>
@@ -974,4 +1016,4 @@ const MoreInfoViking = () => {
   );
 };
 
-export default MoreInfoViking;
+export default MoreInfoViking67;

@@ -46,6 +46,10 @@ import Ultra_Swede_Black_Gloss_Vertical from '../assets/images/Ultra_Swede_Black
 import Ultra_Swede_Burgundy_Burst_Vertical from '../assets/images/Ultra_Swede_Burgundy_Burst_Vertical.png';
 import Ultra_Swede_Cosmic_Black_Burst_Vertical from '../assets/images/Ultra_Swede_Cosmic_Black_Burst_Vertical.png';
 import Ultra_Swede_Worn_Denim_Vertical from '../assets/images/Ultra_Swede_Worn_Denim_Vertical.png';
+import Viking_Black_Gloss_Vertical from '../assets/images/Viking_Black_Gloss_Vertical.png';
+import Viking_Wild_Cherry_Transparent_Vertical from '../assets/images/Viking_Wild_Cherry_Transparent_Vertical.png';
+import Viking_White_Gloss_Vertical from '../assets/images/Viking_White_Gloss_Vertical.png';
+import Viking_Tobacco_Sunburst_Vertical from '../assets/images/Viking_Tobacco_Sunburst_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -527,6 +531,46 @@ const productsList = [
     color: 'Worn Denim',
     info: '/MoreInfoUltraSwede',
     price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Viking_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Viking',
+    color: 'Black Gloss',
+    info: '/MoreInfoViking',
+    price: '1350',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Viking_Wild_Cherry_Transparent_Vertical,
+    brand: 'Hagstrom',
+    name: 'Viking',
+    color: 'Wild Cherry Transparent',
+    info: '/MoreInfoViking',
+    price: '1350',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Viking_White_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Viking',
+    color: 'White Gloss',
+    info: '/MoreInfoViking',
+    price: '1350',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Viking_Tobacco_Sunburst_Vertical,
+    brand: 'Hagstrom',
+    name: 'Viking',
+    color: 'Tobacco Sunburst',
+    info: '/MoreInfoViking',
+    price: '1350',
     quantity: 1,
     id: nanoid(),
   },

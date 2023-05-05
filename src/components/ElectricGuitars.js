@@ -646,7 +646,7 @@ const ElectricGuitars = () => {
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='viking'>
           <RowTitle key={nanoid()}>Viking®</RowTitle>
           <RowParagraph key={nanoid()}>
             The All-Rounder. It covers all genres, from blues to rock/fusion,
@@ -655,7 +655,7 @@ const ElectricGuitars = () => {
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
-              to='/Products'
+              to='/MoreInfoViking'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
@@ -669,7 +669,7 @@ const ElectricGuitars = () => {
               </ImageWrapper>
             </Link>
             <Link
-              to='/Products'
+              to='/MoreInfoViking67'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>

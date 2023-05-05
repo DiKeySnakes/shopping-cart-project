@@ -13,6 +13,7 @@ import MoreInfoImpalaCopperburst from './components/MoreInfoImpalaCopperburst';
 import MoreInfoRetroScapeImpala from './components/MoreInfoRetroScapeImpala';
 import MoreInfoRetroScapeHIII from './components/MoreInfoRetroScapeHIII';
 import MoreInfoViking from './components/MoreInfoViking';
+import MoreInfoViking67 from './components/MoreInfoViking67';
 import MoreInfoVikingGoldTop from './components/MoreInfoVikingGoldTop';
 import MoreInfoSuperVikingTransBrown from './components/MoreInfoSuperVikingTransBrown';
 import MoreInfoFantomenCustom from './components/MoreInfoFantomenCustom';
@@ -88,6 +89,7 @@ function App() {
             path='/MoreInfoSuperViking'
             element={<MoreInfoSuperViking />}
           />
+          <Route path='/MoreInfoViking67' element={<MoreInfoViking67 />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </ScrollToTopHelper>
