@@ -50,6 +50,8 @@ import Viking_Black_Gloss_Vertical from '../assets/images/Viking_Black_Gloss_Ver
 import Viking_Wild_Cherry_Transparent_Vertical from '../assets/images/Viking_Wild_Cherry_Transparent_Vertical.png';
 import Viking_White_Gloss_Vertical from '../assets/images/Viking_White_Gloss_Vertical.png';
 import Viking_Tobacco_Sunburst_Vertical from '../assets/images/Viking_Tobacco_Sunburst_Vertical.png';
+import Viking67_Black_Gloss_Vertical from '../assets/images/Viking67_Black_Gloss_Vertical.png';
+import Viking67_Wild_Cherry_Transparent_Vertical from '../assets/images/Viking67_Wild_Cherry_Transparent_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -537,7 +539,7 @@ const productsList = [
   {
     src: Viking_Black_Gloss_Vertical,
     brand: 'Hagstrom',
-    name: 'Viking',
+    name: 'Viking®',
     color: 'Black Gloss',
     info: '/MoreInfoViking',
     price: '1350',
@@ -547,7 +549,7 @@ const productsList = [
   {
     src: Viking_Wild_Cherry_Transparent_Vertical,
     brand: 'Hagstrom',
-    name: 'Viking',
+    name: 'Viking®',
     color: 'Wild Cherry Transparent',
     info: '/MoreInfoViking',
     price: '1350',
@@ -557,7 +559,7 @@ const productsList = [
   {
     src: Viking_White_Gloss_Vertical,
     brand: 'Hagstrom',
-    name: 'Viking',
+    name: 'Viking®',
     color: 'White Gloss',
     info: '/MoreInfoViking',
     price: '1350',
@@ -567,9 +569,29 @@ const productsList = [
   {
     src: Viking_Tobacco_Sunburst_Vertical,
     brand: 'Hagstrom',
-    name: 'Viking',
+    name: 'Viking®',
     color: 'Tobacco Sunburst',
     info: '/MoreInfoViking',
+    price: '1350',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Viking67_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: "'67 Viking® II",
+    color: 'Black Gloss',
+    info: '/MoreInfoViking67',
+    price: '1350',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Viking67_Wild_Cherry_Transparent_Vertical,
+    brand: 'Hagstrom',
+    name: "'67 Viking® II",
+    color: 'Wild Cherry Transparent',
+    info: '/MoreInfoViking67',
     price: '1350',
     quantity: 1,
     id: nanoid(),

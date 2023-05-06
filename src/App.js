@@ -25,6 +25,7 @@ import MoreInfoUltraMax from './components/MoreInfoUltraMax';
 import MoreInfoSuperViking from './components/MoreInfoSuperViking';
 import MoreInfoUltraSwede from './components/MoreInfoUltraSwede';
 import MoreInfoUltraSwedeESN from './components/MoreInfoUltraSwedeESN';
+import MoreInfoVikingDeluxeBaritone from './components/MoreInfoVikingDeluxeBaritone';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
@@ -90,6 +91,10 @@ function App() {
             element={<MoreInfoSuperViking />}
           />
           <Route path='/MoreInfoViking67' element={<MoreInfoViking67 />} />
+          <Route
+            path='/MoreInfoVikingDeluxeBaritone'
+            element={<MoreInfoVikingDeluxeBaritone />}
+          />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </ScrollToTopHelper>

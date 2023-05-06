@@ -11,19 +11,30 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import Viking67_Hero from '../assets/images/Viking67_Hero.png';
-import Viking67_Header from '../assets/images/Viking67_Header.png';
-import Viking67_Black_Gloss from '../assets/images/Viking67_Black_Gloss.png';
-import Viking67_Black_Gloss_Back from '../assets/images/Viking67_Black_Gloss_Back.png';
-import Viking67_Wild_Cherry_Transparent from '../assets/images/Viking67_Wild_Cherry_Transparent.png';
-import Viking67_Wild_Cherry_Transparent_Back from '../assets/images/Viking67_Wild_Cherry_Transparent_Back.png';
+import Ultra_Swede_Hero from '../assets/images/Ultra_Swede_Hero.png';
+import Ultra_Swede_ESN_Header from '../assets/images/Ultra_Swede_ESN_Header.jpg';
+import HSULSWE09_Ultra_Swede_Black_Gloss from '../assets/images/HSULSWE09_Ultra_Swede_Black_Gloss.png';
+import HSULSWE_Ultra_Swede_Back from '../assets/images/HSULSWE_Ultra_Swede_Back.png';
+import HSULSWE25_Ultra_Swede_Burgundy_Burst from '../assets/images/HSULSWE25_Ultra_Swede_Burgundy_Burst.png';
+import HSULSWE_Ultra_Swede_Worn_Denim from '../assets/images/HSULSWE_Ultra_Swede_Worn_Denim.png';
+import HSULSWE41_Ultra_Swede_Cosmic_Black_Burst from '../assets/images/HSULSWE41_Ultra_Swede_Cosmic_Black_Burst.png';
+import HSULSWE43_Ultra_Swede_Tobacco_Sunburst from '../assets/images/HSULSWE43_Ultra_Swede_Tobacco_Sunburst.png';
 import Logo_Hagstrom_Lilie_Black from '../assets/images/Logo_Hagstrom_Lilie_Black.png';
 import Colors_Black_Gloss from '../assets/images/Colors_Black_Gloss.png';
-import Colors_Wild_Cherry_Transparent from '../assets/images/Colors_Wild_Cherry_Transparent.png';
+import Colors_Cosmic_Black_Burst from '../assets/images/Colors_Cosmic_Black_Burst.png';
+import Colors_Burgundy_Burst from '../assets/images/Colors_Burgundy_Burst.png';
+import Colors_Worn_Denim from '../assets/images/Colors_Worn_Denim.png';
 import Logo_Hagstrom_Lilie from '../assets/images/Logo_Hagstrom_Lilie.png';
+import UltraSwede_Body_Details_01 from '../assets/images/UltraSwede_Body_Details_01.jpg';
 import Detail_resinator_wood from '../assets/images/Detail_resinator_wood.jpg';
 import Detail_expander from '../assets/images/Detail_expander.jpg';
-import Detail_bolt_on_neck from '../assets/images/Detail_bolt_on_neck.jpg';
+import Detail_tuning_peg from '../assets/images/Detail_tuning_peg.jpg';
+import Detail_set_neck from '../assets/images/Detail_set_neck.jpg';
+import Detail_sustain_block_tailpiece from '../assets/images/Detail_sustain_block_tailpiece.jpg';
+import ReactAudioPlayer from 'react-audio-player';
+import UltraSwede_Bridge from '../assets/sounds/UltraSwede_Bridge.ogg';
+import UltraSwede_Neck from '../assets/sounds/UltraSwede_Neck.ogg';
+import ReactPlayer from 'react-player';
 
 const Wrapper = styled.div`
   display: flex;
@@ -94,7 +105,7 @@ const IntroBackground = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(${Viking67_Header});
+  background-image: url(${Ultra_Swede_ESN_Header});
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -318,6 +329,38 @@ const LogoSpan = styled.span`
   display: block;
   float: left;
   opacity: 0.3;
+`;
+
+const Details = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 2rem;
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 650px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
+
+const DetailsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+`;
+
+const DetailsText = styled.p`
+  color: #333333;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 2vmin;
+  @media (max-width: 800px) {
+    font-size: 3vmin;
+  }
+  @media (max-width: 550px) {
+    font-size: 4vmin;
+  }
 `;
 
 const Colors = styled.div`
@@ -545,7 +588,22 @@ const Button = styled.button`
   }
 `;
 
-const MoreInfoViking67 = () => {
+const VideoWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Video = styled.div`
+  width: 84vmin;
+  height: 48vmin;
+  display: flex;
+  flex-direction: row;
+`;
+
+const MoreInfoVikingDeluxeBaritone = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -553,10 +611,10 @@ const MoreInfoViking67 = () => {
         <IntroBackground>
           <IntroContainer>
             <IntroTitle>
-              '67 Viking® II
-              <IntroParagraph>Conquer The World</IntroParagraph>
+              Ultra Swede
+              <IntroParagraph>21st Century Swedish Classic</IntroParagraph>
             </IntroTitle>
-            <IntroImage src={Viking67_Hero} alt='' />
+            <IntroImage src={Ultra_Swede_Hero} alt='' />
           </IntroContainer>
         </IntroBackground>
         <NavContainer>
@@ -566,9 +624,9 @@ const MoreInfoViking67 = () => {
               <span>/</span>
               <NavLink to='/ElectricGuitars'>Electric Guitars</NavLink>
               <span>/</span>
-              <HashLink to='/ElectricGuitars#viking'>Viking®</HashLink>
+              <HashLink to='/ElectricGuitars#ultraSwede'>Ultra Swede</HashLink>
               <span>/</span>
-              <NavLink>'67 Viking® II</NavLink>
+              <NavLink>Ultra Swede</NavLink>
             </NavLinks>
             <ShareLinks>
               <NavLink>
@@ -587,47 +645,40 @@ const MoreInfoViking67 = () => {
         </NavContainer>
         <MainContentWrapper>
           <LeftContentWrapper>
-            <MediaTitle>Hagstrom '67 Viking® II</MediaTitle>
+            <MediaTitle>Hagstrom Ultra Swede</MediaTitle>
             <Paragraph>
               <LogoSpan>
                 <Logo src={Logo_Hagstrom_Lilie_Black} alt='' />
               </LogoSpan>
-              The Hagstrom Viking® saw the first light of day back in 1965, and
-              became quickly one of the most popular Hagstrom models which
-              continued in production until 1979. Since Hagstrom’s international
-              return to the market in 2004, the Viking® has made new conquests
-              around the world and has become one of our most popular models
-              with its amazing tone, ease of playability and ravishingly
-              appealing looks.
+              A slender, compact body joined to an ultra-slim neck profiled in a
+              easy “D” shape is combined with the rich and powerful sound of
+              Hagstrom’s Custom 62 pickups. The tone is truly “ultra-licious”,
+              both in humbucking mode and in coil-split mode for single-coil
+              sounds. The Ultra Swede is everything that makes a Hagstrom
+              special combined together in a platform for the 21st century.
             </Paragraph>
-            <MediaTitle>Rock 'n' Roll History</MediaTitle>
+            <MediaTitle>The Power and the Glory</MediaTitle>
             <Paragraph>
-              Now Hagstrom turns back time and rediscovers the 1967 Viking® II
-              as it was originally produced during this distinct era of rock 'n'
-              roll history. The Swedish pathfinder has influenced the music
-              world (and pop culture itself) by becoming so broadly recognized
-              within international television, media and in the hands of some of
-              music’s biggest legends and forefathers of rock 'n' roll.
+              Hagstrom’s Custom Ceramic 62 pickups shine in both humbucker and
+              in single-coil mode. A tight and raucous humbucker attack is
+              complemented by a lush and airy single-coil tone when the pickup
+              coils are split.
             </Paragraph>
-            <MediaTitle>Modern Day Technology</MediaTitle>
+            <MediaTitle>Ultrathin Neck</MediaTitle>
             <Paragraph>
-              The new Hagstrom ’67 Viking® II equipped with its hollow-body slim
-              lined flame maple ply body, is adjoined to a 6-in-line, bolt-on
-              Canadian maple neck. The new specially developed dual coiled
-              Hagstrom Mini-Humbucking pickups will bring players back to the
-              golden age of rock/pop music, with the introduction of the newly
-              developed Hagstrom “H-52” Mini Humbucker pickups. The same classic
-              vibe from the 60’s originals, fused together with modern day
-              technology for a classic and punchy humbucker tone or in splitable
-              single coil mode, providing players with complete tonal
-              flexibility.
+              Vintage Hagstrom necks were known as the “fastest in the world”
+              and the Ultra Swede easily lives up to this legacy. Its
+              H-Expander™ truss rod, Resinator™ fingerboard, and slim “D”
+              profile provide an ultra-comfortable playing surface that can
+              handle the lowest action settings. Pull the trigger and let those
+              fingers fly!
             </Paragraph>
-            <Paragraph>
-              Gold hardware and details tastefully adorn the instrument where
-              players can’t help falling in love all over again, with this
-              legendary instrument as we bring this ‘67 classic back from days
-              of yesteryear.
+            <Paragraph>Ultra Swede Bridge Pick Up</Paragraph>
+            <ReactAudioPlayer src={UltraSwede_Bridge} controls />
+            <Paragraph style={{ marginTop: '19px' }}>
+              Ultra Swede Neck Pick Up
             </Paragraph>
+            <ReactAudioPlayer src={UltraSwede_Neck} controls />
           </LeftContentWrapper>
           <RightContentWrapper>
             <MediaTitle>Colors</MediaTitle>
@@ -642,14 +693,49 @@ const MoreInfoViking67 = () => {
               </ColorsWrapper>
               <ColorsWrapper>
                 <Image
-                  src={Colors_Wild_Cherry_Transparent}
+                  src={Colors_Cosmic_Black_Burst}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Wild Cherry Transparent</ColorsText>
+                <ColorsText>Cosmic Black Burst</ColorsText>
+              </ColorsWrapper>
+              <ColorsWrapper>
+                <Image
+                  src={Colors_Burgundy_Burst}
+                  alt=''
+                  style={{ width: '70px', height: 'auto' }}
+                />
+                <ColorsText>Burgundy Burst</ColorsText>
+              </ColorsWrapper>
+              <ColorsWrapper>
+                <Image
+                  src={Colors_Worn_Denim}
+                  alt=''
+                  style={{ width: '70px', height: 'auto' }}
+                />
+                <ColorsText>Worn Denim</ColorsText>
+              </ColorsWrapper>
+            </Colors>
+            <MediaTitle>Colors Lefthand</MediaTitle>
+            <Colors>
+              <ColorsWrapper>
+                <Image
+                  src={Colors_Cosmic_Black_Burst}
+                  alt=''
+                  style={{ width: '70px', height: 'auto' }}
+                />
+                <ColorsText>Cosmic Black Burst</ColorsText>
               </ColorsWrapper>
             </Colors>
           </RightContentWrapper>
+        </MainContentWrapper>
+        <MainContentWrapper>
+          <Details>
+            <DetailsWrapper>
+              <Image src={UltraSwede_Body_Details_01} alt='' />
+              <DetailsText>Ultra Swede Body</DetailsText>
+            </DetailsWrapper>
+          </Details>
         </MainContentWrapper>
         <Quote>
           <QuoteContentWrapper>
@@ -685,92 +771,65 @@ const MoreInfoViking67 = () => {
             open={open}
             close={() => setOpen(false)}
             slides={[
-              { src: Viking67_Black_Gloss },
-              { src: Viking67_Black_Gloss_Back },
-              { src: Viking67_Wild_Cherry_Transparent },
-              { src: Viking67_Wild_Cherry_Transparent_Back },
+              { src: HSULSWE09_Ultra_Swede_Black_Gloss },
+              { src: HSULSWE_Ultra_Swede_Back },
+              { src: HSULSWE25_Ultra_Swede_Burgundy_Burst },
+              { src: HSULSWE_Ultra_Swede_Worn_Denim },
+              { src: HSULSWE41_Ultra_Swede_Cosmic_Black_Burst },
+              { src: HSULSWE43_Ultra_Swede_Tobacco_Sunburst },
             ]}
           />
         </LightboxWrapper>
         <SpecsWrapper>
           <LeftSpecsWrapper>
-            <MediaTitle>'67 Viking® II Specs</MediaTitle>
+            <MediaTitle>Ultra Swede Specs</MediaTitle>
             <MediaTitleSecondary>Body</MediaTitleSecondary>
             <ul>
-              <li>Hollow Double Cutaway</li>
-              <li>5-Ply Canadian Flame Maple Ply Construction</li>
-              <li>Multi-Ply Binding</li>
-              <li>Bound f-Holes</li>
+              <li>Material: 2 piece Basswood</li>
+              <li>Top: Maple</li>
+              <li>Style: Single Cutaway</li>
             </ul>
             <MediaTitleSecondary>Neck</MediaTitleSecondary>
             <ul>
-              <li>Bolt-On Neck - Canadian Hard Maple</li>
-              <li>H-Expander™ Truss Rod</li>
-              <li>Multi-Ply Binding</li>
+              <li>Joint: Set Neck</li>
+              <li>Material: Maple</li>
+              <li>Truss Rod: H-Expander™</li>
             </ul>
             <MediaTitleSecondary>Fingerboard/Nut</MediaTitleSecondary>
             <ul>
-              <li>Resinator™ Fingerboard</li>
-              <li>24.56” (624 mm) Scale Length</li>
-              <li>Pearloid Block Inlays</li>
-              <li>22 Medium Jumbo Frets / 15” Radius</li>
-              <li>GraphTech Tusq/40mm</li>
+              <li>Material: Resinator™</li>
+              <li>Radius: 15"</li>
+              <li>Inlays: Select Block Pearl/Abalone</li>
+              <li>Frets: 22 Medium Jumbo</li>
+              <li>Scale Length: 24.75" (628 mm)</li>
+              <li>Nut: GraphTech Black Tusq XL</li>
+              <li>Nut Width: 43 mm</li>
             </ul>
             <MediaTitleSecondary>Electronics</MediaTitleSecondary>
             <ul>
-              <li>2 x Hagstrom H-52 AlNiCo 5</li>
-              <li>Gold Mini Humbucker Pickups w/ coil split</li>
-              <li>3-Way Toggle Switch Pickup Selector - Gold Finish</li>
-              <li>2 x Volume Control / 2 x Tone Control (Push/Pull)</li>
+              <li>Pickups: 2 x Hagstrom Custom 62</li>
+              <li>Pickup Selector: 3-Way Toggle Switch</li>
+              <li>
+                Controls: 1 x Volume / 1 x Tone / Mini Toggle coil split switch
+              </li>
             </ul>
             <MediaTitleSecondary>Parts</MediaTitleSecondary>
             <ul>
               <li>
-                Long Throw Tune-O-Matic Bridge on wood block with Hagstrom
-                Trapeeze Tail Piece - Gold Finish
+                Bridge: Long Travel Tune-O-Matic with Hagstrom Stop Tailpiece
+                and Single Brass String Blocks
               </li>
-              <li>Hagstrom 18:1 Chrome Die Cast Tuners - Gold Finish</li>
-              <li>D’Addario (10-46) Strings</li>
+              <li>Tuning Keys: Hagstrom Design 18:1</li>
+              <li>Strings: D'Addario EXP 110 (10-46)</li>
             </ul>
             <MediaTitleSecondary>Optional Cases</MediaTitleSecondary>
             <ul>
-              <li>Case C55</li>
-              <li>Bag E25</li>
+              <li>Case C52</li>
+              <li>Bag E20</li>
             </ul>
           </LeftSpecsWrapper>
           <RightSpecsWrapper>
-            <MediaTitle>'67 Viking® II Standards</MediaTitle>
-            <StandardsWrapper>
-              <StandardsImageWrapper>
-                <Image
-                  src={Detail_expander}
-                  alt=''
-                  style={{
-                    height: 'auto',
-                    maxWidth: '100%',
-                    verticalAlign: 'top',
-                  }}
-                />
-              </StandardsImageWrapper>
-              <StandardsTextWrapper>
-                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  H-Expander
-                </h4>
-                <p>
-                  All Hagstrom electric guitars and basses include our patented
-                  H-Expander™ truss rod. Providing tension at both ends and
-                  running the entire length of the neck, the rigid yet
-                  light-weight alloy truss rod allows for a very low action and
-                  thin neck, two factors that were instrumental in earning
-                  Hagstrom its reputation as the world’s fastest playing guitar.
-                  The H-Expander™ truss rod not only provides ultimate neck
-                  stability, but it also contributes to Hagstrom’s unique tone.
-                  Longer sustain and a round attack are some of the sonic
-                  characteristics the H-Expander™ adds to the tonal essence of
-                  Hagstrom.
-                </p>
-              </StandardsTextWrapper>
-            </StandardsWrapper>
+            <MediaTitle>Ultra Swede Standards</MediaTitle>
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
@@ -805,7 +864,7 @@ const MoreInfoViking67 = () => {
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
-                  src={Detail_bolt_on_neck}
+                  src={Detail_tuning_peg}
                   alt=''
                   style={{
                     height: 'auto',
@@ -815,19 +874,123 @@ const MoreInfoViking67 = () => {
                 />
               </StandardsImageWrapper>
               <StandardsTextWrapper>
-                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>Bolt-On</h4>
+                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
+                  Hagstrom Machine Heads
+                </h4>
                 <p>
-                  <ul style={{ paddingLeft: '16px' }}>
-                    <li>Slightly brighter and more vivid tone</li>
-                    <li>Ample amounts of attack/"snap"</li>
-                    <li>Strong resonance and sustain</li>
-                    <li>Great serviceability</li>
-                  </ul>
+                  Hagstrom models use 18:1 or 15:1 gear ratio machine heads
+                  based on our own designs to insure accurate tuning. Viking®
+                  and HB series basses feature machine heads with a 17:1 gear
+                  ratio.
+                </p>
+              </StandardsTextWrapper>
+            </StandardsWrapper>
+            <StandardsWrapper>
+              <StandardsImageWrapper>
+                <Image
+                  src={Detail_expander}
+                  alt=''
+                  style={{
+                    height: 'auto',
+                    maxWidth: '100%',
+                    verticalAlign: 'top',
+                  }}
+                />
+              </StandardsImageWrapper>
+              <StandardsTextWrapper>
+                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
+                  H-Expander
+                </h4>
+                <p>
+                  All Hagstrom electric guitars and basses include our patented
+                  H-Expander™ truss rod. Providing tension at both ends and
+                  running the entire length of the neck, the rigid yet
+                  light-weight alloy truss rod allows for a very low action and
+                  thin neck, two factors that were instrumental in earning
+                  Hagstrom its reputation as the world’s fastest playing guitar.
+                  The H-Expander™ truss rod not only provides ultimate neck
+                  stability, but it also contributes to Hagstrom’s unique tone.
+                  Longer sustain and a round attack are some of the sonic
+                  characteristics the H-Expander™ adds to the tonal essence of
+                  Hagstrom.
+                </p>
+              </StandardsTextWrapper>
+            </StandardsWrapper>
+            <StandardsWrapper>
+              <StandardsImageWrapper>
+                <Image
+                  src={Detail_set_neck}
+                  alt=''
+                  style={{
+                    height: 'auto',
+                    maxWidth: '100%',
+                    verticalAlign: 'top',
+                  }}
+                />
+              </StandardsImageWrapper>
+              <StandardsTextWrapper>
+                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
+                  Set Neck
+                </h4>
+                <p>
+                  Hagstrom uses a variety of different neck joints throughout
+                  our range. Our set-neck recipe is the classic and time-tested
+                  Mortise and Tenon joint, a design that most efficiently
+                  transfers string energy from neck to body, and can often only
+                  be found on more expensive custom-built guitars. A team of
+                  experienced and dedicated craftsmen hand carves every neck
+                  joint, insuring perfect execution of this traditional
+                  technique preferred by luthiers for generations.
+                </p>
+              </StandardsTextWrapper>
+            </StandardsWrapper>
+            <StandardsWrapper>
+              <StandardsImageWrapper>
+                <Image
+                  src={Detail_sustain_block_tailpiece}
+                  alt=''
+                  style={{
+                    height: 'auto',
+                    maxWidth: '100%',
+                    verticalAlign: 'top',
+                  }}
+                />
+              </StandardsImageWrapper>
+              <StandardsTextWrapper>
+                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
+                  Sustain Block Tailpiece
+                </h4>
+                <p>
+                  Hagstrom’s unique Sustain Block Tailpiece™ was the result of
+                  design work starting in 1976 and made its first appearance on
+                  Swede and Super Swede guitars produced in 1978. Since then it
+                  has been a signature feature on many of our solid body models.
+                  Each string terminates in a single, massive brass block
+                  coupled directly to the guitar’s body. The blocks are detached
+                  from one another to reduce interference between the strings,
+                  maximizing each string’s unique contribution.
                 </p>
               </StandardsTextWrapper>
             </StandardsWrapper>
           </RightSpecsWrapper>
         </SpecsWrapper>
+        <VideoWrapper>
+          <MediaTitle>
+            <a
+              href='https://youtu.be/a0XMR4VVB5c'
+              target='_blank'
+              rel='noopener noreferrer'>
+              Hagstrom Ultra Swede Demo by James Frankland
+            </a>
+          </MediaTitle>
+          <Video>
+            <ReactPlayer
+              url='https://youtu.be/a0XMR4VVB5c'
+              width='100%'
+              height='100%'
+            />
+          </Video>
+        </VideoWrapper>
         <ButtonWrapper>
           <Link to='/Products'>
             <Button>
@@ -853,4 +1016,4 @@ const MoreInfoViking67 = () => {
   );
 };
 
-export default MoreInfoViking67;
+export default MoreInfoVikingDeluxeBaritone;
