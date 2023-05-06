@@ -596,7 +596,7 @@ const Video = styled.div`
   flex-direction: row;
 `;
 
-const MoreInfoVikingDeluxeBaritone = () => {
+const MoreInfoVikingDeluxe12 = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -954,4 +954,4 @@ const MoreInfoVikingDeluxeBaritone = () => {
   );
 };
 
-export default MoreInfoVikingDeluxeBaritone;
+export default MoreInfoVikingDeluxe12;

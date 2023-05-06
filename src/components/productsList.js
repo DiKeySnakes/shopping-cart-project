@@ -52,6 +52,7 @@ import Viking_White_Gloss_Vertical from '../assets/images/Viking_White_Gloss_Ver
 import Viking_Tobacco_Sunburst_Vertical from '../assets/images/Viking_Tobacco_Sunburst_Vertical.png';
 import Viking67_Black_Gloss_Vertical from '../assets/images/Viking67_Black_Gloss_Vertical.png';
 import Viking67_Wild_Cherry_Transparent_Vertical from '../assets/images/Viking67_Wild_Cherry_Transparent_Vertical.png';
+import Viking_Deluxe_Baritone_Black_Gloss_Vertical from '../assets/images/Viking_Deluxe_Baritone_Black_Gloss_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -592,6 +593,16 @@ const productsList = [
     name: "'67 Viking® II",
     color: 'Wild Cherry Transparent',
     info: '/MoreInfoViking67',
+    price: '1350',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Viking_Deluxe_Baritone_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Viking® Deluxe Baritone',
+    color: 'Black Gloss',
+    info: '/MoreInfoVikingDeluxeBaritone',
     price: '1350',
     quantity: 1,
     id: nanoid(),
