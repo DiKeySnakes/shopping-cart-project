@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.3ccc824e.js",
+    "main.js": "/shopping-cart-project/static/js/main.56c476ed.js",
     "static/media/viking_bridge_neck.ogg": "/shopping-cart-project/static/media/viking_bridge_neck.66695dda61b38dab4673.ogg",
+    "static/media/Viking67_Header.png": "/shopping-cart-project/static/media/Viking67_Header.54b20b69d2c932618e29.png",
     "static/media/viking_neck_clean.ogg": "/shopping-cart-project/static/media/viking_neck_clean.f1212c64b9506888d214.ogg",
     "static/media/HagstromVikingGoldTop.png": "/shopping-cart-project/static/media/HagstromVikingGoldTop.610b80976c5b9f7c1d1d.png",
     "static/media/Artist_Project_Viking_Gold_Top_Vertical.png": "/shopping-cart-project/static/media/Artist_Project_Viking_Gold_Top_Vertical.e60f693fff0d2397d4b7.png",
@@ -10,6 +11,10 @@
     "static/media/Viking_Black_Gloss.png": "/shopping-cart-project/static/media/Viking_Black_Gloss.437a28e34c5b3e6779c6.png",
     "static/media/HagstromSuperVikingTransBrown.png": "/shopping-cart-project/static/media/HagstromSuperVikingTransBrown.a5a54d440ad11f3cf7ce.png",
     "static/media/Artist_Project_Super_Viking_Trans_Brown_Vertical.png": "/shopping-cart-project/static/media/Artist_Project_Super_Viking_Trans_Brown_Vertical.5ba16f83b9aca32eb888.png",
+    "static/media/Viking67_Wild_Cherry_Transparent_Vertical.png": "/shopping-cart-project/static/media/Viking67_Wild_Cherry_Transparent_Vertical.e68407da0d659454688d.png",
+    "static/media/Viking67_Wild_Cherry_Transparent.png": "/shopping-cart-project/static/media/Viking67_Wild_Cherry_Transparent.ae7e056ea56718ad53fd.png",
+    "static/media/Viking67_Black_Gloss_Vertical.png": "/shopping-cart-project/static/media/Viking67_Black_Gloss_Vertical.9252616cbae4b3ffae49.png",
+    "static/media/Viking67_Black_Gloss.png": "/shopping-cart-project/static/media/Viking67_Black_Gloss.2f2cb35db9505bbb09a1.png",
     "static/media/Viking_Wild_Cherry_Transparent_Vertical.png": "/shopping-cart-project/static/media/Viking_Wild_Cherry_Transparent_Vertical.8ee5e891ddfd64b6ccec.png",
     "static/media/Viking_Wild_Cherry_Transparent.png": "/shopping-cart-project/static/media/Viking_Wild_Cherry_Transparent.a287b4598b1d1100dc04.png",
     "static/media/WISBORG_Foto_Hagstrom_final.jpg": "/shopping-cart-project/static/media/WISBORG_Foto_Hagstrom_final.7987da95d6c380feb9f5.jpg",
@@ -56,6 +61,7 @@
     "static/media/SuperSwedeDarkStormVertical.png": "/shopping-cart-project/static/media/SuperSwedeDarkStormVertical.c4571e65e9471ae5c168.png",
     "static/media/HagstromSuperSwedeCrimsonFlame.png": "/shopping-cart-project/static/media/HagstromSuperSwedeCrimsonFlame.a6b0427bd2f58db398e7.png",
     "static/media/SuperSwedeCrimsonFlameVertical.png": "/shopping-cart-project/static/media/SuperSwedeCrimsonFlameVertical.a3beaec20e3e0c05b045.png",
+    "static/media/Viking67_Wild_Cherry_Transparent_Back.png": "/shopping-cart-project/static/media/Viking67_Wild_Cherry_Transparent_Back.6836a0ff61b77f3519f2.png",
     "static/media/Alvar_Black_Gloss_Vertical.png": "/shopping-cart-project/static/media/Alvar_Black_Gloss_Vertical.a6286f0bcc80a497c7dd.png",
     "static/media/HagstromAlvarBlackGloss.png": "/shopping-cart-project/static/media/HagstromAlvarBlackGloss.b6d57b4e59fa9996a280.png",
     "static/media/Fantomen_Custom_Black_Gloss_Vertical.png": "/shopping-cart-project/static/media/Fantomen_Custom_Black_Gloss_Vertical.6891f705e8c4f3545bc4.png",
@@ -81,6 +87,7 @@
     "static/media/HagstromImpalaCopperburstBack.png": "/shopping-cart-project/static/media/HagstromImpalaCopperburstBack.5c3b9b92bcfafa06f62c.png",
     "static/media/Pat_Smear_Signature_Black_Gloss.png": "/shopping-cart-project/static/media/Pat_Smear_Signature_Black_Gloss.a34b50cde830bcc57bd0.png",
     "static/media/HagstromPatSmearBlackGloss.png": "/shopping-cart-project/static/media/HagstromPatSmearBlackGloss.6126aa63d360337fee36.png",
+    "static/media/Viking67_Black_Gloss_Back.png": "/shopping-cart-project/static/media/Viking67_Black_Gloss_Back.d50fca1e1f44b3af63f8.png",
     "static/media/Fantomen_Black_Gloss_Vertical.png": "/shopping-cart-project/static/media/Fantomen_Black_Gloss_Vertical.145d07c3b46203039aae.png",
     "static/media/Fantomen_Black_Gloss.png": "/shopping-cart-project/static/media/Fantomen_Black_Gloss.0b23d3ec956bcfef570e.png",
     "static/media/Retroscape_HIII_Aged_Sky_Blue_Vertical.png": "/shopping-cart-project/static/media/Retroscape_HIII_Aged_Sky_Blue_Vertical.d0a7f8566b957512f99e.png",
@@ -243,6 +250,7 @@
     "static/media/Colors_HAGSTROM_Mandarin_Burst.png": "/shopping-cart-project/static/media/Colors_HAGSTROM_Mandarin_Burst.be0b02c6971fed2b5d71.png",
     "static/media/Arne_Wiese_MotorradKaffee.jpg": "/shopping-cart-project/static/media/Arne_Wiese_MotorradKaffee.f209dda38435cc2a7348.jpg",
     "static/media/Acoustic_Guitars_Header.jpg": "/shopping-cart-project/static/media/Acoustic_Guitars_Header.038a0fd347c99a19e72a.jpg",
+    "static/media/Viking67_Hero.png": "/shopping-cart-project/static/media/Viking67_Hero.37e35f0e109a06365057.png",
     "static/media/Beto_Grammatico_Salta_La_Blanca.jpg": "/shopping-cart-project/static/media/Beto_Grammatico_Salta_La_Blanca.383b87328fc0b7ac7ebc.jpg",
     "static/media/Retroscape_HIII_Hero.png": "/shopping-cart-project/static/media/Retroscape_HIII_Hero.c690273b2d13f3b681c3.png",
     "static/media/HSSWEMK3_Details_345x276Px_03.jpg": "/shopping-cart-project/static/media/HSSWEMK3_Details_345x276Px_03.6bf519c727c3e2d689df.jpg",
@@ -397,10 +405,10 @@
     "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "static/media/ScrollIcon.svg": "/shopping-cart-project/static/media/ScrollIcon.a1eb858b6e5366f1bd5779a8e0ec1c44.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.3ccc824e.js.map": "/shopping-cart-project/static/js/main.3ccc824e.js.map"
+    "main.56c476ed.js.map": "/shopping-cart-project/static/js/main.56c476ed.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.3ccc824e.js"
+    "static/js/main.56c476ed.js"
   ]
 }
