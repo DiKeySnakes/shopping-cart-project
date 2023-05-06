@@ -54,6 +54,9 @@ import Viking67_Black_Gloss_Vertical from '../assets/images/Viking67_Black_Gloss
 import Viking67_Wild_Cherry_Transparent_Vertical from '../assets/images/Viking67_Wild_Cherry_Transparent_Vertical.png';
 import Viking_Deluxe_Baritone_Black_Gloss_Vertical from '../assets/images/Viking_Deluxe_Baritone_Black_Gloss_Vertical.png';
 import Viking_Deluxe_12_Wild_Cherry_Transparent_Vertical from '../assets/images/Viking_Deluxe_12_Wild_Cherry_Transparent_Vertical.png';
+import Tremar_Viking_Deluxe_Cloudy_Seas_Vertical from '../assets/images/Tremar_Viking_Deluxe_Cloudy_Seas_Vertical.png';
+import Tremar_Viking_Deluxe_Wild_Cherry_Transparent_Vertical from '../assets/images/Tremar_Viking_Deluxe_Wild_Cherry_Transparent_Vertical.png';
+import Tremar_Viking_Deluxe_Black_Gloss_Vertical from '../assets/images/Tremar_Viking_Deluxe_Black_Gloss_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -615,6 +618,36 @@ const productsList = [
     color: 'Wild Cherry Transparent',
     info: '/MoreInfoVikingDeluxe12',
     price: '1450',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Tremar_Viking_Deluxe_Cloudy_Seas_Vertical,
+    brand: 'Hagstrom',
+    name: 'Tremar Viking® Deluxe',
+    color: 'Cloudy Seas',
+    info: '/MoreInfoTremarVikingDeluxe',
+    price: '1550',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Tremar_Viking_Deluxe_Wild_Cherry_Transparent_Vertical,
+    brand: 'Hagstrom',
+    name: 'Tremar Viking® Deluxe',
+    color: 'Wild Cherry Transparent',
+    info: '/MoreInfoTremarVikingDeluxe',
+    price: '1550',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Tremar_Viking_Deluxe_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Tremar Viking® Deluxe',
+    color: 'Black Gloss',
+    info: '/MoreInfoTremarVikingDeluxe',
+    price: '1550',
     quantity: 1,
     id: nanoid(),
   },

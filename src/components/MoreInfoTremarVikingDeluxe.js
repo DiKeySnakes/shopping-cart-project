@@ -13,23 +13,26 @@ import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import Tremar_Viking_Deluxe_Hero from '../assets/images/Tremar_Viking_Deluxe_Hero.png';
 import Tremar_Viking_Deluxe_Header from '../assets/images/Tremar_Viking_Deluxe_Header.jpg';
-import Viking_White_Gloss from '../assets/images/Viking_White_Gloss.png';
-import Viking_Wild_Cherry_Transparent from '../assets/images/Viking_Wild_Cherry_Transparent.png';
-import Viking_Black_Gloss from '../assets/images/Viking_Black_Gloss.png';
-import Viking_Tobacco_Sunburst from '../assets/images/Viking_Tobacco_Sunburst.png';
 import Logo_Hagstrom_Lilie_Black from '../assets/images/Logo_Hagstrom_Lilie_Black.png';
 import Colors_Black_Gloss from '../assets/images/Colors_Black_Gloss.png';
 import Colors_Wild_Cherry_Transparent from '../assets/images/Colors_Wild_Cherry_Transparent.png';
-import Colors_Tobacco_Sunburst from '../assets/images/Colors_Tobacco_Sunburst.png';
+import Colors_Cloudy_Seas from '../assets/images/Colors_Cloudy_Seas.png';
+import HSVVIKDL04 from '../assets/images/HSVVIKDL04.png';
+import HSVVIKDL04_Back from '../assets/images/HSVVIKDL04_Back.png';
+import HSVVIKDL77 from '../assets/images/HSVVIKDL77.png';
+import HSVVIKDL77_Back from '../assets/images/HSVVIKDL77_Back.png';
+import HSVVIKDL09 from '../assets/images/HSVVIKDL09.png';
 import Logo_Hagstrom_Lilie from '../assets/images/Logo_Hagstrom_Lilie.png';
 import Detail_resinator_wood from '../assets/images/Detail_resinator_wood.jpg';
 import Detail_expander from '../assets/images/Detail_expander.jpg';
 import Detail_tuning_peg from '../assets/images/Detail_tuning_peg.jpg';
 import Detail_set_neck from '../assets/images/Detail_set_neck.jpg';
-import Detail_trapez_bridge from '../assets/images/Detail_trapez_bridge.jpg';
+import Detail_tremar_vibrato from '../assets/images/Detail_tremar_vibrato.jpg';
 import ReactAudioPlayer from 'react-audio-player';
-import viking_bridge_neck from '../assets/sounds/viking_bridge_neck.ogg';
-import viking_neck_clean from '../assets/sounds/viking_neck_clean.ogg';
+import Viking_Deluxe_Tremar_bridge_position from '../assets/sounds/Viking_Deluxe_Tremar_bridge_position.ogg';
+import Viking_Deluxe_Tremar_bridge_position_2 from '../assets/sounds/Viking_Deluxe_Tremar_bridge_position_2.ogg';
+import Viking_Deluxe_Tremar_mid_position from '../assets/sounds/Viking_Deluxe_Tremar_mid_position.ogg';
+import Viking_Deluxe_Tremar_neck_position from '../assets/sounds/Viking_Deluxe_Tremar_neck_position.ogg';
 
 const Wrapper = styled.div`
   display: flex;
@@ -605,19 +608,31 @@ const MoreInfoTremarVikingDeluxe = () => {
               with stability enhanced by the Tune-O-Matic roller bridge.
             </Paragraph>
             <Paragraph>Tremar Viking® Deluxe Bridge Overdrive</Paragraph>
-            <ReactAudioPlayer src={viking_bridge_neck} controls />
+            <ReactAudioPlayer
+              src={Viking_Deluxe_Tremar_bridge_position}
+              controls
+            />
             <Paragraph style={{ marginTop: '19px' }}>
               Tremar Viking® Deluxe Bridge Distortion
             </Paragraph>
-            <ReactAudioPlayer src={viking_neck_clean} controls />
+            <ReactAudioPlayer
+              src={Viking_Deluxe_Tremar_bridge_position_2}
+              controls
+            />
             <Paragraph style={{ marginTop: '19px' }}>
               Tremar Viking® Deluxe Pickups Combined Clean
             </Paragraph>
-            <ReactAudioPlayer src={viking_neck_clean} controls />
+            <ReactAudioPlayer
+              src={Viking_Deluxe_Tremar_mid_position}
+              controls
+            />
             <Paragraph style={{ marginTop: '19px' }}>
               Tremar Viking® Deluxe Neck Clean
             </Paragraph>
-            <ReactAudioPlayer src={viking_neck_clean} controls />
+            <ReactAudioPlayer
+              src={Viking_Deluxe_Tremar_neck_position}
+              controls
+            />
           </LeftContentWrapper>
           <RightContentWrapper>
             <MediaTitle>Colors</MediaTitle>
@@ -632,19 +647,19 @@ const MoreInfoTremarVikingDeluxe = () => {
               </ColorsWrapper>
               <ColorsWrapper>
                 <Image
+                  src={Colors_Cloudy_Seas}
+                  alt=''
+                  style={{ width: '70px', height: 'auto' }}
+                />
+                <ColorsText>Cloudy Seas</ColorsText>
+              </ColorsWrapper>
+              <ColorsWrapper>
+                <Image
                   src={Colors_Wild_Cherry_Transparent}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
                 <ColorsText>Wild Cherry Transparent</ColorsText>
-              </ColorsWrapper>
-              <ColorsWrapper>
-                <Image
-                  src={Colors_Tobacco_Sunburst}
-                  alt=''
-                  style={{ width: '70px', height: 'auto' }}
-                />
-                <ColorsText>Tobacco Sunburst</ColorsText>
               </ColorsWrapper>
             </Colors>
           </RightContentWrapper>
@@ -683,19 +698,20 @@ const MoreInfoTremarVikingDeluxe = () => {
             open={open}
             close={() => setOpen(false)}
             slides={[
-              { src: Viking_White_Gloss },
-              { src: Viking_Wild_Cherry_Transparent },
-              { src: Viking_Black_Gloss },
-              { src: Viking_Tobacco_Sunburst },
+              { src: HSVVIKDL04 },
+              { src: HSVVIKDL04_Back },
+              { src: HSVVIKDL77 },
+              { src: HSVVIKDL77_Back },
+              { src: HSVVIKDL09 },
             ]}
           />
         </LightboxWrapper>
         <SpecsWrapper>
           <LeftSpecsWrapper>
-            <MediaTitle>Viking® Specs</MediaTitle>
+            <MediaTitle>Tremar Viking® Deluxe Specs</MediaTitle>
             <MediaTitleSecondary>Body</MediaTitleSecondary>
             <ul>
-              <li>Material: Ply Maple</li>
+              <li>Material: Ply Flamed Maple</li>
               <li>Top: Contoured</li>
               <li>Style: Semi-Hollow</li>
             </ul>
@@ -709,7 +725,7 @@ const MoreInfoTremarVikingDeluxe = () => {
             <ul>
               <li>Material: Resinator™</li>
               <li>Radius: 15"</li>
-              <li>Inlays: Block Inlays</li>
+              <li>Inlays: Pearl Block</li>
               <li>Frets: 22 Medium Jumbo</li>
               <li>Scale Length: 24.75" (628 mm)</li>
               <li>Nut: GraphTech Black Tusq XL</li>
@@ -724,8 +740,7 @@ const MoreInfoTremarVikingDeluxe = () => {
             <MediaTitleSecondary>Parts</MediaTitleSecondary>
             <ul>
               <li>
-                Bridge: Long Travel Tune-O-Matic with Hagstrom Trapeze Tail
-                Piece
+                Bridge: Long Travel Tune-O-Matic with Hagstrom Tremar Vibrato
               </li>
               <li>Tuning Keys: Hagstrom Design 18:1</li>
               <li>Strings: D'Addario EXP 110 (10-46)</li>
@@ -737,31 +752,7 @@ const MoreInfoTremarVikingDeluxe = () => {
             </ul>
           </LeftSpecsWrapper>
           <RightSpecsWrapper>
-            <MediaTitle>Viking® Standards</MediaTitle>
-            <StandardsWrapper>
-              <StandardsImageWrapper>
-                <Image
-                  src={Detail_tuning_peg}
-                  alt=''
-                  style={{
-                    height: 'auto',
-                    maxWidth: '100%',
-                    verticalAlign: 'top',
-                  }}
-                />
-              </StandardsImageWrapper>
-              <StandardsTextWrapper>
-                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Hagstrom Machine Heads
-                </h4>
-                <p>
-                  Hagstrom models use 18:1 or 15:1 gear ratio machine heads
-                  based on our own designs to insure accurate tuning. Viking®
-                  and HB series basses feature machine heads with a 17:1 gear
-                  ratio.
-                </p>
-              </StandardsTextWrapper>
-            </StandardsWrapper>
+            <MediaTitle>Tremar Viking® Deluxe Standards</MediaTitle>
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
@@ -790,6 +781,30 @@ const MoreInfoTremarVikingDeluxe = () => {
                   Longer sustain and a round attack are some of the sonic
                   characteristics the H-Expander™ adds to the tonal essence of
                   Hagstrom.
+                </p>
+              </StandardsTextWrapper>
+            </StandardsWrapper>
+            <StandardsWrapper>
+              <StandardsImageWrapper>
+                <Image
+                  src={Detail_tuning_peg}
+                  alt=''
+                  style={{
+                    height: 'auto',
+                    maxWidth: '100%',
+                    verticalAlign: 'top',
+                  }}
+                />
+              </StandardsImageWrapper>
+              <StandardsTextWrapper>
+                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
+                  Hagstrom Machine Heads
+                </h4>
+                <p>
+                  Hagstrom models use 18:1 or 15:1 gear ratio machine heads
+                  based on our own designs to insure accurate tuning. Viking®
+                  and HB series basses feature machine heads with a 17:1 gear
+                  ratio.
                 </p>
               </StandardsTextWrapper>
             </StandardsWrapper>
@@ -827,6 +842,35 @@ const MoreInfoTremarVikingDeluxe = () => {
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
+                  src={Detail_tremar_vibrato}
+                  alt=''
+                  style={{
+                    height: 'auto',
+                    maxWidth: '100%',
+                    verticalAlign: 'top',
+                  }}
+                />
+              </StandardsImageWrapper>
+              <StandardsTextWrapper>
+                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
+                  Tremar Vibrato System
+                </h4>
+                <p>
+                  The Hagstrom Tremar Vibrato is a chrome laden, fine tuned
+                  piece of art with top notch vibrato performance. This
+                  stunningly light and responsive vintage style, top mount
+                  vibrato system, delivers impeccable tuning stability, without
+                  eating away at sustain or compromising your overall tone.
+                  Together with Hagstrom's own longtravel Tune-O-Matic roller
+                  bridge and the complementing, self-lubricating GraphTech TUSQ
+                  XL nut, you won't have to fret being out of tune with your
+                  Hagstrom Tremar type guitars.
+                </p>
+              </StandardsTextWrapper>
+            </StandardsWrapper>
+            <StandardsWrapper>
+              <StandardsImageWrapper>
+                <Image
                   src={Detail_set_neck}
                   alt=''
                   style={{
@@ -849,32 +893,6 @@ const MoreInfoTremarVikingDeluxe = () => {
                   experienced and dedicated craftsmen hand carves every neck
                   joint, insuring perfect execution of this traditional
                   technique preferred by luthiers for generations.
-                </p>
-              </StandardsTextWrapper>
-            </StandardsWrapper>
-            <StandardsWrapper>
-              <StandardsImageWrapper>
-                <Image
-                  src={Detail_trapez_bridge}
-                  alt=''
-                  style={{
-                    height: 'auto',
-                    maxWidth: '100%',
-                    verticalAlign: 'top',
-                  }}
-                />
-              </StandardsImageWrapper>
-              <StandardsTextWrapper>
-                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Trapeze Stringholder/Tailpiece
-                </h4>
-                <p>
-                  The classic Viking® trapeze stringholder/-tailpiece design, is
-                  a work of art in itself. Right underneath the top part, where
-                  the two beautifully swept beams meet, it features a string
-                  claw for easy access and super comfortable string changes.
-                  Adorned with the legendary Hagstrom crest it truly is elegance
-                  defined.
                 </p>
               </StandardsTextWrapper>
             </StandardsWrapper>
