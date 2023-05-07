@@ -57,6 +57,8 @@ import Viking_Deluxe_12_Wild_Cherry_Transparent_Vertical from '../assets/images/
 import Tremar_Viking_Deluxe_Cloudy_Seas_Vertical from '../assets/images/Tremar_Viking_Deluxe_Cloudy_Seas_Vertical.png';
 import Tremar_Viking_Deluxe_Wild_Cherry_Transparent_Vertical from '../assets/images/Tremar_Viking_Deluxe_Wild_Cherry_Transparent_Vertical.png';
 import Tremar_Viking_Deluxe_Black_Gloss_Vertical from '../assets/images/Tremar_Viking_Deluxe_Black_Gloss_Vertical.png';
+import HJ500_Black_Gloss_Vertical from '../assets/images/HJ500_Black_Gloss_Vertical.png';
+import HJ500_Natural_Vertical from '../assets/images/HJ500_Natural_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -648,6 +650,26 @@ const productsList = [
     color: 'Black Gloss',
     info: '/MoreInfoTremarVikingDeluxe',
     price: '1550',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: HJ500_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'HJ500',
+    color: 'Black Gloss',
+    info: '/MoreInfoHJ500',
+    price: '1500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: HJ500_Natural_Vertical,
+    brand: 'Hagstrom',
+    name: 'HJ500',
+    color: 'Natural',
+    info: '/MoreInfoHJ500',
+    price: '1500',
     quantity: 1,
     id: nanoid(),
   },

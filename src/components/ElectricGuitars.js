@@ -727,7 +727,7 @@ const ElectricGuitars = () => {
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='jazzModels'>
           <RowTitle key={nanoid()}>Jazz Models</RowTitle>
           <RowParagraph key={nanoid()}>
             Truly masterful. An outstanding hollowbody archtop, also deemed
@@ -738,7 +738,7 @@ const ElectricGuitars = () => {
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
-              to='/Products'
+              to='/MoreInfoHJ500'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
@@ -752,7 +752,7 @@ const ElectricGuitars = () => {
               </ImageWrapper>
             </Link>
             <Link
-              to='/Products'
+              to='/MoreInfoTremarHJ500'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>

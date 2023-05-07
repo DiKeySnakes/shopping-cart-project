@@ -28,6 +28,8 @@ import MoreInfoUltraSwedeESN from './components/MoreInfoUltraSwedeESN';
 import MoreInfoVikingDeluxeBaritone from './components/MoreInfoVikingDeluxeBaritone';
 import MoreInfoVikingDeluxe12 from './components/MoreInfoVikingDeluxe12';
 import MoreInfoTremarVikingDeluxe from './components/MoreInfoTremarVikingDeluxe';
+import MoreInfoHJ500 from './components/MoreInfoHJ500';
+import MoreInfoTremarHJ500 from './components/MoreInfoTremarHJ500';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
@@ -104,6 +106,11 @@ function App() {
           <Route
             path='/MoreInfoTremarVikingDeluxe'
             element={<MoreInfoTremarVikingDeluxe />}
+          />
+          <Route path='/MoreInfoHJ500' element={<MoreInfoHJ500 />} />
+          <Route
+            path='/MoreInfoTremarHJ500'
+            element={<MoreInfoTremarHJ500 />}
           />
           <Route path='*' element={<NotFound />} />
         </Routes>
