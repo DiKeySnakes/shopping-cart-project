@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.049650e8.js",
+    "main.js": "/shopping-cart-project/static/js/main.78cdcbd0.js",
     "static/media/viking_bridge_neck.ogg": "/shopping-cart-project/static/media/viking_bridge_neck.66695dda61b38dab4673.ogg",
     "static/media/Viking67_Header.png": "/shopping-cart-project/static/media/Viking67_Header.54b20b69d2c932618e29.png",
     "static/media/viking_neck_clean.ogg": "/shopping-cart-project/static/media/viking_neck_clean.f1212c64b9506888d214.ogg",
@@ -171,6 +171,7 @@
     "static/media/Hagstrom_Ultra_Swede_ESN_Black_Gloss_Back.png": "/shopping-cart-project/static/media/Hagstrom_Ultra_Swede_ESN_Black_Gloss_Back.314fdc302a007a485679.png",
     "static/media/Ultra_Max_Details_6.jpg": "/shopping-cart-project/static/media/Ultra_Max_Details_6.b95ba8fd2532927ecb37.jpg",
     "static/media/Alvar_Details_2.jpg": "/shopping-cart-project/static/media/Alvar_Details_2.b65fb67173b1144f410e.jpg",
+    "static/media/HJ500_Natural_Vertical.png": "/shopping-cart-project/static/media/HJ500_Natural_Vertical.920b8672b40a679f763f.png",
     "static/media/HagstromAlvarBlackGlossBack.png": "/shopping-cart-project/static/media/HagstromAlvarBlackGlossBack.a0934b4910ff1d105ae2.png",
     "static/media/Alvar_Details_1.jpg": "/shopping-cart-project/static/media/Alvar_Details_1.cba22ee893cef7deb46e.jpg",
     "static/media/Ultra_Max_Details_5.jpg": "/shopping-cart-project/static/media/Ultra_Max_Details_5.5a3b4631fd644ccd4e6a.jpg",
@@ -180,11 +181,14 @@
     "static/media/Basses_Header.jpg": "/shopping-cart-project/static/media/Basses_Header.2a62fb06da207002a033.jpg",
     "static/media/Micko_Larkin_Courtney_Love.jpg": "/shopping-cart-project/static/media/Micko_Larkin_Courtney_Love.8812ef20d511c33dcabe.jpg",
     "static/media/Big_Country.jpg": "/shopping-cart-project/static/media/Big_Country.f9fce0f3996fa4c5cbfb.jpg",
+    "static/media/HJ500_Black_Gloss_Vertical.png": "/shopping-cart-project/static/media/HJ500_Black_Gloss_Vertical.15df0fc6e004ade96191.png",
+    "static/media/HSHJ50001_1140Px.png": "/shopping-cart-project/static/media/HSHJ50001_1140Px.13b33e252390b21d9b93.png",
     "static/media/Super_Swede_Header.jpg": "/shopping-cart-project/static/media/Super_Swede_Header.9b2e779ce95ea1c409b0.jpg",
     "static/media/Pat_Smear.jpg": "/shopping-cart-project/static/media/Pat_Smear.6b02bf1d300e1d322b26.jpg",
     "static/media/Homepage_Slider_Super_Swede_Book_2021_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_Super_Swede_Book_2021_1920x640Px.ed6cafeb80a3fc4f224b.jpg",
     "static/media/Super_Viking_Mandarin_Flame_Vertical.png": "/shopping-cart-project/static/media/Super_Viking_Mandarin_Flame_Vertical.7a513f6a049805ee696b.png",
     "static/media/Super_Viking_Dandy_Dandelion_Vertical.png": "/shopping-cart-project/static/media/Super_Viking_Dandy_Dandelion_Vertical.c760651cc70f67728d8c.png",
+    "static/media/HSHJ50009_1140Px.png": "/shopping-cart-project/static/media/HSHJ50009_1140Px.c2ae71bd71dcb2e980fe.png",
     "static/media/Viking_Deluxe_12_Wild_Cherry_Transparent_Vertical.png": "/shopping-cart-project/static/media/Viking_Deluxe_12_Wild_Cherry_Transparent_Vertical.f0928c295ae26c23f05f.png",
     "static/media/Super_Viking_Lefthand_Wild_Cherry_Transparent_Vertical.png": "/shopping-cart-project/static/media/Super_Viking_Lefthand_Wild_Cherry_Transparent_Vertical.1ca10cc78ac03c733bcd.png",
     "static/media/Homepage_Slider_Alvar_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_Alvar_1920x640Px.07e339d968534317b034.jpg",
@@ -268,7 +272,9 @@
     "static/media/Sel_Belamier_Amplifier.jpg": "/shopping-cart-project/static/media/Sel_Belamier_Amplifier.fb3448e4b7961147a2e2.jpg",
     "static/media/Colors_HAGSTROM_X_tra_Special_Old_Pale.png": "/shopping-cart-project/static/media/Colors_HAGSTROM_X_tra_Special_Old_Pale.dbe8e0c3d20997a92ee2.png",
     "static/media/HSSUSWEMK3_Details_345x276Px_04.jpg": "/shopping-cart-project/static/media/HSSUSWEMK3_Details_345x276Px_04.0a4cd2187816aaac73d2.jpg",
+    "static/media/HJ500_Header.jpg": "/shopping-cart-project/static/media/HJ500_Header.11b89c3c0fdaffa55976.jpg",
     "static/media/Home_HSSUVIK60_Side_Final.jpg": "/shopping-cart-project/static/media/Home_HSSUVIK60_Side_Final.9d8cbc6ae08dccd2d103.jpg",
+    "static/media/HJ500_Hero.png": "/shopping-cart-project/static/media/HJ500_Hero.2af565981ba774de1e46.png",
     "static/media/Charlie_Bedford.jpg": "/shopping-cart-project/static/media/Charlie_Bedford.f3984d50e50a6c259447.jpg",
     "static/media/Colors_HAGSTROM_Mandarin_Burst.png": "/shopping-cart-project/static/media/Colors_HAGSTROM_Mandarin_Burst.be0b02c6971fed2b5d71.png",
     "static/media/Arne_Wiese_MotorradKaffee.jpg": "/shopping-cart-project/static/media/Arne_Wiese_MotorradKaffee.f209dda38435cc2a7348.jpg",
@@ -360,6 +366,7 @@
     "static/media/Detail_bolt_on_neck.jpg": "/shopping-cart-project/static/media/Detail_bolt_on_neck.2ea5b81ed5490442180d.jpg",
     "static/media/HSSUVIK91_detail_head.jpg": "/shopping-cart-project/static/media/HSSUVIK91_detail_head.41d4cd90d59881aa53f8.jpg",
     "static/media/HSVIK90_Detail_Headstock.jpg": "/shopping-cart-project/static/media/HSVIK90_Detail_Headstock.3cd013b906882a1a1dcb.jpg",
+    "static/media/HSHJ50009_Detail_0001.jpg": "/shopping-cart-project/static/media/HSHJ50009_Detail_0001.2379b7749a34384d0045.jpg",
     "static/media/Claes_Olofsson.jpg": "/shopping-cart-project/static/media/Claes_Olofsson.b6d9d0da4587aa762036.jpg",
     "static/media/Jyri_Vahvanen.jpg": "/shopping-cart-project/static/media/Jyri_Vahvanen.63bcd3d82d9eb74cafc2.jpg",
     "static/media/Detail_stainless_steel_fret.jpg": "/shopping-cart-project/static/media/Detail_stainless_steel_fret.4b36da322c98408c3e1f.jpg",
@@ -369,6 +376,7 @@
     "static/media/Todd_Kerns_by_Tomi_Vesaharju.jpg": "/shopping-cart-project/static/media/Todd_Kerns_by_Tomi_Vesaharju.13acf2fe33fcd0d8d9f5.jpg",
     "static/media/Alejandra_Deheza.jpg": "/shopping-cart-project/static/media/Alejandra_Deheza.e2e47f83c383c09d0721.jpg",
     "static/media/HSCOR18_Detail_COR_TSB_Logo_Final.jpg": "/shopping-cart-project/static/media/HSCOR18_Detail_COR_TSB_Logo_Final.0d9a0c1544f25df0354f.jpg",
+    "static/media/HSHJ50001_Detail_0001.jpg": "/shopping-cart-project/static/media/HSHJ50001_Detail_0001.b3a849327b5e5b026054.jpg",
     "static/media/Detail_resinator_wood.jpg": "/shopping-cart-project/static/media/Detail_resinator_wood.6fdcb68c58cbf8bf532b.jpg",
     "static/media/HSIMP89_Detail_Headstock.jpg": "/shopping-cart-project/static/media/HSIMP89_Detail_Headstock.e48306dcb4b51bba6d27.jpg",
     "static/media/Acoustic_Guitars_Mora_Concert_II.png": "/shopping-cart-project/static/media/Acoustic_Guitars_Mora_Concert_II.7ca32909488fd56467a3.png",
@@ -434,10 +442,10 @@
     "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "static/media/ScrollIcon.svg": "/shopping-cart-project/static/media/ScrollIcon.a1eb858b6e5366f1bd5779a8e0ec1c44.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.049650e8.js.map": "/shopping-cart-project/static/js/main.049650e8.js.map"
+    "main.78cdcbd0.js.map": "/shopping-cart-project/static/js/main.78cdcbd0.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.049650e8.js"
+    "static/js/main.78cdcbd0.js"
   ]
 }
