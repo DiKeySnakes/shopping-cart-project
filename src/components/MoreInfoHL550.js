@@ -563,7 +563,7 @@ const Video = styled.div`
   flex-direction: row;
 `;
 
-const MoreInfoHJ800 = () => {
+const MoreInfoHL550 = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -928,4 +928,4 @@ const MoreInfoHJ800 = () => {
   );
 };
 
-export default MoreInfoHJ800;
+export default MoreInfoHL550;
