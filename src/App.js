@@ -30,6 +30,7 @@ import MoreInfoVikingDeluxe12 from './components/MoreInfoVikingDeluxe12';
 import MoreInfoTremarVikingDeluxe from './components/MoreInfoTremarVikingDeluxe';
 import MoreInfoHJ500 from './components/MoreInfoHJ500';
 import MoreInfoTremarHJ500 from './components/MoreInfoTremarHJ500';
+import MoreInfoHJ800 from './components/MoreInfoHJ800';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
@@ -112,6 +113,7 @@ function App() {
             path='/MoreInfoTremarHJ500'
             element={<MoreInfoTremarHJ500 />}
           />
+          <Route path='/MoreInfoHJ800' element={<MoreInfoHJ800 />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </ScrollToTopHelper>
