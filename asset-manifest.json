@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.78cdcbd0.js",
+    "main.js": "/shopping-cart-project/static/js/main.ffcd1418.js",
     "static/media/viking_bridge_neck.ogg": "/shopping-cart-project/static/media/viking_bridge_neck.66695dda61b38dab4673.ogg",
     "static/media/Viking67_Header.png": "/shopping-cart-project/static/media/Viking67_Header.54b20b69d2c932618e29.png",
     "static/media/viking_neck_clean.ogg": "/shopping-cart-project/static/media/viking_neck_clean.f1212c64b9506888d214.ogg",
@@ -48,6 +48,7 @@
     "static/media/Swede_Dark_Storm_Vertical.png": "/shopping-cart-project/static/media/Swede_Dark_Storm_Vertical.ac978013f27330fb2351.png",
     "static/media/Fantomen_Tobacco_Sunburst.png": "/shopping-cart-project/static/media/Fantomen_Tobacco_Sunburst.a9bb11d5e6a79cd9372e.png",
     "static/media/Alvar_Swedish_Frost_Vertical.png": "/shopping-cart-project/static/media/Alvar_Swedish_Frost_Vertical.2a8a9495b1b5c659806f.png",
+    "static/media/Tremar_HJ500_Black_Gloss_Vertical.png": "/shopping-cart-project/static/media/Tremar_HJ500_Black_Gloss_Vertical.b789e2a8bed7716ba259.png",
     "static/media/Fantomen_Tobacco_Sunburst_Vertical.png": "/shopping-cart-project/static/media/Fantomen_Tobacco_Sunburst_Vertical.d83a658a64a580a34ba5.png",
     "static/media/HagstromAlvarSwedishFrost.png": "/shopping-cart-project/static/media/HagstromAlvarSwedishFrost.856760959ce62cf7fb37.png",
     "static/media/UltraSwede_Neck.ogg": "/shopping-cart-project/static/media/UltraSwede_Neck.a904c99c52cc07cdd8d9.ogg",
@@ -56,6 +57,7 @@
     "static/media/Ultra_Max_Cosmic_Black_Burst_Satin_Vertical.png": "/shopping-cart-project/static/media/Ultra_Max_Cosmic_Black_Burst_Satin_Vertical.241a82b43fa5c2f23b5b.png",
     "static/media/HSULSWE43_Ultra_Swede_Tobacco_Sunburst.png": "/shopping-cart-project/static/media/HSULSWE43_Ultra_Swede_Tobacco_Sunburst.6417e3d8ecf3cbd39156.png",
     "static/media/HagstromUltraMaxCosmicBlackBurstSatin.png": "/shopping-cart-project/static/media/HagstromUltraMaxCosmicBlackBurstSatin.fc011a755169a3cc9a96.png",
+    "static/media/HSVHJ50009_1140Px.png": "/shopping-cart-project/static/media/HSVHJ50009_1140Px.72b65a0bfa93e7329b18.png",
     "static/media/Ultra_Swede_Cosmic_Black_Burst_Vertical.png": "/shopping-cart-project/static/media/Ultra_Swede_Cosmic_Black_Burst_Vertical.063b7eb550cf0064d5b7.png",
     "static/media/HSULSWE41_Ultra_Swede_Cosmic_Black_Burst.png": "/shopping-cart-project/static/media/HSULSWE41_Ultra_Swede_Cosmic_Black_Burst.485ddc59a42003082917.png",
     "static/media/SuperSwedeXtraSpecialOldPaleVertical.png": "/shopping-cart-project/static/media/SuperSwedeXtraSpecialOldPaleVertical.54c8f15b10f89d55929d.png",
@@ -330,6 +332,7 @@
     "static/media/Detail_vintage_tremar_retroscape_impala.jpg": "/shopping-cart-project/static/media/Detail_vintage_tremar_retroscape_impala.b93fd6aad385cef9d75a.jpg",
     "static/media/Ultra_Swede_ESN_Hero.png": "/shopping-cart-project/static/media/Ultra_Swede_ESN_Hero.ad334d0a78b143b8ec89.png",
     "static/media/Detail_lundgren_pickups.jpg": "/shopping-cart-project/static/media/Detail_lundgren_pickups.447389e0956773cd8a25.jpg",
+    "static/media/Tremar_HJ500_Hero.png": "/shopping-cart-project/static/media/Tremar_HJ500_Hero.f9c17eb0c82eb99d58a6.png",
     "static/media/Fantomen_Custom_Header.jpg": "/shopping-cart-project/static/media/Fantomen_Custom_Header.20d1a4d03c4d7320898e.jpg",
     "static/media/Electric_Guitars_Fantomen.png": "/shopping-cart-project/static/media/Electric_Guitars_Fantomen.bbedb24084bd5f5fd719.png",
     "static/media/HSVIK90_Detail_Body.jpg": "/shopping-cart-project/static/media/HSVIK90_Detail_Body.b2ec6244183aae30e526.jpg",
@@ -442,10 +445,10 @@
     "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "static/media/ScrollIcon.svg": "/shopping-cart-project/static/media/ScrollIcon.a1eb858b6e5366f1bd5779a8e0ec1c44.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.78cdcbd0.js.map": "/shopping-cart-project/static/js/main.78cdcbd0.js.map"
+    "main.ffcd1418.js.map": "/shopping-cart-project/static/js/main.ffcd1418.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.78cdcbd0.js"
+    "static/js/main.ffcd1418.js"
   ]
 }
