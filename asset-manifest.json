@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.d1ff231e.js",
+    "main.js": "/shopping-cart-project/static/js/main.f6d5fbfb.js",
     "static/media/viking_bridge_neck.ogg": "/shopping-cart-project/static/media/viking_bridge_neck.66695dda61b38dab4673.ogg",
     "static/media/Viking67_Header.png": "/shopping-cart-project/static/media/Viking67_Header.54b20b69d2c932618e29.png",
     "static/media/viking_neck_clean.ogg": "/shopping-cart-project/static/media/viking_neck_clean.f1212c64b9506888d214.ogg",
     "static/media/hj800_neck_pu.ogg": "/shopping-cart-project/static/media/hj800_neck_pu.018ea87c301753977d9b.ogg",
+    "static/media/hagstrom_HL550.ogg": "/shopping-cart-project/static/media/hagstrom_HL550.d042ae2b61764bb0e6e1.ogg",
     "static/media/hj800_middle.ogg": "/shopping-cart-project/static/media/hj800_middle.edd456805269b091d843.ogg",
     "static/media/hj800_bridge_pu.ogg": "/shopping-cart-project/static/media/hj800_bridge_pu.502b554fde7b8ef4aec1.ogg",
     "static/media/HagstromVikingGoldTop.png": "/shopping-cart-project/static/media/HagstromVikingGoldTop.610b80976c5b9f7c1d1d.png",
@@ -173,6 +174,7 @@
     "static/media/Homepage_Slider_Super_SwedeMKIII_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_Super_SwedeMKIII_1920x640Px.60bbef3f7de60f086544.jpg",
     "static/media/Homepage_Slider_Paramore_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_Paramore_1920x640Px.0b00c0f1ab5a7b32f171.jpg",
     "static/media/Pat_Smear_Header.jpg": "/shopping-cart-project/static/media/Pat_Smear_Header.3f207907daf543643a2e.jpg",
+    "static/media/HL550_Mahogany_Natural_Vertical.png": "/shopping-cart-project/static/media/HL550_Mahogany_Natural_Vertical.20c6f2bc30ea71bb3fe0.png",
     "static/media/Homepage_Slider_SwedeMKIII_1920x640Px.jpg": "/shopping-cart-project/static/media/Homepage_Slider_SwedeMKIII_1920x640Px.b1de66c2c25a1c422826.jpg",
     "static/media/Heritage_Sven_Ingvars.jpg": "/shopping-cart-project/static/media/Heritage_Sven_Ingvars.7fc25649534c23151dd7.jpg",
     "static/media/Hagstrom_Ultra_Swede_ESN_Black_Gloss_Back.png": "/shopping-cart-project/static/media/Hagstrom_Ultra_Swede_ESN_Black_Gloss_Back.314fdc302a007a485679.png",
@@ -181,6 +183,7 @@
     "static/media/HJ500_Natural_Vertical.png": "/shopping-cart-project/static/media/HJ500_Natural_Vertical.920b8672b40a679f763f.png",
     "static/media/HagstromAlvarBlackGlossBack.png": "/shopping-cart-project/static/media/HagstromAlvarBlackGlossBack.a0934b4910ff1d105ae2.png",
     "static/media/Alvar_Details_1.jpg": "/shopping-cart-project/static/media/Alvar_Details_1.cba22ee893cef7deb46e.jpg",
+    "static/media/HL550_Mahogany_Natural.png": "/shopping-cart-project/static/media/HL550_Mahogany_Natural.527ea6691b04758069c7.png",
     "static/media/Ultra_Max_Details_5.jpg": "/shopping-cart-project/static/media/Ultra_Max_Details_5.5a3b4631fd644ccd4e6a.jpg",
     "static/media/Thomas_Wallin_Takida.jpg": "/shopping-cart-project/static/media/Thomas_Wallin_Takida.089857da946269cceebb.jpg",
     "static/media/Ultra_Max_Details_1.jpg": "/shopping-cart-project/static/media/Ultra_Max_Details_1.66b05dc62082dcf6b0f1.jpg",
@@ -262,6 +265,7 @@
     "static/media/Dariusz_Malejonek.jpg": "/shopping-cart-project/static/media/Dariusz_Malejonek.01f886efdeca9eb64e05.jpg",
     "static/media/Viking_Deluxe_12_Header.jpg": "/shopping-cart-project/static/media/Viking_Deluxe_12_Header.c67558db49e0d0d6e99a.jpg",
     "static/media/Bones_Discharge.jpg": "/shopping-cart-project/static/media/Bones_Discharge.545df50a81abec2ad147.jpg",
+    "static/media/HL550_Hero.png": "/shopping-cart-project/static/media/HL550_Hero.1e891fd2f3d2dff77a62.png",
     "static/media/Frame_products.png": "/shopping-cart-project/static/media/Frame_products.23445e2557ac8d6550d7.png",
     "static/media/HSSUSWEMK3_Details_345x276Px_07.jpg": "/shopping-cart-project/static/media/HSSUSWEMK3_Details_345x276Px_07.938ae2320bd6569a16e6.jpg",
     "static/media/Enrico_Santacatterina_Hagstrom_Fantomen.jpg": "/shopping-cart-project/static/media/Enrico_Santacatterina_Hagstrom_Fantomen.c89f7ab81e406deafe18.jpg",
@@ -451,10 +455,10 @@
     "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "static/media/ScrollIcon.svg": "/shopping-cart-project/static/media/ScrollIcon.a1eb858b6e5366f1bd5779a8e0ec1c44.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.d1ff231e.js.map": "/shopping-cart-project/static/js/main.d1ff231e.js.map"
+    "main.f6d5fbfb.js.map": "/shopping-cart-project/static/js/main.f6d5fbfb.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.d1ff231e.js"
+    "static/js/main.f6d5fbfb.js"
   ]
 }
