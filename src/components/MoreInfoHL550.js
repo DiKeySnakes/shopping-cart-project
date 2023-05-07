@@ -11,21 +11,19 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import HJ800_Hero from '../assets/images/HJ800_Hero.png';
+import HL550_Hero from '../assets/images/HL550_Hero.png';
 import HJ500_Header from '../assets/images/HJ500_Header.jpg';
-import HJ800_Vintage_Sunburst from '../assets/images/HJ800_Vintage_Sunburst.png';
 import Logo_Hagstrom_Lilie_Black from '../assets/images/Logo_Hagstrom_Lilie_Black.png';
-import Colors_Vintage_Sunburst from '../assets/images/Colors_Vintage_Sunburst.png';
+import Colors_Mahogany_Natural from '../assets/images/Colors_Mahogany_Natural.png';
 import Logo_Hagstrom_Lilie from '../assets/images/Logo_Hagstrom_Lilie.png';
+import HL550_Mahogany_Natural from '../assets/images/HL550_Mahogany_Natural.png';
 import Detail_resinator_wood from '../assets/images/Detail_resinator_wood.jpg';
 import Detail_expander from '../assets/images/Detail_expander.jpg';
 import Detail_tuning_peg from '../assets/images/Detail_tuning_peg.jpg';
 import Detail_set_neck from '../assets/images/Detail_set_neck.jpg';
 import Detail_trapez_bridge from '../assets/images/Detail_trapez_bridge.jpg';
 import ReactAudioPlayer from 'react-audio-player';
-import hj800_bridge_pu from '../assets/sounds/hj800_bridge_pu.ogg';
-import hj800_middle from '../assets/sounds/hj800_middle.ogg';
-import hj800_neck_pu from '../assets/sounds/hj800_neck_pu.ogg';
+import hagstrom_HL550 from '../assets/sounds/hagstrom_HL550.ogg';
 import ReactPlayer from 'react-player';
 
 const Wrapper = styled.div`
@@ -571,10 +569,10 @@ const MoreInfoHL550 = () => {
         <IntroBackground>
           <IntroContainer>
             <IntroTitle>
-              HJ800
-              <IntroParagraph>A Master's Legacy</IntroParagraph>
+              HL550
+              <IntroParagraph>Mahogany Masterpiece</IntroParagraph>
             </IntroTitle>
-            <IntroImage src={HJ800_Hero} alt='' />
+            <IntroImage src={HL550_Hero} alt='' />
           </IntroContainer>
         </IntroBackground>
         <NavContainer>
@@ -586,7 +584,7 @@ const MoreInfoHL550 = () => {
               <span>/</span>
               <HashLink to='/ElectricGuitars#jazzModels'>Jazz Models</HashLink>
               <span>/</span>
-              <NavLink>HJ800</NavLink>
+              <NavLink>HL550</NavLink>
             </NavLinks>
             <ShareLinks>
               <NavLink>
@@ -605,43 +603,32 @@ const MoreInfoHL550 = () => {
         </NavContainer>
         <MainContentWrapper>
           <LeftContentWrapper>
-            <MediaTitle>Hagstrom HJ800</MediaTitle>
+            <MediaTitle>Hagstrom HL550</MediaTitle>
             <Paragraph>
               <LogoSpan>
                 <Logo src={Logo_Hagstrom_Lilie_Black} alt='' />
               </LogoSpan>
-              Jimmy D’Aquisto’s masterpiece for Hagstrom. Without a doubt, the
-              master’s genius is expressed throughout this striking hollow-body
-              guitar. From its solid spruce top and neck-body joint at the 16th
-              fret, to its 25-inch (635mm) scale length, Jimmy’s masterful touch
-              is woven into the soul Hagstrom’s HJ800.
+              Uncompromisingly Jazz. Uncompromisingly Hagstrom. The feel-good
+              warmth of the HL550’s mahogany archtop body and set mahogany neck
+              is exquisitely captured by Hagstrom’s HF50 floating pickup and
+              shaped by a single volume and tone control. Revered by both
+              professionals and jazz aficionados, the HL550’s extended 22-fret
+              playing surface lets you soar even higher with your lead-line
+              ambitions.
             </Paragraph>
-            <Paragraph>
-              Hagstrom’s potent Custom 58 AlNiCo humbucking pickups produce a
-              rich, full-bodied jazz tone with formidable attack. It’s up to you
-              to take it on a rock detour into an uncharted sound universe.
-            </Paragraph>
-            <Paragraph>HJ800 Bridge Pickup</Paragraph>
-            <ReactAudioPlayer src={hj800_bridge_pu} controls />
-            <Paragraph style={{ marginTop: '19px' }}>
-              HJ800 both Pickups combined
-            </Paragraph>
-            <ReactAudioPlayer src={hj800_middle} controls />
-            <Paragraph style={{ marginTop: '19px' }}>
-              HJ800 Neck Pickup
-            </Paragraph>
-            <ReactAudioPlayer src={hj800_neck_pu} controls />
+            <Paragraph>HL550 Audio Sample</Paragraph>
+            <ReactAudioPlayer src={hagstrom_HL550} controls />
           </LeftContentWrapper>
           <RightContentWrapper>
             <MediaTitle>Colors</MediaTitle>
             <Colors>
               <ColorsWrapper>
                 <Image
-                  src={Colors_Vintage_Sunburst}
+                  src={Colors_Mahogany_Natural}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Vintage Sunburst</ColorsText>
+                <ColorsText>Mahogany Natural</ColorsText>
               </ColorsWrapper>
             </Colors>
           </RightContentWrapper>
@@ -679,22 +666,22 @@ const MoreInfoHL550 = () => {
             }}
             open={open}
             close={() => setOpen(false)}
-            slides={[{ src: HJ800_Vintage_Sunburst }]}
+            slides={[{ src: HL550_Mahogany_Natural }]}
           />
         </LightboxWrapper>
         <SpecsWrapper>
           <LeftSpecsWrapper>
-            <MediaTitle>HJ800 Specs</MediaTitle>
+            <MediaTitle>HL550 Specs</MediaTitle>
             <MediaTitleSecondary>Body</MediaTitleSecondary>
             <ul>
-              <li>Material: 5 Ply Canadian Maple</li>
-              <li>Top: Solid Spruce</li>
+              <li>Material: Mahogany</li>
+              <li>Top: Mahogany</li>
               <li>Style: Hollow-Body</li>
             </ul>
             <MediaTitleSecondary>Neck</MediaTitleSecondary>
             <ul>
               <li>Joint: Set Neck</li>
-              <li>Material: North Eastern American Hard Maple</li>
+              <li>Material: Mahogany</li>
               <li>Truss Rod: H-Expander™</li>
             </ul>
             <MediaTitleSecondary>Fingerboard/Nut</MediaTitleSecondary>
@@ -703,30 +690,29 @@ const MoreInfoHL550 = () => {
               <li>Radius: 15"</li>
               <li>Inlays: Pearl Block</li>
               <li>Frets: 22 Medium Jumbo</li>
-              <li>Scale Length: 25" (635 mm)</li>
+              <li>Scale Length: 24,75" (628 mm)</li>
               <li>Nut: GraphTech Black Tusq XL</li>
               <li>Nut Width: 43 mm</li>
             </ul>
             <MediaTitleSecondary>Electronics</MediaTitleSecondary>
             <ul>
-              <li>Pickups: 2 x Hagstrom Custom 58</li>
-              <li>Pickup Selector: 3-Way Toggle Switch</li>
-              <li>Controls: 2 x Volume / 2 x Tone</li>
+              <li>Pickups: Single Floating Custom HF-50</li>
+              <li>Controls: 1 x Volume / 1 x Tone</li>
             </ul>
             <MediaTitleSecondary>Parts</MediaTitleSecondary>
             <ul>
-              <li>Bridge: Resonator Jimmy with Hagstrom Trapeze Tail Piece</li>
+              <li>Bridge: Ebony Jimmy with Hagstrom Trapeze Tail Piece</li>
               <li>Tuning Keys: Hagstrom Design 18:1</li>
               <li>Strings: D'Addario EXP 115 (11-49)</li>
             </ul>
             <MediaTitleSecondary>Optional Cases</MediaTitleSecondary>
             <ul>
-              <li>Bag E26</li>
-              <li>Case C56</li>
+              <li>Bag E30</li>
+              <li>Case C57</li>
             </ul>
           </LeftSpecsWrapper>
           <RightSpecsWrapper>
-            <MediaTitle>HJ800 Standards</MediaTitle>
+            <MediaTitle>HL550 Standards</MediaTitle>
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
@@ -872,32 +858,15 @@ const MoreInfoHL550 = () => {
         <VideoWrapper>
           <MediaTitle>
             <a
-              href='https://youtu.be/8WPAFbHuOAU'
+              href='https://youtu.be/yg96tAceXmU'
               target='_blank'
               rel='noopener noreferrer'>
-              Hagstrom HJ800 Review by Greg's Guitars
+              Hagstrom HL550 Demo
             </a>
           </MediaTitle>
           <Video>
             <ReactPlayer
-              url='https://youtu.be/8WPAFbHuOAU'
-              width='100%'
-              height='100%'
-            />
-          </Video>
-        </VideoWrapper>
-        <VideoWrapper>
-          <MediaTitle>
-            <a
-              href='https://youtu.be/mYq7QU8B7-c'
-              target='_blank'
-              rel='noopener noreferrer'>
-              Hagstrom HJ800 Demo by Theoretical Limit
-            </a>
-          </MediaTitle>
-          <Video>
-            <ReactPlayer
-              url='https://youtu.be/mYq7QU8B7-c'
+              url='https://youtu.be/yg96tAceXmU'
               width='100%'
               height='100%'
             />

@@ -61,6 +61,7 @@ import HJ500_Black_Gloss_Vertical from '../assets/images/HJ500_Black_Gloss_Verti
 import HJ500_Natural_Vertical from '../assets/images/HJ500_Natural_Vertical.png';
 import Tremar_HJ500_Black_Gloss_Vertical from '../assets/images/Tremar_HJ500_Black_Gloss_Vertical.png';
 import HJ800_Vintage_Sunburst_Vertical from '../assets/images/HJ800_Vintage_Sunburst_Vertical.png';
+import HL550_Mahogany_Natural_Vertical from '../assets/images/HL550_Mahogany_Natural_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -691,6 +692,16 @@ const productsList = [
     name: 'HJ800',
     color: 'Vintage Sunburst',
     info: '/MoreInfoHJ800',
+    price: '1500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: HL550_Mahogany_Natural_Vertical,
+    brand: 'Hagstrom',
+    name: 'HL550',
+    color: 'Mahogany Natural',
+    info: '/MoreInfoHL550',
     price: '1500',
     quantity: 1,
     id: nanoid(),
