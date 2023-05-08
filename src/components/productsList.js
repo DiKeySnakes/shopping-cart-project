@@ -62,6 +62,13 @@ import HJ500_Natural_Vertical from '../assets/images/HJ500_Natural_Vertical.png'
 import Tremar_HJ500_Black_Gloss_Vertical from '../assets/images/Tremar_HJ500_Black_Gloss_Vertical.png';
 import HJ800_Vintage_Sunburst_Vertical from '../assets/images/HJ800_Vintage_Sunburst_Vertical.png';
 import HL550_Mahogany_Natural_Vertical from '../assets/images/HL550_Mahogany_Natural_Vertical.png';
+import Super_Swede_Bass_Black_Gloss_Vertical from '../assets/images/Super_Swede_Bass_Black_Gloss_Vertical.png';
+import Super_Swede_Bass_Natural_Mahogany_Vertical from '../assets/images/Super_Swede_Bass_Natural_Mahogany_Vertical.png';
+import Swede_Bass_Black_Gloss_Vertical from '../assets/images/Swede_Bass_Black_Gloss_Vertical.png';
+import Swede_Bass_Lefthand_Wild_Cherry_Transparent_Vertical from '../assets/images/Swede_Bass_Lefthand_Wild_Cherry_Transparent_Vertical.png';
+import Swede_Bass_Tobacco_Sunburst_Vertical from '../assets/images/Swede_Bass_Tobacco_Sunburst_Vertical.png';
+import Swede_Bass_White_Gloss_Vertical from '../assets/images/Swede_Bass_White_Gloss_Vertical.png';
+import Swede_Bass_Wild_Cherry_Transparent_Vertical from '../assets/images/Swede_Bass_Wild_Cherry_Transparent_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -703,6 +710,76 @@ const productsList = [
     color: 'Mahogany Natural',
     info: '/MoreInfoHL550',
     price: '1500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Super_Swede_Bass_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Super Swede Bass',
+    color: 'Black Gloss',
+    info: '/MoreInfoSuperSwedeBass',
+    price: '1200',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Super_Swede_Bass_Natural_Mahogany_Vertical,
+    brand: 'Hagstrom',
+    name: 'Super Swede Bass',
+    color: 'Mahogany Natural',
+    info: '/MoreInfoSuperSwedeBass',
+    price: '1200',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Swede_Bass_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Swede Bass',
+    color: 'Black Gloss',
+    info: '/MoreInfoSwedeBass',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Swede_Bass_Lefthand_Wild_Cherry_Transparent_Vertical,
+    brand: 'Hagstrom',
+    name: 'Swede Bass Lefthand',
+    color: 'Wild Cherry Transparent',
+    info: '/MoreInfoSwedeBass',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Swede_Bass_Tobacco_Sunburst_Vertical,
+    brand: 'Hagstrom',
+    name: 'Swede Bass',
+    color: 'Tobacco Sunburst',
+    info: '/MoreInfoSwedeBass',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Swede_Bass_White_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Swede Bass',
+    color: 'White Gloss',
+    info: '/MoreInfoSwedeBass',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Swede_Bass_Wild_Cherry_Transparent_Vertical,
+    brand: 'Hagstrom',
+    name: 'Swede Bass',
+    color: 'Wild Cherry Transparent',
+    info: '/MoreInfoSwedeBass',
+    price: '1250',
     quantity: 1,
     id: nanoid(),
   },

@@ -260,7 +260,7 @@ const Basses = () => {
       </NavContainer>
       <MainContentWrapper key={nanoid()}>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='superSwedeBass'>
           <RowTitle key={nanoid()}>Super Swede Bass</RowTitle>
           <RowParagraph key={nanoid()}>
             Johan Rutger Gunnarsson, bassist for ABBA, worked with Hagstrom on
@@ -269,7 +269,7 @@ const Basses = () => {
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
-              to='/Products'
+              to='/MoreInfoSuperSwedeBass'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
@@ -285,7 +285,7 @@ const Basses = () => {
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='swedeBass'>
           <RowTitle key={nanoid()}>Swede Bass</RowTitle>
           <RowParagraph key={nanoid()}>
             The Swede Bass’ classic, single-cut design will be the perfect
@@ -294,7 +294,7 @@ const Basses = () => {
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
-              to='/Products'
+              to='/MoreInfoSwedeBass'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
@@ -310,7 +310,7 @@ const Basses = () => {
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='vikingBass'>
           <RowTitle key={nanoid()}>Viking Bass</RowTitle>
           <RowParagraph key={nanoid()}>
             The semi hollow Viking bass beautifully blend stunnings looks and a
@@ -318,7 +318,7 @@ const Basses = () => {
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
-              to='/Products'
+              to='/MoreInfoVikingBass'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
