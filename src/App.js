@@ -35,6 +35,7 @@ import MoreInfoHL550 from './components/MoreInfoHL550';
 import MoreInfoSuperSwedeBass from './components/MoreInfoSuperSwedeBass';
 import MoreInfoSwedeBass from './components/MoreInfoSwedeBass';
 import MoreInfoVikingBass from './components/MoreInfoVikingBass';
+import MoreInfoH8IIBass from './components/MoreInfoH8IIBass';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
@@ -125,6 +126,7 @@ function App() {
           />
           <Route path='/MoreInfoSwedeBass' element={<MoreInfoSwedeBass />} />
           <Route path='/MoreInfoVikingBass' element={<MoreInfoVikingBass />} />
+          <Route path='/MoreInfoH8IIBass' element={<MoreInfoH8IIBass />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </ScrollToTopHelper>

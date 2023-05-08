@@ -334,7 +334,7 @@ const Basses = () => {
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='retroscape'>
           <RowTitle key={nanoid()}>RetroScape</RowTitle>
           <RowParagraph key={nanoid()}>
             The RetroScape series combines authentic vintage design with modern
@@ -342,7 +342,7 @@ const Basses = () => {
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
-              to='/Products'
+              to='/MoreInfoH8IIBass'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>

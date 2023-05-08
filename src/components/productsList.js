@@ -69,6 +69,13 @@ import Swede_Bass_Lefthand_Wild_Cherry_Transparent_Vertical from '../assets/imag
 import Swede_Bass_Tobacco_Sunburst_Vertical from '../assets/images/Swede_Bass_Tobacco_Sunburst_Vertical.png';
 import Swede_Bass_White_Gloss_Vertical from '../assets/images/Swede_Bass_White_Gloss_Vertical.png';
 import Swede_Bass_Wild_Cherry_Transparent_Vertical from '../assets/images/Swede_Bass_Wild_Cherry_Transparent_Vertical.png';
+import Viking_Bass_Black_Gloss_Vertical from '../assets/images/Viking_Bass_Black_Gloss_Vertical.png';
+import Viking_Bass_Wild_Cherry_Transparent_Vertical from '../assets/images/Viking_Bass_Wild_Cherry_Transparent_Vertical.png';
+import Viking_Bass_Tobacco_Sunburst_Vertical from '../assets/images/Viking_Bass_Tobacco_Sunburst_Vertical.png';
+import Viking_Bass_White_Gloss_Vertical from '../assets/images/Viking_Bass_White_Gloss_Vertical.png';
+import H8_II_Wild_Cherry_Transparent_Vertical from '../assets/images/H8_II_Wild_Cherry_Transparent_Vertical.png';
+import H8_II_Black_Gloss_Vertical from '../assets/images/H8_II_Black_Gloss_Vertical.png';
+import H8_II_Tobacco_Sunburst_Vertical from '../assets/images/H8_II_Tobacco_Sunburst_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -780,6 +787,76 @@ const productsList = [
     color: 'Wild Cherry Transparent',
     info: '/MoreInfoSwedeBass',
     price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Viking_Bass_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Viking® Bass',
+    color: 'Black Gloss',
+    info: '/MoreInfoVikingBass',
+    price: '1350',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Viking_Bass_Wild_Cherry_Transparent_Vertical,
+    brand: 'Hagstrom',
+    name: 'Viking® Bass',
+    color: 'Wild Cherry Transparent',
+    info: '/MoreInfoVikingBass',
+    price: '1350',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Viking_Bass_Tobacco_Sunburst_Vertical,
+    brand: 'Hagstrom',
+    name: 'Viking® Bass',
+    color: 'Tobacco Sunburst',
+    info: '/MoreInfoVikingBass',
+    price: '1350',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Viking_Bass_White_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Viking® Bass',
+    color: 'White Gloss',
+    info: '/MoreInfoVikingBass',
+    price: '1350',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: H8_II_Wild_Cherry_Transparent_Vertical,
+    brand: 'Hagstrom',
+    name: 'H8-II Bass',
+    color: 'Wild Cherry Transparent',
+    info: '/MoreInfoH8IIBass',
+    price: '1750',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: H8_II_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'H8-II Bass',
+    color: 'Black Gloss',
+    info: '/MoreInfoH8IIBass',
+    price: '1750',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: H8_II_Tobacco_Sunburst_Vertical,
+    brand: 'Hagstrom',
+    name: 'H8-II Bass',
+    color: 'Tobacco Sunburst',
+    info: '/MoreInfoH8IIBass',
+    price: '1750',
     quantity: 1,
     id: nanoid(),
   },

@@ -11,21 +11,22 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import Viking_Bass_Hero from '../assets/images/Viking_Bass_Hero.png';
-import Viking_Bass_Header from '../assets/images/Viking_Bass_Header.jpg';
-import Viking_Bass_Black_Gloss from '../assets/images/Viking_Bass_Black_Gloss.png';
-import Viking_Bass_White_Gloss from '../assets/images/Viking_Bass_White_Gloss.png';
-import Viking_Bass_Wild_Cherry_Transparent from '../assets/images/Viking_Bass_Wild_Cherry_Transparent.png';
-import Viking_Bass_Tobacco_Sunburst from '../assets/images/Viking_Bass_Tobacco_Sunburst.png';
+import H8_II_Hero from '../assets/images/H8_II_Hero.png';
+import H8_II_Header from '../assets/images/H8_II_Header.jpg';
+import H8_II_Black_Gloss from '../assets/images/H8_II_Black_Gloss.png';
+import H8_II_Black_Gloss_Back from '../assets/images/H8_II_Black_Gloss_Back.png';
+import H8_II_Tobacco_Sunburst from '../assets/images/H8_II_Tobacco_Sunburst.png';
+import H8_II_Tobacco_Sunburst_Back from '../assets/images/H8_II_Tobacco_Sunburst_Back.png';
 import Logo_Hagstrom_Lilie_Black from '../assets/images/Logo_Hagstrom_Lilie_Black.png';
 import Colors_Black_Gloss from '../assets/images/Colors_Black_Gloss.png';
 import Colors_Wild_Cherry_Transparent from '../assets/images/Colors_Wild_Cherry_Transparent.png';
 import Colors_Tobacco_Sunburst from '../assets/images/Colors_Tobacco_Sunburst.png';
-import Colors_White_Gloss from '../assets/images/Colors_White_Gloss.png';
 import Logo_Hagstrom_Lilie from '../assets/images/Logo_Hagstrom_Lilie.png';
-import Viking_Bass_Details_01 from '../assets/images/Viking_Bass_Details_01.jpg';
-import Viking_Bass_Details_02 from '../assets/images/Viking_Bass_Details_02.jpg';
-import Viking_Bass_Details_03 from '../assets/images/Viking_Bass_Details_03.jpg';
+import HSH8204_03 from '../assets/images/HSH8204_03.jpg';
+import HSH8209_03 from '../assets/images/HSH8209_03.jpg';
+import HSH8218_03 from '../assets/images/HSH8218_03.jpg';
+import H8_II_Wild_Cherry_Transparent from '../assets/images/H8_II_Wild_Cherry_Transparent.png';
+import H8_II_Wild_Cherry_Transparent_Back from '../assets/images/H8_II_Wild_Cherry_Transparent_Back.png';
 import Detail_expander from '../assets/images/Detail_expander.jpg';
 import Detail_resinator_wood from '../assets/images/Detail_resinator_wood.jpg';
 import Detail_tuning_peg from '../assets/images/Detail_tuning_peg.jpg';
@@ -99,7 +100,7 @@ const IntroBackground = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(${Viking_Bass_Header});
+  background-image: url(${H8_II_Header});
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -572,7 +573,7 @@ const Button = styled.button`
   }
 `;
 
-const MoreInfoVikingBass = () => {
+const MoreInfoH8IIBass = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -580,10 +581,10 @@ const MoreInfoVikingBass = () => {
         <IntroBackground>
           <IntroContainer>
             <IntroTitle>
-              Viking® Bass
-              <IntroParagraph>Style and Substance</IntroParagraph>
+              H8-II Bass
+              <IntroParagraph>A Classic Reborn</IntroParagraph>
             </IntroTitle>
-            <IntroImage src={Viking_Bass_Hero} alt='' />
+            <IntroImage src={H8_II_Hero} alt='' />
           </IntroContainer>
         </IntroBackground>
         <NavContainer>
@@ -593,9 +594,9 @@ const MoreInfoVikingBass = () => {
               <span>/</span>
               <NavLink to='/Basses'>Basses</NavLink>
               <span>/</span>
-              <HashLink to='/Basses#vikingBass'>Viking®</HashLink>
+              <HashLink to='/Basses#retroscape'>RetroScape</HashLink>
               <span>/</span>
-              <NavLink>Viking® Bass</NavLink>
+              <NavLink>H8-II Bass</NavLink>
             </NavLinks>
             <ShareLinks>
               <NavLink>
@@ -614,33 +615,44 @@ const MoreInfoVikingBass = () => {
         </NavContainer>
         <MainContentWrapper>
           <LeftContentWrapper>
-            <MediaTitle>Hagstrom Viking® Bass</MediaTitle>
+            <MediaTitle>Hagstrom H8II Bass</MediaTitle>
             <Paragraph>
               <LogoSpan>
                 <Logo src={Logo_Hagstrom_Lilie_Black} alt='' />
               </LogoSpan>
-              Introduced as the Concord bass in 1965, Hagstrom’s Viking® bass
-              injects some tactfully chosen vigor into an all-time classic
-              design. This meticulously crafted semi-hollow bass with a short
-              30.75-inch (781 mm) scale is fitted with Hagstrom’s custom-voiced
-              Dyna-Rail humbucking pickups. A brilliantly designed 6-way rotary
-              switch allows switching between various humbucking and single-coil
-              configurations for a dizzying array of tonal options. From 60’s
-              Brit-rock to modern day low-end goodness, the Viking® bass
-              delivers ear-candy galore.
+              Most people invariably think of Hagstrom when talking about an
+              8-string bass. That’s because Hagstrom was the first brand to
+              mass-produce an 8-string version: the H8. In the late 1960s,
+              countless beat and hard rock icons experimented extensively and
+              used its unique sound as the backbone for psychedelic and classic
+              songs. The H8 not only survived this experimental era of the 1960s
+              but quickly became a timeless instrument. With the H8-II of its
+              RetroScape series, Hagstrom introduces an authentic re-issue of
+              this legendary 8-string bass originally released in 1967. In other
+              words, its tremendously powerful and sparkling sound is back!
+            </Paragraph>
+            <Paragraph>
+              What makes the H8-II so special? The octave sound of the high
+              strings is just perfect. Unlike electronic devices, this approach
+              is not subject to tracking problems. The narrow neck, the
+              congenial 8-string bridge (string-through-body) and its short
+              scale greatly contribute to the perfect playability of the string
+              pairs. Hagstrom’s proprietary “Dyna-Rail” humbuckers produce a
+              phat sound and can be split to single-coil mode using the volume
+              control. The famous “H-Expander” trussrod ensures perfect neck
+              relief despite the considerably higher tension of the eight
+              strings. It also contributes to the bass’s fabulous sustain. The
+              on-board sliders allow players to activate and deactivate the
+              pickups individually. The global “Tone” and “Mute” sliders provide
+              a host of additional sonic options. This attractive package is
+              rounded out by the authentic double-cutaway body shape, which fits
+              snugly in the RetroScape series’ design philosophy and will even
+              win over die-hard vintage freaks.
             </Paragraph>
           </LeftContentWrapper>
           <RightContentWrapper>
             <MediaTitle>Colors</MediaTitle>
             <Colors>
-              <ColorsWrapper>
-                <Image
-                  src={Colors_Black_Gloss}
-                  alt=''
-                  style={{ width: '70px', height: 'auto' }}
-                />
-                <ColorsText>Black Gloss</ColorsText>
-              </ColorsWrapper>
               <ColorsWrapper>
                 <Image
                   src={Colors_Wild_Cherry_Transparent}
@@ -651,23 +663,12 @@ const MoreInfoVikingBass = () => {
               </ColorsWrapper>
               <ColorsWrapper>
                 <Image
-                  src={Colors_Tobacco_Sunburst}
+                  src={Colors_Black_Gloss}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Tobacco Sunburst</ColorsText>
+                <ColorsText>Black Gloss</ColorsText>
               </ColorsWrapper>
-              <ColorsWrapper>
-                <Image
-                  src={Colors_White_Gloss}
-                  alt=''
-                  style={{ width: '70px', height: 'auto' }}
-                />
-                <ColorsText>White Gloss</ColorsText>
-              </ColorsWrapper>
-            </Colors>
-            <MediaTitle>Colors Lefthand</MediaTitle>
-            <Colors>
               <ColorsWrapper>
                 <Image
                   src={Colors_Tobacco_Sunburst}
@@ -682,16 +683,16 @@ const MoreInfoVikingBass = () => {
         <MainContentWrapper>
           <Details>
             <DetailsWrapper>
-              <Image src={Viking_Bass_Details_01} alt='' />
-              <DetailsText></DetailsText>
+              <Image src={HSH8204_03} alt='' />
+              <DetailsText>H8-II Bass Wild Cherry Transparent</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={Viking_Bass_Details_02} alt='' />
-              <DetailsText></DetailsText>
+              <Image src={HSH8209_03} alt='' />
+              <DetailsText>H8-II Bass Black Gloss</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={Viking_Bass_Details_03} alt='' />
-              <DetailsText></DetailsText>
+              <Image src={HSH8218_03} alt='' />
+              <DetailsText>H8-II Bass Tobacco Sunburst</DetailsText>
             </DetailsWrapper>
           </Details>
         </MainContentWrapper>
@@ -729,71 +730,81 @@ const MoreInfoVikingBass = () => {
             open={open}
             close={() => setOpen(false)}
             slides={[
-              { src: Viking_Bass_Black_Gloss },
-              { src: Viking_Bass_White_Gloss },
-              { src: Viking_Bass_Tobacco_Sunburst },
-              { src: Viking_Bass_Wild_Cherry_Transparent },
+              { src: H8_II_Wild_Cherry_Transparent },
+              { src: H8_II_Wild_Cherry_Transparent_Back },
+              { src: H8_II_Black_Gloss },
+              { src: H8_II_Black_Gloss_Back },
+              { src: H8_II_Tobacco_Sunburst },
+              { src: H8_II_Tobacco_Sunburst_Back },
             ]}
           />
         </LightboxWrapper>
         <SpecsWrapper>
           <LeftSpecsWrapper>
-            <MediaTitle>Viking® Bass Specs</MediaTitle>
+            <MediaTitle>H8-II Bass Specs</MediaTitle>
             <MediaTitleSecondary>Body</MediaTitleSecondary>
             <ul>
-              <li>Material: Ply Maple</li>
-              <li>Top: Contoured</li>
-              <li>Style: Semi-Hollow</li>
+              <li>All Mahogany</li>
+              <li>Double Cutaway - Based on Original 1967 Design</li>
             </ul>
             <MediaTitleSecondary>Neck</MediaTitleSecondary>
             <ul>
-              <li>Joint: Set Neck</li>
-              <li>Material: Canadian Hard Maple</li>
+              <li>Bolt-On Neck</li>
+              <li>Material: Hard Canadian Maple</li>
               <li>Truss Rod: H-Expander™</li>
+              <li>“C” Profile</li>
+              <li>Radius: 15"</li>
+              <li>Multi-Ply Binding</li>
             </ul>
             <MediaTitleSecondary>Fingerboard/Nut</MediaTitleSecondary>
             <ul>
               <li>Material: Resinator™</li>
-              <li>Radius: 15"</li>
-              <li>Inlays: Pearl Block</li>
-              <li>Frets: 21 Medium Jumbo</li>
-              <li>Scale Length: 30,75" (781 mm)</li>
-              <li>Nut: GraphTech Black Tusq XL</li>
-              <li>Nut Width: 40 mm</li>
+              <li>Nut: Graph Tech™ Black Tusq XL 40 mm nut</li>
+              <li>Fretboard: Resinator™ Fretboard</li>
+              <li>Inlays: Hagstrom Perloid Dot Inlays</li>
+              <li>Frets: 21 Frets</li>
+              <li>Tuning Keys: Hagstrom Design 22:1 Tuning Pegs</li>
+              <li>Scale Length: 30.75“ / 781 mm</li>
             </ul>
             <MediaTitleSecondary>Electronics</MediaTitleSecondary>
             <ul>
-              <li>Pickups: 2 x Dyna Rail - Viking® Bass N/B</li>
+              <li>Pickups: 2 x Hagstrom DynaRail Humbucker</li>
+              <li>Controls: 1 x Volume Control with Push/Pull Coil Split</li>
+              <li>Kill Switch Located on Upper Bout</li>
               <li>
-                Pickup Selector: 6-Way Rotary
-                <ol style={{ paddingLeft: '32px' }}>
-                  <li>Neck + Bridge, Single coil (Outer coils)</li>
-                  <li>Bridge, Single Coil (Outer Coil)</li>
-                  <li>Neck, Single Coil (Outer Coil)</li>
-                  <li>Neck + Bridge, Humbucking</li>
-                  <li>Bridge, Humbucking</li>
-                  <li>Neck, Humbucking</li>
-                </ol>
+                4 x Switches (left to right)
+                <ul style={{ paddingLeft: '16px' }}>
+                  <li>Neck - off/on</li>
+                  <li>Bridge - off/on</li>
+                  <li>Master Tone - off/mid & high cut</li>
+                  <li>Mute - off/gain reduction & high cut</li>
+                </ul>
               </li>
-              <li>Controls: 2 x Volume / 2 x Tone</li>
             </ul>
             <MediaTitleSecondary>Parts</MediaTitleSecondary>
             <ul>
+              <li>Bridge: Hagstrom Adjustable String-Through Body</li>
+              <li>4 x Hagstrom 22:1 Chrome Die Cast Tuners</li>
+              <li>4 x Hagstrom 18:1 Chrome Die Cast Tuners</li>
               <li>
-                Bridge: Long Travel Tune-O-Matic with Hagstrom Trapeze Tail
-                Piece
+                Custom String Gauges (Complete replacement sets are available to
+                order. Model Number: HBS-8)
+                <ol style={{ paddingLeft: '16px' }}>
+                  <li>G .040 / g .013 (Octave)</li>
+                  <li>D .050 / d .023 (Octave)</li>
+                  <li>A .065 / a .038 (Octave)</li>
+                  <li>E .090 / e .052 (Octave)</li>
+                </ol>
               </li>
-              <li>Tuning Keys: Hagstrom Design 17:1</li>
-              <li>Strings: .45 - .95</li>
             </ul>
             <MediaTitleSecondary>Optional Cases</MediaTitleSecondary>
             <ul>
-              <li>Bag B41</li>
-              <li>Case B62</li>
+              <li>Case B-60</li>
+              <li>Bag B-40</li>
             </ul>
           </LeftSpecsWrapper>
           <RightSpecsWrapper>
-            <MediaTitle>Viking® Bass Standards</MediaTitle>
+            <MediaTitle>H8-II Bass Standards</MediaTitle>
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
@@ -839,7 +850,7 @@ const MoreInfoVikingBass = () => {
               </StandardsImageWrapper>
               <StandardsTextWrapper>
                 <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Hagstrom Machine Heads
+                  Machine Heads
                 </h4>
                 <p>
                   Hagstrom models use 18:1 or 15:1 gear ratio machine heads
@@ -907,4 +918,4 @@ const MoreInfoVikingBass = () => {
   );
 };
 
-export default MoreInfoVikingBass;
+export default MoreInfoH8IIBass;

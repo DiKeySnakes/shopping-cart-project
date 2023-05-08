@@ -371,7 +371,7 @@ const Home = () => {
       <News key={nanoid()}>
         <NewsWrapper key={nanoid()}>
           <Link
-            to='/Products'
+            to='/MoreInfoH8IIBass'
             style={{ textDecoration: 'none' }}
             key={nanoid()}>
             <FramedImage src={Home_HS_H8II_Bass_2017} alt='' key={nanoid()} />
@@ -387,7 +387,7 @@ const Home = () => {
         </NewsWrapper>
         <NewsWrapper key={nanoid()}>
           <Link
-            to='/Products'
+            to='/MoreInfoSuperSwedeBass'
             style={{ textDecoration: 'none' }}
             key={nanoid()}>
             <FramedImage
@@ -405,7 +405,7 @@ const Home = () => {
         </NewsWrapper>
         <NewsWrapper key={nanoid()}>
           <Link
-            to='/Products'
+            to='/MoreInfoSwedeBass'
             style={{ textDecoration: 'none' }}
             key={nanoid()}>
             <FramedImage
@@ -447,7 +447,7 @@ const Home = () => {
       <Teaser key={nanoid()}>
         <TeaserWrapper key={nanoid()}>
           <Link
-            to='/Products'
+            to='/MoreInfoViking'
             style={{ textDecoration: 'none' }}
             key={nanoid()}>
             <Image src={Home_viking_teaser} alt='' key={nanoid()} />
@@ -457,7 +457,7 @@ const Home = () => {
         </TeaserWrapper>
         <TeaserWrapper key={nanoid()}>
           <Link
-            to='/Products'
+            to='/MoreInfoUltraMax'
             style={{ textDecoration: 'none' }}
             key={nanoid()}>
             <Image src={Home_ultramax_teaser} alt='' key={nanoid()} />
@@ -467,7 +467,7 @@ const Home = () => {
         </TeaserWrapper>
         <TeaserWrapper key={nanoid()}>
           <Link
-            to='/Products'
+            to='/MoreInfoH8IIBass'
             style={{ textDecoration: 'none' }}
             key={nanoid()}>
             <Image src={Home_h8_2_bass_teaser} alt='' key={nanoid()} />
@@ -500,7 +500,7 @@ const Home = () => {
       <Teaser key={nanoid()}>
         <TeaserWrapper key={nanoid()}>
           <Link
-            to='/Products'
+            to='/MoreInfoViking67'
             style={{ textDecoration: 'none' }}
             key={nanoid()}>
             <Image src={Home_HSVIK6704_teaser} alt='' key={nanoid()} />
@@ -510,7 +510,7 @@ const Home = () => {
         </TeaserWrapper>
         <TeaserWrapper key={nanoid()}>
           <Link
-            to='/Products'
+            to='/MoreInfoSuperSwedeBass'
             style={{ textDecoration: 'none' }}
             key={nanoid()}>
             <Image src={Home_HSSUSWEB03_teaser} alt='' key={nanoid()} />
@@ -520,7 +520,7 @@ const Home = () => {
         </TeaserWrapper>
         <TeaserWrapper key={nanoid()}>
           <Link
-            to='/Products'
+            to='/MoreInfoPatSmear'
             style={{ textDecoration: 'none' }}
             key={nanoid()}>
             <Image src={Home_Pat_teaser_2} alt='' key={nanoid()} />
