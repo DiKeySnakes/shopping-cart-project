@@ -274,7 +274,7 @@ const AcousticGuitars = () => {
       </NavContainer>
       <MainContentWrapper key={nanoid()}>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='orsa'>
           <RowTitle key={nanoid()}>Orsa</RowTitle>
           <RowParagraph key={nanoid()}>
             Hagstrom’s Orsa series is named after a town in the beautiful
@@ -302,7 +302,7 @@ const AcousticGuitars = () => {
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
-              to='/Products'
+              to='/MoreInfoOrsaDreadnought'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
@@ -316,7 +316,7 @@ const AcousticGuitars = () => {
               </ImageWrapper>
             </Link>
             <Link
-              to='/Products'
+              to='/MoreInfoOrsaDreadnoughtCE'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
@@ -330,7 +330,7 @@ const AcousticGuitars = () => {
               </ImageWrapper>
             </Link>
             <Link
-              to='/Products'
+              to='/MoreInfoOrsaGrandAuditorium'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
@@ -344,7 +344,7 @@ const AcousticGuitars = () => {
               </ImageWrapper>
             </Link>
             <Link
-              to='/Products'
+              to='/MoreInfoOrsaGrandAuditoriumCE'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>

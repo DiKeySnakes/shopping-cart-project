@@ -76,6 +76,10 @@ import Viking_Bass_White_Gloss_Vertical from '../assets/images/Viking_Bass_White
 import H8_II_Wild_Cherry_Transparent_Vertical from '../assets/images/H8_II_Wild_Cherry_Transparent_Vertical.png';
 import H8_II_Black_Gloss_Vertical from '../assets/images/H8_II_Black_Gloss_Vertical.png';
 import H8_II_Tobacco_Sunburst_Vertical from '../assets/images/H8_II_Tobacco_Sunburst_Vertical.png';
+import Acoustic_Orsa_Dreadnought_Vertical from '../assets/images/Acoustic_Orsa_Dreadnought_Vertical.png';
+import Acoustic_Orsa_Dreadnought_CE_Vertical from '../assets/images/Acoustic_Orsa_Dreadnought_CE_Vertical.png';
+import Acoustic_Orsa_GA_Vertical from '../assets/images/Acoustic_Orsa_GA_Vertical.png';
+import Acoustic_Orsa_Grand_Auditorium_CE_Vertical from '../assets/images/Acoustic_Orsa_Grand_Auditorium_CE_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -857,6 +861,46 @@ const productsList = [
     color: 'Tobacco Sunburst',
     info: '/MoreInfoH8IIBass',
     price: '1750',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Orsa_Dreadnought_Vertical,
+    brand: 'Hagstrom',
+    name: 'Orsa Dreadnought',
+    color: 'Natural',
+    info: '/MoreInfoOrsaDreadnought',
+    price: '900',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Orsa_Dreadnought_CE_Vertical,
+    brand: 'Hagstrom',
+    name: 'Orsa Dreadnought CE',
+    color: 'Natural',
+    info: '/MoreInfoOrsaDreadnoughtCE',
+    price: '900',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Orsa_GA_Vertical,
+    brand: 'Hagstrom',
+    name: 'Orsa Grand Auditorium',
+    color: 'Natural',
+    info: '/MoreInfoOrsaGrandAuditorium',
+    price: '900',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Orsa_Grand_Auditorium_CE_Vertical,
+    brand: 'Hagstrom',
+    name: 'Orsa Grand Auditorium CE',
+    color: 'Natural',
+    info: '/MoreInfoOrsaGrandAuditoriumCE',
+    price: '900',
     quantity: 1,
     id: nanoid(),
   },

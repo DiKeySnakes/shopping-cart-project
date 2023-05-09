@@ -36,6 +36,10 @@ import MoreInfoSuperSwedeBass from './components/MoreInfoSuperSwedeBass';
 import MoreInfoSwedeBass from './components/MoreInfoSwedeBass';
 import MoreInfoVikingBass from './components/MoreInfoVikingBass';
 import MoreInfoH8IIBass from './components/MoreInfoH8IIBass';
+import MoreInfoOrsaDreadnought from './components/MoreInfoOrsaDreadnought';
+import MoreInfoOrsaDreadnoughtCE from './components/MoreInfoOrsaDreadnoughtCE';
+import MoreInfoOrsaGrandAuditorium from './components/MoreInfoOrsaGrandAuditorium';
+import MoreInfoOrsaGrandAuditoriumCE from './components/MoreInfoOrsaGrandAuditoriumCE';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
@@ -127,6 +131,22 @@ function App() {
           <Route path='/MoreInfoSwedeBass' element={<MoreInfoSwedeBass />} />
           <Route path='/MoreInfoVikingBass' element={<MoreInfoVikingBass />} />
           <Route path='/MoreInfoH8IIBass' element={<MoreInfoH8IIBass />} />
+          <Route
+            path='/MoreInfoOrsaDreadnought'
+            element={<MoreInfoOrsaDreadnought />}
+          />
+          <Route
+            path='/MoreInfoOrsaDreadnoughtCE'
+            element={<MoreInfoOrsaDreadnoughtCE />}
+          />
+          <Route
+            path='/MoreInfoOrsaGrandAuditorium'
+            element={<MoreInfoOrsaGrandAuditorium />}
+          />
+          <Route
+            path='/MoreInfoOrsaGrandAuditoriumCE'
+            element={<MoreInfoOrsaGrandAuditoriumCE />}
+          />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </ScrollToTopHelper>
