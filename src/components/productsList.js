@@ -84,6 +84,8 @@ import Acoustic_Elfdalia_II_Dreadnought_Natural_Ceder_Vertical from '../assets/i
 import Acoustic_Elfdalia_II_Dreadnought_CE_Natural_Ceder_Vertical from '../assets/images/Acoustic_Elfdalia_II_Dreadnought_CE_Natural_Ceder_Vertical.png';
 import Acoustic_Elfdalia_II_Grand_Auditorium_Natural_Ceder_Vertical from '../assets/images/Acoustic_Elfdalia_II_Grand_Auditorium_Natural_Ceder_Vertical.png';
 import Acoustic_Elfdalia_II_Grand_Auditorium_CE_Natural_Ceder_Vertical from '../assets/images/Acoustic_Elfdalia_II_Grand_Auditorium_CE_Natural_Ceder_Vertical.png';
+import Acoustic_Mora_II_Concert_Vertical from '../assets/images/Acoustic_Mora_II_Concert_Vertical.png';
+import Acoustic_Mora_II_Concert_CE_Vertical from '../assets/images/Acoustic_Mora_II_Concert_CE_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -944,6 +946,26 @@ const productsList = [
     name: 'Elfdalia II Grand Auditorium CE',
     color: 'Natural Ceder',
     info: '/MoreInfoElfdaliaIIGrandAuditoriumCE',
+    price: '900',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Mora_II_Concert_Vertical,
+    brand: 'Hagstrom',
+    name: 'Mora II Concert',
+    color: 'Natural Mahogany',
+    info: '/MoreInfoMoraIIConcert',
+    price: '900',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Mora_II_Concert_CE_Vertical,
+    brand: 'Hagstrom',
+    name: 'Mora II Concert CE',
+    color: 'Natural Mahogany',
+    info: '/MoreInfoMoraIIConcertCE',
     price: '900',
     quantity: 1,
     id: nanoid(),

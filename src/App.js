@@ -44,6 +44,8 @@ import MoreInfoElfdaliaIIDreadnought from './components/MoreInfoElfdaliaIIDreadn
 import MoreInfoElfdaliaIIDreadnoughtCE from './components/MoreInfoElfdaliaIIDreadnoughtCE';
 import MoreInfoElfdaliaIIGrandAuditorium from './components/MoreInfoElfdaliaIIGrandAuditorium';
 import MoreInfoElfdaliaIIGrandAuditoriumCE from './components/MoreInfoElfdaliaIIGrandAuditoriumCE';
+import MoreInfoMoraIIConcert from './components/MoreInfoMoraIIConcert';
+import MoreInfoMoraIIConcertCE from './components/MoreInfoMoraIIConcertCE';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
@@ -166,6 +168,14 @@ function App() {
           <Route
             path='/MoreInfoElfdaliaIIGrandAuditoriumCE'
             element={<MoreInfoElfdaliaIIGrandAuditoriumCE />}
+          />
+          <Route
+            path='/MoreInfoMoraIIConcert'
+            element={<MoreInfoMoraIIConcert />}
+          />
+          <Route
+            path='/MoreInfoMoraIIConcertCE'
+            element={<MoreInfoMoraIIConcertCE />}
           />
           <Route path='*' element={<NotFound />} />
         </Routes>

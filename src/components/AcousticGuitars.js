@@ -436,7 +436,7 @@ const AcousticGuitars = () => {
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='moraII'>
           <RowTitle key={nanoid()}>Mora II</RowTitle>
           <RowParagraph key={nanoid()}>
             The Mora models using a solid Mahogany top with Mahogany back and
@@ -453,7 +453,7 @@ const AcousticGuitars = () => {
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
-              to='/Products'
+              to='/MoreInfoMoraIIConcert'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
@@ -467,7 +467,7 @@ const AcousticGuitars = () => {
               </ImageWrapper>
             </Link>
             <Link
-              to='/Products'
+              to='/MoreInfoMoraIIConcertCE'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
