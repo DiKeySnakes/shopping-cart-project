@@ -80,6 +80,10 @@ import Acoustic_Orsa_Dreadnought_Vertical from '../assets/images/Acoustic_Orsa_D
 import Acoustic_Orsa_Dreadnought_CE_Vertical from '../assets/images/Acoustic_Orsa_Dreadnought_CE_Vertical.png';
 import Acoustic_Orsa_GA_Vertical from '../assets/images/Acoustic_Orsa_GA_Vertical.png';
 import Acoustic_Orsa_Grand_Auditorium_CE_Vertical from '../assets/images/Acoustic_Orsa_Grand_Auditorium_CE_Vertical.png';
+import Acoustic_Elfdalia_II_Dreadnought_Natural_Ceder_Vertical from '../assets/images/Acoustic_Elfdalia_II_Dreadnought_Natural_Ceder_Vertical.png';
+import Acoustic_Elfdalia_II_Dreadnought_CE_Natural_Ceder_Vertical from '../assets/images/Acoustic_Elfdalia_II_Dreadnought_CE_Natural_Ceder_Vertical.png';
+import Acoustic_Elfdalia_II_Grand_Auditorium_Natural_Ceder_Vertical from '../assets/images/Acoustic_Elfdalia_II_Grand_Auditorium_Natural_Ceder_Vertical.png';
+import Acoustic_Elfdalia_II_Grand_Auditorium_CE_Natural_Ceder_Vertical from '../assets/images/Acoustic_Elfdalia_II_Grand_Auditorium_CE_Natural_Ceder_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -900,6 +904,46 @@ const productsList = [
     name: 'Orsa Grand Auditorium CE',
     color: 'Natural',
     info: '/MoreInfoOrsaGrandAuditoriumCE',
+    price: '900',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Elfdalia_II_Dreadnought_Natural_Ceder_Vertical,
+    brand: 'Hagstrom',
+    name: 'Elfdalia II Dreadnought',
+    color: 'Natural Ceder',
+    info: '/MoreInfoElfdaliaIIDreadnought',
+    price: '900',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Elfdalia_II_Dreadnought_CE_Natural_Ceder_Vertical,
+    brand: 'Hagstrom',
+    name: 'Elfdalia II Dreadnought CE',
+    color: 'Natural Ceder',
+    info: '/MoreInfoElfdaliaIIDreadnoughtCE',
+    price: '900',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Elfdalia_II_Grand_Auditorium_Natural_Ceder_Vertical,
+    brand: 'Hagstrom',
+    name: 'Elfdalia II Grand Auditorium',
+    color: 'Natural Ceder',
+    info: '/MoreInfoElfdaliaIIGrandAuditorium',
+    price: '900',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Elfdalia_II_Grand_Auditorium_CE_Natural_Ceder_Vertical,
+    brand: 'Hagstrom',
+    name: 'Elfdalia II Grand Auditorium CE',
+    color: 'Natural Ceder',
+    info: '/MoreInfoElfdaliaIIGrandAuditoriumCE',
     price: '900',
     quantity: 1,
     id: nanoid(),

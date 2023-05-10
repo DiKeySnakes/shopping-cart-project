@@ -40,6 +40,10 @@ import MoreInfoOrsaDreadnought from './components/MoreInfoOrsaDreadnought';
 import MoreInfoOrsaDreadnoughtCE from './components/MoreInfoOrsaDreadnoughtCE';
 import MoreInfoOrsaGrandAuditorium from './components/MoreInfoOrsaGrandAuditorium';
 import MoreInfoOrsaGrandAuditoriumCE from './components/MoreInfoOrsaGrandAuditoriumCE';
+import MoreInfoElfdaliaIIDreadnought from './components/MoreInfoElfdaliaIIDreadnought';
+import MoreInfoElfdaliaIIDreadnoughtCE from './components/MoreInfoElfdaliaIIDreadnoughtCE';
+import MoreInfoElfdaliaIIGrandAuditorium from './components/MoreInfoElfdaliaIIGrandAuditorium';
+import MoreInfoElfdaliaIIGrandAuditoriumCE from './components/MoreInfoElfdaliaIIGrandAuditoriumCE';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
@@ -146,6 +150,22 @@ function App() {
           <Route
             path='/MoreInfoOrsaGrandAuditoriumCE'
             element={<MoreInfoOrsaGrandAuditoriumCE />}
+          />
+          <Route
+            path='/MoreInfoElfdaliaIIDreadnought'
+            element={<MoreInfoElfdaliaIIDreadnought />}
+          />
+          <Route
+            path='/MoreInfoElfdaliaIIDreadnoughtCE'
+            element={<MoreInfoElfdaliaIIDreadnoughtCE />}
+          />
+          <Route
+            path='/MoreInfoElfdaliaIIGrandAuditorium'
+            element={<MoreInfoElfdaliaIIGrandAuditorium />}
+          />
+          <Route
+            path='/MoreInfoElfdaliaIIGrandAuditoriumCE'
+            element={<MoreInfoElfdaliaIIGrandAuditoriumCE />}
           />
           <Route path='*' element={<NotFound />} />
         </Routes>

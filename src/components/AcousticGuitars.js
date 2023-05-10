@@ -360,7 +360,7 @@ const AcousticGuitars = () => {
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='elfdaliaII'>
           <RowTitle key={nanoid()}>Elfdalia II</RowTitle>
           <RowParagraph key={nanoid()}>
             The Elfdalia models using a solid Cedar top with Mahogany back and
@@ -378,7 +378,7 @@ const AcousticGuitars = () => {
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
-              to='/Products'
+              to='/MoreInfoElfdaliaIIDreadnought'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
@@ -392,7 +392,7 @@ const AcousticGuitars = () => {
               </ImageWrapper>
             </Link>
             <Link
-              to='/Products'
+              to='/MoreInfoElfdaliaIIDreadnoughtCE'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
@@ -406,7 +406,7 @@ const AcousticGuitars = () => {
               </ImageWrapper>
             </Link>
             <Link
-              to='/Products'
+              to='/MoreInfoElfdaliaIIGrandAuditorium'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
@@ -420,7 +420,7 @@ const AcousticGuitars = () => {
               </ImageWrapper>
             </Link>
             <Link
-              to='/Products'
+              to='/MoreInfoElfdaliaIIGrandAuditoriumCE'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
