@@ -48,6 +48,8 @@ import MoreInfoMoraIIConcert from './components/MoreInfoMoraIIConcert';
 import MoreInfoMoraIIConcertCE from './components/MoreInfoMoraIIConcertCE';
 import MoreInfoMoraIIDreadnought from './components/MoreInfoMoraIIDreadnought';
 import MoreInfoMoraIIDreadnoughtCE from './components/MoreInfoMoraIIDreadnoughtCE';
+import MoreInfoSiljanIIGrandAuditorium12String from './components/MoreInfoSiljanIIGrandAuditorium12String';
+import MoreInfoSeafarerIIParlorE from './components/MoreInfoSeafarerIIParlorE';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
@@ -186,6 +188,14 @@ function App() {
           <Route
             path='/MoreInfoMoraIIDreadnoughtCE'
             element={<MoreInfoMoraIIDreadnoughtCE />}
+          />
+          <Route
+            path='/MoreInfoSiljanIIGrandAuditorium12String'
+            element={<MoreInfoSiljanIIGrandAuditorium12String />}
+          />
+          <Route
+            path='/MoreInfoSeafarerIIParlorE'
+            element={<MoreInfoSeafarerIIParlorE />}
           />
           <Route path='*' element={<NotFound />} />
         </Routes>

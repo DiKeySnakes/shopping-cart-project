@@ -88,6 +88,8 @@ import Acoustic_Mora_II_Concert_Vertical from '../assets/images/Acoustic_Mora_II
 import Acoustic_Mora_II_Concert_CE_Vertical from '../assets/images/Acoustic_Mora_II_Concert_CE_Vertical.png';
 import Acoustic_Mora_II_Dreadnought_Vertical from '../assets/images/Acoustic_Mora_II_Dreadnought_Vertical.png';
 import Acoustic_Mora_II_Dreadnought_CE_Vertical from '../assets/images/Acoustic_Mora_II_Dreadnought_CE_Vertical.png';
+import Acoustic_Siljan_II_GA_12_String_Vertical from '../assets/images/Acoustic_Siljan_II_GA_12_String_Vertical.png';
+import Acoustic_Seafarer_II_Parlor_E_Vertical from '../assets/images/Acoustic_Seafarer_II_Parlor_E_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -989,6 +991,26 @@ const productsList = [
     color: 'Natural Mahogany',
     info: '/MoreInfoMoraIIDreadnoughtCE',
     price: '900',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Siljan_II_GA_12_String_Vertical,
+    brand: 'Hagstrom',
+    name: 'Siljan II Grand Auditorium 12 String',
+    color: 'Natural',
+    info: '/MoreInfoSiljanIIGrandAuditorium12String',
+    price: '1300',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Seafarer_II_Parlor_E_Vertical,
+    brand: 'Hagstrom',
+    name: 'Seafarer II Parlor E',
+    color: 'Tobacco Sunburst',
+    info: '/MoreInfoSeafarerIIParlorE',
+    price: '1350',
     quantity: 1,
     id: nanoid(),
   },

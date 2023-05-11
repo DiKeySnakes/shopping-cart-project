@@ -511,7 +511,7 @@ const AcousticGuitars = () => {
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='siljanII'>
           <RowTitle key={nanoid()}>Siljan II</RowTitle>
           <RowParagraph key={nanoid()}>
             The Siljan models using a high grade Sitka Spruce top with Mahogany
@@ -580,7 +580,7 @@ const AcousticGuitars = () => {
               </ImageWrapper>
             </Link>
             <Link
-              to='/Products'
+              to='/MoreInfoSiljanIIGrandAuditorium12String'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
@@ -596,7 +596,7 @@ const AcousticGuitars = () => {
           </ItemBox>
         </Row>
         <GuitarsCustomHeader key={nanoid()} />
-        <Row key={nanoid()}>
+        <Row key={nanoid()} id='seafarerII'>
           <RowTitle key={nanoid()}>Seafarer II</RowTitle>
           <RowParagraph key={nanoid()}>
             Parlor-sized bodies have been used by acoustic guitar builders for
@@ -609,7 +609,7 @@ const AcousticGuitars = () => {
           </RowParagraph>
           <ItemBox key={nanoid()}>
             <Link
-              to='/Products'
+              to='/MoreInfoSeafarerIIParlorE'
               style={{ textDecoration: 'none' }}
               key={nanoid()}>
               <ImageWrapper key={nanoid()}>
