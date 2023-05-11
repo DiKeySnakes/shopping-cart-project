@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.d8d4bc2a.js",
+    "main.js": "/shopping-cart-project/static/js/main.e9a3b910.js",
     "static/media/viking_bridge_neck.ogg": "/shopping-cart-project/static/media/viking_bridge_neck.66695dda61b38dab4673.ogg",
     "static/media/Viking67_Header.png": "/shopping-cart-project/static/media/Viking67_Header.54b20b69d2c932618e29.png",
     "static/media/viking_neck_clean.ogg": "/shopping-cart-project/static/media/viking_neck_clean.f1212c64b9506888d214.ogg",
@@ -16,6 +16,7 @@
     "static/media/Acoustic_Mora_II_Concert_CE_Back.png": "/shopping-cart-project/static/media/Acoustic_Mora_II_Concert_CE_Back.73ea9f077aecdf644c75.png",
     "static/media/Acoustic_Elfdalia_II_Dreadnought_CE_Back.png": "/shopping-cart-project/static/media/Acoustic_Elfdalia_II_Dreadnought_CE_Back.f7b2653b39ed8b0b5d00.png",
     "static/media/Acoustic_Elfdalia_II_Grand_Auditorium.png": "/shopping-cart-project/static/media/Acoustic_Elfdalia_II_Grand_Auditorium.789007d222a18fbdaa24.png",
+    "static/media/Acoustic_Siljan_II_GA_12_String_Back.png": "/shopping-cart-project/static/media/Acoustic_Siljan_II_GA_12_String_Back.1513e0d9ebc92b20ce3f.png",
     "static/media/Acoustic_Mora_II_Dreadnought.png": "/shopping-cart-project/static/media/Acoustic_Mora_II_Dreadnought.324d244dd8a9dca68439.png",
     "static/media/Acoustic_Elfdalia_II_Grand_Auditorium_Natural_Ceder_Vertical.png": "/shopping-cart-project/static/media/Acoustic_Elfdalia_II_Grand_Auditorium_Natural_Ceder_Vertical.0c9260021588335abeda.png",
     "static/media/Acoustic_Orsa_Dreadnought.png": "/shopping-cart-project/static/media/Acoustic_Orsa_Dreadnought.de655937ff0c2a4ecd3a.png",
@@ -35,11 +36,14 @@
     "static/media/Acoustic_Orsa_GA_Vertical.png": "/shopping-cart-project/static/media/Acoustic_Orsa_GA_Vertical.860f03369558ee05785a.png",
     "static/media/Acoustic_Orsa_Dreadnought_CE.png": "/shopping-cart-project/static/media/Acoustic_Orsa_Dreadnought_CE.1bc6499f11c40a97b90e.png",
     "static/media/Acoustic_Orsa_Dreadnought_CE_Vertical.png": "/shopping-cart-project/static/media/Acoustic_Orsa_Dreadnought_CE_Vertical.faea8ddd89bf023da72e.png",
+    "static/media/Acoustic_Seafarer_II_Parlor_E_Back.png": "/shopping-cart-project/static/media/Acoustic_Seafarer_II_Parlor_E_Back.faaf4c68b377fe22861f.png",
     "static/media/Acoustic_Elfdalia_II_Dreadnought_CE.png": "/shopping-cart-project/static/media/Acoustic_Elfdalia_II_Dreadnought_CE.902103f7eb559869b809.png",
     "static/media/Acoustic_Orsa_Grand_Auditorium_CE.png": "/shopping-cart-project/static/media/Acoustic_Orsa_Grand_Auditorium_CE.3685fd42b0e0e30e1137.png",
+    "static/media/Acoustic_Siljan_II_GA_12_String.png": "/shopping-cart-project/static/media/Acoustic_Siljan_II_GA_12_String.b6f9c7bdbdc95c634317.png",
     "static/media/Acoustic_Mora_II_Concert_CE.png": "/shopping-cart-project/static/media/Acoustic_Mora_II_Concert_CE.3ac426f1235b502c1902.png",
     "static/media/HagstromVikingGoldTop.png": "/shopping-cart-project/static/media/HagstromVikingGoldTop.610b80976c5b9f7c1d1d.png",
     "static/media/Acoustic_Orsa_Grand_Auditorium_CE_Vertical.png": "/shopping-cart-project/static/media/Acoustic_Orsa_Grand_Auditorium_CE_Vertical.c19f32b5c28d0401e0b5.png",
+    "static/media/Acoustic_Siljan_II_GA_12_String_Vertical.png": "/shopping-cart-project/static/media/Acoustic_Siljan_II_GA_12_String_Vertical.d15a850bad04d9d6b1fa.png",
     "static/media/Artist_Project_Viking_Gold_Top_Vertical.png": "/shopping-cart-project/static/media/Artist_Project_Viking_Gold_Top_Vertical.e60f693fff0d2397d4b7.png",
     "static/media/Acoustic_Elfdalia_II_Dreadnought_CE_Natural_Ceder_Vertical.png": "/shopping-cart-project/static/media/Acoustic_Elfdalia_II_Dreadnought_CE_Natural_Ceder_Vertical.70655f1accbd6fc9f2b0.png",
     "static/media/Acoustic_Mora_II_Concert_CE_Vertical.png": "/shopping-cart-project/static/media/Acoustic_Mora_II_Concert_CE_Vertical.b343f56449bbc6c3d6e1.png",
@@ -94,9 +98,11 @@
     "static/media/Swede_Dark_Storm_Vertical.png": "/shopping-cart-project/static/media/Swede_Dark_Storm_Vertical.ac978013f27330fb2351.png",
     "static/media/H8_II_Black_Gloss_Vertical.png": "/shopping-cart-project/static/media/H8_II_Black_Gloss_Vertical.d2a55e950502dbe4dede.png",
     "static/media/Fantomen_Tobacco_Sunburst.png": "/shopping-cart-project/static/media/Fantomen_Tobacco_Sunburst.a9bb11d5e6a79cd9372e.png",
+    "static/media/Acoustic_Seafarer_II_Parlor_E.png": "/shopping-cart-project/static/media/Acoustic_Seafarer_II_Parlor_E.0cf4902279de34c3f8dc.png",
     "static/media/Alvar_Swedish_Frost_Vertical.png": "/shopping-cart-project/static/media/Alvar_Swedish_Frost_Vertical.2a8a9495b1b5c659806f.png",
     "static/media/Tremar_HJ500_Black_Gloss_Vertical.png": "/shopping-cart-project/static/media/Tremar_HJ500_Black_Gloss_Vertical.b789e2a8bed7716ba259.png",
     "static/media/H8_II_Black_Gloss.png": "/shopping-cart-project/static/media/H8_II_Black_Gloss.943703b7478b2ac244f4.png",
+    "static/media/Acoustic_Seafarer_II_Parlor_E_Vertical.png": "/shopping-cart-project/static/media/Acoustic_Seafarer_II_Parlor_E_Vertical.315fe01b42814161a7cc.png",
     "static/media/Fantomen_Tobacco_Sunburst_Vertical.png": "/shopping-cart-project/static/media/Fantomen_Tobacco_Sunburst_Vertical.d83a658a64a580a34ba5.png",
     "static/media/Viking_Bass_Black_Gloss.png": "/shopping-cart-project/static/media/Viking_Bass_Black_Gloss.9a6337503387f985b62b.png",
     "static/media/HagstromAlvarSwedishFrost.png": "/shopping-cart-project/static/media/HagstromAlvarSwedishFrost.856760959ce62cf7fb37.png",
@@ -338,6 +344,7 @@
     "static/media/Super_Swede_Hero_350x453Px.png": "/shopping-cart-project/static/media/Super_Swede_Hero_350x453Px.6c3debe28f1fcd8c40c0.png",
     "static/media/Mora_II_Concert_CE_Hero.png": "/shopping-cart-project/static/media/Mora_II_Concert_CE_Hero.2298b18d57104f7e8dbe.png",
     "static/media/HSVIDLXBA09.png": "/shopping-cart-project/static/media/HSVIDLXBA09.a5acd06d2c7db59d62e5.png",
+    "static/media/Siljan_II_Header.jpg": "/shopping-cart-project/static/media/Siljan_II_Header.8a30037541ab8ca86031.jpg",
     "static/media/Heritage_historic_hagstrom_guitars.jpg": "/shopping-cart-project/static/media/Heritage_historic_hagstrom_guitars.f6b40b6b2ac66621de49.jpg",
     "static/media/Retroscape_Impala_Header.jpg": "/shopping-cart-project/static/media/Retroscape_Impala_Header.279970980dc61b96d42a.jpg",
     "static/media/Colors_HAGSTROM_Dark_Storm.png": "/shopping-cart-project/static/media/Colors_HAGSTROM_Dark_Storm.1b188d3ff9880814b3d9.png",
@@ -360,6 +367,7 @@
     "static/media/HSSUSWEMK3_Details_345x276Px_01.jpg": "/shopping-cart-project/static/media/HSSUSWEMK3_Details_345x276Px_01.5fe5ac2aca0f79a2b50a.jpg",
     "static/media/Swede_Hero_350x453Px.png": "/shopping-cart-project/static/media/Swede_Hero_350x453Px.e669bd13bc16eada290c.png",
     "static/media/Colo_Miretti.jpg": "/shopping-cart-project/static/media/Colo_Miretti.02e7eda9feb582a87661.jpg",
+    "static/media/Siljan_II_GA_12_Hero.png": "/shopping-cart-project/static/media/Siljan_II_GA_12_Hero.04cb28ceb1d1b8892491.png",
     "static/media/HSVVIKDL09.png": "/shopping-cart-project/static/media/HSVVIKDL09.10f75eaa4aad2e6862d1.png",
     "static/media/Fernando_Vecchio.jpg": "/shopping-cart-project/static/media/Fernando_Vecchio.6f0b835b3822523c587e.jpg",
     "static/media/Super_Viking_Trans_Brown_Header.jpg": "/shopping-cart-project/static/media/Super_Viking_Trans_Brown_Header.e7c7f8682fba5951e9fc.jpg",
@@ -415,6 +423,7 @@
     "static/media/Eddie_Reyes_Taking_Back_Sunday.jpg": "/shopping-cart-project/static/media/Eddie_Reyes_Taking_Back_Sunday.3e4ebd986bcbccff9bed.jpg",
     "static/media/Impala_Copperburst_Header.jpg": "/shopping-cart-project/static/media/Impala_Copperburst_Header.b8b2af286dc8e88baad0.jpg",
     "static/media/Super_Swede_Bass_Hero.png": "/shopping-cart-project/static/media/Super_Swede_Bass_Hero.f79244389095788b5d68.png",
+    "static/media/Seafarer_II_Parlor_E_Hero.png": "/shopping-cart-project/static/media/Seafarer_II_Parlor_E_Hero.d5d99e7498fd0286e4fa.png",
     "static/media/Viking_Hero.png": "/shopping-cart-project/static/media/Viking_Hero.a1e083ba67761827b66b.png",
     "static/media/Gregory_Hinde.jpg": "/shopping-cart-project/static/media/Gregory_Hinde.00f160af302b77df4f81.jpg",
     "static/media/CJ_Wildhearts.jpg": "/shopping-cart-project/static/media/CJ_Wildhearts.663e0d75ffc22556d91b.jpg",
@@ -570,10 +579,10 @@
     "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "static/media/ScrollIcon.svg": "/shopping-cart-project/static/media/ScrollIcon.a1eb858b6e5366f1bd5779a8e0ec1c44.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.d8d4bc2a.js.map": "/shopping-cart-project/static/js/main.d8d4bc2a.js.map"
+    "main.e9a3b910.js.map": "/shopping-cart-project/static/js/main.e9a3b910.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.d8d4bc2a.js"
+    "static/js/main.e9a3b910.js"
   ]
 }
