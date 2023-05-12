@@ -95,6 +95,11 @@ import Acoustic_Siljan_II_Dreadnought_CE_Black_Gloss_Vertical from '../assets/im
 import Acoustic_Siljan_II_Dreadnought_CE_Tobacco_Sunburst_Vertical from '../assets/images/Acoustic_Siljan_II_Dreadnought_CE_Tobacco_Sunburst_Vertical.png';
 import Acoustic_Siljan_II_Dreadnought_CE_Natural_Vertical from '../assets/images/Acoustic_Siljan_II_Dreadnought_CE_Natural_Vertical.png';
 import Acoustic_Siljan_II_Dreadnought_CE_White_Gloss_Vertical from '../assets/images/Acoustic_Siljan_II_Dreadnought_CE_White_Gloss_Vertical.png';
+import Acoustic_Siljan_II_Grand_Auditorium_Vertical from '../assets/images/Acoustic_Siljan_II_Grand_Auditorium_Vertical.png';
+import Acoustic_Siljan_II_Grand_Auditorium_CE_Black_Gloss_Vertical from '../assets/images/Acoustic_Siljan_II_Grand_Auditorium_CE_Black_Gloss_Vertical.png';
+import Acoustic_Siljan_II_Grand_Auditorium_CE_Tobacco_Sunburst_Vertical from '../assets/images/Acoustic_Siljan_II_Grand_Auditorium_CE_Tobacco_Sunburst_Vertical.png';
+import Acoustic_Siljan_II_Grand_Auditorium_CE_Natural_Vertical from '../assets/images/Acoustic_Siljan_II_Grand_Auditorium_CE_Natural_Vertical.png';
+import Acoustic_Siljan_II_Grand_Auditorium_CE_White_Gloss_Vertical from '../assets/images/Acoustic_Siljan_II_Grand_Auditorium_CE_White_Gloss_Vertical.png';
 import Acoustic_Siljan_II_GA_12_String_Vertical from '../assets/images/Acoustic_Siljan_II_GA_12_String_Vertical.png';
 import Acoustic_Seafarer_II_Parlor_E_Vertical from '../assets/images/Acoustic_Seafarer_II_Parlor_E_Vertical.png';
 
@@ -1067,6 +1072,56 @@ const productsList = [
     name: 'Siljan II Dreadnought CE',
     color: 'White Gloss',
     info: '/MoreInfoSiljanIIDreadnoughtCE',
+    price: '1100',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Siljan_II_Grand_Auditorium_Vertical,
+    brand: 'Hagstrom',
+    name: 'Siljan II Grand Auditorium',
+    color: 'Natural',
+    info: '/MoreInfoSiljanIIGrandAuditorium',
+    price: '1100',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Siljan_II_Grand_Auditorium_CE_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Siljan II Grand Auditorium CE',
+    color: 'Black Gloss',
+    info: '/MoreInfoSiljanIIGrandAuditoriumCE',
+    price: '1100',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Siljan_II_Grand_Auditorium_CE_Tobacco_Sunburst_Vertical,
+    brand: 'Hagstrom',
+    name: 'Siljan II Grand Auditorium CE',
+    color: 'Tobacco Sunburst',
+    info: '/MoreInfoSiljanIIGrandAuditoriumCE',
+    price: '1100',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Siljan_II_Grand_Auditorium_CE_Natural_Vertical,
+    brand: 'Hagstrom',
+    name: 'Siljan II Grand Auditorium CE',
+    color: 'Natural',
+    info: '/MoreInfoSiljanIIGrandAuditoriumCE',
+    price: '1100',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Siljan_II_Grand_Auditorium_CE_White_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Siljan II Grand Auditorium CE',
+    color: 'White Gloss',
+    info: '/MoreInfoSiljanIIGrandAuditoriumCE',
     price: '1100',
     quantity: 1,
     id: nanoid(),

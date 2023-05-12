@@ -11,16 +11,11 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import Siljan_II_Dreadnought_Hero from '../assets/images/Siljan_II_Dreadnought_Hero.png';
+import Siljan_II_Grand_Auditorium_Hero from '../assets/images/Siljan_II_Grand_Auditorium_Hero.png';
 import Siljan_II_Header from '../assets/images/Siljan_II_Header.jpg';
-import Acoustic_Siljan_II_Dreadnought_Black_Gloss from '../assets/images/Acoustic_Siljan_II_Dreadnought_Black_Gloss.png';
-import Acoustic_Siljan_II_Dreadnought_Black_Gloss_Back from '../assets/images/Acoustic_Siljan_II_Dreadnought_Black_Gloss_Back.png';
-import Acoustic_Siljan_II_Dreadnought_Natural from '../assets/images/Acoustic_Siljan_II_Dreadnought_Natural.png';
-import Acoustic_Siljan_II_Dreadnought_Natural_Back from '../assets/images/Acoustic_Siljan_II_Dreadnought_Natural_Back.png';
-import Acoustic_Siljan_II_Dreadnought_Lefthand_Black_Gloss from '../assets/images/Acoustic_Siljan_II_Dreadnought_Lefthand_Black_Gloss.png';
-import Acoustic_Siljan_II_Dreadnought_Lefthand_Black_Gloss_Back from '../assets/images/Acoustic_Siljan_II_Dreadnought_Lefthand_Black_Gloss_Back.png';
+import Acoustic_Siljan_II_Grand_Auditorium from '../assets/images/Acoustic_Siljan_II_Grand_Auditorium.png';
+import Acoustic_Siljan_II_Grand_Auditorium_Back from '../assets/images/Acoustic_Siljan_II_Grand_Auditorium_Back.png';
 import Logo_Hagstrom_Lilie_Black from '../assets/images/Logo_Hagstrom_Lilie_Black.png';
-import Colors_Black_Gloss from '../assets/images/Colors_Black_Gloss.png';
 import Colors_Natural from '../assets/images/Colors_Natural.png';
 import Logo_Hagstrom_Lilie from '../assets/images/Logo_Hagstrom_Lilie.png';
 import Acoustics_2016_Detail_6 from '../assets/images/Acoustics_2016_Detail_6.jpg';
@@ -583,7 +578,7 @@ const MoreInfoSiljanIIGrandAuditorium = () => {
               Siljan
               <IntroParagraph>Strong & Steadfast</IntroParagraph>
             </IntroTitle>
-            <IntroImage src={Siljan_II_Dreadnought_Hero} alt='' />
+            <IntroImage src={Siljan_II_Grand_Auditorium_Hero} alt='' />
           </IntroContainer>
         </IntroBackground>
         <NavContainer>
@@ -595,7 +590,7 @@ const MoreInfoSiljanIIGrandAuditorium = () => {
               <span>/</span>
               <HashLink to='/AcousticGuitars#siljanII'>Siljan II</HashLink>
               <span>/</span>
-              <NavLink>Dreadnought</NavLink>
+              <NavLink>Grand Auditorium</NavLink>
             </NavLinks>
             <ShareLinks>
               <NavLink>
@@ -614,7 +609,7 @@ const MoreInfoSiljanIIGrandAuditorium = () => {
         </NavContainer>
         <MainContentWrapper>
           <LeftContentWrapper>
-            <MediaTitle>Hagstrom Siljan II Dreadnought</MediaTitle>
+            <MediaTitle>Hagstrom Siljan II Grand Auditorium</MediaTitle>
             <Paragraph>
               <LogoSpan>
                 <Logo src={Logo_Hagstrom_Lilie_Black} alt='' />
@@ -633,30 +628,11 @@ const MoreInfoSiljanIIGrandAuditorium = () => {
             <Colors>
               <ColorsWrapper>
                 <Image
-                  src={Colors_Black_Gloss}
-                  alt=''
-                  style={{ width: '70px', height: 'auto' }}
-                />
-                <ColorsText>Black Gloss</ColorsText>
-              </ColorsWrapper>
-              <ColorsWrapper>
-                <Image
                   src={Colors_Natural}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
                 <ColorsText>Natural</ColorsText>
-              </ColorsWrapper>
-            </Colors>
-            <MediaTitle>Colors Lefthand</MediaTitle>
-            <Colors>
-              <ColorsWrapper>
-                <Image
-                  src={Colors_Black_Gloss}
-                  alt=''
-                  style={{ width: '70px', height: 'auto' }}
-                />
-                <ColorsText>Black Gloss</ColorsText>
               </ColorsWrapper>
             </Colors>
           </RightContentWrapper>
@@ -715,22 +691,18 @@ const MoreInfoSiljanIIGrandAuditorium = () => {
             open={open}
             close={() => setOpen(false)}
             slides={[
-              { src: Acoustic_Siljan_II_Dreadnought_Black_Gloss },
-              { src: Acoustic_Siljan_II_Dreadnought_Black_Gloss_Back },
-              { src: Acoustic_Siljan_II_Dreadnought_Natural },
-              { src: Acoustic_Siljan_II_Dreadnought_Natural_Back },
-              { src: Acoustic_Siljan_II_Dreadnought_Lefthand_Black_Gloss },
-              { src: Acoustic_Siljan_II_Dreadnought_Lefthand_Black_Gloss_Back },
+              { src: Acoustic_Siljan_II_Grand_Auditorium },
+              { src: Acoustic_Siljan_II_Grand_Auditorium_Back },
             ]}
           />
         </LightboxWrapper>
         <SpecsWrapper>
           <LeftSpecsWrapper>
-            <MediaTitle>Siljan II Dreadnought Specs</MediaTitle>
+            <MediaTitle>Siljan II Grand Auditorium Specs</MediaTitle>
             <MediaTitleSecondary>Body</MediaTitleSecondary>
             <ul>
               <li>Material: Mahogany</li>
-              <li>Shape: Dreadnought with Cutaway</li>
+              <li>Shape: Grand Auditorium with Cutaway</li>
               <li>Top: Solid Sitka Spruce</li>
             </ul>
             <MediaTitleSecondary>Neck</MediaTitleSecondary>
@@ -760,7 +732,7 @@ const MoreInfoSiljanIIGrandAuditorium = () => {
             </ul>
           </LeftSpecsWrapper>
           <RightSpecsWrapper>
-            <MediaTitle>Siljan II Dreadnought Standards</MediaTitle>
+            <MediaTitle>Siljan II Grand Auditorium Standards</MediaTitle>
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image

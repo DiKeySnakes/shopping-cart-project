@@ -11,16 +11,15 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import Siljan_II_Dreadnought_CE_Hero from '../assets/images/Siljan_II_Dreadnought_CE_Hero.png';
+import Siljan_II_Grand_Auditorium_CE_Hero from '../assets/images/Siljan_II_Grand_Auditorium_CE_Hero.png';
 import Siljan_II_Header from '../assets/images/Siljan_II_Header.jpg';
-import Acoustic_Siljan_II_Dreadnought_CE_Black_Gloss from '../assets/images/Acoustic_Siljan_II_Dreadnought_CE_Black_Gloss.png';
-import Acoustic_Siljan_II_Dreadnought_CE_Black_Gloss_Back from '../assets/images/Acoustic_Siljan_II_Dreadnought_CE_Black_Gloss_Back.png';
-import Acoustic_Siljan_II_Dreadnought_CE_Tobacco_Sunburst from '../assets/images/Acoustic_Siljan_II_Dreadnought_CE_Tobacco_Sunburst.png';
-import Acoustic_Siljan_II_Dreadnought_CE_Tobacco_Sunburst_Back from '../assets/images/Acoustic_Siljan_II_Dreadnought_CE_Tobacco_Sunburst_Back.png';
-import Acoustic_Siljan_II_Dreadnought_CE_Natural from '../assets/images/Acoustic_Siljan_II_Dreadnought_CE_Natural.png';
-import Acoustic_Siljan_II_Dreadnought_CE_Natural_Back from '../assets/images/Acoustic_Siljan_II_Dreadnought_CE_Natural_Back.png';
-import Acoustic_Siljan_II_Dreadnought_CE_White_Gloss from '../assets/images/Acoustic_Siljan_II_Dreadnought_CE_White_Gloss.png';
-import Acoustic_Siljan_II_Dreadnought_CE_White_Gloss_Back from '../assets/images/Acoustic_Siljan_II_Dreadnought_CE_White_Gloss_Back.png';
+import Acoustic_Siljan_II_Grand_Auditorium_CE_Black_Gloss from '../assets/images/Acoustic_Siljan_II_Grand_Auditorium_CE_Black_Gloss.png';
+import Acoustic_Siljan_II_Grand_Auditorium_CE_Black_Gloss_Back from '../assets/images/Acoustic_Siljan_II_Grand_Auditorium_CE_Black_Gloss_Back.png';
+import Acoustic_Siljan_II_Grand_Auditorium_CE_Tobacco_Sunburst from '../assets/images/Acoustic_Siljan_II_Grand_Auditorium_CE_Tobacco_Sunburst.png';
+import Acoustic_Siljan_II_Grand_Auditorium_CE_Natural from '../assets/images/Acoustic_Siljan_II_Grand_Auditorium_CE_Natural.png';
+import Acoustic_Siljan_II_Grand_Auditorium_CE_Natural_Back from '../assets/images/Acoustic_Siljan_II_Grand_Auditorium_CE_Natural_Back.png';
+import Acoustic_Siljan_II_Grand_Auditorium_CE_White_Gloss from '../assets/images/Acoustic_Siljan_II_Grand_Auditorium_CE_White_Gloss.png';
+import Acoustic_Siljan_II_Grand_Auditorium_CE_White_Gloss_Back from '../assets/images/Acoustic_Siljan_II_Grand_Auditorium_CE_White_Gloss_Back.png';
 import Logo_Hagstrom_Lilie_Black from '../assets/images/Logo_Hagstrom_Lilie_Black.png';
 import Colors_Black_Gloss from '../assets/images/Colors_Black_Gloss.png';
 import Colors_Tobacco_Sunburst_Acoustics from '../assets/images/Colors_Tobacco_Sunburst_Acoustics.png';
@@ -38,7 +37,7 @@ import Acoustics_2016_Detail_8 from '../assets/images/Acoustics_2016_Detail_8.jp
 import Acoustics_2016_Detail_12 from '../assets/images/Acoustics_2016_Detail_12.jpg';
 import Acoustics_2016_Detail_11 from '../assets/images/Acoustics_2016_Detail_11.jpg';
 import Acoustics_2016_Detail_13 from '../assets/images/Acoustics_2016_Detail_13.jpg';
-import Acoustics_2016_Detail_22 from '../assets/images/Acoustics_2016_Detail_22.jpg';
+import Acoustics_2016_Detail_23 from '../assets/images/Acoustics_2016_Detail_23.jpg';
 import Detail_resinator_wood_acoustic from '../assets/images/Detail_resinator_wood_acoustic.jpg';
 import Detail_tuning_peg from '../assets/images/Detail_tuning_peg.jpg';
 import Detail_isys_preamp from '../assets/images/Detail_isys_preamp.jpg';
@@ -596,7 +595,7 @@ const MoreInfoSiljanIIGrandAuditoriumCE = () => {
               Siljan
               <IntroParagraph>Strong & Steadfast</IntroParagraph>
             </IntroTitle>
-            <IntroImage src={Siljan_II_Dreadnought_CE_Hero} alt='' />
+            <IntroImage src={Siljan_II_Grand_Auditorium_CE_Hero} alt='' />
           </IntroContainer>
         </IntroBackground>
         <NavContainer>
@@ -608,7 +607,7 @@ const MoreInfoSiljanIIGrandAuditoriumCE = () => {
               <span>/</span>
               <HashLink to='/AcousticGuitars#siljanII'>Siljan II</HashLink>
               <span>/</span>
-              <NavLink>Dreadnought CE</NavLink>
+              <NavLink>Grand Auditorium CE</NavLink>
             </NavLinks>
             <ShareLinks>
               <NavLink>
@@ -627,7 +626,7 @@ const MoreInfoSiljanIIGrandAuditoriumCE = () => {
         </NavContainer>
         <MainContentWrapper>
           <LeftContentWrapper>
-            <MediaTitle>Hagstrom Siljan II Dreadnought CE</MediaTitle>
+            <MediaTitle>Hagstrom Siljan II Grand Auditorium CE</MediaTitle>
             <Paragraph>
               <LogoSpan>
                 <Logo src={Logo_Hagstrom_Lilie_Black} alt='' />
@@ -726,8 +725,8 @@ const MoreInfoSiljanIIGrandAuditoriumCE = () => {
               <DetailsText>Cutaway</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={Acoustics_2016_Detail_22} alt='' />
-              <DetailsText>Dreadnought White Gloss</DetailsText>
+              <Image src={Acoustics_2016_Detail_23} alt='' />
+              <DetailsText>Grand Auditorium White Gloss</DetailsText>
             </DetailsWrapper>
           </Details>
         </MainContentWrapper>
@@ -765,24 +764,24 @@ const MoreInfoSiljanIIGrandAuditoriumCE = () => {
             open={open}
             close={() => setOpen(false)}
             slides={[
-              { src: Acoustic_Siljan_II_Dreadnought_CE_Black_Gloss },
-              { src: Acoustic_Siljan_II_Dreadnought_CE_Black_Gloss_Back },
-              { src: Acoustic_Siljan_II_Dreadnought_CE_Tobacco_Sunburst },
-              { src: Acoustic_Siljan_II_Dreadnought_CE_Tobacco_Sunburst_Back },
-              { src: Acoustic_Siljan_II_Dreadnought_CE_Natural },
-              { src: Acoustic_Siljan_II_Dreadnought_CE_Natural_Back },
-              { src: Acoustic_Siljan_II_Dreadnought_CE_White_Gloss },
-              { src: Acoustic_Siljan_II_Dreadnought_CE_White_Gloss_Back },
+              { src: Acoustic_Siljan_II_Grand_Auditorium_CE_Black_Gloss },
+              { src: Acoustic_Siljan_II_Grand_Auditorium_CE_Black_Gloss_Back },
+              { src: Acoustic_Siljan_II_Grand_Auditorium_CE_Tobacco_Sunburst },
+              { src: Acoustic_Siljan_II_Grand_Auditorium_CE_Natural_Back },
+              { src: Acoustic_Siljan_II_Grand_Auditorium_CE_Natural },
+              { src: Acoustic_Siljan_II_Grand_Auditorium_CE_Natural_Back },
+              { src: Acoustic_Siljan_II_Grand_Auditorium_CE_White_Gloss },
+              { src: Acoustic_Siljan_II_Grand_Auditorium_CE_White_Gloss_Back },
             ]}
           />
         </LightboxWrapper>
         <SpecsWrapper>
           <LeftSpecsWrapper>
-            <MediaTitle>Siljan II Dreadnought CE Specs</MediaTitle>
+            <MediaTitle>Siljan II Grand Auditorium CE Specs</MediaTitle>
             <MediaTitleSecondary>Body</MediaTitleSecondary>
             <ul>
               <li>Material: Mahogany</li>
-              <li>Shape: Dreadnought with Cutaway</li>
+              <li>Shape: Grand Auditorium with Cutaway</li>
               <li>Top: Solid Sitka Spruce</li>
             </ul>
             <MediaTitleSecondary>Neck</MediaTitleSecondary>
@@ -825,7 +824,7 @@ const MoreInfoSiljanIIGrandAuditoriumCE = () => {
             </ul>
           </LeftSpecsWrapper>
           <RightSpecsWrapper>
-            <MediaTitle>Siljan II Dreadnought Ce Standards</MediaTitle>
+            <MediaTitle>Siljan II Grand Auditorium CE Standards</MediaTitle>
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
