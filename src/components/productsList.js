@@ -88,6 +88,13 @@ import Acoustic_Mora_II_Concert_Vertical from '../assets/images/Acoustic_Mora_II
 import Acoustic_Mora_II_Concert_CE_Vertical from '../assets/images/Acoustic_Mora_II_Concert_CE_Vertical.png';
 import Acoustic_Mora_II_Dreadnought_Vertical from '../assets/images/Acoustic_Mora_II_Dreadnought_Vertical.png';
 import Acoustic_Mora_II_Dreadnought_CE_Vertical from '../assets/images/Acoustic_Mora_II_Dreadnought_CE_Vertical.png';
+import Acoustic_Siljan_II_Dreadnought_Black_Gloss_Vertical from '../assets/images/Acoustic_Siljan_II_Dreadnought_Black_Gloss_Vertical.png';
+import Acoustic_Siljan_II_Dreadnought_Natural_Vertical from '../assets/images/Acoustic_Siljan_II_Dreadnought_Natural_Vertical.png';
+import Acoustic_Siljan_II_Dreadnought_Lefthand_Black_Gloss_Vertical from '../assets/images/Acoustic_Siljan_II_Dreadnought_Lefthand_Black_Gloss_Vertical.png';
+import Acoustic_Siljan_II_Dreadnought_CE_Black_Gloss_Vertical from '../assets/images/Acoustic_Siljan_II_Dreadnought_CE_Black_Gloss_Vertical.png';
+import Acoustic_Siljan_II_Dreadnought_CE_Tobacco_Sunburst_Vertical from '../assets/images/Acoustic_Siljan_II_Dreadnought_CE_Tobacco_Sunburst_Vertical.png';
+import Acoustic_Siljan_II_Dreadnought_CE_Natural_Vertical from '../assets/images/Acoustic_Siljan_II_Dreadnought_CE_Natural_Vertical.png';
+import Acoustic_Siljan_II_Dreadnought_CE_White_Gloss_Vertical from '../assets/images/Acoustic_Siljan_II_Dreadnought_CE_White_Gloss_Vertical.png';
 import Acoustic_Siljan_II_GA_12_String_Vertical from '../assets/images/Acoustic_Siljan_II_GA_12_String_Vertical.png';
 import Acoustic_Seafarer_II_Parlor_E_Vertical from '../assets/images/Acoustic_Seafarer_II_Parlor_E_Vertical.png';
 
@@ -991,6 +998,76 @@ const productsList = [
     color: 'Natural Mahogany',
     info: '/MoreInfoMoraIIDreadnoughtCE',
     price: '900',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Siljan_II_Dreadnought_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Siljan II Dreadnought',
+    color: 'Black Gloss',
+    info: '/MoreInfoSiljanIIDreadnought',
+    price: '1100',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Siljan_II_Dreadnought_Natural_Vertical,
+    brand: 'Hagstrom',
+    name: 'Siljan II Dreadnought',
+    color: 'Natural',
+    info: '/MoreInfoSiljanIIDreadnought',
+    price: '1100',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Siljan_II_Dreadnought_Lefthand_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Siljan II Dreadnought Lefthand',
+    color: 'Black Gloss',
+    info: '/MoreInfoSiljanIIDreadnought',
+    price: '1250',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Siljan_II_Dreadnought_CE_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Siljan II Dreadnought CE',
+    color: 'Black Gloss',
+    info: '/MoreInfoSiljanIIDreadnoughtCE',
+    price: '1100',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Siljan_II_Dreadnought_CE_Tobacco_Sunburst_Vertical,
+    brand: 'Hagstrom',
+    name: 'Siljan II Dreadnought CE',
+    color: 'Tobacco Sunburst',
+    info: '/MoreInfoSiljanIIDreadnoughtCE',
+    price: '1100',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Siljan_II_Dreadnought_CE_Natural_Vertical,
+    brand: 'Hagstrom',
+    name: 'Siljan II Dreadnought CE',
+    color: 'Natural',
+    info: '/MoreInfoSiljanIIDreadnoughtCE',
+    price: '1100',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Acoustic_Siljan_II_Dreadnought_CE_White_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Siljan II Dreadnought CE',
+    color: 'White Gloss',
+    info: '/MoreInfoSiljanIIDreadnoughtCE',
+    price: '1100',
     quantity: 1,
     id: nanoid(),
   },

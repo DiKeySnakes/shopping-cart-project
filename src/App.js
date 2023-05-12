@@ -48,6 +48,10 @@ import MoreInfoMoraIIConcert from './components/MoreInfoMoraIIConcert';
 import MoreInfoMoraIIConcertCE from './components/MoreInfoMoraIIConcertCE';
 import MoreInfoMoraIIDreadnought from './components/MoreInfoMoraIIDreadnought';
 import MoreInfoMoraIIDreadnoughtCE from './components/MoreInfoMoraIIDreadnoughtCE';
+import MoreInfoSiljanIIDreadnought from './components/MoreInfoSiljanIIDreadnought';
+import MoreInfoSiljanIIDreadnoughtCE from './components/MoreInfoSiljanIIDreadnoughtCE';
+import MoreInfoSiljanIIGrandAuditorium from './components/MoreInfoSiljanIIGrandAuditorium';
+import MoreInfoSiljanIIGrandAuditoriumCE from './components/MoreInfoSiljanIIGrandAuditoriumCE';
 import MoreInfoSiljanIIGrandAuditorium12String from './components/MoreInfoSiljanIIGrandAuditorium12String';
 import MoreInfoSeafarerIIParlorE from './components/MoreInfoSeafarerIIParlorE';
 import NotFound from './components/NotFound';
@@ -188,6 +192,22 @@ function App() {
           <Route
             path='/MoreInfoMoraIIDreadnoughtCE'
             element={<MoreInfoMoraIIDreadnoughtCE />}
+          />
+          <Route
+            path='/MoreInfoSiljanIIDreadnought'
+            element={<MoreInfoSiljanIIDreadnought />}
+          />
+          <Route
+            path='/MoreInfoSiljanIIDreadnoughtCE'
+            element={<MoreInfoSiljanIIDreadnoughtCE />}
+          />
+          <Route
+            path='/MoreInfoSiljanIIGrandAuditorium'
+            element={<MoreInfoSiljanIIGrandAuditorium />}
+          />
+          <Route
+            path='/MoreInfoSiljanIIGrandAuditoriumCE'
+            element={<MoreInfoSiljanIIGrandAuditoriumCE />}
           />
           <Route
             path='/MoreInfoSiljanIIGrandAuditorium12String'
