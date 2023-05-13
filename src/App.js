@@ -60,6 +60,7 @@ import Cart from './features/cart/Cart';
 import Artists from './components/Artists';
 import { Route, Routes } from 'react-router-dom';
 import ScrollToTopHelper from './components/ScrollToTopHelper';
+import NavFooter from './components/NavFooter';
 
 function App() {
   return (
@@ -220,6 +221,7 @@ function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
       </ScrollToTopHelper>
+      <NavFooter />
       <Footer />
     </div>
   );
