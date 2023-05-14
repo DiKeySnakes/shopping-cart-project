@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import HagstromLogoBlack from '../assets/images/Logo_Hagstrom_black.svg';
 import FindUsOnFacebook from '../assets/images/FindUsOnFacebook_320.png';
 
@@ -105,7 +106,7 @@ const NavFooter = () => {
           <FooterFlex>
             <ul>
               <li>
-                <Link>
+                <Link to='/'>
                   <FooterHeadingLogo />
                 </Link>
               </li>
@@ -113,22 +114,19 @@ const NavFooter = () => {
                 <Link>News</Link>
               </li>
               <li>
-                <Link>Artists</Link>
+                <Link to='/Artists'>Artists</Link>
               </li>
             </ul>
             <FooterHeadingLevel2>Stories</FooterHeadingLevel2>
             <ul>
               <li>
-                <Link>Hagstrom History</Link>
+                <Link to='/Heritage'>Hagstrom History</Link>
               </li>
             </ul>
             <FooterHeadingLevel2>Your Hagstrom</FooterHeadingLevel2>
             <ul>
               <li>
                 <Link>International Distributors</Link>
-              </li>
-              <li>
-                <Link>Store Locator</Link>
               </li>
               <li>
                 <Link>Instrument Archive</Link>
@@ -142,40 +140,50 @@ const NavFooter = () => {
             <FooterHeading>Guitars</FooterHeading>
             <ul>
               <li>
-                <Link>Signature</Link>
+                <HashLink to='/ElectricGuitars#signature'>Signature</HashLink>
               </li>
               <li>
-                <Link>Artist Project</Link>
+                <HashLink to='/ElectricGuitars#artistProject'>
+                  Artist Project
+                </HashLink>
               </li>
               <li>
-                <Link>Fantomen</Link>
+                <HashLink to='/ElectricGuitars#fantomen'>Fantomen</HashLink>
               </li>
               <li>
-                <Link>Retroscape</Link>
+                <HashLink to='/ElectricGuitars#retroscape'>Retroscape</HashLink>
               </li>
               <li>
-                <Link>Super Swede</Link>
+                <HashLink to='/ElectricGuitars#superSwede'>
+                  Super Swede
+                </HashLink>
               </li>
               <li>
-                <Link>Swede</Link>
+                <HashLink to='/ElectricGuitars#swede'>Swede</HashLink>
               </li>
               <li>
-                <Link>Ultra Max</Link>
+                <HashLink to='/ElectricGuitars#ultraMax'>Ultra Max</HashLink>
               </li>
               <li>
-                <Link>Ultra Swede</Link>
+                <HashLink to='/ElectricGuitars#ultraSwede'>
+                  Ultra Swede
+                </HashLink>
               </li>
               <li>
-                <Link>Alvar</Link>
+                <HashLink to='/ElectricGuitars#alvar'>Alvar</HashLink>
               </li>
               <li>
-                <Link>Super Viking®</Link>
+                <HashLink to='/ElectricGuitars#superViking'>
+                  Super Viking®
+                </HashLink>
               </li>
               <li>
-                <Link>Viking®</Link>
+                <HashLink to='/ElectricGuitars#viking'>Viking®</HashLink>
               </li>
               <li>
-                <Link>Jazz Models</Link>
+                <HashLink to='/ElectricGuitars#jazzModels'>
+                  Jazz Models
+                </HashLink>
               </li>
             </ul>
           </FooterFlex>
@@ -183,16 +191,16 @@ const NavFooter = () => {
             <FooterHeading>Basses</FooterHeading>
             <ul>
               <li>
-                <Link>Super Swede</Link>
+                <HashLink to='/Basses#superSwedeBass'>Super Swede</HashLink>
               </li>
               <li>
-                <Link>Swede</Link>
+                <HashLink to='/Basses#swedeBass'>Swede</HashLink>
               </li>
               <li>
-                <Link>Viking®</Link>
+                <HashLink to='/Basses#vikingBass'>Viking®</HashLink>
               </li>
               <li>
-                <Link>RetroScape</Link>
+                <HashLink to='/Basses#retroscape'>RetroScape</HashLink>
               </li>
             </ul>
           </FooterFlex>
@@ -200,19 +208,23 @@ const NavFooter = () => {
             <FooterHeading>Acoustic Guitars</FooterHeading>
             <ul>
               <li>
-                <Link>Orsa</Link>
+                <HashLink to='/AcousticGuitars#orsa'>Orsa</HashLink>
               </li>
               <li>
-                <Link>Elfdalia II</Link>
+                <HashLink to='/AcousticGuitars#elfdaliaII'>
+                  Elfdalia II
+                </HashLink>
               </li>
               <li>
-                <Link>Mora II</Link>
+                <HashLink to='/AcousticGuitars#moraII'>Mora II</HashLink>
               </li>
               <li>
-                <Link>Siljan II</Link>
+                <HashLink to='/AcousticGuitars#siljanII'>Siljan II</HashLink>
               </li>
               <li>
-                <Link>Seafarer II</Link>
+                <HashLink to='/AcousticGuitars#seafarerII'>
+                  Seafarer II
+                </HashLink>
               </li>
             </ul>
           </FooterFlex>
