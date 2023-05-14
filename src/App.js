@@ -61,6 +61,7 @@ import Artists from './components/Artists';
 import { Route, Routes } from 'react-router-dom';
 import ScrollToTopHelper from './components/ScrollToTopHelper';
 import NavFooter from './components/NavFooter';
+import Credits from './components/Credits';
 
 function App() {
   return (
@@ -222,6 +223,7 @@ function App() {
         </Routes>
       </ScrollToTopHelper>
       <NavFooter />
+      <Credits />
       <Footer />
     </div>
   );
