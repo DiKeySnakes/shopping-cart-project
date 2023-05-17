@@ -55,6 +55,9 @@ import MoreInfoSiljanIIGrandAuditoriumCE from './components/MoreInfoSiljanIIGran
 import MoreInfoSiljanIIGrandAuditorium12String from './components/MoreInfoSiljanIIGrandAuditorium12String';
 import MoreInfoSeafarerIIParlorE from './components/MoreInfoSeafarerIIParlorE';
 import NotFound from './components/NotFound';
+import NewsP01 from './components/NewsP01';
+import NewsP02 from './components/NewsP02';
+import NewsP03 from './components/NewsP03';
 import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
 import Artists from './components/Artists';
@@ -220,6 +223,9 @@ function App() {
             element={<MoreInfoSeafarerIIParlorE />}
           />
           <Route path='*' element={<NotFound />} />
+          <Route path='/NewsP01' element={<NewsP01 />} />
+          <Route path='/NewsP02' element={<NewsP02 />} />
+          <Route path='/NewsP03' element={<NewsP03 />} />
         </Routes>
       </ScrollToTopHelper>
       <NavFooter />

@@ -111,7 +111,7 @@ const NavFooter = () => {
                 </Link>
               </li>
               <li>
-                <Link>News</Link>
+                <Link to='/NewsP01'>News</Link>
               </li>
               <li>
                 <Link to='/Artists'>Artists</Link>
