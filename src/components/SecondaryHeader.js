@@ -117,9 +117,9 @@ const SecondaryHeader = () => {
           <Edge />
           <Left>
             <Link
-              to='/Artists'
+              to='/NewsP01'
               style={{ textDecoration: 'none', color: '#333333' }}>
-              Artists playing Hagstrom
+              Our latest News
             </Link>
           </Left>
         </LeftWrapper>

@@ -58,6 +58,10 @@ import NotFound from './components/NotFound';
 import NewsP01 from './components/NewsP01';
 import NewsP02 from './components/NewsP02';
 import NewsP03 from './components/NewsP03';
+import NewsRefs01 from './components/NewsRefs01';
+import NewsRefs02 from './components/NewsRefs02';
+import NewsRefs03 from './components/NewsRefs03';
+import NewsRefs04 from './components/NewsRefs04';
 import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
 import Artists from './components/Artists';
@@ -226,6 +230,10 @@ function App() {
           <Route path='/NewsP01' element={<NewsP01 />} />
           <Route path='/NewsP02' element={<NewsP02 />} />
           <Route path='/NewsP03' element={<NewsP03 />} />
+          <Route path='/NewsRefs01' element={<NewsRefs01 />} />
+          <Route path='/NewsRefs02' element={<NewsRefs02 />} />
+          <Route path='/NewsRefs03' element={<NewsRefs03 />} />
+          <Route path='/NewsRefs04' element={<NewsRefs04 />} />
         </Routes>
       </ScrollToTopHelper>
       <NavFooter />

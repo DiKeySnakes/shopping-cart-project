@@ -303,7 +303,7 @@ const NewsP02 = () => {
           <NavLinks>
             <NavLink to='/'>Home</NavLink>
             <span>/</span>
-            <NavLink>News</NavLink>
+            <NavLink to='/NewsP01'>News</NavLink>
           </NavLinks>
           <ShareLinks>
             <NavLink>

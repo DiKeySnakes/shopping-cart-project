@@ -6,7 +6,11 @@ import { NavLink } from 'react-router-dom';
 import { nanoid } from '@reduxjs/toolkit';
 import FramedImage from './FramedImage';
 import Artists_Main_Image from '../assets/images/Artists_Main_Image.jpg';
-import HS_Retroscape_Double_Cut_HIII from '../assets/images/HS_Retroscape_Double_Cut_HIII.jpg';
+import Logo_Hagstrom_Lilie_Black from '../assets/images/Logo_Hagstrom_Lilie_Black.png';
+import HS_Justin_York_H_III from '../assets/images/HS_Justin_York_H_III.jpg';
+import Home_HS_H8II_Bass_2017 from '../assets/images/Home_HS_H8II_Bass_2017.jpg';
+import Home_HS_Super_Swede_Bass_2017 from '../assets/images/Home_HS_Super_Swede_Bass_2017.jpg';
+import Home_HS_Swede_Bass_Test_2017 from '../assets/images/Home_HS_Swede_Bass_Test_2017.jpg';
 
 const Wrapper = styled.div`
   display: flex;
@@ -76,7 +80,7 @@ const ShareLinks = styled.div`
 const MainContentWrapper = styled.div`
   max-width: 1170px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 3rem;
   @media (max-width: 800px) {
     flex-direction: column;
@@ -110,6 +114,92 @@ const RightContentWrapper = styled.div`
   @media (max-width: 800px) {
     border: none;
   }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+const Image = styled.img`
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  src: ${(props) => props.src};
+  alt: ${(props) => props.alt};
+`;
+
+const MediaTitle = styled.h3`
+  display: flex;
+  flex-direction: row;
+  font-size: 3vmin;
+  font-weight: 400;
+  line-height: 110%;
+  font-family: 'Bitter', serif;
+  color: #333333;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  @media (max-width: 800px) {
+    font-size: 5vmin;
+  }
+  @media (max-width: 350px) {
+    font-size: 7vmin;
+  }
+`;
+
+const MediaTitleSecondary = styled.h4`
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5vmin;
+  font-weight: 400;
+  line-height: 110%;
+  font-family: 'Bitter', serif;
+  color: #333333;
+  margin-bottom: 2rem;
+  @media (max-width: 800px) {
+    font-size: 4vmin;
+  }
+  @media (max-width: 350px) {
+    font-size: 6vmin;
+  }
+`;
+
+const Paragraph = styled.p`
+  color: #333333;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 2vmin;
+  padding: 0 0 2vmin;
+  a {
+    font-weight: 700;
+    color: #9b0600;
+    text-decoration: none;
+    border-bottom: 1px dotted #9b0600;
+  }
+  & a:hover {
+    color: #333333;
+    text-decoration: none;
+    border-bottom: 1px solid #333333;
+  }
+  @media (max-width: 800px) {
+    font-size: 3vmin;
+  }
+  @media (max-width: 550px) {
+    font-size: 4vmin;
+  }
+`;
+
+const Logo = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  src: ${(props) => props.src};
+  alt: ${(props) => props.alt};
+`;
+
+const LogoSpan = styled.span`
+  width: 3em;
+  height: 3em;
+  display: block;
+  float: left;
+  opacity: 0.3;
 `;
 
 const News = styled.div`
@@ -150,6 +240,18 @@ const NewsParagraph = styled.p`
   font-family: 'Signika Negative', sans-serif;
   font-size: 1.7vmin;
   padding: 0 0 2vmin;
+  margin-bottom: 2rem;
+  & .active {
+    border-bottom: 1px dotted #111111;
+  }
+  a {
+    text-decoration: none;
+    color: #111111;
+    font-family: 'Signika Negative', sans-serif;
+  }
+  & a:hover {
+    border-bottom: 1px solid #111111;
+  }
   @media (max-width: 800px) {
     font-size: 2.2vmin;
   }
@@ -223,71 +325,7 @@ const Button = styled.button`
   }
 `;
 
-const AuxiliaryParagraph = styled.p`
-  visibility: hidden;
-  color: transparent;
-  font-family: 'Signika Negative', sans-serif;
-  font-size: 14px;
-  padding: 0 0 2vmin;
-  @media (max-width: 800px) {
-    font-size: 10px;
-  }
-  @media (max-width: 550px) {
-    font-size: 8px;
-  }
-`;
-
-const PageNavContainer = styled.div`
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-`;
-
-const PageNavWrapper = styled.div`
-  width: 1170px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 2vmin;
-  font-weight: 400;
-  padding-left: 16px;
-  padding-right: 16px;
-  & .active {
-    cursor: auto;
-  }
-  a {
-    text-decoration: none;
-    color: #111111;
-    font-family: 'Signika Negative', sans-serif;
-    padding: 8px 16px;
-    border: 1px solid #bdbbb9;
-  }
-  & a:hover {
-    border: 1px solid #111111;
-  }
-  span {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
-  @media (max-width: 768px) {
-    font-size: 3vmin;
-  }
-  @media (max-width: 430px) {
-    font-size: 3.5vmin;
-  }
-`;
-
-const PageNavLinks = styled.div`
-  width: 66, 66666667%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  float: left;
-  white-space: nowrap;
-`;
-
-const NewsP03 = () => {
+const NewsRefs03 = () => {
   return (
     <Wrapper key={nanoid()}>
       <IntroBackground key={nanoid()}>
@@ -296,9 +334,9 @@ const NewsP03 = () => {
       <NavContainer>
         <NavWrapper>
           <NavLinks>
-            <NavLink to='/'>Home</NavLink>
-            <span>/</span>
             <NavLink to='/NewsP01'>News</NavLink>
+            <span>/</span>
+            <NavLink>Justin York Presents The H-III</NavLink>
           </NavLinks>
           <ShareLinks>
             <NavLink>
@@ -319,51 +357,83 @@ const NewsP03 = () => {
         <LeftContentWrapper>
           <News key={nanoid()}>
             <NewsWrapper key={nanoid()}>
-              <Link
-                to='/MoreInfoRetroScapeHIII'
-                style={{ textDecoration: 'none' }}
-                key={nanoid()}>
-                <FramedImage
-                  src={HS_Retroscape_Double_Cut_HIII}
-                  alt=''
-                  key={nanoid()}
-                />
-                <NewsTitle key={nanoid()}>H-III</NewsTitle>
-                <NewsParagraph key={nanoid()}>
-                  Retroscape Double-Cut
-                </NewsParagraph>
-                <Button key={nanoid()}>
-                  <i
-                    className='fa-solid fa-angles-right fa-sm'
-                    key={nanoid()}></i>{' '}
-                  Read More
-                </Button>
-              </Link>
-              <AuxiliaryParagraph>
-                The minute you lay your hands on a Hagstrom and strum it for the
-                first time, you can instantly feel why Hagstrom has legions of
-                devoted fans and why so many pro musicians have made it their
-                “number one”.
-              </AuxiliaryParagraph>
+              <Image src={HS_Justin_York_H_III} alt='' key={nanoid()} />
+              <MediaTitle key={nanoid()}>
+                Justin York Presents The H-III
+              </MediaTitle>
+              <MediaTitleSecondary key={nanoid()}>
+                Killer vintage tone
+              </MediaTitleSecondary>
+              <Paragraph>
+                <LogoSpan>
+                  <Logo src={Logo_Hagstrom_Lilie_Black} alt='' />
+                </LogoSpan>
+                <Link to='/MoreInfoRetroScapeHIII'>
+                  Hagstrom Guitars' H-III
+                </Link>
+                , introduced in 1965, has just been re-released as part of the
+                new RetroScape Series. Hear Justin York, alt-rock super group
+                Paramore’s touring guitarist, tell us what he likes about the
+                H-III and then show us what kind of killer vintage tones it
+                delivers in a recording session.
+              </Paragraph>
             </NewsWrapper>
           </News>
-          <NewsParagraph>Page 3 of 3.</NewsParagraph>
         </LeftContentWrapper>
-        <RightContentWrapper></RightContentWrapper>
+        <RightContentWrapper>
+          <MediaTitle>Latest Posts</MediaTitle>
+          <NewsWrapper key={nanoid()}>
+            <Link
+              to='/MoreInfoH8IIBass'
+              style={{ textDecoration: 'none' }}
+              key={nanoid()}>
+              <FramedImage src={Home_HS_H8II_Bass_2017} alt='' key={nanoid()} />
+              <NewsTitle key={nanoid()}>H8II Bass</NewsTitle>
+              <NewsParagraph key={nanoid()}>
+                8-String Reissue RetroScape Series
+              </NewsParagraph>
+            </Link>
+          </NewsWrapper>
+          <NewsWrapper key={nanoid()}>
+            <Link
+              to='/MoreInfoSuperSwedeBass'
+              style={{ textDecoration: 'none' }}
+              key={nanoid()}>
+              <FramedImage
+                src={Home_HS_Super_Swede_Bass_2017}
+                alt=''
+                key={nanoid()}
+              />
+              <NewsTitle key={nanoid()}>Super Swede Bass</NewsTitle>
+              <NewsParagraph key={nanoid()}>
+                Authentic Re-Creation
+              </NewsParagraph>
+            </Link>
+          </NewsWrapper>
+          <NewsWrapper key={nanoid()}>
+            <Link
+              to='/MoreInfoSwedeBass'
+              style={{ textDecoration: 'none' }}
+              key={nanoid()}>
+              <FramedImage
+                src={Home_HS_Swede_Bass_Test_2017}
+                alt=''
+                key={nanoid()}
+              />
+              <NewsTitle key={nanoid()}>Swede Bass</NewsTitle>
+              <NewsParagraph key={nanoid()}>Vintage Shortscale</NewsParagraph>
+            </Link>
+            <NewsParagraph>
+              <Link to='/NewsP01'>
+                <i
+                  className='fa-solid fa-angles-right fa-sm'
+                  key={nanoid()}></i>{' '}
+                All News
+              </Link>
+            </NewsParagraph>
+          </NewsWrapper>
+        </RightContentWrapper>
       </MainContentWrapper>
-      <PageNavContainer>
-        <PageNavWrapper>
-          <PageNavLinks>
-            <NavLink to='/NewsP02'>Previous</NavLink>
-            <span>{<nbsp />}</span>
-            <NavLink to='/NewsP01'>1</NavLink>
-            <span>{<nbsp />}</span>
-            <NavLink to='/NewsP02'>2</NavLink>
-            <span>{<nbsp />}</span>
-            <NavLink to='/NewsP03'>3</NavLink>
-          </PageNavLinks>
-        </PageNavWrapper>
-      </PageNavContainer>
       <ButtonWrapper key={nanoid()}>
         <Link to='/Products' key={nanoid()}>
           <Button key={nanoid()} style={{ marginBottom: '0' }}>
@@ -388,4 +458,4 @@ const NewsP03 = () => {
   );
 };
 
-export default NewsP03;
+export default NewsRefs03;
