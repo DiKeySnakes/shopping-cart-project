@@ -63,6 +63,7 @@ import NewsRefs02 from './components/NewsRefs02';
 import NewsRefs03 from './components/NewsRefs03';
 import NewsRefs04 from './components/NewsRefs04';
 import InternationalDistributors from './components/InternationalDistributors';
+import OwnersCare from './components/OwnersCare';
 import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
 import Artists from './components/Artists';
@@ -239,6 +240,7 @@ function App() {
             path='/InternationalDistributors'
             element={<InternationalDistributors />}
           />
+          <Route path='/OwnersCare' element={<OwnersCare />} />
         </Routes>
       </ScrollToTopHelper>
       <NavFooter />

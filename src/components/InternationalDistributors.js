@@ -72,6 +72,7 @@ const ShareLinks = styled.div`
 `;
 
 const MainTitle = styled.h2`
+  width: 100%;
   display: flex;
   flex-direction: row;
   font-size: 3.2vmin;
@@ -91,34 +92,20 @@ const MainTitle = styled.h2`
 `;
 
 const Container = styled.div`
-  width: 1170px;
+  max-width: 1170px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: space-between;
   margin-right: auto;
   margin-left: auto;
-  @media (max-width: 1200px) {
-    width: 1170px;
-  }
-  @media (max-width: 992px) {
-    width: 970px;
-  }
-  @media (max-width: 768px) {
-    width: 750px;
-    flex-direction: column;
-  }
 `;
 
 const AddressFlex = styled.div`
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto;
   padding-left: 15px;
   padding-right: 15px;
-  li {
-    line-height: 200%;
-    list-style-type: none;
-  }
   a {
     text-decoration: none;
     color: #333333;
@@ -238,8 +225,6 @@ const InternationalDistributors = () => {
       </NavContainer>
       <Container>
         <MainTitle>EUROPE</MainTitle>
-      </Container>
-      <Container>
         <AddressFlex key={nanoid()}>
           <Title key={nanoid()}>Austria</Title>
           <Paragraph key={nanoid()}>Musik Meyer GmbH</Paragraph>
@@ -291,8 +276,6 @@ const InternationalDistributors = () => {
             </a>
           </Paragraph>
         </AddressFlex>
-      </Container>
-      <Container>
         <AddressFlex key={nanoid()}>
           <Title key={nanoid()}>Czech Republic</Title>
           <Paragraph key={nanoid()}>
@@ -348,8 +331,6 @@ const InternationalDistributors = () => {
             </a>
           </Paragraph>
         </AddressFlex>
-      </Container>
-      <Container>
         <AddressFlex key={nanoid()}>
           <Title key={nanoid()}>Finland</Title>
           <Paragraph key={nanoid()}>
@@ -400,8 +381,6 @@ const InternationalDistributors = () => {
             </a>
           </Paragraph>
         </AddressFlex>
-      </Container>
-      <Container>
         <AddressFlex key={nanoid()}>
           <Title key={nanoid()}>Hungary</Title>
           <Paragraph key={nanoid()}>
@@ -457,8 +436,6 @@ const InternationalDistributors = () => {
             </a>
           </Paragraph>
         </AddressFlex>
-      </Container>
-      <Container>
         <AddressFlex key={nanoid()}>
           <Title key={nanoid()}>Italy</Title>
           <Paragraph key={nanoid()}>ADAGIO</Paragraph>
@@ -511,8 +488,6 @@ const InternationalDistributors = () => {
             </a>
           </Paragraph>
         </AddressFlex>
-      </Container>
-      <Container>
         <AddressFlex key={nanoid()}>
           <Title key={nanoid()}>Luxembourg</Title>
           <Paragraph key={nanoid()}>Musik Meyer Benelux</Paragraph>
@@ -563,8 +538,6 @@ const InternationalDistributors = () => {
             </a>
           </Paragraph>
         </AddressFlex>
-      </Container>
-      <Container>
         <AddressFlex key={nanoid()}>
           <Title key={nanoid()}>Poland</Title>
           <Paragraph key={nanoid()}>
@@ -619,8 +592,6 @@ const InternationalDistributors = () => {
             </a>
           </Paragraph>
         </AddressFlex>
-      </Container>
-      <Container>
         <AddressFlex key={nanoid()}>
           <Title key={nanoid()}>Slovenia</Title>
           <Paragraph key={nanoid()}>
@@ -674,8 +645,6 @@ const InternationalDistributors = () => {
             </a>
           </Paragraph>
         </AddressFlex>
-      </Container>
-      <Container>
         <AddressFlex key={nanoid()}>
           <Title key={nanoid()}>Switzerland</Title>
           <Paragraph key={nanoid()}>Musik Meyer Schweiz</Paragraph>
@@ -710,11 +679,7 @@ const InternationalDistributors = () => {
             </a>
           </Paragraph>
         </AddressFlex>
-      </Container>
-      <Container>
         <MainTitle>NORTH AMERICA</MainTitle>
-      </Container>
-      <Container>
         <AddressFlex key={nanoid()}>
           <Title key={nanoid()}>Canada</Title>
           <Paragraph key={nanoid()}>Erikson Music</Paragraph>
@@ -747,11 +712,7 @@ const InternationalDistributors = () => {
             </a>
           </Paragraph>
         </AddressFlex>
-      </Container>
-      <Container>
         <MainTitle>SOUTH AMERICA</MainTitle>
-      </Container>
-      <Container>
         <AddressFlex key={nanoid()}>
           <Title key={nanoid()}>Argentina</Title>
           <Paragraph key={nanoid()}>BREYER HNOS S.A.</Paragraph>
@@ -768,11 +729,7 @@ const InternationalDistributors = () => {
             </a>
           </Paragraph>
         </AddressFlex>
-      </Container>
-      <Container>
         <MainTitle>AUSTRALIA</MainTitle>
-      </Container>
-      <Container>
         <AddressFlex key={nanoid()}>
           <Title key={nanoid()}>Australia</Title>
           <Paragraph key={nanoid()}>Pro Music Pty. Ltd.</Paragraph>
@@ -790,11 +747,7 @@ const InternationalDistributors = () => {
             </a>
           </Paragraph>
         </AddressFlex>
-      </Container>
-      <Container>
         <MainTitle>ASIA</MainTitle>
-      </Container>
-      <Container>
         <AddressFlex key={nanoid()}>
           <Title key={nanoid()}>China</Title>
           <Paragraph key={nanoid()}>

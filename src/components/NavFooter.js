@@ -134,7 +134,7 @@ const NavFooter = () => {
                 <Link>Instrument Archive</Link>
               </li>
               <li>
-                <Link>Owners Care</Link>
+                <Link to='/OwnersCare'>Owners Care</Link>
               </li>
             </ul>
           </FooterFlex>
