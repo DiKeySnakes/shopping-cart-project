@@ -62,6 +62,7 @@ import NewsRefs01 from './components/NewsRefs01';
 import NewsRefs02 from './components/NewsRefs02';
 import NewsRefs03 from './components/NewsRefs03';
 import NewsRefs04 from './components/NewsRefs04';
+import InternationalDistributors from './components/InternationalDistributors';
 import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
 import Artists from './components/Artists';
@@ -234,6 +235,10 @@ function App() {
           <Route path='/NewsRefs02' element={<NewsRefs02 />} />
           <Route path='/NewsRefs03' element={<NewsRefs03 />} />
           <Route path='/NewsRefs04' element={<NewsRefs04 />} />
+          <Route
+            path='/InternationalDistributors'
+            element={<InternationalDistributors />}
+          />
         </Routes>
       </ScrollToTopHelper>
       <NavFooter />

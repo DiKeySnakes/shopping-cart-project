@@ -126,7 +126,9 @@ const NavFooter = () => {
             <FooterHeadingLevel2>Your Hagstrom</FooterHeadingLevel2>
             <ul>
               <li>
-                <Link>International Distributors</Link>
+                <Link to='/InternationalDistributors'>
+                  International Distributors
+                </Link>
               </li>
               <li>
                 <Link>Instrument Archive</Link>
