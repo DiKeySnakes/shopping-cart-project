@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { nanoid } from '@reduxjs/toolkit';
 import Artists_Main_Image from '../assets/images/Artists_Main_Image.jpg';
+import Owners_Care_Back_Bowed_Neck from '../assets/images/Owners_Care_Back_Bowed_Neck.jpg';
+import Owners_Care_Bowed_Neck from '../assets/images/Owners_Care_Bowed_Neck.jpg';
 
 const Wrapper = styled.div`
   display: flex;
@@ -58,6 +60,7 @@ const NavLinks = styled.div`
   justify-content: space-around;
   float: left;
   white-space: nowrap;
+  flex-wrap: wrap;
 `;
 
 const ShareLinks = styled.div`
@@ -153,6 +156,9 @@ const Paragraph = styled.p`
   font-family: 'Signika Negative', sans-serif;
   font-size: 2vmin;
   padding: 0 0 2vmin;
+  ol {
+    padding-left: 16px;
+  }
   a {
     font-weight: 700;
     color: #9b0600;
@@ -185,6 +191,19 @@ const NewsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+`;
+
+const ImageWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const Image = styled.img`
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  src: ${(props) => props.src};
+  alt: ${(props) => props.alt};
 `;
 
 const IntroBackground = styled.div`
@@ -252,11 +271,11 @@ const Button = styled.button`
   }
 `;
 
-const OwnersCare = () => {
+const OwnersCareRefs02 = () => {
   return (
     <Wrapper key={nanoid()}>
       <IntroBackground key={nanoid()}>
-        <IntroTitle key={nanoid()}>OWNERS CARE</IntroTitle>
+        <IntroTitle key={nanoid()}>H-EXPANDER TRUSS ROD</IntroTitle>
       </IntroBackground>
       <NavContainer>
         <NavWrapper>
@@ -265,7 +284,9 @@ const OwnersCare = () => {
             <span>/</span>
             <NavLink>Your Hagstrom</NavLink>
             <span>/</span>
-            <NavLink>Owners Care</NavLink>
+            <NavLink to='/OwnersCare'>Owners Care</NavLink>
+            <span>/</span>
+            <NavLink>H-Expander Truss Rod</NavLink>
           </NavLinks>
           <ShareLinks>
             <NavLink>
@@ -287,25 +308,97 @@ const OwnersCare = () => {
           <News key={nanoid()}>
             <NewsWrapper key={nanoid()}>
               <MediaTitle key={nanoid()}>
-                For owners of Hagstrom guitars
+                H-Expander Truss Rod{<br />}
+                Hagstrom’s Patented H-Expander Truss Rod
               </MediaTitle>
               <Paragraph>
-                All Hagstrom instruments are built from the finest materials by
-                skilled craftspeople who pride themselves on the quality of
-                their workmanship. As a result, you can take pride in being the
-                owner of a Hagstrom, and we hope that you will treat your
-                instrument as carefully as you would of any valuable possession.
+                The neck on your Hagstrom guitar is reinforced with our
+                H-Expander metal truss rod. The design of the truss rod prevents
+                twisting of the neck, and allows the neck to the be adjusted if
+                there is uncomfortable playability between the 5-9th fret area,
+                or even fret buzz in extreme conditions. We have incorporated
+                this special H-Expander truss rod into your guitars for a number
+                or reasons:
               </Paragraph>
               <Paragraph>
-                If you provide the proper care and maintenance of your
-                instrument, it will provide many years of playing enjoyment and
-                satisfaction.
+                <ol>
+                  <li>
+                    To ensure that the neck on your guitar is as strong and
+                    trouble-free as possible
+                  </li>
+                  <li>
+                    To allow easy adjustment if/when possible. Please note that
+                    if you do not have adequate experience of adjusting truss
+                    rods in the past, we suggest to have a professional guitar
+                    technician to make such adjustments for you, to avoid
+                    possible permanent damage the instrument which may void
+                    warranty.
+                  </li>
+                  <li>
+                    The H-Expander truss rod also plays part in tonally
+                    enhancing the physical vibration and resonance of your
+                    instrument. It will increase the instruments sustain, and
+                    provide a sharper attack for Hagstrom players.
+                  </li>
+                </ol>
+              </Paragraph>
+              <MediaTitle key={nanoid()}>
+                H-Expander Truss Rod Adjustment
+              </MediaTitle>
+              <Paragraph>
+                To determine if the neck on your truss rod is out of alignment,
+                follow this procedure:
               </Paragraph>
               <Paragraph>
-                We urge you to read each section carefully, and follow the
-                suggestions provided to preserve the life of your Hagstrom
-                instrument and to keep it playing at its absolute best.
+                With your left hand, depress the low E-string between the nut
+                and the first fret. With your right hand, hold the same string
+                against the fingerboard at the 12th fret.{<br />} There should
+                be a minimum clearance (at least 0.005” (metric: 0.127mm))
+                between the bottom of the string and the top of the 5th fret. If
+                the string clearance is more than 0.03” (Metric: 0.762mm) this
+                would mean that your neck is “bowed” and could need to be
+                adjusted.
               </Paragraph>
+              <Paragraph>
+                <ImageWrapper>
+                  <Image src={Owners_Care_Back_Bowed_Neck} alt='' />
+                </ImageWrapper>
+                To correct neck back bow (requiring less tension on the neck, to
+                relieve any back-bow on the neck), you first need to remove the
+                truss rod cover plate on the headstock, and turn the truss rod
+                nut (using a metric AllenKey and depending on the year your
+                guitar was made, either 3mm or 4mm in size) clockwise. Each
+                movement of the Allen nut should be made using small increments
+                of about 1/12 of a full turn and by placing slight pressure on
+                the neck each time an adjustment is made to help set the neck
+                into its new position.{<br />}
+                If either of the E-strings touch the 5th fret (when placing one
+                finger in the first fret, and the other on the 12th fret), the
+                neck still has a back bow which causes the frets to buzz when
+                played at the first few frets.Fora perfect setup, the string
+                should barely touch the 5th and 6th frets (when placing one
+                finger on the 1st fret and the other on the 12th fret).
+              </Paragraph>
+              <Paragraph>
+                <ImageWrapper>
+                  <Image src={Owners_Care_Bowed_Neck} alt='' />
+                </ImageWrapper>
+                To determine if the neck has too much of a bow (too much
+                relief),follow the same procedure outlined above, however by
+                making adjustments to the truss rod using counter-clockwise
+                motions using the Allan Key, to place more tension on the truss
+                rod to achieve the proper relief. Once either of the the
+                E-strings barely touches the 5th to 6th fret (again, by placing
+                one finger on the string of the 1st fret and another finger on
+                the 12th fret),the neck will then have the correct relief in the
+                neck and truss rod.
+              </Paragraph>
+            </NewsWrapper>
+          </News>
+        </LeftContentWrapper>
+        <RightContentWrapper>
+          <News key={nanoid()}>
+            <NewsWrapper key={nanoid()}>
               <MediaTitleSecondary key={nanoid()}>
                 Owners Care:
               </MediaTitleSecondary>
@@ -330,8 +423,7 @@ const OwnersCare = () => {
               </Paragraph>
             </NewsWrapper>
           </News>
-        </LeftContentWrapper>
-        <RightContentWrapper></RightContentWrapper>
+        </RightContentWrapper>
       </MainContentWrapper>
       <ButtonWrapper key={nanoid()}>
         <Link to='/Products' key={nanoid()}>
@@ -357,4 +449,4 @@ const OwnersCare = () => {
   );
 };
 
-export default OwnersCare;
+export default OwnersCareRefs02;

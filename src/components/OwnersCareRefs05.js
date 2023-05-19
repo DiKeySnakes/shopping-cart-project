@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { nanoid } from '@reduxjs/toolkit';
 import Artists_Main_Image from '../assets/images/Artists_Main_Image.jpg';
+import Owners_Care_string_replacement_1 from '../assets/images/Owners_Care_string_replacement_1.jpg';
+import Owners_Care_string_replacement_2 from '../assets/images/Owners_Care_string_replacement_2.jpg';
 
 const Wrapper = styled.div`
   display: flex;
@@ -58,6 +60,7 @@ const NavLinks = styled.div`
   justify-content: space-around;
   float: left;
   white-space: nowrap;
+  flex-wrap: wrap;
 `;
 
 const ShareLinks = styled.div`
@@ -153,6 +156,9 @@ const Paragraph = styled.p`
   font-family: 'Signika Negative', sans-serif;
   font-size: 2vmin;
   padding: 0 0 2vmin;
+  ol {
+    padding-left: 16px;
+  }
   a {
     font-weight: 700;
     color: #9b0600;
@@ -185,6 +191,19 @@ const NewsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+`;
+
+const ImageWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+const Image = styled.img`
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  src: ${(props) => props.src};
+  alt: ${(props) => props.alt};
 `;
 
 const IntroBackground = styled.div`
@@ -252,11 +271,11 @@ const Button = styled.button`
   }
 `;
 
-const OwnersCare = () => {
+const OwnersCareRefs05 = () => {
   return (
     <Wrapper key={nanoid()}>
       <IntroBackground key={nanoid()}>
-        <IntroTitle key={nanoid()}>OWNERS CARE</IntroTitle>
+        <IntroTitle key={nanoid()}>STRING REPLACEMENT</IntroTitle>
       </IntroBackground>
       <NavContainer>
         <NavWrapper>
@@ -265,7 +284,9 @@ const OwnersCare = () => {
             <span>/</span>
             <NavLink>Your Hagstrom</NavLink>
             <span>/</span>
-            <NavLink>Owners Care</NavLink>
+            <NavLink to='/OwnersCare'>Owners Care</NavLink>
+            <span>/</span>
+            <NavLink>String Replacement</NavLink>
           </NavLinks>
           <ShareLinks>
             <NavLink>
@@ -287,25 +308,72 @@ const OwnersCare = () => {
           <News key={nanoid()}>
             <NewsWrapper key={nanoid()}>
               <MediaTitle key={nanoid()}>
-                For owners of Hagstrom guitars
+                When to change the strings of your guitar
               </MediaTitle>
               <Paragraph>
-                All Hagstrom instruments are built from the finest materials by
-                skilled craftspeople who pride themselves on the quality of
-                their workmanship. As a result, you can take pride in being the
-                owner of a Hagstrom, and we hope that you will treat your
-                instrument as carefully as you would of any valuable possession.
+                Do not wait for a string to break before replacing it. Strings
+                lose their brilliance and response for many reasons, including
+                corrosion from perspiration acids, contact with the frets, and
+                even a player’s touch and playing style. The amount of time
+                required for strings to “go dead” varies considerably from
+                player to player and string to string. You can best compensate
+                for the loss of tonal quality caused by dead strings by changing
+                them often – at least every two weeks if you play regularly and
+                have a normal amount of acid in your system.
               </Paragraph>
               <Paragraph>
-                If you provide the proper care and maintenance of your
-                instrument, it will provide many years of playing enjoyment and
-                satisfaction.
+                When a string “goes dead”, it is best to replace the entire set.
+                Replacing only one string will usually result in it sounding
+                “brighter” than the other strings, and the set will no longer be
+                balanced. If you change to different string gauges, it may be
+                necessary to adjust the neck and even the nut (and may even
+                require re-intonation).
               </Paragraph>
               <Paragraph>
-                We urge you to read each section carefully, and follow the
-                suggestions provided to preserve the life of your Hagstrom
-                instrument and to keep it playing at its absolute best.
+                When changing strings, remove only one string at a time to
+                maintain the tension on the neck and to allow the old strings to
+                be used for tuning reference. Bring the new string up to pitch
+                slowly to avoid breaking it, and do not clip the string to
+                length until after it is mounted, in order to avoid unravelling.
               </Paragraph>
+              <MediaTitle key={nanoid()}>
+                How to re-string your guitar
+              </MediaTitle>
+              <MediaTitleSecondary key={nanoid()}>
+                At the Tailpiece
+              </MediaTitleSecondary>
+              <Paragraph>
+                Simply insert each string through the proper hole in the
+                tailpiece. The “Ball end” of the string will hold it in place.
+              </Paragraph>
+              <MediaTitleSecondary key={nanoid()}>
+                At the Neck
+              </MediaTitleSecondary>
+              <Paragraph>
+                Bring each string up the neck and make a 90-degree bend in the
+                end about 2 inches beyond the proper tuning machine. Insert the
+                string into the hole of the string post. Wind the end of the
+                string halfway around the post and under the attached string.
+                The end of the string is then bent back over the attached string
+                to prevent slippage.
+              </Paragraph>
+              <ImageWrapper>
+                <Image src={Owners_Care_string_replacement_1} alt='' />
+              </ImageWrapper>
+              <Paragraph>
+                The string windings should be close to the base of the post. The
+                string should be wound around the shaft about three times. Bring
+                the string up to pitch before clipping the end.
+              </Paragraph>
+              <ImageWrapper>
+                <Image src={Owners_Care_string_replacement_2} alt='' />
+              </ImageWrapper>
+            </NewsWrapper>
+          </News>
+        </LeftContentWrapper>
+        <RightContentWrapper>
+          <News key={nanoid()}>
+            <NewsWrapper key={nanoid()}>
               <MediaTitleSecondary key={nanoid()}>
                 Owners Care:
               </MediaTitleSecondary>
@@ -330,8 +398,7 @@ const OwnersCare = () => {
               </Paragraph>
             </NewsWrapper>
           </News>
-        </LeftContentWrapper>
-        <RightContentWrapper></RightContentWrapper>
+        </RightContentWrapper>
       </MainContentWrapper>
       <ButtonWrapper key={nanoid()}>
         <Link to='/Products' key={nanoid()}>
@@ -357,4 +424,4 @@ const OwnersCare = () => {
   );
 };
 
-export default OwnersCare;
+export default OwnersCareRefs05;

@@ -153,6 +153,9 @@ const Paragraph = styled.p`
   font-family: 'Signika Negative', sans-serif;
   font-size: 2vmin;
   padding: 0 0 2vmin;
+  ol {
+    padding-left: 16px;
+  }
   a {
     font-weight: 700;
     color: #9b0600;
@@ -252,11 +255,11 @@ const Button = styled.button`
   }
 `;
 
-const OwnersCare = () => {
+const OwnersCareRefs01 = () => {
   return (
     <Wrapper key={nanoid()}>
       <IntroBackground key={nanoid()}>
-        <IntroTitle key={nanoid()}>OWNERS CARE</IntroTitle>
+        <IntroTitle key={nanoid()}>HOW TO CARE FOR YOUR GUITAR</IntroTitle>
       </IntroBackground>
       <NavContainer>
         <NavWrapper>
@@ -265,7 +268,9 @@ const OwnersCare = () => {
             <span>/</span>
             <NavLink>Your Hagstrom</NavLink>
             <span>/</span>
-            <NavLink>Owners Care</NavLink>
+            <NavLink to='/OwnersCare'>Owners Care</NavLink>
+            <span>/</span>
+            <NavLink>How to care for your guitar</NavLink>
           </NavLinks>
           <ShareLinks>
             <NavLink>
@@ -287,25 +292,113 @@ const OwnersCare = () => {
           <News key={nanoid()}>
             <NewsWrapper key={nanoid()}>
               <MediaTitle key={nanoid()}>
-                For owners of Hagstrom guitars
+                How to care for your guitar
               </MediaTitle>
               <Paragraph>
-                All Hagstrom instruments are built from the finest materials by
-                skilled craftspeople who pride themselves on the quality of
-                their workmanship. As a result, you can take pride in being the
-                owner of a Hagstrom, and we hope that you will treat your
-                instrument as carefully as you would of any valuable possession.
+                Proper care of your Hagstrom instrument is basically a matter of
+                common sense. It requires very little time and energy to keep
+                your guitar in proper condition, and your efforts will pay off
+                in the years to come.
+              </Paragraph>
+              <MediaTitle key={nanoid()}>Fingerboard and Strings</MediaTitle>
+              <Paragraph>
+                It's important to take good care of your guitar to ensure that
+                it continues to perform at its best. The following instructions
+                are provided for cleaning and oiling the fretboard of your
+                Hagstrom instrument.
               </Paragraph>
               <Paragraph>
-                If you provide the proper care and maintenance of your
-                instrument, it will provide many years of playing enjoyment and
-                satisfaction.
+                Regularly wiping the fingerboard and strings clean after each
+                playing session is a good practice, as it can help to remove
+                dirt and perspiration acids that can build up and shorten the
+                lifespan of the strings. When oiling the fretboard, we recommend
+                the use of Paraffin oil or Fret Butter™ by DMI Guitar Labs.
               </Paragraph>
               <Paragraph>
-                We urge you to read each section carefully, and follow the
-                suggestions provided to preserve the life of your Hagstrom
-                instrument and to keep it playing at its absolute best.
+                <ol>
+                  <li>
+                    Using Paraffin oil: Remove the old strings. Using a soft,
+                    lint-free cloth, apply a small amount of oil to the
+                    fretboard, and gently rub it in around the first fret area,
+                    working your way through each fret to the top of the
+                    fretboard. Allow the oil to sit for a minute, then wipe it
+                    dry with a clean cloth. For stubborn grime and dirt, you can
+                    use a soft-bristled toothbrush to help remove it. After the
+                    oiling application, your guitar can be strung with new
+                    strings.
+                  </li>
+                  <li>
+                    Using DMI Guitar Labs – Fret Butter™: Your Hagstrom Guitar
+                    was pre-treated with Fret Butter™” prior to leaving our
+                    factory. If you choose to use Fret Butter™, by first
+                    removing the old strings, simply apply it to the fretboard
+                    using the supplied penetrated cloth, and gently apply the
+                    solution to the entire length of the neck. Allow the Fret
+                    Butter™ to penetrate into the fretboard for approximately
+                    one minute. Then remove any excess solution and built-up
+                    grime by rubbing a clean terry cloth up and down along the
+                    entire length of the fretboard. You can also rub each
+                    individual fret perpendicularly with the terry cloth to
+                    clean the surface of each of the frets for an amazing feel
+                    and shine for your next performance.
+                  </li>
+                </ol>
               </Paragraph>
+              <Paragraph>
+                It's important to note that the use of Lemon oil is not
+                recommended, as it could negatively affect the fret slots
+                (resulting in uneven frets) and even miscolor your fretboard
+                over time. By following these instructions, you can help to
+                maintain the longevity and quality of your Hagstrom instrument.
+              </Paragraph>
+              <MediaTitle key={nanoid()}>Plating of hardware</MediaTitle>
+              <Paragraph>
+                Perspiration acid from your fingers and hands can also dull the
+                beauty of the metal plating of the hardware on your instrument.
+                While you are wiping the fingerboard and strings, it is advised
+                to also wipe off the hardware at the same time using a clean
+                cloth.
+              </Paragraph>
+              <MediaTitle key={nanoid()}>Care of Gloss Finishes</MediaTitle>
+              <Paragraph>
+                The high-quality polyester clear coat finish of your instrument
+                can be cleaned as necessary using a number of different guitar
+                care finish products on the market. The Polyester that we use is
+                very durable and will provide you with years of high gloss
+                shine.
+              </Paragraph>
+              <MediaTitle key={nanoid()}>Care of Satin Finishes</MediaTitle>
+              <Paragraph>
+                As Satin finishes can tend to become glossy over time (mainly
+                due to people cleaning their instrument in the same manner as a
+                gloss finish), it is important to clean and treat Satin finishes
+                differently than Gloss finished instruments. There are a number
+                of common household sponges available on the market (commonly
+                available at hardware stores) such as “Magic Eraser Stain
+                Remover pads” that are perfect to clean your Hagstrom guitar
+                that has a Satin finish. Simply by wiping these pads over the
+                satin finish will clean any dirt and debris from your
+                instrument, but will also bring back the guitars original look
+                just at the time that it was shipped from our factory line.
+              </Paragraph>
+              <MediaTitle key={nanoid()}>Tuning Machines</MediaTitle>
+              <Paragraph>
+                The tuning machines on your guitar require no maintenance, as
+                each tuners worm gear and thread are sealed at the back of the
+                tuner. Tuner button tension can be adjusted using a small
+                Philips screwdriver if buttons feel loose over time. Only apply
+                slight 1/16 turn movements (with extreme sensitivity and
+                caution) so return to a firm tuning ease and smoothness of each
+                tuner. Again, use extreme caution as to not damage the Hagstrom
+                button. If you are unsure of this method, always consult a
+                professional guitar technician for such adjustments.
+              </Paragraph>
+            </NewsWrapper>
+          </News>
+        </LeftContentWrapper>
+        <RightContentWrapper>
+          <News key={nanoid()}>
+            <NewsWrapper key={nanoid()}>
               <MediaTitleSecondary key={nanoid()}>
                 Owners Care:
               </MediaTitleSecondary>
@@ -330,8 +423,7 @@ const OwnersCare = () => {
               </Paragraph>
             </NewsWrapper>
           </News>
-        </LeftContentWrapper>
-        <RightContentWrapper></RightContentWrapper>
+        </RightContentWrapper>
       </MainContentWrapper>
       <ButtonWrapper key={nanoid()}>
         <Link to='/Products' key={nanoid()}>
@@ -357,4 +449,4 @@ const OwnersCare = () => {
   );
 };
 
-export default OwnersCare;
+export default OwnersCareRefs01;

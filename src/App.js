@@ -64,6 +64,11 @@ import NewsRefs03 from './components/NewsRefs03';
 import NewsRefs04 from './components/NewsRefs04';
 import InternationalDistributors from './components/InternationalDistributors';
 import OwnersCare from './components/OwnersCare';
+import OwnersCareRefs01 from './components/OwnersCareRefs01';
+import OwnersCareRefs02 from './components/OwnersCareRefs02';
+import OwnersCareRefs03 from './components/OwnersCareRefs03';
+import OwnersCareRefs04 from './components/OwnersCareRefs04';
+import OwnersCareRefs05 from './components/OwnersCareRefs05';
 import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
 import Artists from './components/Artists';
@@ -241,6 +246,11 @@ function App() {
             element={<InternationalDistributors />}
           />
           <Route path='/OwnersCare' element={<OwnersCare />} />
+          <Route path='/OwnersCareRefs01' element={<OwnersCareRefs01 />} />
+          <Route path='/OwnersCareRefs02' element={<OwnersCareRefs02 />} />
+          <Route path='/OwnersCareRefs03' element={<OwnersCareRefs03 />} />
+          <Route path='/OwnersCareRefs04' element={<OwnersCareRefs04 />} />
+          <Route path='/OwnersCareRefs05' element={<OwnersCareRefs05 />} />
         </Routes>
       </ScrollToTopHelper>
       <NavFooter />

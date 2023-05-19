@@ -9,7 +9,6 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #f5c7a9;
   h1 {
     font-size: calc(3.5rem + 2vmin);
   }

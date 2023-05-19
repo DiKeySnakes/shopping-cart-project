@@ -58,6 +58,7 @@ const NavLinks = styled.div`
   justify-content: space-around;
   float: left;
   white-space: nowrap;
+  flex-wrap: wrap;
 `;
 
 const ShareLinks = styled.div`
@@ -153,6 +154,9 @@ const Paragraph = styled.p`
   font-family: 'Signika Negative', sans-serif;
   font-size: 2vmin;
   padding: 0 0 2vmin;
+  ol {
+    padding-left: 16px;
+  }
   a {
     font-weight: 700;
     color: #9b0600;
@@ -252,11 +256,13 @@ const Button = styled.button`
   }
 `;
 
-const OwnersCare = () => {
+const OwnersCareRefs03 = () => {
   return (
     <Wrapper key={nanoid()}>
       <IntroBackground key={nanoid()}>
-        <IntroTitle key={nanoid()}>OWNERS CARE</IntroTitle>
+        <IntroTitle key={nanoid()}>
+          SETTING UP YOUR HAGSTROM INSTRUMENT
+        </IntroTitle>
       </IntroBackground>
       <NavContainer>
         <NavWrapper>
@@ -265,7 +271,9 @@ const OwnersCare = () => {
             <span>/</span>
             <NavLink>Your Hagstrom</NavLink>
             <span>/</span>
-            <NavLink>Owners Care</NavLink>
+            <NavLink to='/OwnersCare'>Owners Care</NavLink>
+            <span>/</span>
+            <NavLink>Setting up your Hagstrom instrument</NavLink>
           </NavLinks>
           <ShareLinks>
             <NavLink>
@@ -287,25 +295,82 @@ const OwnersCare = () => {
           <News key={nanoid()}>
             <NewsWrapper key={nanoid()}>
               <MediaTitle key={nanoid()}>
-                For owners of Hagstrom guitars
+                Setting up your Hagstrom instrument{<br />}
+                Adjustable Bridge
               </MediaTitle>
               <Paragraph>
-                All Hagstrom instruments are built from the finest materials by
-                skilled craftspeople who pride themselves on the quality of
-                their workmanship. As a result, you can take pride in being the
-                owner of a Hagstrom, and we hope that you will treat your
-                instrument as carefully as you would of any valuable possession.
+                Your Hagstrom guitars has an adjustable bridge which allows for
+                string adjustment both horizontally and vertically. It is
+                important to remember that the location of the bridge is a
+                critical factor in assuring correct string vibration and perfect
+                intonation. The bridge on your guitar has been set for optimum
+                performance with the balanced set of strings supplied on the
+                instrument. If you change to different gauges of strings
+                (factory strings are 0.010 – 0.046 gauge), the bridge may
+                require adjustment (as could the neck relief and nut slots).
+                Unless you thoroughly understand the relation between string
+                gauge, bridge height and action, neck relief, nut slot sizing,
+                etc, we do not recommend that you attempt to make such
+                adjustments on the instrument yourself. Instead, take your
+                instrument to a competent service centre. It won’t take long to
+                make the necessary adjustment, and you can be sure that it is
+                done correctly.
+              </Paragraph>
+              <MediaTitle key={nanoid()}>Pickup height</MediaTitle>
+              <Paragraph>
+                The pickups on your Hagstrom guitar or bass have been specially
+                created by us, and designed and formed ideally for your Hagstrom
+                guitar. Each of our pickups are created with a specific tone and
+                character in order to best compliment the instrument. As players
+                have different ideals as to how a guitar should respond and
+                react to their playing style and technique, the pickups on your
+                instrument are set up before leaving the factory to provide
+                players with a well-balanced and dynamic tone. As the height of
+                a pickup works in the same fashion as a hand held microphone,
+                the closer that it is to the source of the sound, the louder
+                that it will be. Ideally, if your Hagstrom instrument is
+                equipped with several pickups, it is essential to setup the
+                height of each pickup to create a perfectly balanced tone when
+                using more than one pickup at a time.
               </Paragraph>
               <Paragraph>
-                If you provide the proper care and maintenance of your
-                instrument, it will provide many years of playing enjoyment and
-                satisfaction.
+                The bridge pickup in your Hagstrom guitar is always hotter
+                (stronger) than the others, in order to provide a stronger lead
+                tones. The neck (and middle pickup, if equipped) has less output
+                than the bridge pickup, which are also specially compensated to
+                control stronger string vibrations normally found at each of
+                these positions on the body. Ideally for a stronger lead tone,
+                we recommend to raise the bridge pickup no higher than 2mm away
+                from the strings (measuring from the top of the screws/slugs (if
+                equipped). If raised higher than this recommended height, it can
+                create buzzing issues (strings vibrating against the pickups) or
+                it can even create a magnetic pull on the strings, which can
+                create feedback issues (common on Semi-hollow or Hollow-body
+                guitars), tuning issues, or even negatively affect the sustain
+                of the instrument. Neck (and middle, if equipped) should be
+                adjusted to a lower position, due to the increased string
+                vibrations that emit from this area. Ideally, we recommend for a
+                neck pickup to be no closer to the strings than around 7-8mm, to
+                create a good balance between the neck and bridge pickup. If
+                your guitar is equipped with a middle pickup, it’s height should
+                be compensated between the height of both the bridge and neck
+                pickups (approximately 4-5mm away from the strings).
               </Paragraph>
               <Paragraph>
-                We urge you to read each section carefully, and follow the
-                suggestions provided to preserve the life of your Hagstrom
-                instrument and to keep it playing at its absolute best.
+                As players have ideal tones that they wish to achieve, it can be
+                helpful to sit with your instrument and listen to the tones
+                between each pickup and make adjustments to the height of each
+                pickup to suit your personal taste to achieve your “ideal tone”.
+                Even small adjustments of the height of each pickup will change
+                the initial response and character of the instruments tone when
+                amplified.
               </Paragraph>
+            </NewsWrapper>
+          </News>
+        </LeftContentWrapper>
+        <RightContentWrapper>
+          <News key={nanoid()}>
+            <NewsWrapper key={nanoid()}>
               <MediaTitleSecondary key={nanoid()}>
                 Owners Care:
               </MediaTitleSecondary>
@@ -330,8 +395,7 @@ const OwnersCare = () => {
               </Paragraph>
             </NewsWrapper>
           </News>
-        </LeftContentWrapper>
-        <RightContentWrapper></RightContentWrapper>
+        </RightContentWrapper>
       </MainContentWrapper>
       <ButtonWrapper key={nanoid()}>
         <Link to='/Products' key={nanoid()}>
@@ -357,4 +421,4 @@ const OwnersCare = () => {
   );
 };
 
-export default OwnersCare;
+export default OwnersCareRefs03;

@@ -58,6 +58,7 @@ const NavLinks = styled.div`
   justify-content: space-around;
   float: left;
   white-space: nowrap;
+  flex-wrap: wrap;
 `;
 
 const ShareLinks = styled.div`
@@ -153,6 +154,9 @@ const Paragraph = styled.p`
   font-family: 'Signika Negative', sans-serif;
   font-size: 2vmin;
   padding: 0 0 2vmin;
+  ol {
+    padding-left: 16px;
+  }
   a {
     font-weight: 700;
     color: #9b0600;
@@ -252,11 +256,11 @@ const Button = styled.button`
   }
 `;
 
-const OwnersCare = () => {
+const OwnersCareRefs04 = () => {
   return (
     <Wrapper key={nanoid()}>
       <IntroBackground key={nanoid()}>
-        <IntroTitle key={nanoid()}>OWNERS CARE</IntroTitle>
+        <IntroTitle key={nanoid()}>TRANSPORT AND STORE YOUR GUITAR</IntroTitle>
       </IntroBackground>
       <NavContainer>
         <NavWrapper>
@@ -265,7 +269,9 @@ const OwnersCare = () => {
             <span>/</span>
             <NavLink>Your Hagstrom</NavLink>
             <span>/</span>
-            <NavLink>Owners Care</NavLink>
+            <NavLink to='/OwnersCare'>Owners Care</NavLink>
+            <span>/</span>
+            <NavLink>Transport and store your guitar</NavLink>
           </NavLinks>
           <ShareLinks>
             <NavLink>
@@ -287,25 +293,37 @@ const OwnersCare = () => {
           <News key={nanoid()}>
             <NewsWrapper key={nanoid()}>
               <MediaTitle key={nanoid()}>
-                For owners of Hagstrom guitars
+                Transport and Storage{<br />}
+                Transporting Your Guitar
               </MediaTitle>
               <Paragraph>
-                All Hagstrom instruments are built from the finest materials by
-                skilled craftspeople who pride themselves on the quality of
-                their workmanship. As a result, you can take pride in being the
-                owner of a Hagstrom, and we hope that you will treat your
-                instrument as carefully as you would of any valuable possession.
+                Extremes in temperature and humidity are a guitar’s worst enemy.
+                Don’t expose your guitar to direct sunlight for longer periods
+                of time, protect it from moisture, and avoid exposure to very
+                hot or cold temperatures. The safest place for your guitar when
+                traveling by car is on the floor of the back seat. Leaving it in
+                the trunk or locking it up in an unventilated or unheated car is
+                not recommended.
               </Paragraph>
               <Paragraph>
-                If you provide the proper care and maintenance of your
-                instrument, it will provide many years of playing enjoyment and
-                satisfaction.
+                Avoid accidental damage to the guitar by always returning it to
+                the case or bag when you are not playing. Be sure that all
+                latches on the case are securely shut into place and always
+                carry the case with the lid towards you.
               </Paragraph>
+              <MediaTitle key={nanoid()}>Storing Your Guitar</MediaTitle>
               <Paragraph>
-                We urge you to read each section carefully, and follow the
-                suggestions provided to preserve the life of your Hagstrom
-                instrument and to keep it playing at its absolute best.
+                Keep your guitar tuned to pitch and in the case for shorter
+                periods of storage. If you intend to store the guitar for an
+                extended period of time, reduce the tension on the strings
+                slightly.
               </Paragraph>
+            </NewsWrapper>
+          </News>
+        </LeftContentWrapper>
+        <RightContentWrapper>
+          <News key={nanoid()}>
+            <NewsWrapper key={nanoid()}>
               <MediaTitleSecondary key={nanoid()}>
                 Owners Care:
               </MediaTitleSecondary>
@@ -330,8 +348,7 @@ const OwnersCare = () => {
               </Paragraph>
             </NewsWrapper>
           </News>
-        </LeftContentWrapper>
-        <RightContentWrapper></RightContentWrapper>
+        </RightContentWrapper>
       </MainContentWrapper>
       <ButtonWrapper key={nanoid()}>
         <Link to='/Products' key={nanoid()}>
@@ -357,4 +374,4 @@ const OwnersCare = () => {
   );
 };
 
-export default OwnersCare;
+export default OwnersCareRefs04;
