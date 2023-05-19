@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.8d406104.js",
+    "main.js": "/shopping-cart-project/static/js/main.31042345.js",
     "static/media/viking_bridge_neck.ogg": "/shopping-cart-project/static/media/viking_bridge_neck.66695dda61b38dab4673.ogg",
     "static/media/Viking67_Header.png": "/shopping-cart-project/static/media/Viking67_Header.54b20b69d2c932618e29.png",
     "static/media/viking_neck_clean.ogg": "/shopping-cart-project/static/media/viking_neck_clean.f1212c64b9506888d214.ogg",
@@ -435,6 +435,7 @@
     "static/media/Swede_Bass_Header.jpg": "/shopping-cart-project/static/media/Swede_Bass_Header.44567e18cdf9aa85514b.jpg",
     "static/media/Tremar_Viking_Deluxe_Header.jpg": "/shopping-cart-project/static/media/Tremar_Viking_Deluxe_Header.21c5713f51975769bdce.jpg",
     "static/media/Beto_Grammatico_Salta_La_Blanca.jpg": "/shopping-cart-project/static/media/Beto_Grammatico_Salta_La_Blanca.383b87328fc0b7ac7ebc.jpg",
+    "static/media/Owners_Care_string_replacement_2.jpg": "/shopping-cart-project/static/media/Owners_Care_string_replacement_2.2c78c521182b26a3b68a.jpg",
     "static/media/H8_II_Hero.png": "/shopping-cart-project/static/media/H8_II_Hero.07cc1f8970850283aeaf.png",
     "static/media/Retroscape_HIII_Hero.png": "/shopping-cart-project/static/media/Retroscape_HIII_Hero.c690273b2d13f3b681c3.png",
     "static/media/HSSWEMK3_Details_345x276Px_03.jpg": "/shopping-cart-project/static/media/HSSWEMK3_Details_345x276Px_03.6bf519c727c3e2d689df.jpg",
@@ -498,6 +499,7 @@
     "static/media/Detail_lundgren_pickups.jpg": "/shopping-cart-project/static/media/Detail_lundgren_pickups.447389e0956773cd8a25.jpg",
     "static/media/Tremar_HJ500_Hero.png": "/shopping-cart-project/static/media/Tremar_HJ500_Hero.f9c17eb0c82eb99d58a6.png",
     "static/media/Fantomen_Custom_Header.jpg": "/shopping-cart-project/static/media/Fantomen_Custom_Header.20d1a4d03c4d7320898e.jpg",
+    "static/media/Owners_Care_string_replacement_1.jpg": "/shopping-cart-project/static/media/Owners_Care_string_replacement_1.b66a2331db638d0d67e3.jpg",
     "static/media/Siljan_II_Grand_Auditorium_CE_Hero.png": "/shopping-cart-project/static/media/Siljan_II_Grand_Auditorium_CE_Hero.f9c0a6b947c6f35bdfe0.png",
     "static/media/Electric_Guitars_Fantomen.png": "/shopping-cart-project/static/media/Electric_Guitars_Fantomen.bbedb24084bd5f5fd719.png",
     "static/media/Acoustics_2016_Detail_7.jpg": "/shopping-cart-project/static/media/Acoustics_2016_Detail_7.08fba9e6d533182de75f.jpg",
@@ -574,6 +576,7 @@
     "static/media/HSFANTOMEN09_Pickup_Detail_07.jpg": "/shopping-cart-project/static/media/HSFANTOMEN09_Pickup_Detail_07.02872c4aa7ee7cfb86a3.jpg",
     "static/media/HSVIK_Details_345x276_0003.jpg": "/shopping-cart-project/static/media/HSVIK_Details_345x276_0003.2f8ad838143a52fc47d6.jpg",
     "static/media/Electric_Guitars_Ultra_Max.png": "/shopping-cart-project/static/media/Electric_Guitars_Ultra_Max.261281a8a84813b6beeb.png",
+    "static/media/Owners_Care_Back_Bowed_Neck.jpg": "/shopping-cart-project/static/media/Owners_Care_Back_Bowed_Neck.09e35846aedab170f2f7.jpg",
     "static/media/Acoustic_Guitars_Elfdalia_Dreadnought.png": "/shopping-cart-project/static/media/Acoustic_Guitars_Elfdalia_Dreadnought.bf6a23cea6ca0cb65b74.png",
     "static/media/Acoustic_Guitars_Elfdalia_Grand_Auditorium.png": "/shopping-cart-project/static/media/Acoustic_Guitars_Elfdalia_Grand_Auditorium.34060c78383538a85219.png",
     "static/media/HSPASS09_Details_345x276Px_01.jpg": "/shopping-cart-project/static/media/HSPASS09_Details_345x276Px_01.c01a17e84afc3c9ebfb0.jpg",
@@ -631,10 +634,10 @@
     "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "static/media/ScrollIcon.svg": "/shopping-cart-project/static/media/ScrollIcon.a1eb858b6e5366f1bd5779a8e0ec1c44.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.8d406104.js.map": "/shopping-cart-project/static/js/main.8d406104.js.map"
+    "main.31042345.js.map": "/shopping-cart-project/static/js/main.31042345.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.8d406104.js"
+    "static/js/main.31042345.js"
   ]
 }
