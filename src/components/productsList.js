@@ -102,6 +102,7 @@ import Acoustic_Siljan_II_Grand_Auditorium_CE_Natural_Vertical from '../assets/i
 import Acoustic_Siljan_II_Grand_Auditorium_CE_White_Gloss_Vertical from '../assets/images/Acoustic_Siljan_II_Grand_Auditorium_CE_White_Gloss_Vertical.png';
 import Acoustic_Siljan_II_GA_12_String_Vertical from '../assets/images/Acoustic_Siljan_II_GA_12_String_Vertical.png';
 import Acoustic_Seafarer_II_Parlor_E_Vertical from '../assets/images/Acoustic_Seafarer_II_Parlor_E_Vertical.png';
+import Super_Swede_LTD_Cosmic_Black_Burst_Vertical from '../assets/images/Super_Swede_LTD_Cosmic_Black_Burst_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -1143,6 +1144,16 @@ const productsList = [
     color: 'Tobacco Sunburst',
     info: '/MoreInfoSeafarerIIParlorE',
     price: '1350',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Super_Swede_LTD_Cosmic_Black_Burst_Vertical,
+    brand: 'Hagstrom',
+    name: 'Super Swede LTD',
+    color: 'Cosmic Black Burst',
+    info: '/MoreInfoSuperSwedeLTD',
+    price: '3500',
     quantity: 1,
     id: nanoid(),
   },

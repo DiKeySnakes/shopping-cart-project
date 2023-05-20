@@ -10,38 +10,23 @@ import 'yet-another-react-lightbox/plugins/thumbnails.css';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
-import Super_Swede_Hero from '../assets/images/Super_Swede_Hero_350x453Px.png';
-import Super_Swede_Header from '../assets/images/Super_Swede_Header.jpg';
-import HagstromSuperSwedeCrimsonFlame from '../assets/images/HagstromSuperSwedeCrimsonFlame.png';
-import HagstromSuperSwedeCrimsonFlameBack from '../assets/images/HagstromSuperSwedeCrimsonFlameBack.png';
-import HagstromSuperSwedeDarkStorm from '../assets/images/HagstromSuperSwedeDarkStorm.png';
-import HagstromSuperSwedeDarkStormBack from '../assets/images/HagstromSuperSwedeDarkStormBack.png';
-import HagstromSuperSwedeXtraSpecialOldPale from '../assets/images/HagstromSuperSwedeXtraSpecialOldPale.png';
-import HagstromSuperSwedeFallSkyGloss from '../assets/images/HagstromSuperSwedeFallSkyGloss.png';
-import HagstromSuperSwedeFallSkyGlossBack from '../assets/images/HagstromSuperSwedeFallSkyGlossBack.png';
+import Super_Swede_LTD_Hero from '../assets/images/Super_Swede_LTD_Hero.png';
+import Super_Swede_LTD_Header from '../assets/images/Super_Swede_LTD_Header.jpg';
 import Logo_Hagstrom_Lilie_Black from '../assets/images/Logo_Hagstrom_Lilie_Black.png';
-import Colors_HAGSTROM_Crimson_Flame from '../assets/images/Colors_HAGSTROM_Crimson_Flame.png';
-import Colors_HAGSTROM_Dark_Storm from '../assets/images/Colors_HAGSTROM_Dark_Storm.png';
-import Colors_HAGSTROM_X_tra_Special_Old_Pale from '../assets/images/Colors_HAGSTROM_X_tra_Special_Old_Pale.png';
-import Colors_HAGSTROM_Fall_Sky_Gloss from '../assets/images/Colors_HAGSTROM_Fall_Sky_Gloss.png';
-import Logo_Hagstrom_Lilie from '../assets/images/Logo_Hagstrom_Lilie.png';
-import HSSUSWEMK3_Details_1 from '../assets/images/HSSUSWEMK3_Details_345x276Px_01.jpg';
-import HSSUSWEMK3_Details_2 from '../assets/images/HSSUSWEMK3_Details_345x276Px_02.jpg';
-import HSSUSWEMK3_Details_3 from '../assets/images/HSSUSWEMK3_Details_345x276Px_03.jpg';
-import HSSUSWEMK3_Details_4 from '../assets/images/HSSUSWEMK3_Details_345x276Px_04.jpg';
-import HSSUSWEMK3_Details_5 from '../assets/images/HSSUSWEMK3_Details_345x276Px_05.jpg';
-import HSSUSWEMK3_Details_6 from '../assets/images/HSSUSWEMK3_Details_345x276Px_06.jpg';
-import HSSUSWEMK3_Details_7 from '../assets/images/HSSUSWEMK3_Details_345x276Px_07.jpg';
-import HSSUSWEMK3_Details_8 from '../assets/images/HSSUSWEMK3_Details_345x276Px_08.jpg';
-import HSSUSWEMK3_Details_9 from '../assets/images/HSSUSWEMK3_Details_345x276Px_09.jpg';
+import Logo_Aegishjalmur from '../assets/images/Logo_Aegishjalmur.png';
+import Colors_Cosmic_Black_Burst from '../assets/images/Colors_Cosmic_Black_Burst.png';
+import Super_Swede_LTD_Detail_1 from '../assets/images/Super_Swede_LTD_Detail_1.jpg';
+import Super_Swede_LTD_Detail_2 from '../assets/images/Super_Swede_LTD_Detail_2.jpg';
+import Super_Swede_LTD_Detail_3 from '../assets/images/Super_Swede_LTD_Detail_3.jpg';
+import Super_Swede_LTD_Detail_4 from '../assets/images/Super_Swede_LTD_Detail_4.jpg';
+import Super_Swede_LTD_Headstock_Detail_5 from '../assets/images/Super_Swede_LTD_Headstock_Detail_5.jpg';
+import Super_Swede_LTD_Detail_6 from '../assets/images/Super_Swede_LTD_Detail_6.jpg';
+import Super_Swede_LTD_Body_Detail from '../assets/images/Super_Swede_LTD_Body_Detail.jpg';
+import Super_Swede_LTD_Cosmic_Black_Burst from '../assets/images/Super_Swede_LTD_Cosmic_Black_Burst.png';
+import Super_Swede_LTD_Cosmic_Black_Burst_Back from '../assets/images/Super_Swede_LTD_Cosmic_Black_Burst_Back.png';
 import Detail_expander from '../assets/images/Detail_expander.jpg';
 import Detail_resinator_wood from '../assets/images/Detail_resinator_wood.jpg';
-import Detail_locking_mechanic from '../assets/images/Detail_locking_mechanic.jpg';
-import Detail_sustain_block_tailpiece from '../assets/images/Detail_sustain_block_tailpiece.jpg';
-import Detail_nape_tenon from '../assets/images/Detail_nape_tenon.jpg';
-import Detail_stainless_steel_fret from '../assets/images/Detail_stainless_steel_fret.jpg';
-import ReactPlayer from 'react-player';
+import Detail_lundgren_pickups from '../assets/images/Detail_lundgren_pickups.jpg';
 
 const Wrapper = styled.div`
   display: flex;
@@ -112,7 +97,7 @@ const IntroBackground = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(${Super_Swede_Header});
+  background-image: url(${Super_Swede_LTD_Header});
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -277,6 +262,22 @@ const MediaTitle = styled.h3`
   }
   @media (max-width: 350px) {
     font-size: 7vmin;
+  }
+`;
+
+const MediaTitleSecondary = styled.h4`
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5vmin;
+  font-weight: 400;
+  line-height: 110%;
+  font-family: 'Signika Negative', sans-serif;
+  color: #333333;
+  @media (max-width: 800px) {
+    font-size: 4vmin;
+  }
+  @media (max-width: 350px) {
+    font-size: 6vmin;
   }
 `;
 
@@ -569,20 +570,13 @@ const Button = styled.button`
   }
 `;
 
-const VideoWrapper = styled.div`
-  width: 100%;
+const FinalWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3rem;
-`;
-
-const Video = styled.div`
-  width: 84vmin;
-  height: 48vmin;
-  display: flex;
-  flex-direction: row;
+  max-width: 768px;
+  height: auto;
+  margin: 2rem 0;
+  padding: 0 16px;
 `;
 
 const MoreInfoSuperSwedeLTD = () => {
@@ -593,10 +587,10 @@ const MoreInfoSuperSwedeLTD = () => {
         <IntroBackground>
           <IntroContainer>
             <IntroTitle>
-              Super Swede
-              <IntroParagraph>Reimagined. Redefined. Revived.</IntroParagraph>
+              Super Swede LTD
+              <IntroParagraph>Made in Sweden.</IntroParagraph>
             </IntroTitle>
-            <IntroImage src={Super_Swede_Hero} alt='' />
+            <IntroImage src={Super_Swede_LTD_Hero} alt='' />
           </IntroContainer>
         </IntroBackground>
         <NavContainer>
@@ -604,11 +598,13 @@ const MoreInfoSuperSwedeLTD = () => {
             <NavLinks>
               <NavLink to='/'>Home</NavLink>
               <span>/</span>
-              <NavLink to='/ElectricGuitars'>Electric Guitars</NavLink>
+              <NavLink>Your Hagstrom</NavLink>
               <span>/</span>
-              <HashLink to='/ElectricGuitars#superSwede'>Super Swede</HashLink>
+              <NavLink to='/InstrumentArchive'>Instrument Archive</NavLink>
               <span>/</span>
-              <NavLink>Super Swede NewGen</NavLink>
+              <NavLink to='/ElectricGuitars'>Swedish Made</NavLink>
+              <span>/</span>
+              <NavLink>Super Swede LTD</NavLink>
             </NavLinks>
             <ShareLinks>
               <NavLink>
@@ -627,22 +623,58 @@ const MoreInfoSuperSwedeLTD = () => {
         </NavContainer>
         <MainContentWrapper>
           <LeftContentWrapper>
-            <MediaTitle>Hagstrom Super Swede</MediaTitle>
+            <MediaTitle>Hagstrom Super Swede LTD</MediaTitle>
             <Paragraph>
               <LogoSpan>
                 <Logo src={Logo_Hagstrom_Lilie_Black} alt='' />
               </LogoSpan>
-              The Super Swede with its longer scale length of 25.5 inches
-              (648mm), delivers a snappy and focused tone that features a
-              well-defined low-end presence. Its higher string tension delivers
-              a clear and articulate tone, well balanced and evenly defined. The
-              Lundgren Design No. 2 pickup in the neck position and No. 5 pickup
-              in the bridge position were carefully paired to deliver a wide
-              diversity of tonal options. The AlNiCo-2 neck pickup produces warm
-              and clear tones, while the AlNiCo-5 bridge pickup delivers a
-              powerful and articulate tone. Combined together, they provide a
-              perfect balance of expression and clarity that allows the Super
-              Swede's natural tone to transpire.
+              Hagstrom continually strives to build the finest guitars
+              available. We steadily take steps to improve our methods and reach
+              new heights of building instruments of the highest possible
+              standard. After several years of consistent pleas by Hagstrom fans
+              over the world, we are very proud to announce that Hagstrom now
+              returns to its roots with production out of Sweden for the first
+              time since the early 1980’s.
+            </Paragraph>
+            <MediaTitle>Made in Sweden</MediaTitle>
+            <Paragraph>
+              To commemorate this historic moment, we are pleased to present the
+              introduction of a very special limited edition of one of
+              Hagstrom’s historic flagship models, the Hagstrom Super Swede.
+              First introduced to the Hagstrom range in 1978, this limited
+              edition will be produced in a total of 30 pieces world-wide. Each
+              of these limited edition instruments is each meticulously built
+              using premium African Mahogany necks and bodies, Mortise and Tenon
+              necks joints, united together using some of the highest graded ¾”
+              flame maple tops. To top off this classic combination of the 25.5”
+              scaled Super Swede, each instrument is offered in one of the most
+              popular Hagstrom finishes, “Cosmic Black Burst”. Each guitar is
+              numbered and documented, to commemorate the first step of
+              returning this point of production back to our motherland.
+            </Paragraph>
+            <MediaTitle>Lundgren Pickups</MediaTitle>
+            <Paragraph>
+              We have joined forces with Johan Lundgren of Swedish Lundgren
+              pickups, where each of the instrument’s features a perfectly
+              matched pair of Lundgren’s hand-built pickups from Sweden. The
+              Super Swede with its long sustain and powerful tone, is perfectly
+              matched with Lundgren’s Alnico 5 splitable “Suckerbucker” in the
+              bridge position. The tone can be best described as “tight” and
+              “lively” which only contributes to the Super Swedes already miles
+              long natural sustain, which literally “sucks” the tone out from
+              the instrument. Lead players will feel an immediate need to
+              lengthen their solos, as the output of this “medium plus” bridge
+              humbucker sings to bring out the guitar’s full potential.
+            </Paragraph>
+            <MediaTitle>Sucker Bucker and Heaven 75</MediaTitle>
+            <Paragraph>
+              In order to provide a perfectly-balanced marriage with the
+              “Suckerbucker” and provide extra versatility, Lundgren’s “Heaven
+              57” was chosen for the neck pickup adding “vintage breath” and
+              delivering a sensational and harmonic clarity. Players will have
+              the best of both worlds using this perfect calibrated set of
+              Lundgren pickups, which will guarantee bringing a wide grin to the
+              face of any player. It’s literally a match made in heaven.
             </Paragraph>
           </LeftContentWrapper>
           <RightContentWrapper>
@@ -650,35 +682,11 @@ const MoreInfoSuperSwedeLTD = () => {
             <Colors>
               <ColorsWrapper>
                 <Image
-                  src={Colors_HAGSTROM_Crimson_Flame}
+                  src={Colors_Cosmic_Black_Burst}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Crimson Flame</ColorsText>
-              </ColorsWrapper>
-              <ColorsWrapper>
-                <Image
-                  src={Colors_HAGSTROM_Dark_Storm}
-                  alt=''
-                  style={{ width: '70px', height: 'auto' }}
-                />
-                <ColorsText>Dark Storm</ColorsText>
-              </ColorsWrapper>
-              <ColorsWrapper>
-                <Image
-                  src={Colors_HAGSTROM_X_tra_Special_Old_Pale}
-                  alt=''
-                  style={{ width: '70px', height: 'auto' }}
-                />
-                <ColorsText>X-tra Special Old Pale</ColorsText>
-              </ColorsWrapper>
-              <ColorsWrapper>
-                <Image
-                  src={Colors_HAGSTROM_Fall_Sky_Gloss}
-                  alt=''
-                  style={{ width: '70px', height: 'auto' }}
-                />
-                <ColorsText>Fall Sky Gloss</ColorsText>
+                <ColorsText>Cosmic Black Burst</ColorsText>
               </ColorsWrapper>
             </Colors>
           </RightContentWrapper>
@@ -686,63 +694,43 @@ const MoreInfoSuperSwedeLTD = () => {
         <MainContentWrapper>
           <Details>
             <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_1} alt='' />
-              <DetailsText>Crimson Flame Finish</DetailsText>
+              <Image src={Super_Swede_LTD_Detail_1} alt='' />
+              <DetailsText>Roller Bridge, Ruthenium Tailpiece</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_2} alt='' />
-              <DetailsText>Iconic headstock</DetailsText>
+              <Image src={Super_Swede_LTD_Detail_2} alt='' />
+              <DetailsText>Lundgren Pickups</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_3} alt='' />
-              <DetailsText>Included C-51 Case</DetailsText>
+              <Image src={Super_Swede_LTD_Detail_3} alt='' />
+              <DetailsText>Schaller Hardware</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_4} alt='' />
-              <DetailsText>Dark Storm Finish</DetailsText>
+              <Image src={Super_Swede_LTD_Detail_4} alt='' />
+              <DetailsText>Flamed Maple Top</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_5} alt='' />
-              <DetailsText>
-                Lundgren Design AlNiCo-2 No. 5/2 Pickups
-              </DetailsText>
+              <Image src={Super_Swede_LTD_Headstock_Detail_5} alt='' />
+              <DetailsText>Hagstrom Headstock</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_6} alt='' />
-              <DetailsText>X-tra Special Old Pale Finish</DetailsText>
-            </DetailsWrapper>
-            <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_7} alt='' />
-              <DetailsText>Long Travel Tune-O-Matic Bridge</DetailsText>
-            </DetailsWrapper>
-            <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_8} alt='' />
-              <DetailsText>Fall Sky Gloss Finish</DetailsText>
-            </DetailsWrapper>
-            <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_9} alt='' />
-              <DetailsText>Super Swede Cutaway</DetailsText>
+              <Image src={Super_Swede_LTD_Detail_6} alt='' />
+              <DetailsText>Limited Edition</DetailsText>
             </DetailsWrapper>
           </Details>
         </MainContentWrapper>
         <Quote>
           <QuoteContentWrapper>
             <Image
-              src={Logo_Hagstrom_Lilie}
+              src={Logo_Aegishjalmur}
               alt=''
-              style={{ width: '100px', height: 'auto', margin: '2vmin' }}
+              style={{ width: '170px', height: 'auto', margin: '2vmin' }}
             />
             <QuoteText>
-              ”I have been playing music since 20 years. I play various types of
-              music such as jazz, hard rock and reggae. This guitar can play all
-              kinds of my music styles. I don't like to compare my guitars but
-              this one has a different class.“{<br />}
-              <a
-                href='https://www.ultimate-guitar.com/reviews/electric_guitars/hagstrom/super_swede/33059/'
-                target='_blank'
-                rel='noopener noreferrer'>
-                Ultimate-Guitar.com/Super-Swede-Review
-              </a>
+              "We proudly present to you the Super Swede LTD Made in Sweden.
+              This instrument combines all our experience, our independent
+              developments and traditional Hagstrom craftsmanship, with the
+              latest manufacturing technologies."
             </QuoteText>
           </QuoteContentWrapper>
         </Quote>
@@ -765,92 +753,100 @@ const MoreInfoSuperSwedeLTD = () => {
             open={open}
             close={() => setOpen(false)}
             slides={[
-              { src: HagstromSuperSwedeCrimsonFlame },
-              { src: HagstromSuperSwedeCrimsonFlameBack },
-              { src: HagstromSuperSwedeDarkStorm },
-              { src: HagstromSuperSwedeDarkStormBack },
-              { src: HagstromSuperSwedeXtraSpecialOldPale },
-              { src: HagstromSuperSwedeDarkStormBack },
-              { src: HagstromSuperSwedeFallSkyGloss },
-              { src: HagstromSuperSwedeFallSkyGlossBack },
+              { src: Super_Swede_LTD_Cosmic_Black_Burst },
+              { src: Super_Swede_LTD_Cosmic_Black_Burst_Back },
             ]}
           />
         </LightboxWrapper>
         <SpecsWrapper>
           <LeftSpecsWrapper>
-            <MediaTitle>Super Swede Specs</MediaTitle>
+            <MediaTitle>Super Swede LTD Specs</MediaTitle>
+            <MediaTitleSecondary>Body</MediaTitleSecondary>
             <ul>
-              <li>Body: Mahogany</li>
-              <li>Top: ¾” Carved Maple Top w/ Top Grade Flame Maple Veneer</li>
-              <li>Binding: Single-Ply Ivory</li>
-              <li>Style: Single Cutaway</li>
-              <li>Neck: Mahogany</li>
+              <li>2 Piece African Gabon Mahogany Body</li>
+              <li>3/4” High Grade Flame Maple Top</li>
+              <li>Hagstrom Polyester Finish</li>
+            </ul>
+            <MediaTitleSecondary>Neck</MediaTitleSecondary>
+            <ul>
+              <li>African Kaya Mahogany Neck - “D” Profile</li>
+              <li>H-Expander™ Truss Rod</li>
               <li>
-                Neck: Set Neck, customized Nape-Tenon neck joint for ultimate
-                fret access
+                Schaller 18:1 M6 Rear-Locking Tuning Machines with Hagstrom
+                Buttons - Finish: Ruthenium/Gold
               </li>
+            </ul>
+            <MediaTitleSecondary>Fingerboard/Nut</MediaTitleSecondary>
+            <ul>
+              <li>Resinator™ Fingerboard / 25.5” (648 mm) Scale Length</li>
+              <li>Pearloid Block Inlays</li>
+              <li>22 Medium Jumbo Frets / 15” Radius</li>
+              <li>GraphTech Black Tusq Nut / 43 mm Nut Width</li>
+            </ul>
+            <MediaTitleSecondary>Electronics</MediaTitleSecondary>
+            <ul>
+              <li>Neck Pickup: Lundgren AlNiCo-2 Heaven 57 Humbucker</li>
+              <li>Bridge Pickup: Lundgren AlNiCo-5 Suckerbucker Humbucker</li>
+              <li>Pickup Selector: 3-Way Toggle Switch</li>
+              <li>2 x Volume Control</li>
+              <li>2 x Tone Control with Independent Push-Pull Coil Split</li>
+              <li>4 x Schaller Dome-Knobs with laser engraved Hagstrom “H”</li>
+            </ul>
+            <MediaTitleSecondary>Parts</MediaTitleSecondary>
+            <ul>
               <li>
-                Neck Thickness: 1st fret 21 mm (excludes FB, paint clear coat)
-                12th fret 22.5 mm (excludes FB, paint clear coat)
+                Schaller STM Long Travel Tune-O-Matic Bridge - Finish:
+                Ruthenium/Gold
               </li>
-              <li>Trussrod: Dual Action H-Expander™</li>
-              <li>Fingerboard: Resinator™</li>
-              <li>Scale Length: 25.50” (648 mm)</li>
-              <li>Radius: 14.4“</li>
-              <li>
-                Inlays: Ivoriod Hagstrom Crest inlays – Lions on 12th fret
-              </li>
-              <li>
-                Position Marks: Hagstrom Crest inlays – Hagstrom Lions on 12th
-                fret
-              </li>
-              <li>Frets: Stainless Steel - 22 Medium Jumbo</li>
-              <li>Nut: Custom String Spaced - GraphTech™ Black Tusq XL</li>
-              <li>Nut Width: 43 mm</li>
-              <li>
-                Headstock Reinforcement: Volute with internal reinforcements
-              </li>
-              <li>
-                Pickup Neck: Lundgren Design AlNiCo-2 No. 2 (Medium Output –
-                Calibrated – 7.3K) Humbucker - Splitable
-              </li>
-              <li>
-                Pickup Bridge: Lundgren Design AlNiCo-2 No. 5 (High Output –
-                Calibrated – 13.2K) Humbucker - Splitable
-              </li>
-              <li>
-                Switch: 3-Way Toggle Switch w/Hagstrom Brass Plated Cap (Chrome
-                Plated)
-              </li>
-              <li>
-                Controls: 2 x Volume Control with R/C Circuit, 2 x Tone Control
-                with Push-Pull Coil Splits
-              </li>
-              <li>
-                Tuning Keys: Hagstrom Bottom Locking – 19:1 Ratio Chrome Tuners
-                w/Hagstrom Tuning Buttons
-              </li>
-              <li>
-                Stop tail: Hagstrom Direct Mounted Sustain Blocks, Plexi Glass
-                Plate, with Chrome Cover
-              </li>
-              <li>Bridge: Long Travel Tune-O-Matic Bridge</li>
-              <li>
-                Knobs: 4 x Hagstrom “H” Barrel Knurled Brass Knobs (Chrome
-                Plated)
-              </li>
-              <li>Pickguard: Single Ply Ivory or 3-ply Black/White/Black</li>
-              <li>
-                Pickup Frames: Hagstrom “Standard” Humbucker Pickup Frame set
-              </li>
-              <li>Strap Buttons: Set of 3, with dual mount at base of body</li>
-              <li>Strings: D’Addario (10-46)</li>
-              <li>Case: Included C-51</li>
-              <li>Optinal Gigbag: E-20</li>
+              <li>Hagstrom Sustain Block™ Tailpiece-Finish: Ruthenium</li>
+              <li>D’Addario Equipped Strings (10-46)</li>
+            </ul>
+            <MediaTitleSecondary>Case</MediaTitleSecondary>
+            <ul>
+              <li>Hagstrom Hard Case included</li>
             </ul>
           </LeftSpecsWrapper>
           <RightSpecsWrapper>
-            <MediaTitle>Super Swede Standards</MediaTitle>
+            <MediaTitle>Super Swede LTD Standards</MediaTitle>
+            <StandardsWrapper>
+              <StandardsImageWrapper>
+                <Image
+                  src={Detail_lundgren_pickups}
+                  alt=''
+                  style={{
+                    height: 'auto',
+                    maxWidth: '100%',
+                    verticalAlign: 'top',
+                  }}
+                />
+              </StandardsImageWrapper>
+              <StandardsTextWrapper>
+                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
+                  Lundgren Pickups
+                </h4>
+                <p>
+                  We worked with Swedish pickup guru Johan Lundgren, designer of
+                  pickups used by artists such as Ghost or Meshuggah’s Martin
+                  Hagström (no relation!). His pickups cover an immense
+                  expressive range; from smooth, warm tones to the kind of
+                  attack and intense dynamic output that would satisfy the
+                  demands of even the most extreme musical styles.
+                </p>
+                <p>
+                  <a
+                    style={{
+                      textDecoration: 'none',
+                      color: '#9b0600',
+                      borderBottom: '1px dotted #9b0600',
+                    }}
+                    href='https://lundgren.se/en/'
+                    target='_blank'
+                    rel='noopener noreferrer'>
+                    Website Lundgren Pickups
+                  </a>
+                </p>
+              </StandardsTextWrapper>
+            </StandardsWrapper>
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
@@ -865,18 +861,18 @@ const MoreInfoSuperSwedeLTD = () => {
               </StandardsImageWrapper>
               <StandardsTextWrapper>
                 <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  H-Expander NewGen
+                  H-Expander
                 </h4>
                 <p>
                   All Hagstrom electric guitars and basses include our patented
-                  H-Expander™ truss rod design. Introduced with the new Swede
-                  and Super Swede models and coupled with a dual action truss
-                  rod, making adjustments even more accurate, it is fit for a
-                  whole new generation of players while retaining Hagstrom’s
-                  reputation as the world’s fastest playing guitar. The
-                  H-Expander™ truss rod not only provides ultimate neck adjust-
-                  and stability, but it also contributes to Hagstrom’s unique
-                  tone. Longer sustain and a round attack are some of the sonic
+                  H-Expander™ truss rod. Providing tension at both ends and
+                  running the entire length of the neck, the rigid yet
+                  light-weight alloy truss rod allows for a very low action and
+                  thin neck, two factors that were instrumental in earning
+                  Hagstrom its reputation as the world’s fastest playing guitar.
+                  The H-Expander™ truss rod not only provides ultimate neck
+                  stability, but it also contributes to Hagstrom’s unique tone.
+                  Longer sustain and a round attack are some of the sonic
                   characteristics the H-Expander™ adds to the tonal essence of
                   Hagstrom.
                 </p>
@@ -913,120 +909,56 @@ const MoreInfoSuperSwedeLTD = () => {
                 </p>
               </StandardsTextWrapper>
             </StandardsWrapper>
-            <StandardsWrapper>
-              <StandardsImageWrapper>
-                <Image
-                  src={Detail_locking_mechanic}
-                  alt=''
-                  style={{
-                    height: 'auto',
-                    maxWidth: '100%',
-                    verticalAlign: 'top',
-                  }}
-                />
-              </StandardsImageWrapper>
-              <StandardsTextWrapper>
-                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Locking Machine Heads by Hagstrom
-                </h4>
-                <p>
-                  A variety of Hagstrom instruments include 19:1 gear ratio
-                  locking machine heads based on our own distinct innovations to
-                  enable highly accurate tuning, fewer wraps around the tuning
-                  post, and hence faster string changes.
-                </p>
-              </StandardsTextWrapper>
-            </StandardsWrapper>
-            <StandardsWrapper>
-              <StandardsImageWrapper>
-                <Image
-                  src={Detail_sustain_block_tailpiece}
-                  alt=''
-                  style={{
-                    height: 'auto',
-                    maxWidth: '100%',
-                    verticalAlign: 'top',
-                  }}
-                />
-              </StandardsImageWrapper>
-              <StandardsTextWrapper>
-                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Sustain Block Tailpiece
-                </h4>
-                <p>
-                  Hagstrom’s unique Sustain Block Tailpiece™ was the result of
-                  design work starting in 1976 and made its first appearance on
-                  Swede and Super Swede guitars produced in 1978. Since then it
-                  has been a signature feature on many of our solid body models.
-                  Each string terminates in a single, massive brass block
-                  coupled directly to the guitar’s body. The blocks are detached
-                  from one another to reduce interference between the strings,
-                  maximizing each string’s unique contribution.
-                </p>
-              </StandardsTextWrapper>
-            </StandardsWrapper>
-            <StandardsWrapper>
-              <StandardsImageWrapper>
-                <Image
-                  src={Detail_nape_tenon}
-                  alt=''
-                  style={{
-                    height: 'auto',
-                    maxWidth: '100%',
-                    verticalAlign: 'top',
-                  }}
-                />
-              </StandardsImageWrapper>
-              <StandardsTextWrapper>
-                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Nape-Tenon Body Neck Joint
-                </h4>
-                <p>
-                  The body and neck joint is a vital part of stringed
-                  instruments. When done correctly, it allows for a seamless
-                  flow of tone, energy, and resonance. Hagstrom has developed an
-                  innovative neck joint design called the "Nape-Tenon", which
-                  combines the custom shop proven mortise and tenon design with
-                  a recessed neck body joint for ultimate upper fret access.
-                </p>
-              </StandardsTextWrapper>
-            </StandardsWrapper>
-            <StandardsWrapper>
-              <StandardsImageWrapper>
-                <Image
-                  src={Detail_stainless_steel_fret}
-                  alt=''
-                  style={{
-                    height: 'auto',
-                    maxWidth: '100%',
-                    verticalAlign: 'top',
-                  }}
-                />
-              </StandardsImageWrapper>
-              <StandardsTextWrapper>
-                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Stainless Steel Fret Material
-                </h4>
-                <p>
-                  Although this construction process may take more time and
-                  effort, we firmly believe that shortcuts are not an option
-                  when striving for excellence. Hence the use of stainless steel
-                  frets, which provide a hassle free lifetime of performance and
-                  ensure optimal intonation and playability.
-                </p>
-              </StandardsTextWrapper>
-            </StandardsWrapper>
           </RightSpecsWrapper>
         </SpecsWrapper>
-        <VideoWrapper>
-          <Video>
-            <ReactPlayer
-              url='https://youtu.be/BLI5lSsmpXA'
-              width='100%'
-              height='100%'
-            />
-          </Video>
-        </VideoWrapper>
+        <FinalWrapper>
+          <Image src={Super_Swede_LTD_Body_Detail} alt='' />
+          <MediaTitle>Schaller Hardware</MediaTitle>
+          <Paragraph>
+            We have also teamed up with one of Hagstrom’s long time suppliers
+            since days of past with “Schaller” Germany, since these specialized
+            instruments prescribed extraordinary hardware to inspire the eyes
+            and ears of the beholder. This joint effort brought forth a
+            customized Schaller STM bridge together with a customized set of
+            Schaller’s rear-locking M6 tuners, all presented with a special mix
+            of Schaller’s Ruthenium with Gold trim finish. Each hardware piece
+            has been carefully designed as a detailed ornament. Playability,
+            tone and response is unequalled with this fantastic combination of
+            hardware, to bring out the best from each instrument.
+          </Paragraph>
+          <MediaTitle>Fret Treatment</MediaTitle>
+          <Paragraph>
+            As icing on the cake, specially inscribed Schaller knobs with our
+            discernible Hagstrom “H” is featured on each of the two independent
+            volume and push/pull tone knobs, to further justify the singularity
+            of each instrument. The arduous setup of each guitar before its
+            initial delivery from Sweden, is executed with utmost passion where
+            each instrument receives several hours of refinement, for perfect
+            playing performance. The instrument frets and fretboards are also
+            specially scanned and treated using the latest “Plek” technology,
+            where any where any necessary fret adjustments are made within
+            1/1000 of a millimeter, resulting in perfect playability throughout
+            the fretboard. The newly introduced setup of a specially customized
+            “Hagstrom Plek” fret radius, offers frets with a slight compound
+            radius for comfortable and even playing from the first to last fret.
+            We have also taken steps to ensure that players in the future can
+            rely on their local “Plek” service shops, to guarantee that their
+            instrument receives the exact same setup as intended when the guitar
+            originally left production. This is done by simply indicating the
+            serial number on the rear inscribed plate at the back of the
+            headstock, where the detailed information for that specific
+            instruments can be accessed through Plek’s international database.
+          </Paragraph>
+          <MediaTitle>Limited Edition</MediaTitle>
+          <Paragraph>
+            Do not hesitate in obtaining one of these unique wonders, as
+            quantities are few and sparse. However, as our Hagstrom intention
+            always goes, each of these instruments offered are listed at a very
+            meager cost considering the time, materials, and heart to offer an
+            incredible value for building some of the world’s finest
+            instruments.
+          </Paragraph>
+        </FinalWrapper>
         <ButtonWrapper>
           <Link to='/Products'>
             <Button>
