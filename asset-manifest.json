@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.31042345.js",
+    "main.js": "/shopping-cart-project/static/js/main.2763bb19.js",
     "static/media/viking_bridge_neck.ogg": "/shopping-cart-project/static/media/viking_bridge_neck.66695dda61b38dab4673.ogg",
     "static/media/Viking67_Header.png": "/shopping-cart-project/static/media/Viking67_Header.54b20b69d2c932618e29.png",
     "static/media/viking_neck_clean.ogg": "/shopping-cart-project/static/media/viking_neck_clean.f1212c64b9506888d214.ogg",
@@ -498,6 +498,7 @@
     "static/media/Ultra_Swede_ESN_Hero.png": "/shopping-cart-project/static/media/Ultra_Swede_ESN_Hero.ad334d0a78b143b8ec89.png",
     "static/media/Detail_lundgren_pickups.jpg": "/shopping-cart-project/static/media/Detail_lundgren_pickups.447389e0956773cd8a25.jpg",
     "static/media/Tremar_HJ500_Hero.png": "/shopping-cart-project/static/media/Tremar_HJ500_Hero.f9c17eb0c82eb99d58a6.png",
+    "static/media/Instrument_Archive_Viking_Deluxe_Custom_Limited_2016.png": "/shopping-cart-project/static/media/Instrument_Archive_Viking_Deluxe_Custom_Limited_2016.19396fb60535cadd752c.png",
     "static/media/Fantomen_Custom_Header.jpg": "/shopping-cart-project/static/media/Fantomen_Custom_Header.20d1a4d03c4d7320898e.jpg",
     "static/media/Owners_Care_string_replacement_1.jpg": "/shopping-cart-project/static/media/Owners_Care_string_replacement_1.b66a2331db638d0d67e3.jpg",
     "static/media/Siljan_II_Grand_Auditorium_CE_Hero.png": "/shopping-cart-project/static/media/Siljan_II_Grand_Auditorium_CE_Hero.f9c0a6b947c6f35bdfe0.png",
@@ -572,6 +573,7 @@
     "static/media/Acoustic_Guitars_Mora_Concert_II.png": "/shopping-cart-project/static/media/Acoustic_Guitars_Mora_Concert_II.7ca32909488fd56467a3.png",
     "static/media/Rich_Jones_Ginger_Wildheart_Band.jpg": "/shopping-cart-project/static/media/Rich_Jones_Ginger_Wildheart_Band.4c56900511db228d2ddf.jpg",
     "static/media/Acoustic_Guitars_Mora_Dreadnought_II.png": "/shopping-cart-project/static/media/Acoustic_Guitars_Mora_Dreadnought_II.4f18ddf78bf3b563a1fb.png",
+    "static/media/Instrument_Archive_Super_Swede_LTD.png": "/shopping-cart-project/static/media/Instrument_Archive_Super_Swede_LTD.8f34c1baf99fd6cab44e.png",
     "static/media/Logo_Retroscape_bg.png": "/shopping-cart-project/static/media/Logo_Retroscape_bg.66fbd1584cd789b7aace.png",
     "static/media/HSFANTOMEN09_Pickup_Detail_07.jpg": "/shopping-cart-project/static/media/HSFANTOMEN09_Pickup_Detail_07.02872c4aa7ee7cfb86a3.jpg",
     "static/media/HSVIK_Details_345x276_0003.jpg": "/shopping-cart-project/static/media/HSVIK_Details_345x276_0003.2f8ad838143a52fc47d6.jpg",
@@ -585,11 +587,15 @@
     "static/media/Acoustic_Guitars_Siljan_Dreadnought_II.png": "/shopping-cart-project/static/media/Acoustic_Guitars_Siljan_Dreadnought_II.7d018203b63049935284.png",
     "static/media/HSH361_HIII_ABE_Body_Final.jpg": "/shopping-cart-project/static/media/HSH361_HIII_ABE_Body_Final.903743bff7d405e09192.jpg",
     "static/media/Acoustic_Guitars_Mora_Dreadnought.png": "/shopping-cart-project/static/media/Acoustic_Guitars_Mora_Dreadnought.758e9528c36e0e0e4405.png",
+    "static/media/Instrument_Archive_HB_8.png": "/shopping-cart-project/static/media/Instrument_Archive_HB_8.9a1b968b6211b6f3722d.png",
     "static/media/Acoustic_Guitars_Orsa_Dreadnought.png": "/shopping-cart-project/static/media/Acoustic_Guitars_Orsa_Dreadnought.1a301e09bc953a764785.png",
     "static/media/Acoustic_Guitars_Orsa_Grand_Auditorium.png": "/shopping-cart-project/static/media/Acoustic_Guitars_Orsa_Grand_Auditorium.1fdefd347abfb8281ef6.png",
     "static/media/HSIMP08_IMP_CSB_Body_Final.jpg": "/shopping-cart-project/static/media/HSIMP08_IMP_CSB_Body_Final.614dc9680608735b56d0.jpg",
+    "static/media/Instrument_Archive_Three_Kings.png": "/shopping-cart-project/static/media/Instrument_Archive_Three_Kings.18569dc170b5c6ad7eff.png",
     "static/media/HSIMP18_IMP_TSB_Body_Final.jpg": "/shopping-cart-project/static/media/HSIMP18_IMP_TSB_Body_Final.28c3fb518a5aaacdead4.jpg",
     "static/media/Acoustic_Guitars_Mora_Concert.png": "/shopping-cart-project/static/media/Acoustic_Guitars_Mora_Concert.513d3d6478351ce6cf65.png",
+    "static/media/Instrument_Archive_Northern_Super_Swede.png": "/shopping-cart-project/static/media/Instrument_Archive_Northern_Super_Swede.64c9734005b63432794c.png",
+    "static/media/Instrument_Archive_Northen_Super_Swede_Bass.png": "/shopping-cart-project/static/media/Instrument_Archive_Northen_Super_Swede_Bass.844a87c289c8d4a0f242.png",
     "static/media/Electric_Guitars_HL550.png": "/shopping-cart-project/static/media/Electric_Guitars_HL550.940bc6e14e84d32a71f4.png",
     "static/media/HSH309_HIII_BLK_Body_Final.jpg": "/shopping-cart-project/static/media/HSH309_HIII_BLK_Body_Final.62eab61dd5f580128c41.jpg",
     "static/media/Acoustic_Guitars_Dalarna_Dreadnought_CE.png": "/shopping-cart-project/static/media/Acoustic_Guitars_Dalarna_Dreadnought_CE.9bf245df428cdc5073fd.png",
@@ -610,9 +616,11 @@
     "static/media/Electric_Guitars_Super_Viking.png": "/shopping-cart-project/static/media/Electric_Guitars_Super_Viking.4b55f67a2f6f8087517a.png",
     "static/media/Acoustic_Guitars_Dalarna_Grand_Auditorium_CE.png": "/shopping-cart-project/static/media/Acoustic_Guitars_Dalarna_Grand_Auditorium_CE.77138388458021d6a5bc.png",
     "static/media/Basses_Swede.png": "/shopping-cart-project/static/media/Basses_Swede.14777d417eb1738d42ad.png",
+    "static/media/Instrument_Archive_Northern_Swede.png": "/shopping-cart-project/static/media/Instrument_Archive_Northern_Swede.2791ac611d17045025e7.png",
     "static/media/Electric_Guitars_Tremar_Viking_Deluxe.png": "/shopping-cart-project/static/media/Electric_Guitars_Tremar_Viking_Deluxe.fc4a835cf5dd8041fca5.png",
     "static/media/Acoustic_Guitars_Siljan_12.png": "/shopping-cart-project/static/media/Acoustic_Guitars_Siljan_12.85d5668d79613e4de56b.png",
     "static/media/Electric_Guitars_Pat_Smear.png": "/shopping-cart-project/static/media/Electric_Guitars_Pat_Smear.e1910f59e1d5dd4c42d8.png",
+    "static/media/Instrument_Archive_Viking_Deluxe.png": "/shopping-cart-project/static/media/Instrument_Archive_Viking_Deluxe.7055eb295585e84c3f70.png",
     "static/media/Detail_set_neck.jpg": "/shopping-cart-project/static/media/Detail_set_neck.211456543b548468a7aa.jpg",
     "static/media/Acoustic_Guitars_Seafarer_Parlour_CE.png": "/shopping-cart-project/static/media/Acoustic_Guitars_Seafarer_Parlour_CE.1297393dcdfd35e98dd7.png",
     "static/media/Acoustic_Guitars_Siljan_Dreadnought_CE.png": "/shopping-cart-project/static/media/Acoustic_Guitars_Siljan_Dreadnought_CE.7028fed2e40f048b9f30.png",
@@ -634,10 +642,10 @@
     "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "static/media/ScrollIcon.svg": "/shopping-cart-project/static/media/ScrollIcon.a1eb858b6e5366f1bd5779a8e0ec1c44.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.31042345.js.map": "/shopping-cart-project/static/js/main.31042345.js.map"
+    "main.2763bb19.js.map": "/shopping-cart-project/static/js/main.2763bb19.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.31042345.js"
+    "static/js/main.2763bb19.js"
   ]
 }
