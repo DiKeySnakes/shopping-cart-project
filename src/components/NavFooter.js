@@ -131,7 +131,7 @@ const NavFooter = () => {
                 </Link>
               </li>
               <li>
-                <Link>Instrument Archive</Link>
+                <Link to='/InstrumentArchive'>Instrument Archive</Link>
               </li>
               <li>
                 <Link to='/OwnersCare'>Owners Care</Link>

@@ -196,6 +196,7 @@ const NewsWrapper = styled.div`
 const ImageWrapper = styled.div`
   display: flex;
   flex-direction: row;
+  margin-bottom: 2rem;
 `;
 
 const Image = styled.img`

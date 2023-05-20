@@ -69,6 +69,15 @@ import OwnersCareRefs02 from './components/OwnersCareRefs02';
 import OwnersCareRefs03 from './components/OwnersCareRefs03';
 import OwnersCareRefs04 from './components/OwnersCareRefs04';
 import OwnersCareRefs05 from './components/OwnersCareRefs05';
+import InstrumentArchive from './components/InstrumentArchive';
+import MoreInfoSuperSwedeLTD from './components/MoreInfoSuperSwedeLTD';
+import MoreInfoNorthernSuperSwede from './components/MoreInfoNorthernSuperSwede';
+import MoreInfoNorthernSwede from './components/MoreInfoNorthernSwede';
+import MoreInfoVikingDeluxe from './components/MoreInfoVikingDeluxe';
+import MoreInfoThreeKings from './components/MoreInfoThreeKings';
+import MoreInfoVikingDeluxeCustomLimited2016 from './components/MoreInfoVikingDeluxeCustomLimited2016';
+import MoreInfoNorthernSuperSwedeBass from './components/MoreInfoNorthernSuperSwedeBass';
+import MoreInfoHB8 from './components/MoreInfoHB8';
 import Footer from './components/Footer';
 import Cart from './features/cart/Cart';
 import Artists from './components/Artists';
@@ -251,6 +260,33 @@ function App() {
           <Route path='/OwnersCareRefs03' element={<OwnersCareRefs03 />} />
           <Route path='/OwnersCareRefs04' element={<OwnersCareRefs04 />} />
           <Route path='/OwnersCareRefs05' element={<OwnersCareRefs05 />} />
+          <Route path='/InstrumentArchive' element={<InstrumentArchive />} />
+          <Route
+            path='/MoreInfoSuperSwedeLTD'
+            element={<MoreInfoSuperSwedeLTD />}
+          />
+          <Route
+            path='/MoreInfoNorthernSuperSwede'
+            element={<MoreInfoNorthernSuperSwede />}
+          />
+          <Route
+            path='/MoreInfoNorthernSwede'
+            element={<MoreInfoNorthernSwede />}
+          />
+          <Route
+            path='/MoreInfoVikingDeluxe'
+            element={<MoreInfoVikingDeluxe />}
+          />
+          <Route path='/MoreInfoThreeKings' element={<MoreInfoThreeKings />} />
+          <Route
+            path='/MoreInfoVikingDeluxeCustomLimited2016'
+            element={<MoreInfoVikingDeluxeCustomLimited2016 />}
+          />
+          <Route
+            path='/MoreInfoNorthernSuperSwedeBass'
+            element={<MoreInfoNorthernSuperSwedeBass />}
+          />
+          <Route path='/MoreInfoHB8' element={<MoreInfoHB8 />} />
         </Routes>
       </ScrollToTopHelper>
       <NavFooter />

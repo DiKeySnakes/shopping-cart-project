@@ -58,6 +58,7 @@ const NavLinks = styled.div`
   justify-content: space-around;
   float: left;
   white-space: nowrap;
+  flex-wrap: wrap;
 `;
 
 const ShareLinks = styled.div`
