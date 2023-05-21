@@ -103,6 +103,10 @@ import Acoustic_Siljan_II_Grand_Auditorium_CE_White_Gloss_Vertical from '../asse
 import Acoustic_Siljan_II_GA_12_String_Vertical from '../assets/images/Acoustic_Siljan_II_GA_12_String_Vertical.png';
 import Acoustic_Seafarer_II_Parlor_E_Vertical from '../assets/images/Acoustic_Seafarer_II_Parlor_E_Vertical.png';
 import Super_Swede_LTD_Cosmic_Black_Burst_Vertical from '../assets/images/Super_Swede_LTD_Cosmic_Black_Burst_Vertical.png';
+import Northern_Super_Swede_Black_Gloss_Vertical from '../assets/images/Northern_Super_Swede_Black_Gloss_Vertical.png';
+import Northern_Super_Swede_Tobacco_Sunburst_Vertical from '../assets/images/Northern_Super_Swede_Tobacco_Sunburst_Vertical.png';
+import Northern_Super_Swede_Cosmic_Black_Burst_Vertical from '../assets/images/Northern_Super_Swede_Cosmic_Black_Burst_Vertical.png';
+import Northern_Super_Swede_Vintage_Sunburst_Vertical from '../assets/images/Northern_Super_Swede_Vintage_Sunburst_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -1154,6 +1158,46 @@ const productsList = [
     color: 'Cosmic Black Burst',
     info: '/MoreInfoSuperSwedeLTD',
     price: '3500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Northern_Super_Swede_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Northern Super Swede',
+    color: 'Black Gloss',
+    info: '/MoreInfoNorthernSuperSwede',
+    price: '2500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Northern_Super_Swede_Tobacco_Sunburst_Vertical,
+    brand: 'Hagstrom',
+    name: 'Northern Super Swede',
+    color: 'Tobacco Sunburst',
+    info: '/MoreInfoNorthernSuperSwede',
+    price: '2500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Northern_Super_Swede_Cosmic_Black_Burst_Vertical,
+    brand: 'Hagstrom',
+    name: 'Northern Super Swede',
+    color: 'Cosmic Black Burst',
+    info: '/MoreInfoNorthernSuperSwede',
+    price: '2500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Northern_Super_Swede_Vintage_Sunburst_Vertical,
+    brand: 'Hagstrom',
+    name: 'Northern Super Swede',
+    color: 'Vintage Sunburst',
+    info: '/MoreInfoNorthernSuperSwede',
+    price: '2500',
     quantity: 1,
     id: nanoid(),
   },
