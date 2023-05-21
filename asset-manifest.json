@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.5204d323.js",
+    "main.js": "/shopping-cart-project/static/js/main.a9ba8998.js",
     "static/media/viking_bridge_neck.ogg": "/shopping-cart-project/static/media/viking_bridge_neck.66695dda61b38dab4673.ogg",
     "static/media/Viking67_Header.png": "/shopping-cart-project/static/media/Viking67_Header.54b20b69d2c932618e29.png",
     "static/media/viking_neck_clean.ogg": "/shopping-cart-project/static/media/viking_neck_clean.f1212c64b9506888d214.ogg",
@@ -175,12 +175,16 @@
     "static/media/Hagstrom_Retroscape_Impala_Brown_Burst.png": "/shopping-cart-project/static/media/Hagstrom_Retroscape_Impala_Brown_Burst.c9f70ac06421bca1bf62.png",
     "static/media/Hagstrom_Ultra_Swede_ESN_Tobacco_Sunburst.png": "/shopping-cart-project/static/media/Hagstrom_Ultra_Swede_ESN_Tobacco_Sunburst.cbe9f70f2d65d797a212.png",
     "static/media/HS_Pat_Smear_Red_2016.jpg": "/shopping-cart-project/static/media/HS_Pat_Smear_Red_2016.cb8cc5265853eb816b71.jpg",
+    "static/media/Northern_Super_Swede_Tobacco_Sunburst_Vertical.png": "/shopping-cart-project/static/media/Northern_Super_Swede_Tobacco_Sunburst_Vertical.fedadbbd5eb49d9da697.png",
     "static/media/Ultra_Swede_ESN_Tobacco_Sunburst_Vertical.png": "/shopping-cart-project/static/media/Ultra_Swede_ESN_Tobacco_Sunburst_Vertical.0bb5f4d36bf153a559ee.png",
+    "static/media/Northern_Super_Swede_Tobacco_Sunburst.png": "/shopping-cart-project/static/media/Northern_Super_Swede_Tobacco_Sunburst.a196a2d3cd2c7951e2a1.png",
     "static/media/Heritage_Hagstrom_58_Adv_ny.jpg": "/shopping-cart-project/static/media/Heritage_Hagstrom_58_Adv_ny.25dd4eded89a22cadf60.jpg",
     "static/media/Fantomen_Tobacco_Sunburst_Back.png": "/shopping-cart-project/static/media/Fantomen_Tobacco_Sunburst_Back.134c486f2f91b23cb174.png",
     "static/media/Viking_Bass_White_Gloss.png": "/shopping-cart-project/static/media/Viking_Bass_White_Gloss.8849b740c281e0e8cce6.png",
     "static/media/HagstromImpalaCopperburstBack.png": "/shopping-cart-project/static/media/HagstromImpalaCopperburstBack.5c3b9b92bcfafa06f62c.png",
+    "static/media/Northern_Super_Swede_Cosmic_Black_Burst_Vertical.png": "/shopping-cart-project/static/media/Northern_Super_Swede_Cosmic_Black_Burst_Vertical.d42f10bbefd07a9627b3.png",
     "static/media/Viking_Bass_White_Gloss_Vertical.png": "/shopping-cart-project/static/media/Viking_Bass_White_Gloss_Vertical.564272989cb28ead7dc0.png",
+    "static/media/Northern_Super_Swede_Cosmic_Black_Burst.png": "/shopping-cart-project/static/media/Northern_Super_Swede_Cosmic_Black_Burst.2fdf9c934a631e780856.png",
     "static/media/Pat_Smear_Signature_Black_Gloss.png": "/shopping-cart-project/static/media/Pat_Smear_Signature_Black_Gloss.a34b50cde830bcc57bd0.png",
     "static/media/HagstromPatSmearBlackGloss.png": "/shopping-cart-project/static/media/HagstromPatSmearBlackGloss.6126aa63d360337fee36.png",
     "static/media/Viking67_Black_Gloss_Back.png": "/shopping-cart-project/static/media/Viking67_Black_Gloss_Back.d50fca1e1f44b3af63f8.png",
@@ -190,7 +194,9 @@
     "static/media/Viking_Deluxe_Tremar_mid_position.ogg": "/shopping-cart-project/static/media/Viking_Deluxe_Tremar_mid_position.b19f751127f1d3a5a903.ogg",
     "static/media/HSVVIKDL77_Back.png": "/shopping-cart-project/static/media/HSVVIKDL77_Back.fb56f72d3e806f318e31.png",
     "static/media/Hagstrom_Retroscape_HIII_Aged_Sky_Blue.png": "/shopping-cart-project/static/media/Hagstrom_Retroscape_HIII_Aged_Sky_Blue.6ff00c3036308bad6a92.png",
+    "static/media/Northern_Super_Swede_Vintage_Sunburst_Vertical.png": "/shopping-cart-project/static/media/Northern_Super_Swede_Vintage_Sunburst_Vertical.3316e88d58c2ec91fd8b.png",
     "static/media/Retroscape_HIII_White_Vertical.png": "/shopping-cart-project/static/media/Retroscape_HIII_White_Vertical.bfb9496fdbfdae2cecb4.png",
+    "static/media/Northern_Super_Swede_Vintage_Sunburst.png": "/shopping-cart-project/static/media/Northern_Super_Swede_Vintage_Sunburst.70c68433efec48895f49.png",
     "static/media/Hagstrom_Ultra_Swede_ESN_Wild_Cherry_Transparent.png": "/shopping-cart-project/static/media/Hagstrom_Ultra_Swede_ESN_Wild_Cherry_Transparent.6cc2537a7b36fd648f38.png",
     "static/media/H8_II_Tobacco_Sunburst_Back.png": "/shopping-cart-project/static/media/H8_II_Tobacco_Sunburst_Back.f7a5e6601dcd81ee7541.png",
     "static/media/Ultra_Swede_ESN_Wild_Cherry_Transparent_Vertical.png": "/shopping-cart-project/static/media/Ultra_Swede_ESN_Wild_Cherry_Transparent_Vertical.9c93be6d7f48f5d4a97d.png",
@@ -218,6 +224,7 @@
     "static/media/HSVVIKDL04_Back.png": "/shopping-cart-project/static/media/HSVVIKDL04_Back.99c860a2b58e3868e4b7.png",
     "static/media/HagstromSuperSwedeCrimsonFlameBack.png": "/shopping-cart-project/static/media/HagstromSuperSwedeCrimsonFlameBack.0b0b98e3455af258ee76.png",
     "static/media/Retroscape_Impala_Black_Vertical.png": "/shopping-cart-project/static/media/Retroscape_Impala_Black_Vertical.c96ded7a47b53bd12f08.png",
+    "static/media/Northern_Super_Swede_Black_Gloss_Vertical.png": "/shopping-cart-project/static/media/Northern_Super_Swede_Black_Gloss_Vertical.9b61a3f6c8c509a55bdd.png",
     "static/media/Acoustic_Siljan_II_Grand_Auditorium_CE_Black_Gloss_Vertical.png": "/shopping-cart-project/static/media/Acoustic_Siljan_II_Grand_Auditorium_CE_Black_Gloss_Vertical.1acee8ed7b1928ba9471.png",
     "static/media/HagstromSwedeCrimsonFlameBack.png": "/shopping-cart-project/static/media/HagstromSwedeCrimsonFlameBack.223f35c737cae7e2fc3d.png",
     "static/media/HagstromAlvarWildCherryTransparentBack.png": "/shopping-cart-project/static/media/HagstromAlvarWildCherryTransparentBack.2187c1247f872d916674.png",
@@ -225,6 +232,7 @@
     "static/media/Hagstrom_Ultra_Swede_ESN_Wild_Cherry_Transparent_Back.png": "/shopping-cart-project/static/media/Hagstrom_Ultra_Swede_ESN_Wild_Cherry_Transparent_Back.0b7d630d2fbad72c7b9e.png",
     "static/media/Retroscape_HIII_Black_Vertical.png": "/shopping-cart-project/static/media/Retroscape_HIII_Black_Vertical.0f50761931d51860c8b7.png",
     "static/media/Super_Swede_Bass_Black_Gloss_Vertical.png": "/shopping-cart-project/static/media/Super_Swede_Bass_Black_Gloss_Vertical.47aea5db60e380a710e4.png",
+    "static/media/Northern_Super_Swede_Black_Gloss.png": "/shopping-cart-project/static/media/Northern_Super_Swede_Black_Gloss.5f856012e0cf08662849.png",
     "static/media/Hagstrom_Retroscape_Impala_Black.png": "/shopping-cart-project/static/media/Hagstrom_Retroscape_Impala_Black.eb6d440ea29d0eb10bcb.png",
     "static/media/HS_Faith_Impala.jpg": "/shopping-cart-project/static/media/HS_Faith_Impala.d4508e9883612e762c99.jpg",
     "static/media/Hagstrom_Retroscape_HIII_3_Tone_Sunburst_Back.png": "/shopping-cart-project/static/media/Hagstrom_Retroscape_HIII_3_Tone_Sunburst_Back.86e27d82188e6660cfe3.png",
@@ -446,6 +454,7 @@
     "static/media/Retroscape_HIII_Hero.png": "/shopping-cart-project/static/media/Retroscape_HIII_Hero.c690273b2d13f3b681c3.png",
     "static/media/HSSWEMK3_Details_345x276Px_03.jpg": "/shopping-cart-project/static/media/HSSWEMK3_Details_345x276Px_03.6bf519c727c3e2d689df.jpg",
     "static/media/Super_Viking_Header.jpg": "/shopping-cart-project/static/media/Super_Viking_Header.12f4fa9df079ceb1c1cf.jpg",
+    "static/media/Northern_Super_Swede_Hero.png": "/shopping-cart-project/static/media/Northern_Super_Swede_Hero.fc9efdd85761ed6bd25d.png",
     "static/media/Andreas_Klemens_TSY_2012.jpg": "/shopping-cart-project/static/media/Andreas_Klemens_TSY_2012.25ed3b23c492e296f8fb.jpg",
     "static/media/Viking_Deluxe_Baritone_Hero.png": "/shopping-cart-project/static/media/Viking_Deluxe_Baritone_Hero.d18ef8eb5b08394ec7fd.png",
     "static/media/HSSUSWEMK3_Details_345x276Px_05.jpg": "/shopping-cart-project/static/media/HSSUSWEMK3_Details_345x276Px_05.1c81e7560e3d961f458f.jpg",
@@ -519,6 +528,7 @@
     "static/media/Electric_Guitars_Header.jpg": "/shopping-cart-project/static/media/Electric_Guitars_Header.b08e1df7185e2d87427f.jpg",
     "static/media/Rodrigo_Gonzalez.jpg": "/shopping-cart-project/static/media/Rodrigo_Gonzalez.213ea5d372fadcc880dd.jpg",
     "static/media/Super_Swede_LTD_Detail_1.jpg": "/shopping-cart-project/static/media/Super_Swede_LTD_Detail_1.a663b90760d833e485f1.jpg",
+    "static/media/Northern_Super_Swede_Pickup_Custom_Detail_02.jpg": "/shopping-cart-project/static/media/Northern_Super_Swede_Pickup_Custom_Detail_02.54d80b4eb5b6645705e6.jpg",
     "static/media/Home_viking_teaser.jpg": "/shopping-cart-project/static/media/Home_viking_teaser.4bc5d87dab6c6a5a1604.jpg",
     "static/media/HSSUVIK91_detail_pick.jpg": "/shopping-cart-project/static/media/HSSUVIK91_detail_pick.b4b4e6a3821e07fa64af.jpg",
     "static/media/Detail_tremar_vibrato.jpg": "/shopping-cart-project/static/media/Detail_tremar_vibrato.4ce708abe77c48a49623.jpg",
@@ -635,6 +645,7 @@
     "static/media/Instrument_Archive_Viking_Deluxe.png": "/shopping-cart-project/static/media/Instrument_Archive_Viking_Deluxe.7055eb295585e84c3f70.png",
     "static/media/Detail_set_neck.jpg": "/shopping-cart-project/static/media/Detail_set_neck.211456543b548468a7aa.jpg",
     "static/media/Acoustic_Guitars_Seafarer_Parlour_CE.png": "/shopping-cart-project/static/media/Acoustic_Guitars_Seafarer_Parlour_CE.1297393dcdfd35e98dd7.png",
+    "static/media/Northen_Super_Swede_Sunburst_Flying_Detail_01.jpg": "/shopping-cart-project/static/media/Northen_Super_Swede_Sunburst_Flying_Detail_01.c0f5012e98be342e26ac.jpg",
     "static/media/Acoustic_Guitars_Siljan_Dreadnought_CE.png": "/shopping-cart-project/static/media/Acoustic_Guitars_Siljan_Dreadnought_CE.7028fed2e40f048b9f30.png",
     "static/media/HSFANTOMEN09_Detail_06.jpg": "/shopping-cart-project/static/media/HSFANTOMEN09_Detail_06.c4f4916ae497dfb4f249.jpg",
     "static/media/Electric_Guitars_Viking.png": "/shopping-cart-project/static/media/Electric_Guitars_Viking.5fc173c05278e9eace74.png",
@@ -655,10 +666,10 @@
     "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "static/media/ScrollIcon.svg": "/shopping-cart-project/static/media/ScrollIcon.a1eb858b6e5366f1bd5779a8e0ec1c44.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.5204d323.js.map": "/shopping-cart-project/static/js/main.5204d323.js.map"
+    "main.a9ba8998.js.map": "/shopping-cart-project/static/js/main.a9ba8998.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.5204d323.js"
+    "static/js/main.a9ba8998.js"
   ]
 }
