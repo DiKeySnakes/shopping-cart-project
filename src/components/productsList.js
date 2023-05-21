@@ -107,6 +107,9 @@ import Northern_Super_Swede_Black_Gloss_Vertical from '../assets/images/Northern
 import Northern_Super_Swede_Tobacco_Sunburst_Vertical from '../assets/images/Northern_Super_Swede_Tobacco_Sunburst_Vertical.png';
 import Northern_Super_Swede_Cosmic_Black_Burst_Vertical from '../assets/images/Northern_Super_Swede_Cosmic_Black_Burst_Vertical.png';
 import Northern_Super_Swede_Vintage_Sunburst_Vertical from '../assets/images/Northern_Super_Swede_Vintage_Sunburst_Vertical.png';
+import Northern_Swede_Black_Gloss_Vertical from '../assets/images/Northern_Swede_Black_Gloss_Vertical.png';
+import Northern_Swede_Wild_Cherry_Transparent_Vertical from '../assets/images/Northern_Swede_Wild_Cherry_Transparent_Vertical.png';
+import Northern_Swede_White_Gloss_Vertical from '../assets/images/Northern_Swede_White_Gloss_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -1197,6 +1200,36 @@ const productsList = [
     name: 'Northern Super Swede',
     color: 'Vintage Sunburst',
     info: '/MoreInfoNorthernSuperSwede',
+    price: '2500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Northern_Swede_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Northern Swede',
+    color: 'Black Gloss',
+    info: '/MoreInfoNorthernSwede',
+    price: '2500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Northern_Swede_Wild_Cherry_Transparent_Vertical,
+    brand: 'Hagstrom',
+    name: 'Northern Swede',
+    color: 'Wild Cherry Transparent',
+    info: '/MoreInfoNorthernSwede',
+    price: '2500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Northern_Swede_White_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Northern Swede',
+    color: 'White Gloss',
+    info: '/MoreInfoNorthernSwede',
     price: '2500',
     quantity: 1,
     id: nanoid(),
