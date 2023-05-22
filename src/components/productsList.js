@@ -110,6 +110,9 @@ import Northern_Super_Swede_Vintage_Sunburst_Vertical from '../assets/images/Nor
 import Northern_Swede_Black_Gloss_Vertical from '../assets/images/Northern_Swede_Black_Gloss_Vertical.png';
 import Northern_Swede_Wild_Cherry_Transparent_Vertical from '../assets/images/Northern_Swede_Wild_Cherry_Transparent_Vertical.png';
 import Northern_Swede_White_Gloss_Vertical from '../assets/images/Northern_Swede_White_Gloss_Vertical.png';
+import Viking_Deluxe_Amber_Sunburst_Vertical from '../assets/images/Viking_Deluxe_Amber_Sunburst_Vertical.png';
+import Viking_Deluxe_Natural_Vertical from '../assets/images/Viking_Deluxe_Natural_Vertical.png';
+import Viking_Deluxe_White_Gloss_Vertical from '../assets/images/Viking_Deluxe_White_Gloss_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -1231,6 +1234,36 @@ const productsList = [
     color: 'White Gloss',
     info: '/MoreInfoNorthernSwede',
     price: '2500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Viking_Deluxe_Amber_Sunburst_Vertical,
+    brand: 'Hagstrom',
+    name: 'Viking Deluxe',
+    color: 'Amber Sunburst',
+    info: '/MoreInfoVikingDeluxe',
+    price: '2200',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Viking_Deluxe_Natural_Vertical,
+    brand: 'Hagstrom',
+    name: 'Viking Deluxe',
+    color: 'Natural',
+    info: '/MoreInfoVikingDeluxe',
+    price: '2200',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Viking_Deluxe_White_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Viking Deluxe',
+    color: 'White Gloss',
+    info: '/MoreInfoVikingDeluxe',
+    price: '2200',
     quantity: 1,
     id: nanoid(),
   },
