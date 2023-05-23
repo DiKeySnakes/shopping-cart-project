@@ -113,6 +113,9 @@ import Northern_Swede_White_Gloss_Vertical from '../assets/images/Northern_Swede
 import Viking_Deluxe_Amber_Sunburst_Vertical from '../assets/images/Viking_Deluxe_Amber_Sunburst_Vertical.png';
 import Viking_Deluxe_Natural_Vertical from '../assets/images/Viking_Deluxe_Natural_Vertical.png';
 import Viking_Deluxe_White_Gloss_Vertical from '../assets/images/Viking_Deluxe_White_Gloss_Vertical.png';
+import Three_Kings_Super_Swede_Vertical from '../assets/images/Three_Kings_Super_Swede_Vertical.png';
+import Three_Kings_Swede_Vertical from '../assets/images/Three_Kings_Swede_Vertical.png';
+import Three_Kings_Ultra_Swede_Vertical from '../assets/images/Three_Kings_Ultra_Swede_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -1264,6 +1267,36 @@ const productsList = [
     color: 'White Gloss',
     info: '/MoreInfoVikingDeluxe',
     price: '2200',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Three_Kings_Super_Swede_Vertical,
+    brand: 'Hagstrom',
+    name: 'Three Kings Super Swede',
+    color: 'Black Gloss',
+    info: '/MoreInfoThreeKings',
+    price: '4500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Three_Kings_Swede_Vertical,
+    brand: 'Hagstrom',
+    name: 'Three Kings Swede',
+    color: 'Black Gloss',
+    info: '/MoreInfoThreeKings',
+    price: '4500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Three_Kings_Ultra_Swede_Vertical,
+    brand: 'Hagstrom',
+    name: 'Three Kings Ultra Swede',
+    color: 'Black Gloss',
+    info: '/MoreInfoThreeKings',
+    price: '4500',
     quantity: 1,
     id: nanoid(),
   },
