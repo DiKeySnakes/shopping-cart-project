@@ -116,6 +116,7 @@ import Viking_Deluxe_White_Gloss_Vertical from '../assets/images/Viking_Deluxe_W
 import Three_Kings_Super_Swede_Vertical from '../assets/images/Three_Kings_Super_Swede_Vertical.png';
 import Three_Kings_Swede_Vertical from '../assets/images/Three_Kings_Swede_Vertical.png';
 import Three_Kings_Ultra_Swede_Vertical from '../assets/images/Three_Kings_Ultra_Swede_Vertical.png';
+import Viking_Deluxe_Custom_Limited_2016_Emerald_Green_Vertical from '../assets/images/Viking_Deluxe_Custom_Limited_2016_Emerald_Green_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -1296,6 +1297,16 @@ const productsList = [
     name: 'Three Kings Ultra Swede',
     color: 'Black Gloss',
     info: '/MoreInfoThreeKings',
+    price: '4500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Viking_Deluxe_Custom_Limited_2016_Emerald_Green_Vertical,
+    brand: 'Hagstrom',
+    name: 'Viking Deluxe Custom Limited 2016',
+    color: 'Emerald Green',
+    info: '/MoreInfoVikingDeluxeCustomLimited2016',
     price: '4500',
     quantity: 1,
     id: nanoid(),
