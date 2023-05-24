@@ -120,6 +120,8 @@ import Viking_Deluxe_Custom_Limited_2016_Emerald_Green_Vertical from '../assets/
 import Northern_Super_Swede_Bass_Indian_Summer_Vertical from '../assets/images/Northern_Super_Swede_Bass_Indian_Summer_Vertical.png';
 import Northern_Super_Swede_Bass_Black_Gloss_Vertical from '../assets/images/Northern_Super_Swede_Bass_Black_Gloss_Vertical.png';
 import Northern_Super_Swede_Bass_Natural_Mahogany_Vertical from '../assets/images/Northern_Super_Swede_Bass_Natural_Mahogany_Vertical.png';
+import HB_8_Bass_Wild_Cherry_Transparent_Vertical from '../assets/images/HB_8_Bass_Wild_Cherry_Transparent_Vertical.png';
+import HB_8_Bass_Black_Gloss_Vertical from '../assets/images/HB_8_Bass_Black_Gloss_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -1341,6 +1343,26 @@ const productsList = [
     color: 'Natural Mahogany',
     info: '/MoreInfoNorthernSuperSwedeBass',
     price: '2500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: HB_8_Bass_Wild_Cherry_Transparent_Vertical,
+    brand: 'Hagstrom',
+    name: 'HB-8 Bass',
+    color: 'Wild Cherry Transparent',
+    info: '/MoreInfoHB8',
+    price: '3500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: HB_8_Bass_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'HB-8 Bass',
+    color: 'Black Gloss',
+    info: '/MoreInfoHB8',
+    price: '3500',
     quantity: 1,
     id: nanoid(),
   },
