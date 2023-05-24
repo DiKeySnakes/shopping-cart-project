@@ -117,6 +117,9 @@ import Three_Kings_Super_Swede_Vertical from '../assets/images/Three_Kings_Super
 import Three_Kings_Swede_Vertical from '../assets/images/Three_Kings_Swede_Vertical.png';
 import Three_Kings_Ultra_Swede_Vertical from '../assets/images/Three_Kings_Ultra_Swede_Vertical.png';
 import Viking_Deluxe_Custom_Limited_2016_Emerald_Green_Vertical from '../assets/images/Viking_Deluxe_Custom_Limited_2016_Emerald_Green_Vertical.png';
+import Northern_Super_Swede_Bass_Indian_Summer_Vertical from '../assets/images/Northern_Super_Swede_Bass_Indian_Summer_Vertical.png';
+import Northern_Super_Swede_Bass_Black_Gloss_Vertical from '../assets/images/Northern_Super_Swede_Bass_Black_Gloss_Vertical.png';
+import Northern_Super_Swede_Bass_Natural_Mahogany_Vertical from '../assets/images/Northern_Super_Swede_Bass_Natural_Mahogany_Vertical.png';
 
 import { nanoid } from '@reduxjs/toolkit';
 
@@ -1308,6 +1311,36 @@ const productsList = [
     color: 'Emerald Green',
     info: '/MoreInfoVikingDeluxeCustomLimited2016',
     price: '4500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Northern_Super_Swede_Bass_Indian_Summer_Vertical,
+    brand: 'Hagstrom',
+    name: 'Northern Super Swede Bass',
+    color: 'Indian Summer',
+    info: '/MoreInfoNorthernSuperSwedeBass',
+    price: '2500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Northern_Super_Swede_Bass_Black_Gloss_Vertical,
+    brand: 'Hagstrom',
+    name: 'Northern Super Swede Bass',
+    color: 'Black Gloss',
+    info: '/MoreInfoNorthernSuperSwedeBass',
+    price: '2500',
+    quantity: 1,
+    id: nanoid(),
+  },
+  {
+    src: Northern_Super_Swede_Bass_Natural_Mahogany_Vertical,
+    brand: 'Hagstrom',
+    name: 'Northern Super Swede Bass',
+    color: 'Natural Mahogany',
+    info: '/MoreInfoNorthernSuperSwedeBass',
+    price: '2500',
     quantity: 1,
     id: nanoid(),
   },

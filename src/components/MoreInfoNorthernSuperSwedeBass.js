@@ -11,37 +11,28 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import Super_Swede_Hero from '../assets/images/Super_Swede_Hero_350x453Px.png';
-import Super_Swede_Header from '../assets/images/Super_Swede_Header.jpg';
-import HagstromSuperSwedeCrimsonFlame from '../assets/images/HagstromSuperSwedeCrimsonFlame.png';
-import HagstromSuperSwedeCrimsonFlameBack from '../assets/images/HagstromSuperSwedeCrimsonFlameBack.png';
-import HagstromSuperSwedeDarkStorm from '../assets/images/HagstromSuperSwedeDarkStorm.png';
-import HagstromSuperSwedeDarkStormBack from '../assets/images/HagstromSuperSwedeDarkStormBack.png';
-import HagstromSuperSwedeXtraSpecialOldPale from '../assets/images/HagstromSuperSwedeXtraSpecialOldPale.png';
-import HagstromSuperSwedeFallSkyGloss from '../assets/images/HagstromSuperSwedeFallSkyGloss.png';
-import HagstromSuperSwedeFallSkyGlossBack from '../assets/images/HagstromSuperSwedeFallSkyGlossBack.png';
+import Northern_Super_Swede_Bass_Hero from '../assets/images/Northern_Super_Swede_Bass_Hero.png';
+import Northen_Super_Swede_Bass_Header from '../assets/images/Northen_Super_Swede_Bass_Header.jpg';
 import Logo_Hagstrom_Lilie_Black from '../assets/images/Logo_Hagstrom_Lilie_Black.png';
-import Colors_HAGSTROM_Crimson_Flame from '../assets/images/Colors_HAGSTROM_Crimson_Flame.png';
-import Colors_HAGSTROM_Dark_Storm from '../assets/images/Colors_HAGSTROM_Dark_Storm.png';
-import Colors_HAGSTROM_X_tra_Special_Old_Pale from '../assets/images/Colors_HAGSTROM_X_tra_Special_Old_Pale.png';
-import Colors_HAGSTROM_Fall_Sky_Gloss from '../assets/images/Colors_HAGSTROM_Fall_Sky_Gloss.png';
-import Logo_Hagstrom_Lilie from '../assets/images/Logo_Hagstrom_Lilie.png';
-import HSSUSWEMK3_Details_1 from '../assets/images/HSSUSWEMK3_Details_345x276Px_01.jpg';
-import HSSUSWEMK3_Details_2 from '../assets/images/HSSUSWEMK3_Details_345x276Px_02.jpg';
-import HSSUSWEMK3_Details_3 from '../assets/images/HSSUSWEMK3_Details_345x276Px_03.jpg';
-import HSSUSWEMK3_Details_4 from '../assets/images/HSSUSWEMK3_Details_345x276Px_04.jpg';
-import HSSUSWEMK3_Details_5 from '../assets/images/HSSUSWEMK3_Details_345x276Px_05.jpg';
-import HSSUSWEMK3_Details_6 from '../assets/images/HSSUSWEMK3_Details_345x276Px_06.jpg';
-import HSSUSWEMK3_Details_7 from '../assets/images/HSSUSWEMK3_Details_345x276Px_07.jpg';
-import HSSUSWEMK3_Details_8 from '../assets/images/HSSUSWEMK3_Details_345x276Px_08.jpg';
-import HSSUSWEMK3_Details_9 from '../assets/images/HSSUSWEMK3_Details_345x276Px_09.jpg';
+import Logo_Northen_Series from '../assets/images/Logo_Northen_Series.png';
+import Colors_Black_Gloss from '../assets/images/Colors_Black_Gloss.png';
+import Colors_Natural_Mahogany from '../assets/images/Colors_Natural_Mahogany.png';
+import Colors_Indian_Summer from '../assets/images/Colors_Indian_Summer.png';
+import HSNOSUSWB_Details_345x276_007 from '../assets/images/HSNOSUSWB_Details_345x276_007.jpg';
+import HSNOSUSWB_Details_345x276_005 from '../assets/images/HSNOSUSWB_Details_345x276_005.jpg';
+import HSNOSUSWB_Details_345x276_006 from '../assets/images/HSNOSUSWB_Details_345x276_006.jpg';
+import HSNOSUSWB_Details_345x276_002 from '../assets/images/HSNOSUSWB_Details_345x276_002.jpg';
+import HSNOSUSWB_Details_345x276_003 from '../assets/images/HSNOSUSWB_Details_345x276_003.jpg';
+import HSNOSUSWB_Details_345x276_004 from '../assets/images/HSNOSUSWB_Details_345x276_004.jpg';
+import HSNOSUSWB_Details_345x276_001 from '../assets/images/HSNOSUSWB_Details_345x276_001.jpg';
+import HSNOSUSWB01_1140Px_front from '../assets/images/HSNOSUSWB01_1140Px_front.png';
+import HSNOSUSWB01_1140Px_back from '../assets/images/HSNOSUSWB01_1140Px_back.png';
+import HSNOSUSWB09_1140Px_front from '../assets/images/HSNOSUSWB09_1140Px_front.png';
+import HSNOSUSWB09_1140Px_back from '../assets/images/HSNOSUSWB09_1140Px_back.png';
+import HSNOSUSWB55_1140Px_front from '../assets/images/HSNOSUSWB55_1140Px_front.png';
+import HSNOSUSWB55_1140Px_back from '../assets/images/HSNOSUSWB55_1140Px_back.png';
 import Detail_expander from '../assets/images/Detail_expander.jpg';
 import Detail_resinator_wood from '../assets/images/Detail_resinator_wood.jpg';
-import Detail_locking_mechanic from '../assets/images/Detail_locking_mechanic.jpg';
-import Detail_sustain_block_tailpiece from '../assets/images/Detail_sustain_block_tailpiece.jpg';
-import Detail_nape_tenon from '../assets/images/Detail_nape_tenon.jpg';
-import Detail_stainless_steel_fret from '../assets/images/Detail_stainless_steel_fret.jpg';
-import ReactPlayer from 'react-player';
 
 const Wrapper = styled.div`
   display: flex;
@@ -112,7 +103,7 @@ const IntroBackground = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(${Super_Swede_Header});
+  background-image: url(${Northen_Super_Swede_Bass_Header});
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -277,6 +268,22 @@ const MediaTitle = styled.h3`
   }
   @media (max-width: 350px) {
     font-size: 7vmin;
+  }
+`;
+
+const MediaTitleSecondary = styled.h4`
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5vmin;
+  font-weight: 400;
+  line-height: 110%;
+  font-family: 'Signika Negative', sans-serif;
+  color: #333333;
+  @media (max-width: 800px) {
+    font-size: 4vmin;
+  }
+  @media (max-width: 350px) {
+    font-size: 6vmin;
   }
 `;
 
@@ -546,7 +553,7 @@ const ButtonWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
 `;
 
 const Button = styled.button`
@@ -569,22 +576,6 @@ const Button = styled.button`
   }
 `;
 
-const VideoWrapper = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3rem;
-`;
-
-const Video = styled.div`
-  width: 84vmin;
-  height: 48vmin;
-  display: flex;
-  flex-direction: row;
-`;
-
 const MoreInfoNorthernSuperSwedeBass = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -593,10 +584,10 @@ const MoreInfoNorthernSuperSwedeBass = () => {
         <IntroBackground>
           <IntroContainer>
             <IntroTitle>
-              Super Swede
-              <IntroParagraph>Reimagined. Redefined. Revived.</IntroParagraph>
+              Northen Super Swede Bass
+              <IntroParagraph>Ahead of Its Time</IntroParagraph>
             </IntroTitle>
-            <IntroImage src={Super_Swede_Hero} alt='' />
+            <IntroImage src={Northern_Super_Swede_Bass_Hero} alt='' />
           </IntroContainer>
         </IntroBackground>
         <NavContainer>
@@ -604,11 +595,15 @@ const MoreInfoNorthernSuperSwedeBass = () => {
             <NavLinks>
               <NavLink to='/'>Home</NavLink>
               <span>/</span>
-              <NavLink to='/ElectricGuitars'>Electric Guitars</NavLink>
+              <NavLink>Your Hagstrom</NavLink>
               <span>/</span>
-              <HashLink to='/ElectricGuitars#superSwede'>Super Swede</HashLink>
+              <NavLink to='/InstrumentArchive'>Instrument Archive</NavLink>
               <span>/</span>
-              <NavLink>Super Swede NewGen</NavLink>
+              <HashLink to='/InstrumentArchive#northernSwede'>
+                Northen Series
+              </HashLink>
+              <span>/</span>
+              <NavLink>Super Swede Bass</NavLink>
             </NavLinks>
             <ShareLinks>
               <NavLink>
@@ -627,22 +622,30 @@ const MoreInfoNorthernSuperSwedeBass = () => {
         </NavContainer>
         <MainContentWrapper>
           <LeftContentWrapper>
-            <MediaTitle>Hagstrom Super Swede</MediaTitle>
+            <MediaTitle>Hagstrom Super Swede Bass</MediaTitle>
             <Paragraph>
               <LogoSpan>
                 <Logo src={Logo_Hagstrom_Lilie_Black} alt='' />
               </LogoSpan>
-              The Super Swede with its longer scale length of 25.5 inches
-              (648mm), delivers a snappy and focused tone that features a
-              well-defined low-end presence. Its higher string tension delivers
-              a clear and articulate tone, well balanced and evenly defined. The
-              Lundgren Design No. 2 pickup in the neck position and No. 5 pickup
-              in the bridge position were carefully paired to deliver a wide
-              diversity of tonal options. The AlNiCo-2 neck pickup produces warm
-              and clear tones, while the AlNiCo-5 bridge pickup delivers a
-              powerful and articulate tone. Combined together, they provide a
-              perfect balance of expression and clarity that allows the Super
-              Swede's natural tone to transpire.
+              Equipped with precision engineered and internationally renowned
+              Schaller hardware, specially voiced, „Lundgren Pickups“ hand wound
+              in Sweden, precision European craftsmanship and pride, are only a
+              few convincing factors that this bass can only be associated as
+              “Super”.
+            </Paragraph>
+            <Paragraph>
+              Discover this revolutionary bass beauty for yourself and how this
+              unique instrument has been conceived as a legendary piece, since
+              its first introduction to the world some 25 years ago.
+            </Paragraph>
+            <Paragraph>
+              We proudly present the Northen Series - Super Swede bass, built
+              entirely from the “Magnificently Rare” original Super Swede bass
+              design. First introduced in 1980, built in a limited quantity of
+              merely 364 instruments, this Hagstrom bass wonderchild, has been
+              faithfully reproduced by the Hagstrom team to finally give players
+              the chance to rediscover why this legendary 4-stringer has
+              rightfully earned its name “Super”.
             </Paragraph>
           </LeftContentWrapper>
           <RightContentWrapper>
@@ -650,35 +653,27 @@ const MoreInfoNorthernSuperSwedeBass = () => {
             <Colors>
               <ColorsWrapper>
                 <Image
-                  src={Colors_HAGSTROM_Crimson_Flame}
+                  src={Colors_Black_Gloss}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Crimson Flame</ColorsText>
+                <ColorsText>Black Gloss</ColorsText>
               </ColorsWrapper>
               <ColorsWrapper>
                 <Image
-                  src={Colors_HAGSTROM_Dark_Storm}
+                  src={Colors_Natural_Mahogany}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>Dark Storm</ColorsText>
+                <ColorsText>Natural Mahogany</ColorsText>
               </ColorsWrapper>
               <ColorsWrapper>
                 <Image
-                  src={Colors_HAGSTROM_X_tra_Special_Old_Pale}
+                  src={Colors_Indian_Summer}
                   alt=''
                   style={{ width: '70px', height: 'auto' }}
                 />
-                <ColorsText>X-tra Special Old Pale</ColorsText>
-              </ColorsWrapper>
-              <ColorsWrapper>
-                <Image
-                  src={Colors_HAGSTROM_Fall_Sky_Gloss}
-                  alt=''
-                  style={{ width: '70px', height: 'auto' }}
-                />
-                <ColorsText>Fall Sky Gloss</ColorsText>
+                <ColorsText>Indian Summer</ColorsText>
               </ColorsWrapper>
             </Colors>
           </RightContentWrapper>
@@ -686,63 +681,47 @@ const MoreInfoNorthernSuperSwedeBass = () => {
         <MainContentWrapper>
           <Details>
             <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_1} alt='' />
-              <DetailsText>Crimson Flame Finish</DetailsText>
+              <Image src={HSNOSUSWB_Details_345x276_007} alt='' />
+              <DetailsText>Set Neck</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_2} alt='' />
-              <DetailsText>Iconic headstock</DetailsText>
+              <Image src={HSNOSUSWB_Details_345x276_005} alt='' />
+              <DetailsText>High End Schaller Metal Knobs</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_3} alt='' />
-              <DetailsText>Included C-51 Case</DetailsText>
+              <Image src={HSNOSUSWB_Details_345x276_006} alt='' />
+              <DetailsText>Independent single string saddles</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_4} alt='' />
-              <DetailsText>Dark Storm Finish</DetailsText>
+              <Image src={HSNOSUSWB_Details_345x276_002} alt='' />
+              <DetailsText>Headstock</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_5} alt='' />
-              <DetailsText>
-                Lundgren Design AlNiCo-2 No. 5/2 Pickups
-              </DetailsText>
+              <Image src={HSNOSUSWB_Details_345x276_003} alt='' />
+              <DetailsText>Neck Through Body</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_6} alt='' />
-              <DetailsText>X-tra Special Old Pale Finish</DetailsText>
+              <Image src={HSNOSUSWB_Details_345x276_004} alt='' />
+              <DetailsText>Pearl Block Inlays</DetailsText>
             </DetailsWrapper>
             <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_7} alt='' />
-              <DetailsText>Long Travel Tune-O-Matic Bridge</DetailsText>
-            </DetailsWrapper>
-            <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_8} alt='' />
-              <DetailsText>Fall Sky Gloss Finish</DetailsText>
-            </DetailsWrapper>
-            <DetailsWrapper>
-              <Image src={HSSUSWEMK3_Details_9} alt='' />
-              <DetailsText>Super Swede Cutaway</DetailsText>
+              <Image src={HSNOSUSWB_Details_345x276_001} alt='' />
+              <DetailsText>Mahogany Body</DetailsText>
             </DetailsWrapper>
           </Details>
         </MainContentWrapper>
         <Quote>
           <QuoteContentWrapper>
             <Image
-              src={Logo_Hagstrom_Lilie}
+              src={Logo_Northen_Series}
               alt=''
-              style={{ width: '100px', height: 'auto', margin: '2vmin' }}
+              style={{ width: '170px', height: 'auto', margin: '2vmin' }}
             />
             <QuoteText>
-              ”I have been playing music since 20 years. I play various types of
-              music such as jazz, hard rock and reggae. This guitar can play all
-              kinds of my music styles. I don't like to compare my guitars but
-              this one has a different class.“{<br />}
-              <a
-                href='https://www.ultimate-guitar.com/reviews/electric_guitars/hagstrom/super_swede/33059/'
-                target='_blank'
-                rel='noopener noreferrer'>
-                Ultimate-Guitar.com/Super-Swede-Review
-              </a>
+              The minute you lay your hands on a Hagstrom and strum it for the
+              first time, you can instantly feel why Hagstrom has legions of
+              devoted fans and why so many pro musicians have made it their
+              “number one”.
             </QuoteText>
           </QuoteContentWrapper>
         </Quote>
@@ -765,92 +744,61 @@ const MoreInfoNorthernSuperSwedeBass = () => {
             open={open}
             close={() => setOpen(false)}
             slides={[
-              { src: HagstromSuperSwedeCrimsonFlame },
-              { src: HagstromSuperSwedeCrimsonFlameBack },
-              { src: HagstromSuperSwedeDarkStorm },
-              { src: HagstromSuperSwedeDarkStormBack },
-              { src: HagstromSuperSwedeXtraSpecialOldPale },
-              { src: HagstromSuperSwedeDarkStormBack },
-              { src: HagstromSuperSwedeFallSkyGloss },
-              { src: HagstromSuperSwedeFallSkyGlossBack },
+              { src: HSNOSUSWB01_1140Px_front },
+              { src: HSNOSUSWB01_1140Px_back },
+              { src: HSNOSUSWB09_1140Px_front },
+              { src: HSNOSUSWB09_1140Px_back },
+              { src: HSNOSUSWB55_1140Px_front },
+              { src: HSNOSUSWB55_1140Px_back },
             ]}
           />
         </LightboxWrapper>
         <SpecsWrapper>
           <LeftSpecsWrapper>
-            <MediaTitle>Super Swede Specs</MediaTitle>
+            <MediaTitle>Northen Super Swede Bass Specs</MediaTitle>
+            <MediaTitleSecondary>Body</MediaTitleSecondary>
             <ul>
-              <li>Body: Mahogany</li>
-              <li>Top: ¾” Carved Maple Top w/ Top Grade Flame Maple Veneer</li>
-              <li>Binding: Single-Ply Ivory</li>
-              <li>Style: Single Cutaway</li>
-              <li>Neck: Mahogany</li>
+              <li>Material: Figured Mahogany Wings</li>
+            </ul>
+            <MediaTitleSecondary>Neck</MediaTitleSecondary>
+            <ul>
+              <li>Neck Through Body</li>
+              <li>Material: Mahogany</li>
+              <li>Truss Rod: H-Expander™</li>
+            </ul>
+            <MediaTitleSecondary>Fingerboard/Nut</MediaTitleSecondary>
+            <ul>
+              <li>Material: Resinator™</li>
+              <li>Inlays: Pearloid Block</li>
+              <li>Frets: 20 Medium Jumbo</li>
+              <li>Scale Length: 34" (864 mm)</li>
+              <li>Nut: GraphTech Black Tusq XL</li>
+              <li>Nut Width: 1,57" (40 mm)</li>
+            </ul>
+            <MediaTitleSecondary>Electronics</MediaTitleSecondary>
+            <ul>
+              <li>Pickups: 2 x Handwound Lundgren Jazzbass “Vintage” Set</li>
               <li>
-                Neck: Set Neck, customized Nape-Tenon neck joint for ultimate
-                fret access
+                Controls: 2 x Volume / 1 x Tone - High End Schaller Metal Knobs
+                Nickel
               </li>
+            </ul>
+            <MediaTitleSecondary>Parts</MediaTitleSecondary>
+            <ul>
               <li>
-                Neck Thickness: 1st fret 21 mm (excludes FB, paint clear coat)
-                12th fret 22.5 mm (excludes FB, paint clear coat)
+                Bridge: Custom Hagstrom - Independent single string saddles -
+                Nickel
               </li>
-              <li>Trussrod: Dual Action H-Expander™</li>
-              <li>Fingerboard: Resinator™</li>
-              <li>Scale Length: 25.50” (648 mm)</li>
-              <li>Radius: 14.4“</li>
-              <li>
-                Inlays: Ivoriod Hagstrom Crest inlays – Lions on 12th fret
-              </li>
-              <li>
-                Position Marks: Hagstrom Crest inlays – Hagstrom Lions on 12th
-                fret
-              </li>
-              <li>Frets: Stainless Steel - 22 Medium Jumbo</li>
-              <li>Nut: Custom String Spaced - GraphTech™ Black Tusq XL</li>
-              <li>Nut Width: 43 mm</li>
-              <li>
-                Headstock Reinforcement: Volute with internal reinforcements
-              </li>
-              <li>
-                Pickup Neck: Lundgren Design AlNiCo-2 No. 2 (Medium Output –
-                Calibrated – 7.3K) Humbucker - Splitable
-              </li>
-              <li>
-                Pickup Bridge: Lundgren Design AlNiCo-2 No. 5 (High Output –
-                Calibrated – 13.2K) Humbucker - Splitable
-              </li>
-              <li>
-                Switch: 3-Way Toggle Switch w/Hagstrom Brass Plated Cap (Chrome
-                Plated)
-              </li>
-              <li>
-                Controls: 2 x Volume Control with R/C Circuit, 2 x Tone Control
-                with Push-Pull Coil Splits
-              </li>
-              <li>
-                Tuning Keys: Hagstrom Bottom Locking – 19:1 Ratio Chrome Tuners
-                w/Hagstrom Tuning Buttons
-              </li>
-              <li>
-                Stop tail: Hagstrom Direct Mounted Sustain Blocks, Plexi Glass
-                Plate, with Chrome Cover
-              </li>
-              <li>Bridge: Long Travel Tune-O-Matic Bridge</li>
-              <li>
-                Knobs: 4 x Hagstrom “H” Barrel Knurled Brass Knobs (Chrome
-                Plated)
-              </li>
-              <li>Pickguard: Single Ply Ivory or 3-ply Black/White/Black</li>
-              <li>
-                Pickup Frames: Hagstrom “Standard” Humbucker Pickup Frame set
-              </li>
-              <li>Strap Buttons: Set of 3, with dual mount at base of body</li>
-              <li>Strings: D’Addario (10-46)</li>
-              <li>Case: Included C-51</li>
-              <li>Optinal Gigbag: E-20</li>
+              <li>Tuning Keys: Schaller M4 - Nickel 20:1 Gear Ratio</li>
+              <li>D'Addario EXP 165 (45 - 105)</li>
+            </ul>
+            <MediaTitleSecondary>Case</MediaTitleSecondary>
+            <ul>
+              <li>Hagstrom Case included</li>
             </ul>
           </LeftSpecsWrapper>
           <RightSpecsWrapper>
-            <MediaTitle>Super Swede Standards</MediaTitle>
+            <MediaTitle>Northen Super Swede Bass Standards</MediaTitle>
             <StandardsWrapper>
               <StandardsImageWrapper>
                 <Image
@@ -865,18 +813,18 @@ const MoreInfoNorthernSuperSwedeBass = () => {
               </StandardsImageWrapper>
               <StandardsTextWrapper>
                 <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  H-Expander NewGen
+                  H-Expander
                 </h4>
                 <p>
                   All Hagstrom electric guitars and basses include our patented
-                  H-Expander™ truss rod design. Introduced with the new Swede
-                  and Super Swede models and coupled with a dual action truss
-                  rod, making adjustments even more accurate, it is fit for a
-                  whole new generation of players while retaining Hagstrom’s
-                  reputation as the world’s fastest playing guitar. The
-                  H-Expander™ truss rod not only provides ultimate neck adjust-
-                  and stability, but it also contributes to Hagstrom’s unique
-                  tone. Longer sustain and a round attack are some of the sonic
+                  H-Expander™ truss rod. Providing tension at both ends and
+                  running the entire length of the neck, the rigid yet
+                  light-weight alloy truss rod allows for a very low action and
+                  thin neck, two factors that were instrumental in earning
+                  Hagstrom its reputation as the world’s fastest playing guitar.
+                  The H-Expander™ truss rod not only provides ultimate neck
+                  stability, but it also contributes to Hagstrom’s unique tone.
+                  Longer sustain and a round attack are some of the sonic
                   characteristics the H-Expander™ adds to the tonal essence of
                   Hagstrom.
                 </p>
@@ -913,120 +861,8 @@ const MoreInfoNorthernSuperSwedeBass = () => {
                 </p>
               </StandardsTextWrapper>
             </StandardsWrapper>
-            <StandardsWrapper>
-              <StandardsImageWrapper>
-                <Image
-                  src={Detail_locking_mechanic}
-                  alt=''
-                  style={{
-                    height: 'auto',
-                    maxWidth: '100%',
-                    verticalAlign: 'top',
-                  }}
-                />
-              </StandardsImageWrapper>
-              <StandardsTextWrapper>
-                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Locking Machine Heads by Hagstrom
-                </h4>
-                <p>
-                  A variety of Hagstrom instruments include 19:1 gear ratio
-                  locking machine heads based on our own distinct innovations to
-                  enable highly accurate tuning, fewer wraps around the tuning
-                  post, and hence faster string changes.
-                </p>
-              </StandardsTextWrapper>
-            </StandardsWrapper>
-            <StandardsWrapper>
-              <StandardsImageWrapper>
-                <Image
-                  src={Detail_sustain_block_tailpiece}
-                  alt=''
-                  style={{
-                    height: 'auto',
-                    maxWidth: '100%',
-                    verticalAlign: 'top',
-                  }}
-                />
-              </StandardsImageWrapper>
-              <StandardsTextWrapper>
-                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Sustain Block Tailpiece
-                </h4>
-                <p>
-                  Hagstrom’s unique Sustain Block Tailpiece™ was the result of
-                  design work starting in 1976 and made its first appearance on
-                  Swede and Super Swede guitars produced in 1978. Since then it
-                  has been a signature feature on many of our solid body models.
-                  Each string terminates in a single, massive brass block
-                  coupled directly to the guitar’s body. The blocks are detached
-                  from one another to reduce interference between the strings,
-                  maximizing each string’s unique contribution.
-                </p>
-              </StandardsTextWrapper>
-            </StandardsWrapper>
-            <StandardsWrapper>
-              <StandardsImageWrapper>
-                <Image
-                  src={Detail_nape_tenon}
-                  alt=''
-                  style={{
-                    height: 'auto',
-                    maxWidth: '100%',
-                    verticalAlign: 'top',
-                  }}
-                />
-              </StandardsImageWrapper>
-              <StandardsTextWrapper>
-                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Nape-Tenon Body Neck Joint
-                </h4>
-                <p>
-                  The body and neck joint is a vital part of stringed
-                  instruments. When done correctly, it allows for a seamless
-                  flow of tone, energy, and resonance. Hagstrom has developed an
-                  innovative neck joint design called the "Nape-Tenon", which
-                  combines the custom shop proven mortise and tenon design with
-                  a recessed neck body joint for ultimate upper fret access.
-                </p>
-              </StandardsTextWrapper>
-            </StandardsWrapper>
-            <StandardsWrapper>
-              <StandardsImageWrapper>
-                <Image
-                  src={Detail_stainless_steel_fret}
-                  alt=''
-                  style={{
-                    height: 'auto',
-                    maxWidth: '100%',
-                    verticalAlign: 'top',
-                  }}
-                />
-              </StandardsImageWrapper>
-              <StandardsTextWrapper>
-                <h4 style={{ marginTop: '0', lineHeight: '1.2em' }}>
-                  Stainless Steel Fret Material
-                </h4>
-                <p>
-                  Although this construction process may take more time and
-                  effort, we firmly believe that shortcuts are not an option
-                  when striving for excellence. Hence the use of stainless steel
-                  frets, which provide a hassle free lifetime of performance and
-                  ensure optimal intonation and playability.
-                </p>
-              </StandardsTextWrapper>
-            </StandardsWrapper>
           </RightSpecsWrapper>
         </SpecsWrapper>
-        <VideoWrapper>
-          <Video>
-            <ReactPlayer
-              url='https://youtu.be/BLI5lSsmpXA'
-              width='100%'
-              height='100%'
-            />
-          </Video>
-        </VideoWrapper>
         <ButtonWrapper>
           <Link to='/Products'>
             <Button>
