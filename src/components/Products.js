@@ -2,6 +2,10 @@ import ScrollToTop from 'react-scroll-to-top';
 import { ReactComponent as MySVG } from '../assets/ScrollIcon.svg';
 import styled from 'styled-components';
 import productsList from './productsList';
+import productsListElectricGuitars from './productsListElectricGuitars';
+import productsListAcousticGuitars from './productsListAcousticGuitars';
+import productsListBasses from './productsListBasses';
+import productsListInstrumentArchive from './productsListInstrumentArchive';
 import { useDispatch, useSelector } from 'react-redux';
 import { increment } from '../features/counter/counterSlice';
 import { addItem, selectCart } from '../features/cart/cartSlice';
@@ -14,7 +18,7 @@ import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { nanoid } from '@reduxjs/toolkit';
 import Modal from 'react-modal';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Frame_products from '../assets/images/Frame_products.png';
 import Electric_Guitars_Header from '../assets/images/Electric_Guitars_Header.jpg';
 import CustomHeader from '../components/CustomHeader';
@@ -286,6 +290,41 @@ const ButtonGroup = styled.div`
   margin: 2rem;
 `;
 
+const RadioButtonGroupWrapper = styled.div`
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2vmin;
+  color: #111111;
+  font-family: 'Signika Negative', sans-serif;
+  @media (max-width: 768px) {
+    font-size: 3vmin;
+  }
+  @media (max-width: 430px) {
+    font-size: 3.5vmin;
+  }
+`;
+
+const RadioButtonGroup = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+const RadioButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  label {
+    margin-left: 16px;
+  }
+`;
+
 const Products = () => {
   let subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -308,11 +347,36 @@ const Products = () => {
   const cart = useSelector(selectCart);
   const info = useSelector(selectInfo);
 
+  const [category, setCategory] = useState('All Products');
+  const [list, setList] = useState(productsList);
+
+  const onOptionChange = (e) => {
+    setCategory(e.target.value);
+  };
+
+  useEffect(() => {
+    if (category === 'All Products') {
+      setList(productsList);
+    }
+    if (category === 'Electric Guitars') {
+      setList(productsListElectricGuitars);
+    }
+    if (category === 'Acoustic Guitars') {
+      setList(productsListAcousticGuitars);
+    }
+    if (category === 'Basses') {
+      setList(productsListBasses);
+    }
+    if (category === 'Instrument Archive') {
+      setList(productsListInstrumentArchive);
+    }
+  }, [list, category]);
+
   const handleAddToCartClick = (e) => {
     const target = e.target;
     const itemId = target.parentNode.parentNode.firstChild.id;
     console.log('itemId:', itemId);
-    const item = productsList.find((elem) => elem.id === itemId);
+    const item = list.find((elem) => elem.id === itemId);
     console.log('item:', item);
     if (cart.includes(item) === false) {
       dispatch(addItem(item));
@@ -331,7 +395,7 @@ const Products = () => {
     const target = e.target;
     const itemId = target.parentNode.parentNode.parentNode.firstChild.id;
     console.log('itemId:', itemId);
-    const item = productsList.find((elem) => elem.id === itemId);
+    const item = list.find((elem) => elem.id === itemId);
     console.log('item:', item);
     dispatch(clearMoreInfoItem());
     dispatch(addMoreInfoItem(item));
@@ -367,8 +431,74 @@ const Products = () => {
           </NavWrapper>
         </NavContainer>
         <CustomHeader />
+        <RadioButtonGroupWrapper>
+          <h3 style={{ marginBottom: '1rem' }}>Select category</h3>
+
+          <RadioButtonGroup>
+            <RadioButtonWrapper>
+              <input
+                type='radio'
+                name='category'
+                value='All Products'
+                id='allProducts'
+                checked={category === 'All Products'}
+                onChange={onOptionChange}
+              />
+              <label htmlFor='allProducts'>All Products</label>
+            </RadioButtonWrapper>
+
+            <RadioButtonWrapper>
+              <input
+                type='radio'
+                name='category'
+                value='Electric Guitars'
+                id='electricGuitars'
+                checked={category === 'Electric Guitars'}
+                onChange={onOptionChange}
+              />
+              <label htmlFor='electricGuitars'>Electric Guitars</label>
+            </RadioButtonWrapper>
+
+            <RadioButtonWrapper>
+              <input
+                type='radio'
+                name='category'
+                value='Acoustic Guitars'
+                id='acousticGuitars'
+                checked={category === 'Acoustic Guitars'}
+                onChange={onOptionChange}
+              />
+              <label htmlFor='acousticGuitars'>Acoustic Guitars</label>
+            </RadioButtonWrapper>
+
+            <RadioButtonWrapper>
+              <input
+                type='radio'
+                name='category'
+                value='Basses'
+                id='basses'
+                checked={category === 'Basses'}
+                onChange={onOptionChange}
+              />
+              <label htmlFor='basses'>Basses</label>
+            </RadioButtonWrapper>
+
+            <RadioButtonWrapper>
+              <input
+                type='radio'
+                name='category'
+                value='Instrument Archive'
+                id='instrumentArchive'
+                checked={category === 'Instrument Archive'}
+                onChange={onOptionChange}
+              />
+              <label htmlFor='instrumentArchive'>Instrument Archive</label>
+            </RadioButtonWrapper>
+          </RadioButtonGroup>
+        </RadioButtonGroupWrapper>
+        <CustomHeader />
         <CardContainer>
-          {productsList.map((elem) => {
+          {list.map((elem) => {
             return (
               <CardWrapper key={nanoid()}>
                 <Card key={elem.id} id={elem.id}>
