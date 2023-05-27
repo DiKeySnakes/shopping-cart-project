@@ -1,4 +1,6 @@
 import ScrollToTop from 'react-scroll-to-top';
+import { useReactToPrint } from 'react-to-print';
+import { useRef } from 'react';
 import { ReactComponent as MySVG } from '/home/dikeysnakes/repos/shopping-cart-project/src/assets/ScrollIcon.svg';
 import CustomHeader from '../../components/CustomHeader';
 import Acoustic_Guitars_Header from '/home/dikeysnakes/repos/shopping-cart-project/src/assets/images/Acoustic_Guitars_Header.jpg';
@@ -294,6 +296,41 @@ const Subtotal = styled.div`
   align-items: right;
 `;
 
+const PrintButtonWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  p {
+    font-size: calc(0.5rem + 2vmin);
+    @media (max-width: 650px) {
+      font-size: calc(1rem + 2vmin);
+    }
+    @media (max-width: 430px) {
+      font-size: calc(0.5rem + 2vmin);
+    }
+  }
+`;
+
+const PrintButton = styled.button`
+  padding: 0.5rem 1rem;
+  font-size: calc(0.5rem + 2vmin);
+  background-color: transparent;
+  font-family: 'Bitter', serif;
+  border: none;
+  cursor: pointer;
+  color: #333333;
+  @media (max-width: 650px) {
+    font-size: calc(1rem + 2vmin);
+  }
+  @media (max-width: 430px) {
+    font-size: calc(0.5rem + 2vmin);
+  }
+`;
+
 const Cart = () => {
   const dispatch = useDispatch();
   const cart = useSelector(selectCart);
@@ -368,6 +405,11 @@ const Cart = () => {
     { title: 'Shipping', price: 0.0 },
   ];
 
+  const componentRef = useRef();
+  const handlePrintClick = useReactToPrint({
+    content: () => componentRef.current,
+  });
+
   return (
     <Wrapper>
       <IntroBackground>
@@ -396,7 +438,13 @@ const Cart = () => {
         </NavWrapper>
       </NavContainer>
       <CustomHeader />
-      <ReceiptWrapper>
+      <PrintButtonWrapper>
+        <p>Click the button to print your Receipt</p>
+        <PrintButton onClick={handlePrintClick}>
+          <i className='fa-solid fa-print'></i> Print
+        </PrintButton>
+      </PrintButtonWrapper>
+      <ReceiptWrapper ref={componentRef}>
         <Receipt>
           <h1 style={{ fontSize: '5vmin' }}>Order № {Date.now()}</h1>
           <Table data={data} columns={columns} style={{ fontSize: '2vmin' }} />
@@ -469,6 +517,12 @@ const Cart = () => {
             <i className='fa-solid fa-angles-right fa-sm'></i> Continue shopping
           </Button>
         </Link>
+      </ProductsButtonWrapper>
+      <ProductsButtonWrapper>
+        <Button style={{ marginTop: '3rem', backgroundColor: 'green' }}>
+          <i className='fa-solid fa-angles-right fa-sm'></i> Check out{' '}
+          <i className='fa-solid fa-angles-right fa-sm'></i>
+        </Button>
       </ProductsButtonWrapper>
       <ScrollToTop
         smooth
