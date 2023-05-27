@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.7df893fa.css",
-    "main.js": "/shopping-cart-project/static/js/main.3a786711.js",
+    "main.js": "/shopping-cart-project/static/js/main.2111c045.js",
     "static/media/HB8_rocks_hard.mp3": "/shopping-cart-project/static/media/HB8_rocks_hard.a9fedff51088352b76bb.mp3",
     "static/media/hb8_pickupvergleich.ogg": "/shopping-cart-project/static/media/hb8_pickupvergleich.bed857ed2499c1a20a81.ogg",
     "static/media/viking_bridge_neck.ogg": "/shopping-cart-project/static/media/viking_bridge_neck.66695dda61b38dab4673.ogg",
@@ -736,10 +736,10 @@
     "static/media/frame.svg": "/shopping-cart-project/static/media/frame.3dad972ebc4ee5f2c59cbefcd072a6ac.svg",
     "static/media/ScrollIcon.svg": "/shopping-cart-project/static/media/ScrollIcon.a1eb858b6e5366f1bd5779a8e0ec1c44.svg",
     "main.7df893fa.css.map": "/shopping-cart-project/static/css/main.7df893fa.css.map",
-    "main.3a786711.js.map": "/shopping-cart-project/static/js/main.3a786711.js.map"
+    "main.2111c045.js.map": "/shopping-cart-project/static/js/main.2111c045.js.map"
   },
   "entrypoints": [
     "static/css/main.7df893fa.css",
-    "static/js/main.3a786711.js"
+    "static/js/main.2111c045.js"
   ]
 }
